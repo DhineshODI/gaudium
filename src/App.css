@@ -1,0 +1,7370 @@
+.mainheadingText {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.secondHeadingText {
+  font-family: "Alexandria", sans-serif;
+  font-size: 64px;
+  line-height: 1;
+}
+
+.subHeadingText {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+.textTransform {
+  text-transform: uppercase;
+}
+
+/* OurSignaturestyle */
+
+.marquee-loop {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding-bottom: 30px;
+}
+
+.OurSignatureApproach {
+  padding-top: 50px;
+}
+
+.track {
+  display: inline-flex;
+  animation: marquee 18s linear infinite;
+}
+
+.track span {
+  font-size: 40px;
+  font-weight: 700;
+  padding-right: 50px;
+}
+
+@keyframes marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+.marquee-loop span {
+    font-family: "Alexandria", sans-serif;
+    font-size: 120px;
+    line-height: 100%;
+    color: #eae3e8;
+    text-transform: uppercase;
+}
+
+
+.oursignaturecontents ul li {
+  font-family: "Alexandra", sans-serif;
+  position: relative;
+  font-size: 100px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1;
+  /* -webkit-text-stroke: 2px #884f79; */
+  color: transparent !important;
+  cursor: pointer;
+  width: max-content;
+  position: relative;
+      transition: 0.6s ease-out;
+}
+
+
+.oursignaturecontents ul .active-li::before {
+    content: "";
+    height: 2px;
+    width: 25%;
+    background-color: #874f79;
+    position: absolute;
+    right: -18%;
+    top: 50%;
+    transition: 0.6s ease-out;
+}
+
+.oursignatureflex {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 20%;
+    padding: 80px 0;
+}
+
+.side-text {
+  position: absolute;
+  /* top: 10%;
+  left: 121%; */
+  white-space: normal;
+  width: 34%;
+  /* transition: opacity 0.3s ease, transform 0.3s ease; */
+  font-family: "Poppins", sans-serif;
+  font-size: 21px;
+  color: #1d1f22;
+  word-break: break-word;
+  line-height: 1.1;
+  font-weight: 500;
+}
+
+.active-li .side-text {
+    top: 6%;
+    left: 119%;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.active-li.hover-li .side-text {
+     top: 0%;
+    left: 119%;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.oursignaturecontents ul li:hover .side-text {
+  opacity: 1;
+}
+
+.oursignaturecontents ul li .main-text {
+  -webkit-text-stroke: 2px #884f79;
+}
+
+.active-li .main-text {
+  color: #a762a1;
+  font-weight: 700;
+  transition: 0.6s ease-out;
+  transition: color 0.6s ease, transform 0.6s ease;
+}
+
+.active-li {
+  position: relative;
+}
+
+
+
+.oursignarurerightside img {
+  /* Smooth transition */
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  /* opacity: 0.7;
+  transform: scale(1); */
+}
+
+.oursignarurerightside img:hover,
+.active-image {
+  opacity: 1;
+  transform: scale(1.04);
+}
+
+
+.OurSignatureApproach .subHeadingText {
+      color: #1d1f22;
+    width: 50%;
+}
+
+
+/* OurSignaturestyle */
+
+/* testimonal-Slider */
+
+.testimonalFullSection {
+  background-image: url("/public/images/homepage/testimonal-banner.jpg");
+  height: 837px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .testimonalFullSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/public/images/homepage/testimonal-banner.jpg");
+  background-size: contain;
+  background-position: center;
+  z-index: -1;
+} */
+
+.testimonalSliderContainer {
+  width: 54%;
+  margin-top: 100px;
+  margin-left: 5%;
+}
+
+.testimonalPersonImage {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  object-fit: cover;
+}
+
+.testimonalPersonImagediv {
+  border: 5px solid #e5e5e7;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  position: relative;
+}
+
+.testimonalPersonImagediv::before {
+  content: "";
+  position: absolute;
+  width: 179%;
+  height: 1px;
+  background: #e9e9e9;
+  top: 50%;
+  right: -138px;
+}
+
+.youtubeIcontestimonal {
+  width: 50px;
+  height: 32px;
+}
+
+.testimonalSectionName {
+  background-color: #b26dac;
+  width: max-content;
+  padding: 10px 25px;
+  margin-top: 30px;
+}
+
+.testimonalSectionName h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 22.5px;
+  font-weight: bold;
+  color: #f5f5f3;
+  line-height: 1;
+}
+
+.testimonalSectionName p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  color: #f5f5f3;
+  line-height: 1;
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+
+.testimonalContent {
+  padding: 20px 35px;
+}
+
+.testimonalSliderborder {
+  border: 1px solid #d4d4d4;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  width: 100%;
+  background: #ffffff;
+}
+
+.testimonalPersonImageContainer {
+  margin-top: 20px;
+}
+
+.testimonalSlidersSlide {
+  width: 88% !important;
+}
+
+.testimonalContent .subHeadingText {
+  color: #636465;
+}
+
+.testimonalRow .secondHeadingText {
+  color: #b26eac;
+}
+
+.testimonalFullSection .mainheadingText {
+  color: #1d1f22;
+}
+
+/* testimonal-Slider */
+
+/* schedule A visitrow */
+
+.schdeuleMainrowsection {
+  padding-top: 100px;
+}
+
+.scheduleAvisitrow .mainheadingText {
+  color: #fafafa;
+}
+
+.scheduleAvisitrow .secondHeadingText {
+  color: #f9f9f9;
+  width: 68%;
+  line-height: 0.9;
+  margin-top: 10px;
+}
+
+.schudleVisitsection {
+  /* background-color: #b26eac; */
+  /* margin: 60px 0; */
+  background-image: url("/public/images/homepage/cta-banner.jpg");
+  height: 800px;
+}
+
+.schudleVisitsection .container {
+  /* padding-top: 100px; */
+}
+
+.schudleVisitsection .subHeadingText {
+  color: #fafafa;
+  width: 50%;
+  margin-top: 6px;
+}
+
+.sechondHeadingMain {
+  display: flex;
+  justify-content: center;
+}
+
+.scheduleaVisitbutton {
+  display: flex;
+  justify-content: center;
+  margin-top: 35px;
+}
+
+.scheduleaVisitbutton button {
+  background-color: #fff;
+  width: 156px;
+  height: 46px;
+  border: 1px solid #7c4c78;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 600;
+  color: #363435;
+  letter-spacing: 1px;
+  z-index: 10;
+}
+
+/* schedule A visitrow */
+
+/* CurtSlider- Section */
+
+.curlatedLine {
+  position: relative;
+}
+
+.curlatedLine::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 44%;
+  background: #d5bed0;
+  top: 50%;
+}
+
+.curlatedArrow img {
+  width: 40px;
+  height: 40px;
+}
+
+.curtedSectionMainRowBg {
+  background-image: url("/public/images/homepage/cursedBanner.jpg");
+  height: 895px;
+}
+
+.curtsectionrow {
+  display: flex;
+  padding-top: 100px;
+}
+
+.curtSliderLeftSection {
+  margin-left: 9%;
+}
+
+.curtSliderLeftSection .secondHeadingText {
+  text-transform: uppercase;
+}
+
+.curtLivingSlider {
+  width: 50%;
+}
+
+.curatedSliderContainer {
+  width: 350px;
+}
+
+.curatedSliderContainer {
+  border: 8px solid transparent;
+  position: relative;
+}
+
+.curatedSliderContainer::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: -8px;
+  width: 104%;
+  height: 10%;
+  border-bottom: 8px solid #a24f9b;
+  border-left: 8px solid #a24f9b;
+  border-right: 8px solid #a24f9b;
+  box-sizing: border-box;
+}
+
+.natureIntergreated {
+  position: absolute;
+  background-color: #b26eac;
+  left: 20px;
+  padding: 0px 8px;
+  font-family: "Alexandria", sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 1.1;
+}
+
+.natureIntergreated:nth-child(2) {
+  top: 20px;
+}
+
+.natureIntergreated:nth-child(3) {
+  top: 46px; /* adjust spacing as needed */
+}
+
+.natureIntergreated:nth-child(4) {
+  top: 72px; /* adjust spacing as needed */
+}
+
+.curtSliderLeftSection .secondHeadingText {
+  width: 30%;
+  color: #b26eac;
+  line-height: 0.9;
+  font-weight: 600;
+}
+
+.curtSliderLeftSection .subHeadingText {
+  width: 59%;
+  margin-top: 30px;
+  color: #636465;
+}
+/* CurtSlider- Section */
+
+/* Footer-Css */
+
+.FooterMainDiv {
+  background-color: #121212;
+  padding: 90px 0;
+}
+
+.FooterInnerDiv {
+  position: relative;
+}
+
+.FooterInnerDiv h5 {
+  color: #d5d5d5;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.footerListsul li {
+  color: #cbcbcb;
+  color: #8b8b8b;
+  font-size: 15px;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.footerListsul {
+  display: flex;
+  column-gap: 30px;
+  margin-top: 10px;
+}
+
+.FooterSplit {
+  display: flex;
+  column-gap: 7%;
+  justify-content: center;
+}
+
+.FooterInnerDiv::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -56px;
+  width: 1.5px;
+  height: 100%;
+  background-color: #222222;
+}
+
+.footercopyRight {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 75px;
+  position: relative;
+  margin-left: 1.5%;
+  margin-right: 5%;
+}
+
+.footercopyRight .subHeadingText {
+  color: #8b8b8b;
+  text-transform: uppercase;
+}
+
+.designByOpendesigns {
+  display: flex;
+  column-gap: 6px;
+  align-items: center;
+}
+
+.iconsFooters {
+  display: flex;
+  column-gap: 10px;
+}
+
+.iconsFooters img {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.iconsMainDivFooter {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.footercopyRight::before {
+  content: "";
+  position: absolute;
+  top: -32px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #222222;
+}
+
+.text-hover-underline:hover {
+  cursor: pointer;
+}
+
+.text-hover-underline {
+  position: relative;
+  text-decoration: none;
+  color: #000;
+  width: max-content;
+}
+
+.text-hover-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0; /* Adjust depending on font */
+  width: 0;
+  height: 2px;
+  background-color: #8f8f8f; /* underline color */
+  transition: width 0.3s ease;
+}
+
+.text-hover-underline:hover::after {
+  width: 100%;
+}
+
+/* Footer-Css */
+
+/* What Makes keystone Unique */
+
+.whatMakesHeading1 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #b26eac;
+  font-weight: 600;
+}
+
+.whatMakesHeading2 {
+  text-transform: uppercase;
+  text-align: center;
+  color: #1d1f22;
+  font-weight: 600;
+  line-height: 0.7;
+}
+
+.WhatMakesKeyStonesFlex {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.WhatMakesKeyStonesFlex p {
+  width: 70%;
+}
+
+.whatsmakeSectionBG {
+  background-image: url("/public/images/homepage/seond-banner.jpg");
+  height: 1120px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.whatMakesHeadingMainRow {
+  padding-top: 100px;
+}
+
+.FirstcontentWhatMakesSection .secondHeadingText {
+  text-transform: uppercase;
+  line-height: 0.8;
+}
+
+.FirstcontentWhatMakesSection .subHeadingText {
+  text-transform: uppercase;
+  background-color: #773770;
+  color: #fff;
+  width: max-content;
+  padding: 0 5px;
+  line-height: 1.1;
+}
+
+.FirstcontentWhatMakesSection {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  column-gap: 26%;
+}
+
+.FlexFirstcontentWhatMakesSection {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50%;
+}
+
+.FlexFirstcontentWhatMakesSection:nth-child(2) {
+  align-items: flex-start;
+}
+
+.FirstcontentWhatMakesSection.lastSectionWhatMakes {
+  justify-content: center;
+  width: 100%;
+}
+
+.lastSectionWhatMakes .FlexFirstcontentWhatMakesSection {
+  width: max-content;
+  margin-top: 50px;
+  align-items: center;
+}
+
+/* What Makes keystone Unique */
+
+/* Live The ThoughtFull */
+
+.LiveThoughtFlex .LiveThoughtFlexImg {
+  position: relative;
+}
+
+.knowMoreButtonImage {
+  position: absolute;
+  bottom: -17px;
+  left: 41%;
+  background: #fff;
+  color: #884f79;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  padding: 12px 25px;
+  border-radius: 50px;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 1.2;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+
+.yearsScrollText {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 60px;
+  position: relative;
+}
+.yearsScrollText::before {
+  content: "";
+  position: absolute;
+  bottom: -27px;
+  left: -88px;
+  width: 113%;
+  height: 2px;
+  height: 1px;
+  background-color: #b77faa;
+}
+
+.yearsScrollText:last-child:before {
+  content: none;
+}
+
+.yearsScrollText h6 {
+  font-size: 200px;
+  line-height: 0.75;
+  color: #ffff98 !important;
+}
+
+.yearsScrollText span {
+  font-family: "Poppins", sans-serif;
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 300;
+  width: 39%;
+  line-height: 0.9;
+  color: #fff;
+  margin-left: 11px;
+}
+
+.yearsScrollText.projectsScroll h6 {
+  font-size: 95px;
+  line-height: 0.75;
+}
+
+.yearsScrollText.projectsScroll::before {
+  font-size: 95px;
+  line-height: 0.75;
+}
+
+.LiveThoughtFlex {
+  display: flex;
+  align-items: center;
+  column-gap: 6%;
+  margin-top: 20px;
+}
+
+.LiveThoughtsBg {
+  /* background-color: #a7578f; */
+  padding: 100px 0;
+  background-image: url("/public/images/homepage/livethroughBg.jpg");
+  background-image: url("/public/images/ongoing-images/onGoingProjectsBg.jpg");
+}
+
+.yearsScrollText.projectsScroll span {
+  font-size: 19px;
+  color: #fff;
+  width: 24%;
+  line-height: 1;
+}
+
+.LiveThoughtsBg .secondHeadingText {
+  text-transform: uppercase;
+  line-height: 0.8;
+  color: #ffff98;
+  color: #fff;
+  position: relative;
+}
+
+.LiveKeystonePromoters {
+  margin-top: 10px;
+}
+
+.LiveThoughtsBg .mainheadingText {
+  font-weight: 500;
+}
+
+.LiveThoughtsBg .subHeadingText {
+  color: #ffffff;
+  line-height: 1.3;
+  width: 83%;
+  margin-top: 20px;
+  font-weight: 400;
+  width: 68%;
+}
+
+.LiveThoughtFlex .secondHeadingText::before {
+  content: "+";
+  position: absolute;
+  top: -13px;
+  right: -7px;
+  font-size: 33px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.LiveThoughtFlex .projectsScroll .secondHeadingText::before {
+  top: -12px;
+  right: -14px;
+  font-size: 23px;
+}
+
+/* Live The ThoughtFull */
+
+/* ArchitureSection */
+
+.ArchitectureContent {
+  /* display: flex;
+  position: absolute;
+  top: 0; */
+}
+
+.ArchitectureContent h4 {
+  /* display: none; */
+}
+
+.ArchitectureContent .secondHeadingText {
+  text-transform: uppercase;
+  font-size: 40px;
+  transform: rotate(270deg);
+  width: 359px;
+  position: absolute;
+  top: 46%;
+  left: -31%;
+  text-align: end;
+  font-weight: 500;
+}
+
+.architectureWidth {
+  width: 26%;
+  position: relative;
+}
+
+.architectureWidth img {
+  width: 100%;
+}
+
+.ArchitectureContent .subHeadingText {
+  width: 100%;
+  text-align: left;
+}
+
+.ArchitectureContent button {
+  text-transform: uppercase;
+  text-decoration: 3px underline;
+  text-underline-offset: 5px;
+}
+
+.archisecondHeadingText {
+  width: 65%;
+  position: absolute;
+  top: 0;
+  left: 26%;
+  top: 14%;
+}
+
+.archisecondHeadingText button {
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.MainarchitectureWidth {
+  display: flex;
+  justify-content: center;
+  column-gap: 5%;
+}
+
+.archiBg {
+  /* background-image: url("/public/images/homepage/architureBG.jpg");
+  height: 770px;
+  display: flex;
+  align-items: center; */
+  background-image: url(/public/images/homepage/architureBG.jpg);
+  height: 770px;
+  display: flex;
+  align-items: center;
+  background-repeat: repeat-x;
+  background-size: cover;
+  animation: moveBg 20s linear infinite;
+}
+
+@keyframes moveBg {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -3000px 0;
+  }
+}
+
+/* ArchitureSection */
+
+/* On Going Projects */
+.projectsNameOnGoing {
+  margin-bottom: 18px;
+  margin-top: 18px;
+  position: relative;
+}
+
+.projectsNameOnGoing::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: #9d6497;
+  width: 100%;
+  bottom: -16px;
+}
+
+.projectsNameOnGoing:nth-child(3)::before {
+  content: none;
+}
+
+.projectsNameOnGoing:first-child {
+  margin-top: 0;
+}
+
+.ongoingProjectSection {
+  display: flex;
+  align-items: center;
+  height: 370px;
+}
+
+.projectsNameOnGoing h5 {
+  font-size: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 1;
+  width: max-content;
+  color: #ffffff;
+}
+
+.projectsNameOnGoing span {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #ffffff;
+}
+
+.projectsNameOnGoingmAINcONTAINER {
+  background-color: #550e40;
+  background-color: #843d7d;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 25px;
+  margin-left: -3px;
+  padding-right: 50px;
+}
+
+.ongoingProjectSection img {
+  width: auto;
+  height: 100%;
+  border: 2px solid #fff;
+}
+
+.onGoingViewProject {
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1.3;
+  color: #ffffff;
+  text-transform: uppercase;
+  word-spacing: 2px;
+  padding: 1px 0;
+  border-top: 2px solid #9d6497;
+  width: max-content;
+  border-bottom: 2px solid #9d6497;
+}
+
+.ongoingBg {
+  padding: 100px 0;
+  background-image: url("/public/images/ongoing-images/onGoingProjectsBg.jpg");
+}
+
+.onGoingRightSection {
+  width: 30%;
+  margin-top: 5%;
+}
+
+.onGoingRightSection .mainheadingText {
+  text-transform: uppercase;
+  line-height: 0.8;
+  color: #fff;
+}
+
+.onGoingRightSection .secondHeadingText {
+  text-transform: uppercase;
+  width: 30%;
+  line-height: 0.8;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.onGoingMainSectionDiv {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  column-gap: 50px;
+  margin-top: 50px;
+}
+
+.onGoingRightSection .mainheadingText.onGoingSecondTextContainer {
+  line-height: 1.1;
+  width: 90%;
+  font-size: 32px;
+  text-transform: capitalize;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.ArchitectureContent .subHeadingText {
+  width: 100%;
+  text-align: left;
+}
+
+.secondSliderContentSections .subHeadingText {
+  margin-top: 25px;
+  color: #fff;
+  width: 73%;
+  font-weight: 400;
+}
+
+.onGoingMainSectionDiv:last-child .onGoingRightSection {
+  margin-top: 2%;
+  padding-left: 3%;
+}
+
+.onGoingMainSectionDiv:first-child {
+  margin-top: 0;
+}
+
+.onGoingRightSection .customDots .dot {
+  background: #a46198;
+  width: 34px;
+  height: 9px;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+
+.onGoingRightSection .customDots .dot.active {
+  background: #f4eef3;
+}
+
+.onGoingRightSection .customDots {
+  margin-top: 25px;
+  display: none;
+}
+
+.viewallprojectsongoing button {
+  background: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #884f79;
+  border-radius: 50px;
+  height: 45px;
+  width: 250px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.viewallprojectsongoing {
+  width: max-content;
+  margin-top: 30px;
+}
+
+/* On Going Projects */
+
+/* Header */
+
+.HeaderMainSEC {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+  align-items: center;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.35s ease;
+  position: fixed;
+  top: 40px;
+  width: 100%;
+  z-index: 999;
+  /* display: none; */
+}
+
+.HeaderMainSEC.is-sticky {
+  background: rgba(255, 255, 255, 1);
+  backdrop-filter: blur(0);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.15);
+  top: 0;
+  z-index: 10000;
+}
+
+.HeaderMainSEC .headerLogoImg {
+  padding: 10px 0;
+  width: 200px;
+}
+
+.headerHomePage .HeaderMainSEC {
+  margin-top: 30px;
+}
+
+.listHeaders {
+  display: flex;
+  justify-content: center;
+  column-gap: 45px;
+  align-items: center;
+  position: relative;
+}
+
+.headerTop .listHeaders {
+  position: relative;
+}
+
+.headerTop .listHeaders::before {
+  content: "" !important;
+  position: absolute !important;
+  width: 159% !important;
+  height: 1px !important;
+  background-color: #a085a0 !important;
+  bottom: -1px !important;
+  /* right: 0; */
+  left: -74% !important;
+}
+
+.listHeaders li:hover {
+  color: #b2477c !important;
+  cursor: pointer;
+  /* font-weight: 600; */
+}
+
+.listHeaders li {
+  font-family: "Alexandria", sans-serif;
+  font-size: 19px;
+  text-transform: uppercase;
+}
+
+.listHeaders .text-hover-underline:after {
+  height: 5px;
+  background-color: #b2477c;
+  bottom: -5px;
+}
+
+.listHeaders li.active {
+  color: #b2477c;
+  text-decoration: underline;
+  text-underline-offset: 8px;
+  text-decoration: 5px solid underline;
+  font-weight: 600;
+}
+
+.headerHomePage .listHeaders li {
+  color: #fff;
+  font-weight: 600;
+}
+
+.hamburgerIconImage {
+  width: 40px;
+  height: 40px;
+}
+
+.hamburgerflex {
+  display: flex;
+  align-items: center;
+  column-gap: 17px;
+  background-color: #c5c5c5;
+  padding: 5px 20px;
+}
+
+.hamburgerflex span {
+  font-family: "Alexandria", sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.headerTop {
+  display: flex;
+  background: #b26dac;
+  padding: 8px 2%;
+  justify-content: space-between;
+}
+
+.headerTop .mailHeadingText {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: #fff;
+}
+.headerTop .mailHeadingText span {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: #fff;
+}
+
+/* Header */
+
+/* Video Banner   */
+
+.contentHeadingBanner .secondHeadingText {
+  font-size: 170px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  line-height: 0.9;
+}
+
+.contentHeadingBanner {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: rgba(161, 105, 155, 0.75);
+  background: rgba(98, 5, 88, 0.6); */
+  background: rgba(0, 0, 0, 0.6);
+  /* padding-top: 120px; */
+}
+
+.videoBannermainContainer {
+  position: relative;
+}
+
+.withTextContent {
+  font-family: "Alex Brush", cursive;
+  font-size: 95px;
+  line-height: 0.6;
+  color: #fff;
+}
+
+.contentHeadingBanner .subHeadingText {
+  color: #fff;
+  width: 40%;
+  text-align: center;
+  margin-top: 10px;
+}
+.videoBannerVideoFILE {
+  height: 100vh;
+}
+
+.videoBannerVideoFILE video {
+  /* display: block; */
+}
+
+.headerHomePage {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.headerHomePage .headerTop {
+  display: flex;
+  background: #b26dac;
+}
+
+.headerHomePage .headerTop {
+  background-color: #481242;
+}
+
+/* Video Banner   */
+
+/* Contact-Page-CSS  */
+
+.detailPageBanners img {
+  width: 100%;
+}
+
+.detailPageBanners h5 {
+  text-transform: uppercase;
+  font-size: 130px;
+  font-weight: 800;
+  color: #fff;
+  text-align: center;
+  line-height: 0.8;
+}
+.detailPageBanners {
+  background-image: url("/public/images/Contact-Us-Banner.jpg");
+  height: 523px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 90px;
+}
+
+.detailPageBanners .subHeadingText {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+}
+
+.BreadCrumSection {
+  display: flex;
+  column-gap: 10px;
+  margin-top: 15px;
+}
+
+.contactUsBannerPageBg {
+  background-image: url("/public/images/contact-us-bg-fom.jpg");
+  height: 560px;
+  position: relative;
+}
+
+.formContactUsSection {
+  display: flex;
+  justify-content: center;
+}
+
+.formContactUsSectionFlex {
+  background-image: url("/public/images//contact-us-bg-form-inside-bg.jpg");
+  width: 1065px;
+  background-color: #fff;
+  padding: 0px 70px;
+  position: absolute;
+  bottom: -89%;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 20px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.formContactUsSectionFlex .secondHeadingText {
+  text-transform: uppercase;
+  color: #b36ead;
+  font-weight: 600;
+}
+
+.formContactUsSectionFlex .subHeadingText {
+  color: #636465;
+}
+
+.contactFormInputEach label {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.contactFormInputEach label sup {
+  color: red;
+  font-size: 17px;
+  top: 0px;
+  left: -2px;
+}
+.channelPartnerFormSection .contactFormInputEach label sup {
+  color: red;
+  font-size: 17px;
+  top: 0px;
+  left: -2px;
+}
+
+.contactFormInputEach input {
+  height: 58px;
+  width: 100%;
+  border: 2px solid #dfdfdf;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding-left: 10px;
+  font-size: 22px;
+  font-family: "Poppins", sans-serif;
+}
+
+.formMainStyleContactPage {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 50px;
+  row-gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.contactFormInputEach {
+  width: 37%;
+}
+
+.contactFormInputEach button {
+  background: #b26dac;
+  width: 100%;
+  padding: 10px 5px;
+  font-size: 20px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  font-weight: 500;
+  color: #fff;
+  margin-top: 13px;
+}
+
+.contactPageBgPadding {
+  padding-bottom: 515px;
+}
+
+.bannerafterSectionMAIN {
+  display: flex;
+  justify-content: center;
+  column-gap: 80px;
+  align-items: center;
+}
+.seondbannerafterSectionMAIN {
+  width: 20%;
+}
+
+.seondbannerafterSectionMAINrow {
+  width: 225px;
+  height: 225px;
+  background-color: #feff99;
+  border-radius: 50%;
+}
+
+.firstbannerafterSectionMAIN {
+  width: 30%;
+  width: 46%;
+}
+
+.thirdbannerafterSectionMAIN {
+  width: 30%;
+  width: 34%;
+}
+
+.afterMainBG {
+  background-color: #b26dac;
+  padding: 100px 0;
+}
+
+.gettknowHeading {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #ffff98;
+}
+.visitOurOFficetext {
+  font-family: "Poppins", sans-serif;
+  font-size: 47px;
+  font-weight: 600;
+  line-height: 1.1;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.contactPageAddress {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #fff;
+  width: 80%;
+}
+
+/* Contact-Page-CSS  */
+
+/* Ongoing-Projects-CSS  */
+
+.ongoingProjectsPage .detailPageBanners {
+  background-image: url("/public/images/ongoing-images/project-Iisting-main-bg.jpg");
+}
+
+.ongoingProjectsPage .thirdbannerafterSectionMAIN {
+  /* width: 26%; */
+}
+
+.ongoingProjectsPage .afterMainBG {
+  background-image: url("/public/images/ongoing-images/project-Iisting-second-bg.jpg");
+  padding: 100px 0;
+  height: 806px;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.onGoingProjectsLists {
+  background-color: #fff;
+  position: relative;
+}
+
+.mainRowonGoingProjectsLists {
+  display: flex;
+}
+
+.onGoingProjectsLists h5 {
+  font-size: 55px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  width: max-content;
+  color: #bc5d9a;
+}
+
+.onGoingProjectsLists span {
+  font-size: 30px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #686868;
+}
+
+.FirstonGoingProjectsLists,
+.secondonGoingProjectsLists,
+.thirdonGoingProjectsLists {
+  margin-bottom: 33px;
+  position: relative;
+}
+
+.mainRowonGoingProjectsLists {
+  width: 84%;
+  margin-bottom: 100px;
+}
+.mainRowonGoingProjectsLists img {
+  width: 55%;
+}
+
+.mainRowonGoingProjectsLists .onGoingProjectsLists {
+  width: 44%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border: 1.5px solid #e1bbd3;
+  padding-left: 45px;
+}
+
+.FirstmainonGoingProjectsLists {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttononGoingProjectsLists {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #b25d94;
+  width: 35%;
+  height: 50px;
+  border-top-left-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: background 0.4s ease, color 0.4s ease;
+}
+
+.buttononGoingProjectsLists:hover {
+  background: #fff;
+  color: #b25d94;
+}
+
+.FirstonGoingProjectsLists::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: #dbc5d3;
+  width: 100%;
+  bottom: -16px;
+}
+
+.secondonGoingProjectsLists::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  background: #dbc5d3;
+  width: 100%;
+  bottom: -16px;
+}
+
+.thirdonGoingProjectsLists {
+  margin-bottom: 0;
+}
+
+.ongoingProjectsDiVMain {
+  margin-top: -105px;
+  margin-top: 50px;
+  border-bottom: 2px solid #cdb5c7;
+  padding-bottom: 50px;
+}
+
+.ongoingprojectslist li {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  color: #7a7a7a;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  position: relative;
+  padding: 0 25px;
+  cursor: pointer;
+}
+
+.ongoingprojectslist li.activestatus {
+  color: #974579;
+  text-decoration: underline 2px solid #974579;
+  text-underline-offset: 8px;
+}
+
+.ongoingprojectslist li::before {
+  content: "";
+  width: 2px;
+  height: 60%;
+  background-color: #7a7a7a;
+  position: absolute;
+  top: 19%;
+  right: -19px;
+}
+
+.ongoingprojectslist li:last-child::before {
+  content: none;
+}
+
+.ongoingprojectslist {
+  display: flex;
+  justify-content: center;
+  column-gap: 40px;
+  width: max-content;
+  background: #fff;
+  border-radius: 50px;
+  border: 8px solid #a15c9d;
+  padding: 10px 45px;
+}
+
+.ongoingslistflex {
+  display: flex;
+  justify-content: center;
+}
+
+.margintopafterlist {
+  margin-top: -380px;
+}
+/* Ongoing-Projects-CSS  */
+
+/* Careers Page -CSS  */
+
+.CarrePageMainSection .detailPageBanners {
+  background-image: url("/public/images/careers/careers-page-banner.jpg");
+}
+
+.CarrePageMainSection .firstbannerafterSectionMAIN {
+  /* width: 34%; */
+}
+
+.CarrePageMainSection .thirdbannerafterSectionMAIN {
+  /* width: 32%; */
+}
+
+.careersCurrentOpenings {
+  background-image: url("/public/images/careers/careers-page-banner-current-openings.jpg");
+  height: 845px;
+  display: flex;
+  align-items: center;
+}
+
+.careersCurrentOpeningSection .secondHeadingText {
+  text-transform: uppercase;
+  color: #b26eac;
+  text-align: center;
+  font-weight: 600;
+}
+
+.careersCurrentOpeningSection .subHeadingText {
+  font-weight: 500;
+}
+
+.careersCards img {
+  width: 61px;
+  height: 61px;
+}
+
+.careersCards {
+  display: flex;
+  column-gap: 15px;
+  padding: 35px 30px;
+  background: white;
+  width: 30%;
+  border-radius: 20px;
+  position: relative;
+}
+
+.careersCards h4 {
+  width: 100%;
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+  color: #111019;
+  font-weight: 600;
+}
+
+.careersCards .subHeadingText {
+  margin-top: 10px;
+  color: #636465;
+  width: max-content;
+}
+
+.careersCardsMaxwidth {
+  width: max-content;
+}
+
+.careerCardsFLex {
+  display: flex;
+  justify-content: center;
+  column-gap: 3.5%;
+  row-gap: 50px;
+  flex-wrap: wrap;
+  width: 80%;
+}
+
+.careersMainContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.careersCards button {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: #b26dac;
+  color: #fff;
+  font-size: 13px;
+  padding: 4px 15px;
+  border-bottom-right-radius: 20px;
+  border-top-left-radius: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.worthwithUsSection {
+  background-image: url("/public/images/careers/careers-page-banner-form.jpg");
+  height: 815px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.worthwithUsSection .secondHeadingText {
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #b26eac;
+}
+
+.worthwithUsSection .subHeadingText {
+  font-weight: 500;
+  color: #636465;
+}
+
+.mainSectionFormWithUs {
+  width: 70%;
+}
+
+.CarrePageMainSection .formContactUsSectionFlex {
+  padding: 0px 70px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: none;
+  position: unset;
+  width: 100%;
+  background-color: transparent;
+  box-shadow: unset;
+}
+
+.CarrePageMainSection .contactFormInputEach {
+  width: 40%;
+  align-self: end;
+}
+
+.CarrePageMainSection .formMainStyleContactPage {
+  row-gap: 20px;
+}
+
+.CarrePageMainSection .contactFormInputEach input {
+  margin-top: 5px;
+}
+
+/* Careers Page -CSS  */
+
+/* Joint Venture Page -CSS  */
+
+.JointVenturePage .detailPageBanners {
+  background-image: url("/public/images/joint-venture-banner.jpg");
+}
+
+.JointVenturePage .formContactUsSectionFlex {
+  padding: 0px 70px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: none;
+  position: unset;
+  width: 100%;
+  background-color: transparent;
+  box-shadow: unset;
+}
+
+/* Joint Venture Page -CSS  */
+
+/* Channel-Partner Page -CSS  */
+
+.channelPartnerMainSection .firstbannerafterSectionMAIN {
+  width: 50%;
+}
+
+.channelPartnerMainSection .detailPageBanners {
+  background-image: url(/public/images/channel-partner-page-banner.jpg);
+}
+
+.channelPartnerMainSection .formContactUsSectionFlex {
+  padding: 0px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-image: none;
+  position: unset;
+  width: 40%;
+  width: 33%;
+  /* width: 100%; */
+  background-color: transparent;
+  box-shadow: unset;
+}
+
+.channelPartnerFormSection {
+  display: flex;
+  justify-content: center;
+  justify-content: flex-start;
+  margin-top: 50px;
+  column-gap: 140px;
+}
+
+.channelPartnerMainSection .contactFormInputEach {
+  width: 100%;
+}
+.channelPartnerFormSection .formChannelPartnerImage {
+  width: 46%;
+  height: 45%;
+}
+
+.channelPartnerFormSection .contactFormInputEach button {
+  background: #864973;
+  font-size: 18px;
+  height: 54px;
+}
+
+.channelPartnerFormSection .contactFormInputEach input {
+  margin-top: 10px;
+  height: 58px;
+}
+
+.channelPartnerFormSection .formMainStyleContactPage {
+  row-gap: 25px;
+  margin-top: 0;
+}
+
+.channelPartnerFormFirst .secondHeadingText {
+  text-transform: uppercase;
+  color: #b26eac;
+  font-weight: 600;
+}
+
+.channelPartnerFormFirst .subHeadingText {
+  color: #636465;
+  width: 70%;
+}
+
+.channelPartnerFormFirst {
+  background-image: url("/public/images/channel-partner-form-banner.jpg");
+  height: 890px;
+  display: flex;
+  align-items: center;
+}
+
+.channelPartnerFormFirst .contactFormInputEach label {
+  font-size: 18px;
+}
+
+.channelContentPartner {
+  /* margin-left: 15%;
+  width: 52%; */
+}
+
+/* Channel-Partner Page -CSS  */
+
+/* Project Detail -CSS  */
+
+/* 1st */
+
+.spectraproject .secondHeadingText {
+  font-size: 100px;
+}
+
+.detailPageBanners.spectraproject {
+  background-image: url("/public/images/project-detail/spectra-project-bg.jpg");
+}
+
+.projectDetailIconSection {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.projectDetailIconSection::before {
+  content: "";
+  height: 70%;
+  width: 1px;
+  background-color: rgba(255, 255, 255, 0.7);
+  position: absolute;
+  right: -27px;
+}
+
+.projectDetailIconSection:last-child:before {
+  content: none;
+}
+
+.projectDetailIconSection img {
+  width: 50px;
+  height: 50px;
+  filter: invert(1);
+}
+
+.projectDetailIconSection .mainheadingText {
+  font-size: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0px;
+  line-height: 0.9;
+  margin-left: 10px;
+}
+
+.projectDetailFlexdiv {
+  display: flex;
+  column-gap: 50px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 30px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.projectDetailPage .BreadCrumSection {
+  margin-top: 25px;
+}
+
+.projectDetailPage .firstbannerafterSectionMAIN {
+  width: 40%;
+}
+
+.projectDetailPage .afterMainBG {
+  background-image: url("/public/images/project-detail/project-detail-page-rose-banner.jpg");
+  height: 496px;
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+}
+
+/* 1st */
+
+/* 3rd */
+
+.ProjectDetailSectionContentSection {
+  max-width: 1099px;
+}
+
+.ProjectDetailSectionContentSection .projectDetailBannerIMageMain {
+  border: 10px solid #b7a5cf;
+}
+
+.mainContainerDetailProject {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 115px;
+  margin-top: -100px;
+}
+
+.projectDetailProjectName {
+  display: flex;
+  align-items: flex-end;
+  column-gap: 25px;
+  flex-direction: column;
+  width: 50%;
+}
+
+.noffloorswidth {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  padding-left: 50px;
+  border-bottom: 1px solid #b9aace;
+}
+
+.projectDetailProjectName img {
+  width: 75px;
+}
+
+.projectNameDetailPage h5 {
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  line-height: 1;
+  width: max-content;
+  color: #b26eac;
+}
+
+.projectNameDetailPage p {
+  font-size: 28px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  width: max-content;
+  color: #111610;
+  margin-top: 10px;
+}
+
+.projectdetailflex {
+  display: flex;
+  column-gap: 20px;
+  border-bottom: 1px solid #c8bcd8;
+  padding-bottom: 20px;
+  width: 95%;
+  padding-left: 50px;
+  padding-left: 0px;
+  padding-top: 20px;
+  align-items: center;
+}
+
+.projectNameDetailPage.projectdetailflex p {
+  font-size: 28px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.mainconatinerprojectflex {
+  display: flex;
+  border-bottom: 1px solid #c8bcd8;
+  padding-bottom: 20px;
+  column-gap: 23px;
+  width: 95%;
+  padding-left: 50px;
+  padding-left: 0px;
+  align-items: center;
+  padding-top: 45px;
+}
+
+.spectraprojectdetailssection {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.nooffloors {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  width: max-content;
+  color: #111610;
+  margin-top: 15px;
+  margin-bottom: 16px;
+}
+
+.nooffloors span {
+  font-weight: 700;
+  color: #404040;
+}
+
+.spectraprojectdetailssection::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #b9aace;
+  position: absolute;
+  left: 50%;
+}
+
+/* 3rd */
+
+.projectspecifiationclass .secondHeadingText {
+  color: #b26eac;
+  font-weight: bold;
+  margin-bottom: 12px;
+}
+
+.projectspecificationcard {
+  width: 100%;
+  background: #fff;
+  border-radius: 20px;
+
+  padding: 30px 42px;
+  height: 347px;
+  border-bottom: 6px solid #772c72;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  background-image: url("/public/images/project-detail/slider-cards-bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.projectsspccards .slick-slide > div:first-of-type {
+  margin: 0 20px;
+}
+
+.projectsspccards .slick-track {
+  padding-bottom: 50px;
+}
+
+/* .projectsspccards .slick-slide {
+ display: flex;
+} */
+
+.projectspecificationcard .projectspecicon {
+  width: 100px;
+}
+
+.projectspeclist li span {
+  font-weight: 600;
+}
+
+.projectspecname {
+  font-family: "Alexandria", sans-serif;
+  font-size: 28px;
+  line-height: 1;
+  font-weight: 600;
+  color: #b26eac;
+  margin-top: 15px;
+  position: relative;
+  width: max-content;
+}
+
+.projectspecname::before {
+  content: "";
+  width: 106%;
+  height: 6px;
+  background-color: #b26eac;
+  position: absolute;
+  top: 36px;
+  z-index: 1;
+}
+
+.projectspeclist {
+  position: relative;
+  padding-top: 25px;
+}
+
+.projectspeclist::before {
+  content: "";
+  width: 90%;
+  height: 1px;
+  background-color: #d2cde1;
+  position: absolute;
+  top: 11px;
+}
+
+.projectspeclist li {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 400;
+  color: #575757;
+  margin-top: 9px;
+}
+
+.projectspecifiationclass {
+  /* background-color: #edeef2; */
+  background-image: url("/public/images/project-detail/specifcation-bg.jpg");
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectsspccards {
+  margin-top: 80px;
+}
+
+.projectDetailPage .curlatedLine {
+  margin-top: 20px;
+  column-gap: 150px;
+}
+
+.projectDetailPage .curlatedLine::before {
+  height: 1px;
+  width: 9%;
+  background: #d3d4d6;
+}
+
+.projectDetailPage .curlatedArrow img {
+  width: 47px;
+  height: 47px;
+}
+
+.projectaminitessection {
+  background-image: url("/public/images/project-detail/aminites-bg.jpg");
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectaminitessection .secondHeadingText {
+  color: #b26eac;
+  text-align: right;
+  font-weight: 600;
+  line-height: 0.9;
+  margin-top: 5px;
+}
+
+.projectaminitessection .subHeadingText:first-child {
+  text-align: end;
+  color: #4d287d;
+  font-weight: 600;
+}
+
+.projectaminitessection .subHeadingText:last-child {
+  text-align: end;
+  color: #3c3c3c;
+  font-weight: 500;
+  padding-left: 50%;
+  margin-top: 10px;
+  font-size: 19px;
+}
+
+.aminitessectionproject {
+  position: relative;
+  width: 90%;
+  margin-left: 12px;
+}
+
+.contentaminities {
+  position: absolute;
+  top: 25px;
+  width: max-content;
+  background: #8d5089;
+  padding: 5px 8px;
+  font-size: 26px;
+  color: #fefefe;
+  font-family: "Alexandria", sans-serif;
+  text-transform: uppercase;
+  left: 25px;
+  font-weight: 500;
+}
+
+.aminitessectionproject::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: -6px;
+  width: 103%;
+  height: 10%;
+  border-bottom: 9px solid #901788;
+  border-left: 9px solid #901788;
+  border-right: 9px solid #901788;
+  box-sizing: border-box;
+}
+
+.projectaminitesslider {
+  width: 70%;
+}
+
+.mainprojectaminitesslider {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+}
+
+.aminitessectionproject img {
+  width: 100%;
+}
+
+.projectaminitesslider .slick-slider .slick-list {
+  padding-bottom: 65px;
+}
+
+.projectaminitesslider .slick-slide div div {
+  display: flex !important;
+  justify-content: center;
+}
+
+.projectaminitessection .curlatedLine {
+  margin-top: 1px;
+  column-gap: 150px;
+}
+
+.arrowwidthsection {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+}
+
+.onearrowwidthsection {
+  width: 70%;
+}
+
+.projectaminitessection .curlatedLine::before {
+  height: 1px;
+  width: 13%;
+  background: #8b8b8b;
+}
+
+.projectlocationshighlights {
+  background-image: url("/public/images/project-detail/location-bg.jpg");
+  height: 1100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.widthprojectlocationshighlights {
+  width: 100%;
+  padding: 100px 0;
+  margin-bottom: 75px;
+}
+
+.projectlocationshighlights .secondHeadingText {
+  color: #b26eac;
+  font-weight: 600;
+  text-align: left;
+  padding-left: 7%;
+}
+
+.projectlocationshighlights .subHeadingText {
+  color: #3c3c3c;
+  text-align: left;
+  padding-left: 7%;
+  margin-top: 10px;
+}
+
+.downloadbrocedhurebuttonflex {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: -40px;
+  width: 100%;
+}
+
+.downloadbrocedhurebutton {
+  display: flex;
+  background-color: #b26eac;
+  padding: 15px 40px;
+  column-gap: 25px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.downloadbrocedhurebutton .subHeadingText {
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.fordownloadbrocedh {
+  position: relative;
+}
+
+.locationadvantagesicon {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+  padding: 10px;
+}
+
+.locationadvantagesicon .nearbyloactions {
+  font-family: "Alexandria", sans-serif;
+  font-size: 27px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.locationadvantageflex {
+  display: flex;
+  column-gap: 5%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.locationimageside {
+  width: 43%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.onelocationimageside {
+  position: relative;
+}
+
+.locationcontentside {
+  width: 30%;
+}
+
+.locationimageside img {
+  width: 96%;
+  /* position: absolute; */
+  top: 0;
+}
+
+.locationcontentside ul {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  padding-left: 30px;
+  margin: 0;
+}
+
+.locationcontentside .open ul {
+  max-height: 500px; /* adjust based on your content size */
+  opacity: 1;
+  padding-top: 10px;
+}
+
+.locationadvantagesicon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  gap: 15px;
+  padding: 10px 0;
+  border-top: 1px solid #d8d8d8;
+  position: relative;
+  border-bottom: 1px solid #d8d8d8;
+}
+
+.locationadvantagesicon::before {
+  content: "+";
+  position: absolute;
+  top: 17px;
+  z-index: 1;
+  font-size: 29px;
+  line-height: 100%;
+  right: 12px;
+  font-weight: 600;
+}
+
+.locationadvantagesicon img {
+  width: 40px;
+  height: 40px;
+}
+.accordion-section.open .locationadvantagesicon img {
+  width: 45px;
+  height: 45px;
+}
+.nearbyloactions {
+  font-weight: 600;
+  color: #333;
+}
+
+.accordion-section.open .locationadvantagesicon .nearbyloactions {
+  font-size: 34px;
+}
+
+.accordion-section.open .locationadvantagesicon::before {
+  top: 12px;
+  z-index: 1;
+  font-size: 37px;
+}
+
+.accordion-section.open .locationadvantagesicon {
+  border-bottom: 1px solid #d8d8d8;
+  padding: 15px 5px;
+}
+
+.accordion-section {
+  margin: 13px 0;
+}
+
+.locationcontentside ul li {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #515151;
+  line-height: 100%;
+  margin-top: 10px;
+}
+
+.distance {
+  font-weight: 700;
+}
+
+.imageoverlayforprojectdetail {
+  position: absolute;
+  bottom: -31%;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  background-color: #b070ad;
+  z-index: 0;
+}
+.locationviewbutton {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  padding-top: 0px;
+  height: 100%;
+  align-items: end;
+  height: max-content;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 25px;
+}
+
+.locationviewbutton .subHeadingText {
+  display: flex;
+  justify-content: center;
+  color: #fff;
+  padding-left: 0;
+  margin-top: 0;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.overlayimageprojectdetail {
+  background-color: #b070ad;
+  height: 70%;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  z-index: 10;
+  position: absolute;
+  bottom: -70px;
+  z-index: 10;
+  padding-bottom: 20px;
+}
+
+.locationimageside img {
+  z-index: 100;
+}
+
+.overlayimageprojectdetail .subHeadingText {
+  padding-left: 0;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.seocndoverlayimageprojectdetail {
+  display: flex;
+  column-gap: 15px;
+}
+
+.projectconstructionupdates .secondHeadingText {
+  color: #b26dac;
+  width: 30%;
+  line-height: 87%;
+  font-weight: 500;
+}
+
+.conatinerprojectconstructionupdates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conatinerprojectconstructionupdates .subHeadingText {
+  width: 50%;
+  line-height: 120%;
+  color: #646464;
+  margin-top: 10px;
+}
+
+.projectconstructionupdates {
+  background-color: #f0f0f0;
+  padding: 100px 0;
+}
+
+.galleryconatiner {
+  background-color: #fff;
+  padding: 12px;
+  margin-top: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.floorplanprojectdetail {
+  width: 32%;
+  height: auto;
+  background-color: #b26dac;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fullwidthprojectdetail {
+  width: 100%;
+  padding: 70px 0px;
+}
+
+.floorplanleft h4 {
+  font-family: "Alexandria", sans-serif;
+  font-size: 55px;
+  line-height: 1;
+  text-transform: uppercase;
+  width: 50%;
+  line-height: 88%;
+  font-weight: 500;
+  color: #fff;
+  text-align: end;
+  padding-right: 40px;
+}
+
+.floorplanleft .subHeadingText {
+  color: #fff;
+  font-weight: 400;
+  width: 40%;
+  text-align: end;
+  line-height: 111%;
+  margin-top: 20px;
+  padding-right: 40px;
+  font-size: 16px;
+}
+
+.floorplanleftlist li {
+  font-family: "Alexandria", sans-serif;
+  font-size: 30px;
+  line-height: 1;
+  line-height: 88%;
+  font-weight: 500;
+  color: #fff;
+  padding: 15px 0;
+  border-top: 1px solid #9c5d96;
+  padding-right: 22px;
+  width: 50%;
+  text-align: end;
+  /* border-bottom: 1px solid #9c5d96; */
+  padding-right: 40px;
+}
+
+/* .floorplanleftlist li::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 0;
+  background-color: #000;
+  left: 0;
+} */
+
+.activefloorstate .floorplanleftlist li::before {
+  top: 0;
+}
+
+.activefloorstate {
+  background-color: #7e006c;
+  width: max-content !important;
+  margin: 10px 0;
+  padding: 12px 24px !important;
+  padding-right: 40px !important;
+  position: relative;
+}
+
+.activefloorstate::before {
+  content: "";
+  width: 170%;
+  height: 1px;
+  position: absolute;
+  top: -12px;
+  background-color: #9c5d96;
+  right: 0;
+}
+
+.projectfloorflex {
+  display: flex;
+}
+
+.floorplanleftlist {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 30px;
+}
+.floorplanleft {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: self-end;
+}
+/* Project Detail -CSS  */
+
+/* aboutus-css */
+
+/* popup */
+
+@keyframes modalPopup {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.94);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-modalPopup {
+  animation: modalPopup 0.35s ease-out;
+}
+
+.insidepopupclass {
+  /* background-image: url("/public/images/about-us/popupimage1.jpg"); */
+  display: flex;
+}
+
+.insidepopupclasscontent {
+  width: 1387px;
+  height: 90vh;
+  background: transparent;
+  box-shadow: none;
+  background-image: url("/public/images/about-us/popupimage1.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding-left: 6%;
+}
+
+.aboutuspopupstyles {
+  width: 52%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.aboutuspopupstyles .subHeadingText {
+  line-height: 1.7;
+}
+
+.aboutuspopupstyles .secondHeadingText {
+  color: #b26eac;
+}
+
+.aboutuspopupstyles .mainheadingText {
+  color: #4d4d4d;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 29px;
+  line-height: 1;
+}
+
+.insideppupsub {
+  margin-top: 30px;
+}
+.popupclosebuttonabout {
+  font-size: 40px;
+  font-weight: 600;
+  right: 5%;
+  top: 5%;
+  color: #000;
+  cursor: pointer;
+}
+/* popup */
+
+.vissionmisiontext.secondHeadingText {
+  font-size: 113px;
+  font-weight: 800;
+  position: absolute;
+  top: 20px;
+}
+
+.line3 {
+  position: relative;
+  display: inline-block;
+  font-family: "Alexandra", sans-serif;
+  font-size: 130px;
+  line-height: 1;
+  font-weight: 800;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* MIDDLE 80% — STROKE + #7e63ab at 0.5 opacity */
+.line3::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-weight: 800;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+
+  /* #7e63ab with 50% opacity */
+  color: rgba(126, 99, 171, 0.4);
+  -webkit-text-fill-color: rgba(126, 99, 171, 0.4);
+
+  /* stroke */
+  -webkit-text-stroke: 1px #fff;
+
+  /* show ONLY middle 80% (10% → 90%) */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    black 10%,
+    black 100%,
+    transparent 100%,
+    transparent 100%
+  );
+
+  z-index: 2;
+}
+
+/* LEFT 10% + RIGHT 10% — PINK COLOR */
+.line3::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  font-weight: 800;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  color: #b26eac;
+  -webkit-text-fill-color: #b26eac;
+  -webkit-text-stroke: 0;
+  -webkit-mask-image: linear-gradient(
+    to right,
+    black 0%,
+    /* left visible */ black 18%,
+    /* left edge end */ transparent 20%,
+    /* hide middle */ transparent 80%,
+    black 50%,
+    /* right edge start */ black 50% /* right visible */
+  );
+  z-index: 1;
+}
+
+.aboutusvissionmission {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutusvissionmission img {
+  width: 78% !important;
+  z-index: 2;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.vissionmissionaboutrow {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.visionmissonrow {
+  padding: 150px 0;
+}
+
+.leftsidecontentsectionabout {
+  position: absolute;
+  width: 27%;
+  height: auto;
+  background: #b26eac;
+  left: 10%;
+  z-index: 1000;
+  top: 33%;
+  text-align: end;
+  padding: 50px 30px;
+  padding-bottom: 0px;
+}
+.leftsidecontentsectionabout .subHeadingText {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.visiiontexttransperant {
+  margin-top: 25px;
+}
+
+.visiiontexttransperant .subHeadingText {
+  font-size: 70px;
+  line-height: 51px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #a1559a;
+  -webkit-text-stroke: 1px #c99fc4;
+}
+
+.rightsidecontentsectionabout {
+  position: absolute;
+  width: 26%;
+  height: auto;
+  background: #b26eac;
+  right: 13%;
+  z-index: 1000;
+  top: 33%;
+  text-align: left;
+  padding: 50px 30px;
+  padding-bottom: 0px;
+}
+.rightsidecontentsectionabout .subHeadingText {
+  font-size: 22px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.visiiontexttransperant {
+  margin-top: 25px;
+}
+
+.visiiontexttransperant .subHeadingText {
+  font-size: 70px;
+  line-height: 51px;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: #a1559a;
+  -webkit-text-stroke: 1px #c99fc4;
+}
+.aboutusvissionmission {
+  /* position: relative; */
+}
+
+.aboutuspagesection .detailPageBanners {
+  background-image: url("/public/images/about-us/aboutus-hero-banner.jpg");
+}
+
+.aboutuspagesection .detailPageBanners .secondHeadingText {
+  font-size: 130px;
+}
+
+.aboutuspagesection .detailPageBanners .subHeadingText {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  text-transform: none;
+  font-weight: 400;
+  width: 43%;
+  text-align: center;
+  line-height: 1.2;
+  margin-top: 80px;
+}
+
+.aboutuspagesection .firstbannerafterSectionMAIN {
+  /* width: 43%; */
+}
+.aboutuspagesection .bannerafterSectionMAIN {
+  column-gap: 35px;
+}
+
+.aboutuspagesection .thirdbannerafterSectionMAIN {
+  /* width: 17%; */
+}
+
+.aboutuspagesection .contactPageAddress {
+  width: 100%;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.aboutuspagesection .aboutustextcontent {
+  font-family: "Poppins", sans-serif;
+  font-size: 19px;
+  margin-top: 15px;
+  color: #eca7e6;
+  font-weight: 400;
+}
+
+.underaboutusection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid #dd99d7;
+  padding-top: 30px;
+}
+
+.firstunderaboutusection {
+  width: 75%;
+}
+
+.flexunderaboutsection {
+  display: flex;
+  justify-content: center;
+  column-gap: 80px;
+  margin-top: 40px;
+  /* margin: 0 10%; */
+  margin-top: 40px;
+}
+
+.underaboutusection .subHeadingText {
+  font-weight: 300;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.firstunderaboutusection .subHeadingText span {
+  font-weight: 700;
+  color: #fff;
+}
+.underaboutusection .subHeadingText.numbertext {
+  color: #ffff98;
+  font-weight: 400;
+}
+
+.shapeusconatiner {
+  height: 700px;
+  display: flex;
+  align-items: center;
+  background: #f9f9f9;
+}
+
+.shapeusflex {
+  display: flex;
+  width: 105%;
+}
+
+.shapeconatinerflex {
+  background: #9e5498;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 42%;
+}
+
+.shapeconatinerflex .secondHeadingText {
+  font-size: 85px;
+  line-height: 0.9;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffff98;
+}
+
+.shapeusconatiner .container {
+  margin-left: 0 !important;
+  padding-left: 0;
+}
+
+.shapeusflex img {
+  width: 58%;
+}
+
+.keystoneuniquesection {
+  background-image: url("/public/images/about-us/keystone-unique.jpg");
+  height: 1000px;
+}
+
+.keystoneuniquesection .mainheadingText {
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 500;
+}
+
+.unqiuesectionflex {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  column-gap: 18px;
+  align-items: flex-end;
+}
+
+.unqiuesectionflex .secondHeadingText {
+  width: 63%;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 0.9;
+  font-weight: 600;
+}
+
+.unqiuesectionflex .subHeadingText {
+  width: 46%;
+  color: #fff;
+}
+
+.lowconatinersection {
+  margin: 0 10%;
+  padding-top: 50px;
+}
+.lowconatinersectionafterbanner {
+  margin: 0 7%;
+}
+
+.unquiecardsection {
+  background: #b26eac;
+  width: 48%;
+  border-radius: 20px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  padding-top: 20px;
+}
+
+.unquiecardsection img {
+  width: 70px;
+  height: 70px;
+  align-self: flex-end;
+}
+
+.unqiuecardsflexc {
+  display: flex;
+  width: 55%;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 10px;
+  margin-top: 30px;
+}
+
+.timedelivery {
+  line-height: 0.9;
+  width: 100%;
+  font-size: 35px;
+  letter-spacing: 0;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+}
+
+.unquiecardsection .subHeadingText {
+  color: #fff;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-size: 16px;
+  width: 94%;
+  font-weight: 400;
+  margin-top: 7px;
+}
+
+.aboutusfounders .secondHeadingText {
+  font-size: 95px;
+  line-height: 1;
+  font-weight: 800;
+  color: #b26eac;
+}
+
+.aboutusfounders .subHeadingText {
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #fff;
+}
+
+.foundersbanner.active {
+}
+
+.rectangleone {
+  background-color: #ffffff;
+  position: relative;
+  width: 59%;
+  height: 110px;
+  transition: background-color 0.7s ease, transform 0.3s ease;
+}
+
+.rectangleone.active {
+  background-color: #b26eac;
+}
+
+.founderdetails {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  padding-left: 41%;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.founderimagee {
+  position: absolute;
+  width: 137px;
+  top: -42px;
+  left: -1px;
+}
+
+.founderdetails .secondHeadingText {
+  font-size: 30px;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.founderflex {
+  display: flex;
+  margin-top: 50px;
+  justify-content: flex-start;
+  column-gap: 150px;
+}
+
+.founderflex1 {
+  width: 50%;
+}
+
+.founderflex2 {
+  width: 33%;
+}
+
+.founderflexcontentpopup .foundernamepopup {
+  font-size: 50px;
+  font-family: "Alexandria", sans-serif;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #b26eac;
+  font-weight: 500;
+}
+
+.founderflexcontentpopup .subHeadingText {
+  color: #545454;
+}
+
+.subHeadingText.founderwho {
+  color: #545454;
+  text-transform: none;
+  font-weight: 400;
+  padding: 15px 0;
+}
+
+.founderflex2 hr {
+  color: #ababac;
+}
+
+/* .popupaboutusfounders ul {
+  width: 63%;
+} */
+
+.popupaboutusfounders ul li {
+  font-size: 25px;
+  font-family: "Alexandria", sans-serif;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  width: max-content;
+  position: relative;
+  width: 85%;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.popupaboutusfounders ul li::before {
+  content: "";
+  width: 72%;
+  height: 2px;
+  position: absolute;
+  background: #873765;
+  bottom: -5px;
+}
+
+.popupaboutusfounders ul li::after {
+  content: "";
+  background-image: url("/images/icons/right-arrow-testimonal.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 33px;
+  height: 28px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  right: -20%;
+}
+
+.notactive .founderdetails .secondHeadingText {
+  color: #b26eac;
+}
+
+.notactive .subHeadingText {
+  color: #b26eac !important;
+}
+
+/* aoutusfoundersbanner */
+
+.foundersbanner {
+  background-image: url("/public/images/about-us/aoutusfoundersbanner.jpg");
+  /* background-image: url("/public/images/about-us/aoutusfoundersbanner2.jpg"); */
+  height: 1000px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.foundersbanner.active {
+  background-image: url("/public/images/about-us/aoutusfoundersbanner2.jpg");
+}
+
+.foundersbanner .lowconatinersection {
+  margin-right: 0;
+  padding-top: 70px;
+}
+
+.aboutusfounders .subHeadingText {
+  width: 100%;
+}
+
+.popupaboutusfounders ul {
+  margin-top: 30px;
+}
+
+.aboutusfoundermaincontent .subHeadingText {
+  color: #000;
+  width: 26%;
+}
+
+.aboutusslidersectionnew .mainheadingText {
+  letter-spacing: 0;
+  text-transform: uppercase;
+  /* color: #fff; */
+}
+
+.aboutusslidersectionnew .secondHeadingText {
+  width: 50%;
+  text-transform: uppercase;
+}
+.aboutusslidersectionnew .subHeadingText {
+  width: 50%;
+  margin-top: 20px;
+}
+/* aboutus-css */
+
+/* testimonial-css */
+
+.testimonalpagedisply {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 5%;
+  padding: 0 5%;
+  row-gap: 70px;
+}
+
+.testimonalpagedisply .testimonalSliderborder {
+  width: 27%;
+  box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset,
+    rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.testimonialpagebgcars {
+  background: #f5f7fb;
+  padding: 100px 0;
+}
+
+.testimonialmainpage .detailPageBanners {
+  background-image: url("/public/images/testimonial-bg.jpg");
+}
+
+/* testimonial-css */
+
+/* NRI-Page */
+
+.NriPage .unqiuecardsflexc {
+  width: 100%;
+}
+.NriPage .unquiecardsection {
+  width: 26%;
+}
+
+.NriPage .timedelivery {
+  width: 70%;
+}
+
+.NriPage .keystoneuniquesection {
+  background-image: url(/public/images/nri/nripagecardsbg.jpg);
+  height: 1030px;
+}
+
+.NriPage .keystoneuniquesection .mainheadingText {
+  color: #b26eac;
+}
+
+.NriPage .unqiuesectionflex .secondHeadingText {
+  color: #1d1f22;
+}
+
+.NriPage .unqiuecardsflexc {
+  margin-top: 60px;
+}
+
+.nricardscontent .subHeadingText {
+  width: 40%;
+  font-weight: 500;
+}
+.nricardscontent {
+  margin-top: 35px;
+}
+
+.NriPagebutton {
+  margin-top: 40px;
+}
+
+.NriPagebutton button {
+  background: #b370ad;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 50px;
+  height: 45px;
+  width: 215px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.nridiscoversection .secondHeadingText {
+  text-transform: uppercase;
+  line-height: 0.9;
+  width: 90%;
+  color: #fff;
+}
+
+.nridiscoversection {
+  background-color: #b26eac;
+  padding-bottom: 190px;
+}
+
+.nridiscoversection .mainheadingText {
+  color: #ffff98;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.maincontentnriimage {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  line-height: 1.1;
+  font-size: 30px;
+  width: 100%;
+  font-weight: 400;
+}
+
+.flexnriimage {
+  display: flex;
+  column-gap: 70px;
+  margin-top: 50px;
+}
+
+.twoflexnriimage {
+  width: 50%;
+  width: 35%;
+}
+
+.oneflexnriimage {
+  width: 50%;
+  width: 54%;
+}
+
+.flexnriimage .subHeadingText {
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.nrilist li p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  color: #fff;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.nrilist li p strong {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+}
+
+.nrilist .valuediv {
+  font-family: "Poppins", sans-serif;
+  color: #ffff98;
+  font-weight: 400;
+}
+
+.mainlistul {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-bottom: 25px;
+  border-top: 1px solid #dd99d7;
+}
+
+.firstulnri {
+  width: 57%;
+}
+
+.nrilistenquire button {
+  background: #fdfcfd;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  color: #884f79;
+  border-radius: 50px;
+  height: 45px;
+  width: 215px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+
+.nrilistenquire {
+  margin-top: 15px;
+}
+
+.nrifaq .secondHeadingText {
+  text-transform: uppercase;
+  line-height: 0.9;
+  width: 100%;
+}
+
+.nrifaq .subHeadingText {
+  width: 70%;
+  margin-top: 20px;
+  font-weight: 500;
+}
+
+.faqflexdiv {
+  display: flex;
+  column-gap: 45px;
+}
+
+.onefaqnriconatiner {
+  width: 42%;
+}
+
+.twofaqnriconatiner {
+  width: 60%;
+}
+
+.faqnriconatiner h4 {
+}
+
+.nrifaq {
+  background-image: url("/public/images/nri/nrifaqbg.jpg");
+  height: 816px;
+  display: flex;
+  align-items: center;
+}
+.onefaqnriconatiner .mainheadingText {
+  color: #b26eac;
+}
+
+.nrifaq .lowconatinersection {
+  margin-right: 2%;
+}
+
+.twofaqnriconatiner li {
+  margin-top: 20px;
+}
+
+.faqnriconatiner {
+  cursor: pointer;
+  border: 1.8px solid #d0d1d2;
+  padding: 30px;
+  border-radius: 10px;
+  padding: 20px;
+  transition: all 0.5s ease;
+}
+
+.faqnriconatiner.active {
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.faqnriconatiner h4 {
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  position: relative;
+  line-height: 1.1;
+}
+
+.faqnriconatiner h4::before {
+  font-family: "Poppins", sans-serif;
+  content: "+";
+  position: absolute;
+  top: 0;
+  left: 95%;
+  font-size: 29px;
+  font-weight: 600;
+  line-height: 0.9;
+}
+.faqnriconatiner.active h4 {
+  font-weight: 700;
+  color: #b26eac;
+  font-size: 27px;
+  width: 90%;
+  line-height: 1.1;
+}
+
+.faqnriconatiner.active h4::before {
+  content: "-";
+  line-height: 0.9;
+  left: 107%;
+  font-size: 34px;
+}
+
+.faqnriconatiner.active .subHeadingText {
+  font-weight: 300;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  width: 100%;
+}
+
+.detailPageBanners.NRIbaner .subHeadingText {
+  font-size: 16px;
+  text-transform: none;
+  font-weight: 400;
+  width: 43%;
+  text-align: center;
+  line-height: 1.2;
+  margin-top: 50px;
+}
+
+.NriPage .detailPageBanners {
+  background-image: url("/public/images/nri/nribannerbg.jpg");
+}
+
+/* NRI-Page */
+
+/* menubar */
+
+.menubarstyle {
+  height: 100vh;
+  z-index: 10000000;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+}
+
+.menubarWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh; /* full screen menu */
+  background: #ffffff; /* your menu bg */
+  z-index: 991099;
+  overflow-y: auto; /* scroll inside menu if needed */
+}
+
+.smoothMenu {
+  will-change: transform, opacity; /* Boost GPU */
+  transform: translate3d(0, 0, 0); /* Force hardware acceleration */
+}
+
+.onemenu {
+  width: 62%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.twomenu {
+  width: 38%;
+  height: 100%;
+  background-color: #a862a2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.twomenu::before {
+  /* content: "";
+  position: absolute;
+  background-image: url("/public/images/hamburger-icon.svg");
+  top: 4%;
+  right: 8%;
+  width: 57px;
+  height: 76px;
+  background-size: contain; */
+}
+
+.menubarcloseicon {
+  position: absolute;
+  top: 4%;
+  right: 8%;
+  width: 57px;
+  height: 76px;
+  background-size: contain;
+}
+
+.twomenu li {
+  font-size: 38px;
+  text-transform: uppercase;
+  font-family: "Alexandria", sans-serif;
+  color: #fff;
+  font-weight: 300;
+  border-bottom: 1px solid #925491;
+  width: 80%;
+  padding-left: 50px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  transition: padding-left 0.3s ease;
+}
+
+.twomenu li:hover {
+  padding-left: 70px;
+  /* color: #250521; */
+}
+
+.twomenu li:last-child {
+  border: none;
+}
+
+/* menubar */
+
+.line1 {
+  font-family: "Alexandra", sans-serif;
+  position: relative;
+  font-size: 88px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0;
+  line-height: 1;
+  -webkit-text-stroke: 1px #a762a1;
+  color: transparent !important;
+}
+
+.line1::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    color: #fff;
+    color: #843d7d;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0px solid #fff;
+    animation: reveal 7s ease-in-out infinite;
+    -webkit-text-stroke: 1px rgba(255,255,255,0.4);
+}
+
+@keyframes reveal {
+  0% {
+    width: 0%;
+  }
+  40% {
+    width: 100%;
+  }
+  60% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+.line2 {
+  font-family: "Alexandra", sans-serif;
+  position: relative;
+  font-size: 88px;
+  font-weight: 800;
+  color: transparent !important;
+
+  text-transform: uppercase;
+  margin: 0;
+  -webkit-text-stroke: 1px #a762a1;
+  line-height: 1;
+}
+
+.line2::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: #fff;
+  color: #b26eac;
+      color: #843d7d;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 0px solid #fff;
+  animation: reveal2 7s ease-in-out infinite;
+   -webkit-text-stroke: 1px rgba(255,255,255,0.4);
+}
+
+@keyframes reveal2 {
+  0% {
+    width: 0%;
+  }
+  40% {
+    width: 110%;
+  }
+  60% {
+    width: 110%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+.keystonesectionflexx .secondHeadingText {
+  font-size: 150px;
+  line-height: 122px;
+  margin-top: 0;
+}
+
+.onetextkeystone {
+  display: flex;
+  justify-content: center;
+  margin-left: 5%;
+}
+.twotextkeystone {
+  display: flex;
+  justify-content: center;
+}
+
+.keystonesectionflexx {
+  margin-top: -38px;
+}
+
+/* resposive start */
+@media (max-width: 1600px) and (min-width: 1400px) {
+  /* HomePage-Responsive */
+  .secondHeadingText {
+    font-size: 54px;
+  }
+
+  .subHeadingText {
+    font-size: 15px;
+  }
+
+  .contentHeadingBanner .secondHeadingText {
+    font-size: 120px;
+  }
+
+  .yearsScrollText h6 {
+    font-size: 110px;
+    line-height: 0.75;
+  }
+
+  .yearsScrollText span {
+    font-size: 22px;
+  }
+
+  .yearsScrollText.projectsScroll h6 {
+    font-size: 75px;
+    line-height: 0.75;
+  }
+
+  .whatsmakeSectionBG {
+    height: 900px;
+  }
+
+  .FirstcontentWhatMakesSection.lastSectionWhatMakes {
+    padding-top: 10px;
+  }
+
+  .FirstcontentWhatMakesSection {
+    column-gap: 31%;
+  }
+
+  .FirstcontentWhatMakesSection {
+    padding-top: 80px;
+  }
+
+  .videoBannerVideoFILE {
+    height: auto;
+  }
+
+  .ArchitectureContent .secondHeadingText {
+    font-size: 30px;
+    width: 315px;
+    top: 46%;
+    left: -36%;
+    text-align: center;
+  }
+
+  .archisecondHeadingText button {
+    margin-top: 10px;
+  }
+
+  .ongoingProjectSection {
+    height: 310px;
+  }
+
+  .projectsNameOnGoing h5 {
+    font-size: 30px;
+  }
+
+  .projectsNameOnGoing span {
+    font-size: 17px;
+  }
+
+  .onGoingMainSectionDiv {
+    column-gap: 30px;
+  }
+
+  .onGoingRightSection .mainheadingText.onGoingSecondTextContainer {
+    width: 100%;
+    font-size: 27px;
+  }
+
+  .secondSliderContentSections .subHeadingText {
+    margin-top: 15px;
+    width: 85%;
+  }
+
+  .viewallprojectsongoing button {
+    font-size: 14px;
+
+    height: 43px;
+    width: 203px;
+  }
+
+  .viewallprojectsongoing {
+    margin-top: 20px;
+  }
+
+  .testimonalSliderContainer {
+    width: 59%;
+    margin-left: 0%;
+  }
+
+  .testimonalFullSection {
+    height: auto;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .testimonalPersonImage {
+    width: 58px;
+    height: 58px;
+  }
+
+  .testimonalPersonImagediv::before {
+    right: -119px;
+  }
+
+  .testimonalSectionName h4 {
+    font-size: 20.5px;
+  }
+
+  .testimonalSectionName p {
+    font-size: 16px;
+  }
+
+  .curtedSectionMainRowBg {
+    height: auto;
+    background-position: center;
+    background-size: contain;
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+  }
+
+  .curtsectionrow {
+    padding-top: 37px;
+  }
+
+  .curtSliderLeftSection {
+    margin-left: 6%;
+  }
+
+  .curtSliderLeftSection .subHeadingText {
+    width: 93%;
+  }
+
+  .curtLivingSlider {
+    width: 57%;
+  }
+
+  .curatedSliderContainer {
+    width: 320px;
+    width: 90%;
+    margin: 0 20px;
+  }
+
+  .curatedSliderContainer::before {
+    left: -6px;
+  }
+
+  .schudleVisitsection {
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    height: 800px;
+    background-size: cover;
+  }
+
+  .schdeuleMainrowsection {
+    padding-top: 10px;
+    padding-bottom: 43px;
+  }
+
+  .keystonesectionflexx .secondHeadingText {
+    font-size: 120px;
+    line-height: 111px;
+  }
+
+  .FooterInnerDiv::before {
+    left: -39px;
+  }
+
+  .footerListsul li {
+    font-size: 12px;
+  }
+  .FooterSplit {
+    column-gap: 7.5%;
+  }
+
+  .footercopyRight {
+    margin-left: 1%;
+    margin-right: 4%;
+  }
+
+  .LiveThoughtFlex .LiveThoughtFlexImg {
+    width: 58%;
+  }
+  .LiveThoughtFlex {
+    column-gap: 4%;
+  }
+
+  .yearsScrollText::before {
+    left: -48px;
+  }
+
+  .yearsScrollText.projectsScroll span {
+    font-size: 15px;
+  }
+
+  .LiveThoughtFlex .secondHeadingText::before {
+    top: -21px;
+    right: -8px;
+    font-size: 26px;
+  }
+
+  .LiveThoughtFlex .projectsScroll .secondHeadingText::before {
+    top: -13px;
+    right: -11px;
+    font-size: 19px;
+  }
+
+  /* HomePage-Responsive */
+
+  /* AboutPage-Responsive */
+
+  .detailPageBanners {
+    margin-top: 60px;
+  }
+
+  .aboutuspagesection .detailPageBanners .secondHeadingText {
+    font-size: 100px;
+  }
+
+  .aboutuspagesection .detailPageBanners .subHeadingText {
+    line-height: 1.2;
+    margin-top: 36px;
+  }
+
+  .visitOurOFficetext {
+    font-size: 37px;
+    line-height: 1;
+  }
+
+  .gettknowHeading {
+    font-size: 15px;
+  }
+
+  .afterMainBG {
+    padding: 70px 0;
+  }
+  .underaboutusection .subHeadingText {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .shapeusflex {
+    width: 95%;
+  }
+
+  .shapeusconatiner {
+    height: 580px;
+  }
+
+  .shapeconatinerflex .secondHeadingText {
+    font-size: 68px;
+    line-height: 0.9;
+  }
+  .lowconatinersection {
+    margin: 0 7%;
+    padding-top: 50px;
+  }
+
+  .timedelivery {
+    line-height: 0.9;
+    font-size: 28px;
+    width: 50%;
+  }
+
+  .keystoneuniquesection {
+    height: 858px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .unquiecardsection img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .unquiecardsection {
+    padding: 20px;
+    padding-top: 15px;
+  }
+
+  .vissionmisiontext.secondHeadingText {
+    font-size: 100px;
+    top: 20px;
+  }
+
+  .leftsidecontentsectionabout .subHeadingText {
+    font-size: 18px;
+  }
+
+  .visiiontexttransperant .subHeadingText {
+    font-size: 60px;
+    line-height: 47px;
+  }
+
+  .rightsidecontentsectionabout .subHeadingText {
+    font-size: 18px;
+  }
+
+  .visiiontexttransperant .subHeadingText {
+    font-size: 60px;
+    line-height: 47px;
+  }
+
+  .aboutusfoundermaincontent .secondHeadingText {
+    font-size: 85px;
+  }
+
+  .founderdetails .secondHeadingText {
+    font-size: 27px;
+  }
+
+  .founderflex {
+    margin-top: 15px;
+  }
+
+  .founderflexcontentpopup .foundernamepopup {
+    font-size: 45px;
+  }
+
+  .popupaboutusfounders ul li {
+    font-size: 20px;
+  }
+
+  .rectangleone {
+    width: 54%;
+  }
+
+  .founderdetails {
+    height: 100%;
+    padding-left: 45%;
+  }
+
+  .foundersbanner {
+    height: 700px;
+  }
+
+  /* AboutPage-Responsive */
+
+  /* Ongoing Page */
+
+  .detailPageBanners h5 {
+    font-size: 100px;
+  }
+
+  .detailPageBanners .subHeadingText {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  .margintopafterlist {
+    margin-top: -370px;
+  }
+  .onGoingProjectsLists h5 {
+    font-size: 45px;
+  }
+
+  .onGoingProjectsLists span {
+    font-size: 26px;
+  }
+
+  .buttononGoingProjectsLists {
+    font-size: 15px;
+  }
+
+  .mainRowonGoingProjectsLists .onGoingProjectsLists {
+    padding-left: 30px;
+  }
+  .ongoingProjectsDiVMain {
+    margin-top: 60px;
+  }
+
+  .ongoingProjectsPage .afterMainBG {
+    padding: 50px 0;
+    height: 700px;
+  }
+  /* Ongoing Page */
+
+  /* joint-venture-Page */
+
+  .worthwithUsSection {
+    background-position: center;
+  }
+
+  /* joint-venture-Page */
+
+  /* channel-partner-Page */
+
+  .channelPartnerFormSection {
+    column-gap: 95px;
+  }
+  .channelPartnerFormSection .contactFormInputEach input {
+    margin-top: 6px;
+    height: 50px;
+  }
+
+  .channelPartnerMainSection .formContactUsSectionFlex {
+    width: 35%;
+  }
+
+  .channelPartnerFormSection .formChannelPartnerImage {
+    width: 49%;
+    height: 46%;
+  }
+
+  /* channel-partner-Page */
+
+  /* careers-Page */
+
+  .careersCards h4 {
+    font-size: 24px;
+
+    line-height: 1.1;
+  }
+
+  .careersCards img {
+    width: 55px;
+    height: 55px;
+  }
+  .careersCards {
+    padding: 35px 23px;
+  }
+
+  .careersCurrentOpenings {
+    height: 700px;
+    background-position: center;
+  }
+
+  /* careers-Page */
+
+  /* testimonial page */
+  .testimonalpagedisply {
+    padding: 0 3%;
+    row-gap: 70px;
+  }
+  .testimonalpagedisply .testimonalPersonImagediv::before {
+    right: -114px;
+    width: 167%;
+  }
+
+  /* testimonial page */
+
+  /* NRI page */
+
+  .nridiscoversection .mainheadingText {
+    font-size: 18px;
+  }
+
+  .maincontentnriimage {
+    font-size: 26px;
+  }
+
+  .flexnriimage .subHeadingText {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .nrilist li p {
+    font-size: 17px;
+    line-height: 1.4;
+  }
+
+  .mainlistul {
+    padding-top: 12px;
+    padding-bottom: 15px;
+  }
+
+  .nrilistenquire button {
+    font-size: 14px;
+
+    height: 43px;
+    width: 191px;
+  }
+
+  .flexnriimage {
+    column-gap: 60px;
+  }
+
+  .nrifaq {
+    height: 735px;
+  }
+
+  .faqnriconatiner.active h4 {
+    font-size: 24px;
+  }
+
+  .faqnriconatiner.active .subHeadingText {
+    font-size: 18px;
+  }
+
+  .faqnriconatiner h4 {
+    font-size: 19px;
+  }
+
+  .NriPagebutton button {
+    font-size: 14px;
+
+    height: 43px;
+    width: 191px;
+  }
+
+  .NriPagebutton {
+    margin-top: 30px;
+  }
+
+  .faqflexdiv {
+    column-gap: 29px;
+  }
+
+  .faqnriconatiner.active {
+    padding: 25px;
+  }
+
+  .faqnriconatiner h4::before {
+    font-size: 25px;
+  }
+
+  .faqnriconatiner.active h4::before {
+    font-size: 30px;
+  }
+
+  /* NRI page */
+
+  /* ProjectDetail Page  */
+
+  .spectraproject .secondHeadingText {
+    font-size: 84px;
+  }
+
+  .projectDetailIconSection .mainheadingText {
+    font-size: 20px;
+  }
+  .projectDetailPage .BreadCrumSection {
+    margin-top: 20px;
+  }
+
+  .ProjectDetailSectionContentSection {
+    max-width: 950px;
+  }
+
+  .projectNameDetailPage h5 {
+    font-size: 44px;
+  }
+
+  .projectNameDetailPage p {
+    font-size: 25px;
+  }
+
+  .projectDetailProjectName img {
+    width: 65px;
+  }
+
+  .mainconatinerprojectflex {
+    padding-top: 30px;
+  }
+
+  .projectdetailflex {
+    padding-bottom: 17px;
+    padding-top: 15px;
+  }
+
+  .nooffloors {
+    font-size: 21px;
+    margin-top: 11px;
+    margin-bottom: 12px;
+  }
+
+  .contentaminities {
+    font-size: 20px;
+    left: 19px;
+  }
+
+  .aminitessectionproject::before {
+    width: 104%;
+  }
+
+  .projectspecificationcard .projectspecicon {
+    width: 80px;
+  }
+  .projectspeclist li {
+    font-size: 16px;
+  }
+
+  .projectaminitessection .subHeadingText:last-child {
+    font-size: 17px;
+  }
+
+  .projectspecname {
+    font-size: 26px;
+
+    margin-top: 15px;
+  }
+
+  .accordion-section.open .locationadvantagesicon .nearbyloactions {
+    font-size: 30px;
+  }
+
+  .locationcontentside {
+    width: 34%;
+  }
+
+  .locationimageside {
+    width: 48%;
+  }
+  .locationcontentside ul li {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .locationadvantagesicon {
+    padding: 7px 0;
+  }
+
+  .locationcontentside .open ul {
+    padding-bottom: 10px;
+  }
+
+  .locationadvantagesicon img {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* ProjectDetail Page  */
+}
+
+@media (max-width: 1400px) and (min-width: 1250px) {
+  /* HomePage-Responsive */
+
+  .LiveThoughtFlex .secondHeadingText::before {
+    top: -21px;
+    right: -8px;
+    font-size: 26px;
+  }
+
+  .LiveThoughtFlex .projectsScroll .secondHeadingText::before {
+    top: -13px;
+    right: -11px;
+    font-size: 19px;
+  }
+  .secondHeadingText {
+    font-size: 50px;
+  }
+
+  .subHeadingText {
+    font-size: 15px;
+  }
+
+  .contentHeadingBanner .secondHeadingText {
+    font-size: 100px;
+  }
+
+  .contentHeadingBanner {
+     height: 100%;
+  }
+  .hamburgerflex {
+    column-gap: 11px;
+
+    padding: 5px 17px;
+  }
+  .HeaderMainSEC .headerLogoImg {
+    width: 175px;
+  }
+
+  .hamburgerIconImage {
+    width: 35px;
+    height: 35px;
+  }
+  .listHeaders {
+    column-gap: 36px;
+  }
+
+  .listHeaders li {
+    font-size: 16px;
+  }
+
+  .yearsScrollText h6 {
+    font-size: 110px;
+    line-height: 0.75;
+  }
+
+  .yearsScrollText span {
+    font-size: 22px;
+  }
+
+  .yearsScrollText.projectsScroll h6 {
+    font-size: 75px;
+    line-height: 0.75;
+  }
+
+  .whatsmakeSectionBG {
+    height: 850px;
+  }
+
+  .FirstcontentWhatMakesSection.lastSectionWhatMakes {
+    padding-top: 10px;
+  }
+
+  .FirstcontentWhatMakesSection {
+    column-gap: 31%;
+  }
+
+  .FirstcontentWhatMakesSection {
+    padding-top: 80px;
+  }
+
+  .videoBannerVideoFILE {
+    height: auto;
+  }
+
+  .ArchitectureContent .secondHeadingText {
+    font-size: 30px;
+    width: 315px;
+    top: 46%;
+    left: -43%;
+    text-align: center;
+  }
+
+  .projectsNameOnGoing {
+    margin-bottom: 12px;
+    margin-top: 16px;
+  }
+
+  .projectsNameOnGoingmAINcONTAINER {
+    padding: 0 12px;
+    padding-right: 20px;
+  }
+
+  .onGoingViewProject {
+    margin-top: 3px;
+  }
+
+  .archiBg {
+    height: 605px;
+  }
+  .projectsNameOnGoing::before {
+    bottom: -12px;
+  }
+  .archisecondHeadingText button {
+    margin-top: 10px;
+  }
+
+  .ongoingProjectSection {
+    height: 298px;
+  }
+
+  .projectsNameOnGoing h5 {
+    font-size: 25px;
+  }
+
+  .projectsNameOnGoing span {
+    font-size: 17px;
+  }
+
+  .onGoingMainSectionDiv {
+    column-gap: 30px;
+  }
+
+  .onGoingRightSection .mainheadingText.onGoingSecondTextContainer {
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .secondSliderContentSections .subHeadingText {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .viewallprojectsongoing button {
+    font-size: 14px;
+
+    height: 43px;
+    width: 203px;
+  }
+
+  .viewallprojectsongoing {
+    margin-top: 20px;
+  }
+
+  .testimonalSliderContainer {
+    width: 59%;
+    margin-left: 0%;
+  }
+
+  .testimonalFullSection {
+    height: auto;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .testimonalPersonImage {
+    width: 58px;
+    height: 58px;
+  }
+
+  .testimonalPersonImagediv::before {
+    right: -88px;
+    width: 128%;
+  }
+
+  .testimonalSectionName h4 {
+    font-size: 20.5px;
+  }
+
+  .testimonalSectionName p {
+    font-size: 16px;
+  }
+
+  .curtedSectionMainRowBg {
+    height: auto;
+    background-position: center;
+    background-size: contain;
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+  }
+
+  .curtsectionrow {
+    padding-top: 37px;
+  }
+
+  .curtSliderLeftSection {
+    margin-left: 6%;
+  }
+
+  .curtSliderLeftSection .subHeadingText {
+    width: 100%;
+  }
+
+  .curtLivingSlider {
+    width: 57%;
+  }
+
+  .curatedSliderContainer {
+    width: 320px;
+    width: 90%;
+    margin: 0 20px;
+  }
+
+  .curatedSliderContainer::before {
+    left: -6px;
+  }
+
+  .schudleVisitsection {
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    height: 800px;
+    background-size: cover;
+  }
+
+  .schdeuleMainrowsection {
+    padding-top: 10px;
+    padding-bottom: 43px;
+  }
+
+  .keystonesectionflexx .secondHeadingText {
+    font-size: 100px;
+    line-height: 100px;
+  }
+
+  .FooterInnerDiv::before {
+    left: -33px;
+  }
+
+  .footerListsul li {
+    font-size: 11px;
+  }
+  .FooterSplit {
+    column-gap: 5.5%;
+  }
+
+  .footercopyRight {
+    margin-left: 1%;
+    margin-right: 4%;
+  }
+
+  .LiveThoughtFlex .LiveThoughtFlexImg {
+    width: 53%;
+  }
+  .LiveThoughtFlex {
+    column-gap: 4%;
+  }
+
+  .yearsScrollText::before {
+    left: -42px;
+  }
+
+  .yearsScrollText.projectsScroll span {
+    font-size: 15px;
+  }
+
+  .lastSectionWhatMakes .FlexFirstcontentWhatMakesSection {
+    margin-top: 20px;
+  }
+
+  /* HomePage-Responsive */
+
+  /* AboutPage-Responsive */
+
+  .detailPageBanners {
+    margin-top: 60px;
+  }
+
+  .aboutuspagesection .detailPageBanners .secondHeadingText {
+    font-size: 85px;
+  }
+
+  .aboutuspagesection .detailPageBanners .subHeadingText {
+    line-height: 1.2;
+    margin-top: 26px;
+  }
+
+  .lowconatinersectionafterbanner {
+    margin: 0%;
+  }
+
+  .visitOurOFficetext {
+    font-size: 33px;
+    line-height: 1;
+  }
+  .seondbannerafterSectionMAINrow {
+    width: 199px;
+    height: 200px;
+  }
+  .gettknowHeading {
+    font-size: 15px;
+  }
+
+  .afterMainBG {
+    padding: 70px 0;
+  }
+  .underaboutusection .subHeadingText {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .shapeusflex {
+    width: 100%;
+  }
+
+  .shapeusconatiner {
+    height: 530px;
+  }
+
+  .shapeconatinerflex .secondHeadingText {
+    font-size: 51px;
+    line-height: 0.9;
+  }
+  .lowconatinersection {
+    margin: 0;
+    padding-top: 50px;
+  }
+
+  .unquiecardsection .subHeadingText {
+    font-size: 14px;
+  }
+
+  .timedelivery {
+    line-height: 0.9;
+    font-size: 28px;
+    width: 50%;
+  }
+
+  .aboutuspagesection .aboutustextcontent {
+    line-height: 1.2;
+  }
+
+  .flexunderaboutsection {
+    margin-top: 30px;
+  }
+
+  .keystoneuniquesection {
+    height: 858px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .unquiecardsection img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .unquiecardsection {
+    padding: 20px;
+    padding-top: 15px;
+  }
+
+  .vissionmisiontext.secondHeadingText {
+    font-size: 100px;
+    top: 20px;
+  }
+
+  .leftsidecontentsectionabout .subHeadingText {
+    font-size: 16px;
+  }
+
+  .visiiontexttransperant .subHeadingText {
+    font-size: 60px;
+    line-height: 47px;
+  }
+
+  .rightsidecontentsectionabout .subHeadingText {
+    font-size: 16px;
+  }
+
+  .leftsidecontentsectionabout {
+    left: 3%;
+  }
+
+  .rightsidecontentsectionabout {
+    right: 1%;
+  }
+  .aboutusvissionmission img {
+    width: 70% !important;
+  }
+  .visiiontexttransperant .subHeadingText {
+    font-size: 51px;
+    line-height: 39px;
+  }
+  .visionmissonrow {
+    padding: 100px 0;
+  }
+  .aboutusfoundermaincontent .secondHeadingText {
+    font-size: 75px;
+  }
+
+  .founderdetails .secondHeadingText {
+    font-size: 27px;
+  }
+
+  .founderflex {
+    margin-top: 15px;
+  }
+
+  .founderflexcontentpopup .foundernamepopup {
+    font-size: 45px;
+  }
+
+  .popupaboutusfounders ul li {
+    font-size: 20px;
+  }
+
+  .rectangleone {
+    width: 59%;
+  }
+
+  .founderdetails {
+    height: 100%;
+    padding-left: 45%;
+  }
+
+  .foundersbanner {
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .founderflex1 {
+    width: 56%;
+    padding-left: 4%;
+  }
+
+  /* AboutPage-Responsive */
+
+  /* Ongoing Page */
+
+  .detailPageBanners h5 {
+    font-size: 85px;
+  }
+
+  .detailPageBanners .subHeadingText {
+    font-size: 16px;
+  }
+
+  .margintopafterlist {
+    margin-top: -390px;
+  }
+  .onGoingProjectsLists h5 {
+    font-size: 36px;
+  }
+
+  .onGoingProjectsLists span {
+    font-size: 23px;
+  }
+
+  .buttononGoingProjectsLists {
+    font-size: 13px;
+    height: 40px;
+  }
+
+  .mainRowonGoingProjectsLists .onGoingProjectsLists {
+    padding-left: 23px;
+  }
+  .ongoingProjectsDiVMain {
+    margin-top: 60px;
+  }
+
+  .ongoingProjectsPage .afterMainBG {
+    padding: 50px 0;
+    height: 700px;
+  }
+
+  .contactPageAddress {
+    font-size: 16px;
+    width: 85%;
+  }
+
+  .ongoingprojectslist li {
+    font-size: 16px;
+
+    letter-spacing: 2px;
+
+    padding: 0 20px;
+  }
+
+  .ongoingprojectslist {
+    padding: 10px 35px;
+  }
+  /* Ongoing Page */
+
+  /* joint-venture-Page */
+
+  .worthwithUsSection {
+    background-position: center;
+    height: 700px;
+  }
+
+  .JointVenturePage .formContactUsSectionFlex {
+    padding: 0px 0px;
+  }
+  .contactFormInputEach label {
+    font-size: 16px;
+  }
+
+  .contactFormInputEach input {
+    height: 50px;
+  }
+
+  /* joint-venture-Page */
+
+  /* channel-partner-Page */
+
+  .channelPartnerFormSection {
+    column-gap: 95px;
+  }
+  .channelPartnerFormSection .contactFormInputEach input {
+    margin-top: 6px;
+    height: 50px;
+    font-size: 18px;
+  }
+
+  .channelPartnerMainSection .formContactUsSectionFlex {
+    width: 35%;
+  }
+
+  .channelPartnerFormSection .formChannelPartnerImage {
+    width: 49%;
+    height: 46%;
+  }
+
+  /* channel-partner-Page */
+
+  /* careers-Page */
+
+  .careersCards h4 {
+    font-size: 21px;
+    line-height: 1.1;
+  }
+
+  .careersCards img {
+    width: 50px;
+    height: 50px;
+  }
+  .careersCards {
+    padding: 33px 23px;
+  }
+
+  .careersCurrentOpenings {
+    height: 650px;
+    background-position: center;
+  }
+
+  .careersCards .subHeadingText {
+    margin-top: 6px;
+  }
+
+  .careerCardsFLex {
+    row-gap: 40px;
+  }
+
+  /* careers-Page */
+
+  /* testimonial page */
+  .testimonalpagedisply {
+    padding: 0%;
+    row-gap: 60px;
+  }
+  .testimonalpagedisply .testimonalPersonImagediv::before {
+    right: -114px;
+    width: 167%;
+  }
+
+  .testimonalpagedisply .testimonalSliderborder {
+    width: 28%;
+  }
+
+  /* testimonial page */
+
+  /* NRI page */
+
+  .nridiscoversection .mainheadingText {
+    font-size: 18px;
+  }
+
+  .maincontentnriimage {
+    font-size: 26px;
+  }
+
+  .flexnriimage .subHeadingText {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .nrilist li p {
+    font-size: 17px;
+    line-height: 1.4;
+  }
+
+  .twofaqnriconatiner li:first-child {
+    margin-top: 10px;
+  }
+
+  .mainlistul {
+    padding-top: 12px;
+    padding-bottom: 15px;
+  }
+
+  .nrilistenquire button {
+    font-size: 14px;
+
+    height: 43px;
+    width: 191px;
+  }
+
+  .flexnriimage {
+    column-gap: 60px;
+  }
+
+  .nrifaq {
+    height: 700px;
+  }
+
+  .faqnriconatiner.active h4 {
+    font-size: 24px;
+  }
+
+  .faqnriconatiner.active .subHeadingText {
+    font-size: 18px;
+    margin-top: 11px;
+  }
+
+  .faqnriconatiner h4 {
+    font-size: 19px;
+  }
+
+  .NriPagebutton button {
+    font-size: 14px;
+
+    height: 43px;
+    width: 191px;
+  }
+
+  .NriPagebutton {
+    margin-top: 30px;
+  }
+
+  .faqflexdiv {
+    column-gap: 29px;
+  }
+
+  .faqnriconatiner.active {
+    padding: 25px;
+  }
+
+  .faqnriconatiner h4::before {
+    font-size: 25px;
+  }
+
+  .faqnriconatiner.active h4::before {
+    font-size: 30px;
+  }
+
+  .nridiscoversection .secondHeadingText {
+    width: 75%;
+  }
+
+  .nrifaq .lowconatinersection {
+    padding-top: 0;
+  }
+
+  /* NRI page */
+
+  /* ProjectDetail Page  */
+
+  .spectraproject .secondHeadingText {
+    font-size: 80px;
+  }
+
+  .projectDetailIconSection .mainheadingText {
+    font-size: 20px;
+  }
+  .projectDetailPage .BreadCrumSection {
+    margin-top: 20px;
+  }
+
+  .ProjectDetailSectionContentSection {
+    max-width: 885px;
+  }
+
+  .projectNameDetailPage h5 {
+    font-size: 40px;
+  }
+
+  .projectNameDetailPage p {
+    font-size: 25px;
+  }
+
+  .projectDetailProjectName img {
+    width: 65px;
+  }
+
+  .projectNameDetailPage.projectdetailflex p {
+    font-size: 23px;
+    margin-bottom: 3px;
+  }
+
+  .mainconatinerprojectflex {
+    padding-top: 30px;
+    column-gap: 17px;
+  }
+
+  .projectdetailflex {
+    padding-bottom: 17px;
+    padding-top: 15px;
+  }
+
+  .nooffloors {
+    font-size: 19px;
+    margin-top: 9px;
+    margin-bottom: 11px;
+  }
+
+  .contentaminities {
+    font-size: 20px;
+    left: 19px;
+  }
+
+  .aminitessectionproject::before {
+    width: 104%;
+  }
+
+  .projectspecificationcard .projectspecicon {
+    width: 80px;
+  }
+  .projectspeclist li {
+    font-size: 16px;
+  }
+
+  .projectaminitessection .subHeadingText:last-child {
+    font-size: 17px;
+  }
+
+  .projectspecname {
+    font-size: 26px;
+
+    margin-top: 15px;
+  }
+
+  .accordion-section.open .locationadvantagesicon .nearbyloactions {
+    font-size: 27px;
+  }
+
+  .locationcontentside {
+    width: 34%;
+  }
+
+  .accordion-section.open .locationadvantagesicon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .accordion-section.open .locationadvantagesicon::before {
+    font-size: 33px;
+  }
+  .locationadvantagesicon .nearbyloactions {
+    font-size: 23px;
+  }
+
+  .widthprojectlocationshighlights {
+    padding: 90px 0;
+    margin-bottom: 0;
+  }
+
+  .projectlocationshighlights {
+    height: auto;
+    background-position: bottom;
+  }
+  .locationimageside {
+    width: 50%;
+  }
+  .locationcontentside ul li {
+    font-size: 15px;
+    margin-top: 10px;
+  }
+
+  .locationadvantagesicon {
+    padding: 7px 0;
+  }
+
+  .locationcontentside .open ul {
+    padding-bottom: 10px;
+  }
+
+  .locationadvantagesicon img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .projectDetailIconSection img {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* ProjectDetail Page  */
+}
+
+@media (max-width: 1250px) and (min-width: 1100px) {
+  /* HomePage-Responsive */
+
+  .LiveThoughtFlex .secondHeadingText::before {
+    top: -17px;
+    right: -8px;
+    font-size: 23px;
+  }
+
+  .LiveThoughtFlex .projectsScroll .secondHeadingText::before {
+    top: -6px;
+    right: -11px;
+    font-size: 17px;
+  }
+  .secondHeadingText {
+    font-size: 45px;
+  }
+
+  .subHeadingText {
+    font-size: 13px;
+  }
+
+  .contentHeadingBanner .secondHeadingText {
+    font-size: 90px;
+  }
+
+  .contentHeadingBanner {
+      height: 100%;
+  }
+  .hamburgerflex {
+    column-gap: 4px;
+    padding: 5px 14px;
+  }
+  .HeaderMainSEC .headerLogoImg {
+    width: 160px;
+  }
+
+  .hamburgerIconImage {
+    width: 30px;
+    height: 30px;
+  }
+  .listHeaders {
+    column-gap: 20px;
+  }
+
+  .listHeaders li {
+    font-size: 16px;
+  }
+
+  .yearsScrollText h6 {
+    font-size: 90px;
+    line-height: 0.75;
+  }
+
+  .yearsScrollText span {
+    font-size: 22px;
+  }
+
+  .yearsScrollText.projectsScroll h6 {
+    font-size: 75px;
+    line-height: 0.75;
+  }
+
+  .whatsmakeSectionBG {
+    height: 750px;
+  }
+
+  .FirstcontentWhatMakesSection.lastSectionWhatMakes {
+    padding-top: 0px;
+  }
+
+  .FirstcontentWhatMakesSection {
+    column-gap: 31%;
+  }
+
+  .FirstcontentWhatMakesSection {
+    padding-top: 55px;
+  }
+
+  .videoBannerVideoFILE {
+    height: auto;
+  }
+
+  .ArchitectureContent .secondHeadingText {
+    font-size: 30px;
+    width: 315px;
+    top: 46%;
+    left: -52%;
+    text-align: center;
+  }
+
+  .projectsNameOnGoing {
+    margin-bottom: 12px;
+    margin-top: 16px;
+  }
+
+  .projectsNameOnGoingmAINcONTAINER {
+    padding: 0 12px;
+    padding-right: 20px;
+  }
+
+  .onGoingViewProject {
+    margin-top: 3px;
+    font-size: 14px;
+  }
+
+  .archiBg {
+    height: 555px;
+  }
+  .projectsNameOnGoing::before {
+    bottom: -12px;
+  }
+  .archisecondHeadingText button {
+    margin-top: 10px;
+  }
+
+  .ongoingProjectSection {
+    height: 260px;
+  }
+
+  .projectsNameOnGoing h5 {
+    font-size: 20px;
+  }
+
+  .projectsNameOnGoing span {
+    font-size: 14px;
+  }
+
+  .onGoingMainSectionDiv {
+    column-gap: 30px;
+  }
+
+  .onGoingRightSection .mainheadingText.onGoingSecondTextContainer {
+    width: 100%;
+    font-size: 24px;
+  }
+
+  .secondSliderContentSections .subHeadingText {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .viewallprojectsongoing button {
+    font-size: 12px;
+    height: 38px;
+    width: 182px;
+  }
+
+  .viewallprojectsongoing {
+    margin-top: 20px;
+  }
+
+  .testimonalSliderContainer {
+    width: 65%;
+    margin-left: -3%;
+  }
+
+  .testimonalFullSection {
+    height: auto;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .testimonalPersonImage {
+    width: 58px;
+    height: 58px;
+  }
+
+  .testimonalPersonImagediv::before {
+    right: -88px;
+    width: 128%;
+  }
+
+  .testimonalSectionName h4 {
+    font-size: 20.5px;
+  }
+
+  .testimonalSectionName p {
+    font-size: 16px;
+  }
+
+  .curtedSectionMainRowBg {
+    height: auto;
+    background-position: center;
+    background-size: contain;
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+  }
+
+  .curtsectionrow {
+    padding-top: 37px;
+  }
+
+  .curtSliderLeftSection {
+    margin-left: 5%;
+  }
+
+  .testimonalContent {
+    padding: 20px;
+  }
+
+  .natureIntergreated {
+    font-size: 19px;
+  }
+  .natureIntergreated:nth-child(4) {
+    top: 67px;
+  }
+
+  .natureIntergreated:nth-child(2) {
+    top: 25px;
+  }
+
+  .curtSliderLeftSection .subHeadingText {
+    width: 100%;
+  }
+
+  .curtLivingSlider {
+    width: 57%;
+  }
+
+  .curatedSliderContainer {
+    width: 320px;
+    width: 90%;
+    margin: 0 20px;
+  }
+
+  .curatedSliderContainer::before {
+    left: -6px;
+  }
+
+  .schudleVisitsection {
+    padding: 100px 0;
+    background-repeat: no-repeat;
+    height: 700px;
+    background-size: cover;
+  }
+
+  .schdeuleMainrowsection {
+    padding-top: 10px;
+    padding-bottom: 43px;
+  }
+
+  .keystonesectionflexx {
+    margin-top: -22px;
+  }
+
+  .keystonesectionflexx .secondHeadingText {
+    font-size: 90px;
+    line-height: 76px;
+  }
+
+  .FooterInnerDiv::before {
+    left: -26px;
+  }
+
+  .footerListsul li {
+    font-size: 12px;
+  }
+  .FooterSplit {
+    column-gap: 5.5%;
+  }
+
+  .footerListsul {
+    flex-direction: column;
+  }
+
+  .withTextContent {
+    font-size: 78px;
+  }
+
+  .footercopyRight {
+    margin-left: -1%;
+    margin-right: 1%;
+  }
+
+  .knowMoreButtonImage {
+    font-size: 13px;
+  }
+
+  .LiveThoughtFlex .LiveThoughtFlexImg {
+    width: 52%;
+  }
+  .LiveThoughtFlex {
+    column-gap: 4%;
+  }
+
+  .yearsScrollText::before {
+    left: -36px;
+    width: 93%;
+  }
+
+  .yearsScrollText.projectsScroll span {
+    font-size: 15px;
+  }
+
+  .lastSectionWhatMakes .FlexFirstcontentWhatMakesSection {
+    margin-top: 20px;
+  }
+
+  /* HomePage-Responsive */
+
+  /* AboutPage-Responsive */
+
+  .detailPageBanners {
+    margin-top: 60px;
+  }
+
+  .aboutuspagesection .detailPageBanners .secondHeadingText {
+    font-size: 70px;
+  }
+
+  .aboutuspagesection .detailPageBanners .subHeadingText {
+    line-height: 1.2;
+    margin-top: 26px;
+  }
+
+  .lowconatinersectionafterbanner {
+    margin: 0%;
+  }
+
+  .aboutuspagesection .contactPageAddress {
+    font-size: 16px;
+  }
+
+  .visitOurOFficetext {
+    font-size: 28px;
+    line-height: 1.1;
+  }
+  .seondbannerafterSectionMAINrow {
+    width: 199px;
+    height: 200px;
+  }
+  .gettknowHeading {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  .afterMainBG {
+    padding: 70px 0;
+  }
+  .underaboutusection .subHeadingText {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+
+  .shapeusflex {
+    width: 100%;
+  }
+
+  .shapeusconatiner {
+    height: 530px;
+  }
+
+  .shapeconatinerflex .secondHeadingText {
+    font-size: 51px;
+    line-height: 0.9;
+  }
+  .lowconatinersection {
+    margin: 0;
+    padding-top: 50px;
+  }
+
+  .unquiecardsection .subHeadingText {
+    font-size: 14px;
+  }
+
+  .timedelivery {
+    line-height: 0.9;
+    font-size: 28px;
+    width: 50%;
+  }
+
+  .aboutuspagesection .aboutustextcontent {
+    line-height: 1.2;
+    font-size: 15px;
+  }
+
+  .flexunderaboutsection {
+    margin-top: 30px;
+  }
+
+  .keystoneuniquesection {
+    height: 858px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .unquiecardsection img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .unquiecardsection {
+    padding: 20px;
+    padding-top: 15px;
+  }
+
+  .vissionmisiontext.secondHeadingText {
+    font-size: 88px;
+    top: 20px;
+    line-height: 80px;
+  }
+
+  .leftsidecontentsectionabout .subHeadingText {
+    font-size: 16px;
+  }
+
+  .visiiontexttransperant .subHeadingText {
+    font-size: 60px;
+    line-height: 47px;
+  }
+
+  .rightsidecontentsectionabout .subHeadingText {
+    font-size: 16px;
+  }
+
+  .leftsidecontentsectionabout {
+    left: 3%;
+    width: 33%;
+  }
+
+  .rightsidecontentsectionabout {
+    right: 1%;
+    width: 32%;
+  }
+  .aboutusvissionmission img {
+    width: 70% !important;
+  }
+  .visiiontexttransperant .subHeadingText {
+    font-size: 51px;
+    line-height: 39px;
+  }
+  .visionmissonrow {
+    padding: 100px 0;
+  }
+  .aboutusfoundermaincontent .secondHeadingText {
+    font-size: 75px;
+  }
+
+  .founderdetails .secondHeadingText {
+    font-size: 27px;
+  }
+
+  .founderflex {
+    margin-top: 15px;
+  }
+
+  .founderflexcontentpopup .foundernamepopup {
+    font-size: 45px;
+  }
+
+  .popupaboutusfounders ul li {
+    font-size: 17px;
+  }
+
+  .rectangleone {
+    width: 59%;
+  }
+
+  .founderdetails {
+    height: 100%;
+    padding-left: 45%;
+  }
+
+  .foundersbanner {
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .founderflex1 {
+    width: 56%;
+    padding-left: 0;
+  }
+
+  .founderimagee {
+    width: 119px;
+    top: -23px;
+  }
+
+  /* AboutPage-Responsive */
+
+  /* Ongoing Page */
+
+  .detailPageBanners h5 {
+    font-size: 70px;
+    line-height: 0.9;
+  }
+
+  .BreadCrumSection {
+    margin-top: 10px;
+  }
+
+  .detailPageBanners .subHeadingText {
+    font-size: 15px;
+  }
+
+  .margintopafterlist {
+    margin-top: -315px;
+  }
+  .onGoingProjectsLists h5 {
+    font-size: 30px;
+  }
+
+  .onGoingProjectsLists span {
+    font-size: 20px;
+  }
+
+  .buttononGoingProjectsLists {
+    font-size: 10px;
+    height: 32px;
+  }
+
+  .mainRowonGoingProjectsLists .onGoingProjectsLists {
+    padding-left: 20px;
+  }
+  .ongoingProjectsDiVMain {
+    margin-top: 60px;
+  }
+
+  .ongoingProjectsPage .afterMainBG {
+    padding: 50px 0;
+    height: 615px;
+  }
+
+  .contactPageAddress {
+    font-size: 16px;
+    width: 85%;
+  }
+
+  .ongoingprojectslist li {
+    font-size: 16px;
+
+    letter-spacing: 2px;
+
+    padding: 0 20px;
+  }
+
+  .ongoingprojectslist {
+    padding: 10px 35px;
+  }
+  /* Ongoing Page */
+
+  /* ContactUs */
+
+  .contactUsBannerPageBg {
+    background-position: center;
+  }
+
+  /* ContactUs */
+
+  /* joint-venture-Page */
+
+  .worthwithUsSection {
+    background-position: center;
+    height: 700px;
+  }
+
+  .JointVenturePage .formContactUsSectionFlex {
+    padding: 0px 0px;
+  }
+  .contactFormInputEach label {
+    font-size: 16px;
+  }
+
+  .contactFormInputEach input {
+    height: 50px;
+    font-size: 16px;
+  }
+
+  /* joint-venture-Page */
+
+  /* channel-partner-Page */
+
+  .channelPartnerFormSection {
+    column-gap: 70px;
+  }
+  .channelPartnerFormSection .contactFormInputEach input {
+    margin-top: 5px;
+    height: 47px;
+    font-size: 16px;
+  }
+
+  .channelPartnerMainSection .formContactUsSectionFlex {
+    width: 32%;
+  }
+
+  .channelPartnerFormSection .formChannelPartnerImage {
+    width: 49%;
+    height: 46%;
+  }
+  .channelPartnerFormSection .formMainStyleContactPage {
+    row-gap: 16px;
+  }
+
+  .channelPartnerFormFirst {
+    height: auto;
+    padding-top: 70px;
+  }
+  /* channel-partner-Page */
+
+  /* careers-Page */
+
+  .careersCards h4 {
+    font-size: 21px;
+    line-height: 1.1;
+  }
+
+  .careersCards img {
+    width: 50px;
+    height: 50px;
+  }
+  .careersCards {
+    padding: 33px 23px;
+  }
+
+  .careersCurrentOpenings {
+    height: 650px;
+    background-position: center;
+  }
+
+  .careersCards .subHeadingText {
+    margin-top: 6px;
+  }
+
+  .careerCardsFLex {
+    row-gap: 40px;
+    width: 97%;
+  }
+
+  .careersCurrentOpenings .contactFormInputEach button {
+    height: 52px;
+  }
+
+  .CarrePageMainSection .formContactUsSectionFlex {
+    padding-left: 20px;
+  }
+
+  /* careers-Page */
+
+  /* testimonial page */
+  .testimonalpagedisply {
+    padding: 0%;
+    row-gap: 50px;
+  }
+  .testimonalpagedisply .testimonalPersonImagediv::before {
+    right: -95px;
+    width: 142%;
+  }
+
+  .testimonalpagedisply .testimonalSliderborder {
+    width: 28%;
+  }
+
+  /* testimonial page */
+
+  /* NRI page */
+
+  .nridiscoversection .mainheadingText {
+    font-size: 18px;
+  }
+
+  .maincontentnriimage {
+    font-size: 23px;
+  }
+
+  .nridiscoversection {
+    padding-bottom: 100px;
+  }
+
+  .flexnriimage .subHeadingText {
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+  .nrilist li p {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+
+  .twofaqnriconatiner li:first-child {
+    margin-top: 10px;
+  }
+
+  .mainlistul {
+    padding-top: 12px;
+    padding-bottom: 15px;
+  }
+
+  .nrilistenquire button {
+    font-size: 14px;
+
+    height: 43px;
+    width: 191px;
+  }
+
+  .flexnriimage {
+    column-gap: 60px;
+  }
+
+  .nrifaq {
+    height: 650px;
+  }
+
+  .faqnriconatiner.active h4 {
+    font-size: 20px;
+  }
+
+  .faqnriconatiner.active .subHeadingText {
+    font-size: 14px;
+    margin-top: 11px;
+  }
+
+  .faqnriconatiner h4 {
+    font-size: 17px;
+  }
+
+  .faqnriconatiner {
+    padding: 16px;
+  }
+
+  .NriPagebutton button {
+    font-size: 14px;
+
+    height: 43px;
+    width: 191px;
+  }
+
+  .NriPagebutton {
+    margin-top: 30px;
+  }
+
+  .faqflexdiv {
+    column-gap: 29px;
+  }
+
+  .faqnriconatiner.active {
+    padding: 25px;
+  }
+
+  .faqnriconatiner h4::before {
+    font-size: 20px;
+  }
+
+  .faqnriconatiner.active h4::before {
+    font-size: 25px;
+  }
+
+  .nridiscoversection .secondHeadingText {
+    width: 75%;
+  }
+
+  .nrifaq .lowconatinersection {
+    padding-top: 0;
+  }
+
+  .detailPageBanners.NRIbaner .subHeadingText {
+    margin-top: 30px;
+  }
+
+  .NriPage .keystoneuniquesection {
+    height: 900px;
+  }
+
+  /* NRI page */
+
+  /* ProjectDetail Page  */
+
+  .spectraproject .secondHeadingText {
+    font-size: 75px;
+  }
+
+  .projectDetailIconSection .mainheadingText {
+    font-size: 20px;
+  }
+  .projectDetailPage .BreadCrumSection {
+    margin-top: 20px;
+  }
+
+  .ProjectDetailSectionContentSection {
+    max-width: 820px;
+  }
+
+  .projectNameDetailPage h5 {
+    font-size: 40px;
+  }
+
+  .projectNameDetailPage p {
+    font-size: 25px;
+  }
+
+  .projectDetailProjectName img {
+    width: 55px;
+  }
+
+  .projectNameDetailPage.projectdetailflex p {
+    font-size: 23px;
+    margin-bottom: 3px;
+  }
+
+  .mainconatinerprojectflex {
+    padding-top: 30px;
+    column-gap: 17px;
+  }
+
+  .projectdetailflex {
+    padding-bottom: 17px;
+    padding-top: 15px;
+  }
+
+  .nooffloors {
+    font-size: 19px;
+    margin-top: 9px;
+    margin-bottom: 11px;
+  }
+
+  .contentaminities {
+    font-size: 15px;
+    left: 12px;
+  }
+
+  .aminitessectionproject::before {
+    width: 104%;
+  }
+
+  .projectDetailPage .afterMainBG {
+    height: 400px;
+  }
+
+  .mainContainerDetailProject {
+    padding-bottom: 95px;
+  }
+
+  .downloadbrocedhurebutton .subHeadingText {
+    font-size: 14px;
+  }
+  .projectspecificationcard .projectspecicon {
+    width: 55px;
+    height: 55px;
+  }
+  .projectspeclist li {
+    font-size: 16px;
+  }
+
+  .projectaminitessection .subHeadingText:last-child {
+    font-size: 17px;
+  }
+
+  .projectspecname {
+    font-size: 24px;
+    margin-top: 14px;
+  }
+
+  .projectspecname::before {
+    height: 5px;
+    top: 34px;
+  }
+
+  .projectspecificationcard {
+    padding: 20px 25px;
+    height: 324px;
+  }
+
+  .accordion-section.open .locationadvantagesicon .nearbyloactions {
+    font-size: 23px;
+  }
+
+  .locationcontentside {
+    width: 39%;
+  }
+
+  .accordion-section.open .locationadvantagesicon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .accordion-section.open .locationadvantagesicon::before {
+    font-size: 33px;
+  }
+  .locationadvantagesicon .nearbyloactions {
+    font-size: 20px;
+  }
+
+  .widthprojectlocationshighlights {
+    padding: 90px 0;
+    margin-bottom: 0;
+  }
+
+  .projectlocationshighlights {
+    height: auto;
+    background-position: bottom;
+  }
+  .locationimageside {
+    width: 54%;
+  }
+  .locationcontentside ul li {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .locationadvantagesicon {
+    padding: 7px 0;
+  }
+
+  .locationcontentside .open ul {
+    padding-bottom: 10px;
+  }
+
+  .locationadvantagesicon img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .projectDetailIconSection img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .locationadvantagesicon::before {
+    top: 10px;
+    font-size: 24px;
+  }
+
+  .accordion-section.open .locationadvantagesicon {
+    padding: 10px 5px;
+  }
+
+  .overlayimageprojectdetail .subHeadingText {
+    font-size: 16px;
+  }
+  .projectconstructionupdates .secondHeadingText {
+    width: 41%;
+  }
+
+  .projectDetailPage .curlatedArrow img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .projectspecifiationclass {
+    height: 700px;
+  }
+
+  .projectsspccards {
+    margin-top: 50px;
+  }
+
+  .projectDetailPage .curlatedLine {
+    margin-top: 10px;
+  }
+  /* ProjectDetail Page  */
+}
+
+@media (max-width: 1100px) and (min-width: 900px) {
+  /* HomePage-Responsive */
+
+  .LiveThoughtFlex .secondHeadingText::before {
+    top: -17px;
+    right: -8px;
+    font-size: 23px;
+  }
+
+  .LiveThoughtFlex .projectsScroll .secondHeadingText::before {
+    top: -6px;
+    right: -11px;
+    font-size: 17px;
+  }
+  .secondHeadingText {
+    font-size: 40px;
+  }
+
+  .subHeadingText {
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  .contentHeadingBanner .secondHeadingText {
+    font-size: 75px;
+  }
+
+  .contentHeadingBanner {
+    height: 100%;
+    /* margin-top: 50px; */
+  }
+  .hamburgerflex {
+    column-gap: 4px;
+    padding: 5px 14px;
+  }
+  .HeaderMainSEC .headerLogoImg {
+    width: 140px;
+  }
+  .architectureWidth {
+    width: 30%;
+    position: relative;
+  }
+  .hamburgerIconImage {
+    width: 30px;
+    height: 30px;
+  }
+  .listHeaders {
+    column-gap: 18px;
+  }
+
+  .listHeaders li {
+    font-size: 14px;
+  }
+
+  .yearsScrollText h6 {
+    font-size: 70px;
+    line-height: 0.75;
+  }
+
+  .yearsScrollText span {
+    font-size: 22px;
+  }
+
+  .yearsScrollText.projectsScroll h6 {
+    font-size: 50px;
+    line-height: 0.75;
+  }
+
+  .whatsmakeSectionBG {
+    height: 550px;
+    background-size: contain;
+  }
+  .whatMakesHeadingMainRow {
+    padding-top: 40px;
+  }
+  .FirstcontentWhatMakesSection.lastSectionWhatMakes {
+    padding-top: 0px;
+  }
+
+  .FirstcontentWhatMakesSection {
+    column-gap: 31%;
+  }
+
+  .mainheadingText {
+    font-size: 15px;
+  }
+
+  .FirstcontentWhatMakesSection {
+    padding-top: 30px;
+  }
+
+  .videoBannerVideoFILE {
+    height: auto;
+  }
+
+  .ArchitectureContent .secondHeadingText {
+    font-size: 23px;
+    width: 285px;
+    top: 46%;
+    left: -45%;
+    text-align: center;
+  }
+
+  .archisecondHeadingText {
+    width: 63%;
+    left: 26%;
+    top: 19%;
+  }
+
+  .onGoingRightSection .mainheadingText {
+    line-height: 1.1;
+  }
+
+  .projectsNameOnGoing {
+    margin-bottom: 8px;
+    margin-top: 16px;
+  }
+
+  .projectsNameOnGoingmAINcONTAINER {
+    padding: 0 12px;
+    padding-right: 20px;
+  }
+
+  .onGoingViewProject {
+    margin-top: 3px;
+    font-size: 14px;
+  }
+
+  .archiBg {
+    height: 505px;
+  }
+  .projectsNameOnGoing::before {
+    bottom: -12px;
+  }
+  .archisecondHeadingText button {
+    margin-top: 10px;
+  }
+
+  .ongoingProjectSection {
+    height: 220px;
+  }
+
+  .onGoingMainSectionDiv:last-child .onGoingRightSection {
+    margin-top: 0;
+  }
+
+  .projectsNameOnGoing h5 {
+    font-size: 16px;
+  }
+
+  .projectsNameOnGoing span {
+    font-size: 12px;
+  }
+
+  .onGoingMainSectionDiv {
+    column-gap: 30px;
+  }
+
+  .onGoingRightSection .mainheadingText.onGoingSecondTextContainer {
+    width: 100%;
+    font-size: 20px;
+  }
+
+  .secondSliderContentSections .subHeadingText {
+    margin-top: 15px;
+    width: 100%;
+  }
+
+  .viewallprojectsongoing button {
+    font-size: 10px;
+    height: 34px;
+    width: 160px;
+  }
+
+  .viewallprojectsongoing {
+    margin-top: 15px;
+  }
+
+  .testimonalSliderContainer {
+    width: 66%;
+    margin-left: -3%;
+  }
+
+  .testimonalFullSection {
+    height: auto;
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .testimonalPersonImage {
+    width: 58px;
+    height: 58px;
+  }
+
+  .testimonalPersonImagediv::before {
+    right: -73px;
+    width: 99%;
+  }
+
+  .testimonalSectionName h4 {
+    font-size: 20.5px;
+  }
+
+  .testimonalSectionName p {
+    font-size: 16px;
+  }
+
+  .curtLivingSlider .curlatedLine {
+    gap: 150px;
+  }
+
+  .curlatedLine::before {
+    width: 29%;
+  }
+
+  .curtedSectionMainRowBg {
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    padding: 50px 0;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+  }
+
+  .curtsectionrow {
+    padding-top: 0;
+  }
+
+  .curtSliderLeftSection {
+    margin-left: 5%;
+  }
+
+  .testimonalContent {
+    padding: 20px;
+  }
+
+  .natureIntergreated {
+    font-size: 19px;
+  }
+  .natureIntergreated:nth-child(4) {
+    top: 67px;
+  }
+
+  .natureIntergreated:nth-child(2) {
+    top: 25px;
+  }
+
+  .curtSliderLeftSection .subHeadingText {
+    width: 100%;
+  }
+
+  .curtLivingSlider {
+    width: 57%;
+  }
+
+  .curatedSliderContainer {
+    width: 320px;
+    width: 90%;
+    margin: 0 20px;
+  }
+
+  .curatedSliderContainer::before {
+    left: -6px;
+  }
+
+  .schudleVisitsection {
+    padding: 60px 0;
+    background-repeat: no-repeat;
+    height: 600px;
+    background-size: cover;
+  }
+
+  .schdeuleMainrowsection {
+    padding-top: 10px;
+    padding-bottom: 43px;
+  }
+  .scheduleaVisitbutton button {
+    width: 142px;
+    height: 39px;
+
+    font-size: 12px;
+  }
+  .keystonesectionflexx {
+    margin-top: -22px;
+  }
+
+  .scheduleaVisitbutton {
+    margin-top: 13px;
+  }
+
+  .keystonesectionflexx .secondHeadingText {
+    font-size: 76px;
+    line-height: 60px;
+  }
+
+  .FooterInnerDiv::before {
+    left: -22px;
+  }
+
+  .footerListsul li {
+    font-size: 11px;
+    margin-top: 6px;
+  }
+  .FooterSplit {
+    column-gap: 5.5%;
+  }
+
+  .FooterMainDiv {
+    padding: 50px 0;
+  }
+
+  .footerListsul {
+    flex-direction: column;
+  }
+
+  .contentHeadingBanner .subHeadingText {
+    width: 60%;
+  }
+
+  .withTextContent {
+    font-size: 65px;
+  }
+
+  .footercopyRight {
+    margin-left: -1%;
+    margin-right: 1%;
+  }
+
+  .knowMoreButtonImage {
+    font-size: 13px;
+  }
+
+  .LiveThoughtFlex .LiveThoughtFlexImg {
+    width: 52%;
+  }
+  .LiveThoughtFlex {
+    column-gap: 4%;
+  }
+
+  .yearsScrollText::before {
+    left: -36px;
+    width: 93%;
+  }
+
+  .yearsScrollText.projectsScroll span {
+    font-size: 15px;
+  }
+
+  .lastSectionWhatMakes .FlexFirstcontentWhatMakesSection {
+    margin-top: 20px;
+  }
+
+  /* HomePage-Responsive */
+
+  /* AboutPage-Responsive */
+
+  .detailPageBanners {
+    margin-top: 60px;
+    background-position: center;
+  }
+
+  .aboutuspagesection .detailPageBanners .secondHeadingText {
+    font-size: 70px;
+  }
+
+  .aboutuspagesection .detailPageBanners .subHeadingText {
+    line-height: 1.2;
+    margin-top: 26px;
+  }
+
+  .lowconatinersectionafterbanner {
+    margin: 0%;
+  }
+
+  .aboutuspagesection .contactPageAddress {
+    font-size: 14px;
+  }
+
+  .visitOurOFficetext {
+    font-size: 23px;
+    line-height: 1.1;
+  }
+  .seondbannerafterSectionMAINrow {
+    width: 175px;
+    height: 175px;
+  }
+  .gettknowHeading {
+    font-size: 15px;
+    margin-bottom: 6px;
+  }
+
+  .afterMainBG {
+    padding: 70px 0;
+  }
+  .underaboutusection .subHeadingText {
+    font-size: 16px;
+    line-height: 1.2;
+  }
+  .underaboutusection {
+    padding-top: 20px;
+  }
+  .shapeusflex {
+    width: 88%;
+  }
+
+  .shapeusconatiner {
+    height: 430px;
+  }
+
+  .shapeconatinerflex .secondHeadingText {
+    font-size: 44px;
+    line-height: 0.9;
+  }
+  .lowconatinersection {
+    margin: 0;
+    padding-top: 50px;
+  }
+
+  .unquiecardsection .subHeadingText {
+    font-size: 12px;
+  }
+
+  .timedelivery {
+    line-height: 1;
+    font-size: 20px;
+    width: 50%;
+  }
+
+  .aboutuspagesection .aboutustextcontent {
+    line-height: 1.2;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .flexunderaboutsection {
+    margin-top: 30px;
+  }
+
+  .keystoneuniquesection {
+    height: 858px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .unquiecardsection img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .unquiecardsection {
+    padding: 20px;
+    padding-top: 15px;
+  }
+
+  .vissionmisiontext.secondHeadingText {
+    font-size: 73px;
+    top: 20px;
+    line-height: 73px;
+  }
+
+  .leftsidecontentsectionabout .subHeadingText {
+    font-size: 16px;
+  }
+
+  .visiiontexttransperant .subHeadingText {
+    font-size: 60px;
+    line-height: 47px;
+  }
+
+  .rightsidecontentsectionabout .subHeadingText {
+    font-size: 16px;
+  }
+
+  .leftsidecontentsectionabout {
+    left: 3%;
+    width: 40%;
+  }
+
+  .rightsidecontentsectionabout {
+    right: 1%;
+    width: 40%;
+  }
+  .aboutusvissionmission img {
+    width: 70% !important;
+  }
+  .visiiontexttransperant .subHeadingText {
+    font-size: 51px;
+    line-height: 39px;
+  }
+  .visionmissonrow {
+    padding: 100px 0;
+  }
+  .aboutusfoundermaincontent .secondHeadingText {
+    font-size: 75px;
+  }
+
+  .founderdetails .secondHeadingText {
+    font-size: 27px;
+  }
+
+  .founderflex {
+    margin-top: 15px;
+  }
+
+  .founderflexcontentpopup .foundernamepopup {
+    font-size: 38px;
+  }
+
+  .popupaboutusfounders ul li {
+    font-size: 16px;
+  }
+
+  .rectangleone {
+    width: 59%;
+    height: 93px;
+  }
+
+  .aboutuspagesection .detailPageBanners {
+    background-position: center;
+  }
+
+  .founderdetails {
+    height: 100%;
+    padding-left: 42%;
+  }
+
+  .foundersbanner {
+    height: 700px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .founderflex1 {
+    width: 56%;
+    padding-left: 0;
+  }
+
+  .founderimagee {
+    width: 103px;
+    top: -22px;
+  }
+
+  /* AboutPage-Responsive */
+
+  /* Ongoing Page */
+
+  .detailPageBanners h5 {
+    font-size: 70px;
+    line-height: 0.9;
+  }
+
+  .BreadCrumSection {
+    margin-top: 10px;
+  }
+
+  .detailPageBanners .subHeadingText {
+    font-size: 15px;
+  }
+
+  .margintopafterlist {
+    margin-top: -315px;
+  }
+  .onGoingProjectsLists h5 {
+    font-size: 28px;
+  }
+
+  .onGoingProjectsLists span {
+    font-size: 20px;
+  }
+
+  .FirstonGoingProjectsLists,
+  .secondonGoingProjectsLists,
+  .thirdonGoingProjectsLists {
+    margin-bottom: 28px;
+  }
+
+  .buttononGoingProjectsLists {
+    font-size: 10px;
+    height: 40px;
+  }
+
+  .mainRowonGoingProjectsLists .onGoingProjectsLists {
+    padding-left: 20px;
+  }
+  .ongoingProjectsDiVMain {
+    margin-top: 60px;
+  }
+
+  .ongoingProjectsPage .afterMainBG {
+    padding: 50px 0;
+    height: 615px;
+  }
+
+  .contactPageAddress {
+    font-size: 16px;
+    width: 85%;
+  }
+
+  .ongoingprojectslist li {
+    font-size: 16px;
+
+    letter-spacing: 2px;
+
+    padding: 0 20px;
+  }
+
+  .ongoingprojectslist {
+    padding: 10px 35px;
+  }
+  /* Ongoing Page */
+
+  /* ContactUs */
+
+  .contactUsBannerPageBg {
+    background-position: center;
+  }
+
+  .formContactUsSectionFlex {
+    width: 100%;
+  }
+
+  /* ContactUs */
+
+  /* joint-venture-Page */
+
+  .worthwithUsSection {
+    background-position: center;
+    height: 700px;
+  }
+
+  .JointVenturePage .formContactUsSectionFlex {
+    padding: 0px 0px;
+  }
+  .contactFormInputEach label {
+    font-size: 14px;
+  }
+
+  .contactFormInputEach input {
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .formMainStyleContactPage {
+    column-gap: 35px;
+    row-gap: 19px;
+  }
+
+  .contactFormInputEach button {
+    padding: 7px 4px;
+    font-size: 16px;
+
+    margin-top: 13px;
+  }
+
+  /* joint-venture-Page */
+
+  /* channel-partner-Page */
+
+  .channelPartnerFormSection {
+    column-gap: 70px;
+  }
+  .channelPartnerFormSection .contactFormInputEach input {
+    margin-top: 5px;
+    height: 47px;
+    font-size: 16px;
+  }
+
+  .channelPartnerMainSection .formContactUsSectionFlex {
+    width: 35%;
+  }
+
+  .channelPartnerFormSection .formChannelPartnerImage {
+    width: 53%;
+    height: 46%;
+  }
+  .channelPartnerFormSection .formMainStyleContactPage {
+    row-gap: 16px;
+  }
+
+  .channelPartnerFormFirst {
+    height: auto;
+    padding-top: 70px;
+  }
+  /* channel-partner-Page */
+
+  /* careers-Page */
+
+  .careersCards h4 {
+    font-size: 20px;
+    line-height: 1.1;
+  }
+
+  .careersCards img {
+    width: 40px;
+    height: 40px;
+  }
+  .careersCards {
+    padding: 30px 20px;
+    padding-top: 20px;
+  }
+
+  .careersCurrentOpenings {
+    height: 550px;
+    background-position: center;
+  }
+
+  .careersMainContainer {
+    margin-top: 50px;
+  }
+
+  .careersCards .subHeadingText {
+    margin-top: 6px;
+  }
+
+  .careerCardsFLex {
+    row-gap: 30px;
+    width: 100%;
+  }
+
+  .careersCurrentOpenings .contactFormInputEach button {
+    height: 52px;
+  }
+
+  .CarrePageMainSection .formContactUsSectionFlex {
+    padding-left: 20px;
+  }
+
+  .CarrePageMainSection .contactFormInputEach input {
+    height: 45px;
+    font-size: 16px;
+  }
+
+  /* careers-Page */
+
+  /* testimonial page */
+  .testimonalpagedisply {
+    padding: 0%;
+    row-gap: 45px;
+    column-gap: 3%;
+  }
+  .testimonalpagedisply .testimonalPersonImagediv::before {
+    right: -91px;
+    width: 135%;
+  }
+
+  .testimonalpagedisply .testimonalSliderborder {
+    width: 31%;
+  }
+
+  .testimonialpagebgcars {
+    padding: 70px 0;
+  }
+
+  /* testimonial page */
+
+  /* NRI page */
+
+  .nridiscoversection .mainheadingText {
+    font-size: 18px;
+  }
+
+  .maincontentnriimage {
+    font-size: 20px;
+  }
+
+  .nridiscoversection {
+    padding-bottom: 75px;
+  }
+
+  .flexnriimage .subHeadingText {
+    margin-top: 12px;
+    margin-bottom: 16px;
+  }
+  .nrilist li p {
+    font-size: 15px;
+    line-height: 1.3;
+  }
+
+  .firstulnri {
+    width: 65%;
+  }
+
+  .twoflexnriimage {
+    width: 38%;
+  }
+
+  .nrilistenquire {
+    margin-top: 10px;
+  }
+
+  .twofaqnriconatiner li:first-child {
+    margin-top: 10px;
+  }
+
+  .mainlistul {
+    padding-top: 12px;
+    padding-bottom: 15px;
+  }
+
+  .nrilistenquire button {
+    font-size: 14px;
+
+    height: 43px;
+    width: 191px;
+  }
+
+  .flexnriimage {
+    column-gap: 35px;
+  }
+
+  .nrifaq {
+    height: 590px;
+  }
+
+  .faqnriconatiner.active h4 {
+    font-size: 20px;
+  }
+
+  .faqnriconatiner.active .subHeadingText {
+    font-size: 14px;
+    margin-top: 11px;
+  }
+
+  .faqnriconatiner h4 {
+    font-size: 17px;
+  }
+
+  .faqnriconatiner {
+    padding: 16px;
+  }
+
+  .NriPagebutton button {
+    font-size: 14px;
+
+    height: 43px;
+    width: 191px;
+  }
+
+  .NriPagebutton {
+    margin-top: 30px;
+  }
+
+  .faqflexdiv {
+    column-gap: 29px;
+  }
+
+  .faqnriconatiner.active {
+    padding: 25px;
+  }
+
+  .faqnriconatiner h4::before {
+    font-size: 20px;
+  }
+
+  .faqnriconatiner.active h4::before {
+    font-size: 25px;
+  }
+
+  .nridiscoversection .secondHeadingText {
+    width: 75%;
+  }
+
+  .nrifaq .lowconatinersection {
+    padding-top: 0;
+  }
+
+  .detailPageBanners.NRIbaner .subHeadingText {
+    margin-top: 22px;
+  }
+
+  .NriPage .keystoneuniquesection {
+    height: 800px;
+  }
+
+  /* NRI page */
+
+  /* ProjectDetail Page  */
+
+  .spectraproject .secondHeadingText {
+    font-size: 70px;
+  }
+
+  .projectDetailIconSection .mainheadingText {
+    font-size: 16px;
+  }
+  .projectDetailPage .BreadCrumSection {
+    margin-top: 20px;
+  }
+
+  .ProjectDetailSectionContentSection {
+    max-width: 720px;
+  }
+
+  .projectNameDetailPage h5 {
+    font-size: 35px;
+  }
+
+  .projectNameDetailPage p {
+    font-size: 20px;
+    margin-top: 8px;
+  }
+
+  .projectDetailProjectName img {
+    width: 45px;
+  }
+
+  .projectNameDetailPage.projectdetailflex p {
+    font-size: 20px;
+    margin-bottom: 3px;
+  }
+
+  .mainconatinerprojectflex {
+    padding-top: 30px;
+    column-gap: 17px;
+  }
+
+  .projectdetailflex {
+    padding-bottom: 17px;
+    padding-top: 15px;
+  }
+
+  .nooffloors {
+    font-size: 17px;
+    margin-top: 8px;
+    margin-bottom: 9px;
+  }
+
+  .noffloorswidth {
+    padding-left: 40px;
+  }
+  .projectaminitessection {
+    height: 800px;
+  }
+
+  .contentaminities {
+    font-size: 15px;
+    left: 12px;
+  }
+
+  .aminitessectionproject::before {
+    width: 104%;
+  }
+
+  .projectDetailPage .afterMainBG {
+    height: 350px;
+  }
+
+  .mainContainerDetailProject {
+    padding-bottom: 95px;
+  }
+
+  .downloadbrocedhurebutton .subHeadingText {
+    font-size: 14px;
+  }
+  .projectspecificationcard .projectspecicon {
+    width: 55px;
+    height: 55px;
+  }
+  .projectspeclist li {
+    font-size: 14px;
+    line-height: 1.1;
+  }
+
+  .projectaminitessection .subHeadingText:last-child {
+    font-size: 17px;
+  }
+
+  .projectspecname {
+    font-size: 24px;
+    margin-top: 14px;
+  }
+
+  .projectspecname::before {
+    height: 5px;
+    top: 34px;
+  }
+
+  .projectspecificationcard {
+    padding: 20px 25px;
+    height: 324px;
+  }
+
+  .accordion-section.open .locationadvantagesicon .nearbyloactions {
+    font-size: 23px;
+  }
+
+  .locationcontentside {
+    width: 39%;
+  }
+
+  .accordion-section.open .locationadvantagesicon img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .accordion-section.open .locationadvantagesicon::before {
+    font-size: 33px;
+  }
+  .locationadvantagesicon .nearbyloactions {
+    font-size: 20px;
+  }
+
+  .widthprojectlocationshighlights {
+    padding: 90px 0;
+    margin-bottom: 0;
+  }
+
+  .projectlocationshighlights {
+    height: auto;
+    background-position: bottom;
+  }
+  .locationimageside {
+    width: 54%;
+  }
+  .locationcontentside ul li {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  .locationadvantagesicon {
+    padding: 7px 0;
+  }
+
+  .locationcontentside .open ul {
+    padding-bottom: 10px;
+  }
+
+  .locationadvantagesicon img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .projectDetailIconSection img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .locationadvantagesicon::before {
+    top: 10px;
+    font-size: 24px;
+  }
+
+  .accordion-section.open .locationadvantagesicon {
+    padding: 10px 5px;
+  }
+
+  .overlayimageprojectdetail .subHeadingText {
+    font-size: 16px;
+  }
+  .projectconstructionupdates .secondHeadingText {
+    width: 41%;
+  }
+
+  .projectDetailPage .curlatedArrow img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .projectaminitesslider {
+    width: 77%;
+  }
+
+  .projectspecifiationclass {
+    height: 700px;
+  }
+
+  .projectsspccards {
+    margin-top: 50px;
+  }
+
+  .projectDetailPage .curlatedLine {
+    margin-top: 0px;
+  }
+  /* ProjectDetail Page  */
+}
+/* resposive start */
+
+.marquee {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  font-size: 10rem;
+  color: #eae3e8;
+  font-weight: bold;
+}
+
+.marquee-track {
+  display: inline-flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.marquee-track .content {
+  display: flex;
+}
+
+.marquee-track span {
+  margin-right: 1rem;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.parallax {
+  position: relative;
+  overflow: hidden;
+}
+
+.scroller {
+  display: flex;
+  white-space: nowrap;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 2.25rem;
+  font-weight: bold;
+  letter-spacing: -0.02em;
+  filter: drop-shadow(0 1px 1px rgba(0, 0, 0, 0.1));
+}
+
+.scroller span {
+  flex-shrink: 0;
+}
+
+@media (min-width: 768px) {
+  .scroller {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+}
+
+/* TextImageSection.css - copy to same folder as component */
+

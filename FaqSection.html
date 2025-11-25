@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .btn-style700 {
+        position: relative;
+        border-color: #979695;
+        color: #979695;
+      }
+      .btn-style700::before,
+      .btn-style700::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-color: #dd6395;
+        border-radius: 5px;
+        border-style: solid;
+        transition: all 0.35s;
+        content: "";
+        z-index: 1;
+      }
+      .btn-style700::before {
+        width: 0;
+        height: 100%;
+        border-width: 1px 0 1px 0;
+      }
+      .btn-style700::after {
+        width: 100%;
+        height: 0;
+        border-width: 0 1px 0 1px;
+      }
+      .btn-style700:hover {
+        border-color: #dd6395;
+        color: #dd6395;
+      }
+      .btn-style700:hover::before {
+        width: 100%;
+        border-width: 1px 0 1px 0;
+      }
+      .btn-style700:hover::after {
+        height: 100%;
+        border-width: 0 1px 0 1px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="category">
+        <div>
+          <h1>Shadow</h1>
+        </div>
+        <div class="buttons-wrapper">
+          <div><a class="click-btn btn-style1" href="#">Hover me</a></div>
+          <div><a class="click-btn btn-style2" href="#">Hover me</a></div>
+          <div><a class="click-btn btn-style3" href="#">Hover me</a></div>
+          <div><a class="click-btn btn-style4" href="#">Hover me</a></div>
+          <div><a class="click-btn btn-style5" href="#">Hover me</a></div>
+        </div>
+      </div>
+      <div class="category">
+        <div>
+          <h1>Background</h1>
+        </div>
+        <div class="buttons-wrapper">
+          <div><a class="click-btn btn-style500" href="#">Hover me</a></div>
+          <div><a class="click-btn btn-style501" href="#">Hover me</a></div>
+          <div><a class="click-btn btn-style502" href="#">Hover me</a></div>
+          <div><a class="click-btn btn-style503" href="#">Hover me</a></div>
+          <div><a class="click-btn btn-style504" href="#">Hover me</a></div>
+          <div><a class="click-btn btn-style505" href="#">Hover me</a></div>
+          <div><a class="click-btn btn-style506" href="#">Hover me</a></div>
+          <div><a class="click-btn btn-style507" href="#">Hover me</a></div>
+          <div><a class="click-btn btn-style508" href="#">Hover me</a></div>
+          <div><a class="click-btn btn-style509" href="#">Hover me</a></div>
+          <div><a class="click-btn btn-style510" href="#">Hover me</a></div>
+          <div>
+            <a class="click-btn btn-style511" href="#"><span>Hover me</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="category">
+        <div>
+          <h1>Border</h1>
+        </div>
+        <div class="buttons-wrapper">
+          <div><a class="click-btn btn-style700" href="#">Hover me</a></div>
+          <div>
+            <a class="click-btn btn-style701" href="#"><span>Hover me</span></a>
+          </div>
+          <div><a class="click-btn btn-style702" href="#">Hover me</a></div>
+          <div>
+            <a class="click-btn btn-style703" href="#"><span>Hover me</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="category">
+        <div>
+          <h1>Other</h1>
+        </div>
+        <div class="buttons-wrapper">
+          <div>
+            <a class="click-btn btn-style900" href="#" data-hover="Click me!"
+              >Hover me</a
+            >
+          </div>
+          <div><a class="click-btn btn-style901" href="#">Hover me</a></div>
+          <div>
+            <a class="click-btn btn-style902" href="#">
+              <div class="block"><span></span></div>
+              <span data-name="hover">Hover</span>
+              <span data-name="me">me</span>
+            </a>
+          </div>
+          <div><a class="click-btn btn-style903" href="#">Hover me</a></div>
+          <div>
+            <a class="click-btn btn-style904" data-hover="Click me!" href="#">
+              <span>Hover me</span>
+            </a>
+          </div>
+          <div><a class="click-btn btn-style905" href="#">Hover me</a></div>
+          <div>
+            <a class="click-btn btn-style906" href="#" data-hover="Click me!"
+              >Hover me</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

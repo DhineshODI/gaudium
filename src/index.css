@@ -59,6 +59,25 @@
   font-style: normal;
 }
 
+/* Gaudium Fonts */
+@font-face {
+  font-family: "arial";
+  src: url("/Fonts/arial.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "arialblack";
+  src: url("/Fonts/ARIALBLACKITALIC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/* Gaudium Fonts */
+
 .rfm-marquee {
   z-index: 0 !important;
 }

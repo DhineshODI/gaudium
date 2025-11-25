@@ -1,0 +1,184 @@
+.mainheadingfont {
+  font-family: Arial Black;
+  font-weight: 400;
+  font-style: Italic;
+  font-size: 80px;
+  line-height: 100%;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+}
+
+/* Header-Css */
+.headerstyle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.65% 5%;
+}
+
+.headerdiv {
+  background-color: #fff;
+}
+
+.homepagebanner .headerdiv {
+  background-color: transparent;
+  z-index: 1;
+  position: relative;
+}
+
+.homepagebanner .headerstyle {
+  padding: 1% 5%;
+  padding-top: 1.5%;
+}
+
+/* Header-Css */
+
+/* Homepage-Css */
+.homepagebanner {
+  position: relative;
+}
+
+.homepagebanner .homepageherobanner {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.homepageherobanner img {
+  height: auto;
+  width: 100%;
+}
+
+.exploreacademey {
+  display: flex;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.exploreacademey button {
+  padding: 25px 49px;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-family: Arial;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: #fff;
+  backdrop-filter: blur(24px);
+}
+.exploreacademey button.activebutton {
+  background-color: #ffffff;
+  color: #be1e2d;
+  font-weight: 600;
+}
+
+.exploresectiondiv {
+  position: absolute;
+  bottom: 80px;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.homevideosection {
+}
+
+.videosectionmain .topleftheading {
+  /* color: #be1e2d; */
+}
+
+.topleftheading {
+  position: relative;
+  margin: 0;
+  -webkit-text-stroke: 1px #be1e2d;
+  color: transparent !important;
+}
+
+.topleftheading::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  color: #be1e2d;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: Arial Black;
+  animation: reveal 7s ease-in-out infinite;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+}
+
+@keyframes reveal {
+  0% {
+    width: 0%;
+  }
+  40% {
+    width: 100%;
+  }
+  60% {
+    width: 100%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.bottomrightheading {
+  position: relative;
+  margin: 0;
+  -webkit-text-stroke: 1px #005e96;
+  color: transparent !important;
+}
+
+.bottomrightheading::before {
+  font-family: Arial Black;
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: #005e96;
+  white-space: nowrap;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.4);
+  animation: revealRightToLeft 7s ease-in-out infinite;
+  clip-path: inset(0 0 0 100%); /* start hidden from right side */
+}
+
+@keyframes revealRightToLeft {
+  0% {
+    clip-path: inset(0 0 0 100%); /* fully hidden (right side) */
+  }
+  40% {
+    clip-path: inset(0 0 0 0); /* fully visible */
+  }
+  60% {
+    clip-path: inset(0 0 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.videosectionmain .topleftheading {
+  text-align: center;
+}
+
+.videosectionmain .topleftheading {
+  text-align: center;
+}
+
+.videosectionmain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homevideosection {
+  margin-top: 900px;
+}
+/* Homepage-Css */

@@ -26,28 +26,202 @@ export default function Homepage() {
         <div className="homevideosection">
           <div className="container max-w-7xl mx-auto px-4 ">
             <div className="videosectionmain">
-              <div>
-                <h2
-                  className="mainheadingfont topleftheading"
-                  data-text="Success You"
-                >
-                  Success You
+              <div className="firstheading">
+                <h2 class="mainheadingfont uppertextstyle">
+                  <span class="stroke">Success You</span>
+                  <span class="fill">Success You</span>
                 </h2>
               </div>
 
-              <div>
-                <h2
-                  className="mainheadingfont bottomrightheading"
-                  data-text="Can Measure"
-                >
-                  Can Measure
+              <div className="secondheading">
+                <h2 class="mainheadingfont bottomtextstyle">
+                  <span class="stroke">Can Measure</span>
+                  <span class="fill">Can Measure</span>
                 </h2>
+              </div>
+            </div>
+
+            <div className="paravideosection">
+              <p className="paragraphtext">
+                Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
+                pellentesq uescelerisque libero malesuada tristique Ultricies
+                leo viverra.
+              </p>
+            </div>
+
+            <div className="homepageaboutcompany">
+              <div className="flexhomepageabout">
+                <div className="widthhomepagecompanythere">
+                  <div className="homepagecompanythere">
+                    <h4 className="countingsection">30</h4>
+                    <p className="paragraphtext">common wealth games</p>
+                  </div>
+
+                  <div className="bottomlinesection"></div>
+
+                  <p className="secondheadingtext secondparacontent">
+                    <strong> Lorem ipsum dolor </strong>
+                    sit amet consectetur. Velit nullam tincidunt nibh morbi.
+                  </p>
+                </div>
+                <div className="widthhomepagecompanythere">
+                  <div className="homepagecompanythere">
+                    <h4 className="countingsection">25</h4>
+                    <p className="paragraphtext">world championships</p>
+                  </div>
+
+                  <div className="bottomlinesection"></div>
+
+                  <p className="secondheadingtext secondparacontent">
+                    <strong> Lorem ipsum dolor </strong>
+                    sit amet consectetur. Velit nullam tincidunt nibh morbi.
+                  </p>
+                </div>
+                <div className="widthhomepagecompanythere">
+                  <div className="homepagecompanythere">
+                    <h4 className="countingsection">30</h4>
+                    <p className="paragraphtext">National Games of India</p>
+                  </div>
+
+                  <div className="bottomlinesection"></div>
+
+                  <p className="secondheadingtext secondparacontent">
+                    <strong> Lorem ipsum dolor </strong>
+                    sit amet consectetur. Velit nullam tincidunt nibh morbi.
+                  </p>
+                </div>
+                <div className="widthhomepagecompanythere">
+                  <div className="homepagecompanythere">
+                    <h4 className="countingsection">30</h4>
+                    <p className="paragraphtext">common wealth games</p>
+                  </div>
+
+                  <div className="bottomlinesection"></div>
+
+                  <p className="secondheadingtext secondparacontent">
+                    <strong> Lorem ipsum dolor </strong>
+                    sit amet consectetur. Velit nullam tincidunt nibh morbi.
+                  </p>
+                </div>
+                <div className="widthhomepagecompanythere">
+                  <div className="homepagecompanythere">
+                    <h4 className="countingsection">30</h4>
+                    <p className="paragraphtext">common wealth games</p>
+                  </div>
+
+                  <div className="bottomlinesection"></div>
+
+                  <p className="secondheadingtext secondparacontent">
+                    <strong> Lorem ipsum dolor </strong>
+                    sit amet consectetur. Velit nullam tincidunt nibh morbi.
+                  </p>
+                </div>
+                <div className="widthhomepagecompanythere">
+                  <div className="homepagecompanythere">
+                    <h4 className="countingsection">30</h4>
+                    <p className="paragraphtext">common wealth games</p>
+                  </div>
+
+                  <div className="bottomlinesection"></div>
+
+                  <p className="secondheadingtext secondparacontent">
+                    <strong> Lorem ipsum dolor </strong>
+                    sit amet consectetur. Velit nullam tincidunt nibh morbi.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         {/* video-section */}
+
+        {/* Bg-Section */}
+
+        <div className="maingbsectionhome">
+          <div className="container max-w-7xl mx-auto px-4 ">
+            <div className="videosectionmain">
+              <div className="firstheading">
+                <h2 class="mainheadingfont uppertextstyle">
+                  <span class="stroke">India's first integrated</span>
+                  <span class="fill">India's first integrated</span>
+                </h2>
+              </div>
+
+              <div className="secondheading">
+                <h2 class="mainheadingfont bottomtextstyle">
+                  <span class="stroke">residential sports school</span>
+                  <span class="fill">residential sports school</span>
+                </h2>
+              </div>
+            </div>
+
+            <div className="paravideosection">
+              <p className="paragraphtext">
+                Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
+                pellentesque scelerisque libero malesuada tristique urna.
+                Ultricies leo viverra tincidunt pharetra pretium pulvinar orci.
+                In vel ac magna velit rhoncus nibh etiam. Scelerisque varius
+                pretium elitneque pellentesque Quis cursus elit rhoncus.
+              </p>
+            </div>
+
+            <div className="discovermorebutton">
+              <button className="secondheadingtext">Discover More</button>
+            </div>
+
+            <div>
+              <div className="expansivecampsflex">
+                <div className="expansivecards">
+                  <div className="expansivefirstsec">
+                    <h5>27</h5>
+                    <p className="secondheadingtext">Acres</p>
+                  </div>
+                  <h4 className="paragraphtext">Expansive Campus</h4>
+                  <p className="secondheadingtext avasttext">
+                    A vast space built for all-round sports excellence.
+                  </p>
+                </div>
+                <div className="expansivecards">
+                  <div className="expansivefirstsec">
+                    <h5>27</h5>
+                    <p className="secondheadingtext">Acres</p>
+                  </div>
+                  <h4 className="paragraphtext">Expansive Campus</h4>
+                  <p className="secondheadingtext avasttext">
+                    A vast space built for all-round sports excellence.
+                  </p>
+                </div>
+                <div className="expansivecards">
+                  <div className="expansivefirstsec">
+                    <h5>27</h5>
+                    <p className="secondheadingtext">Acres</p>
+                  </div>
+                  <h4 className="paragraphtext">Expansive Campus</h4>
+                  <p className="secondheadingtext avasttext">
+                    A vast space built for all-round sports excellence.
+                  </p>
+                </div>
+                <div className="expansivecards">
+                  <div className="expansivefirstsec">
+                    <h5>27</h5>
+                    <p className="secondheadingtext">Acres</p>
+                  </div>
+                  <h4 className="paragraphtext">Expansive Campus</h4>
+                  <p className="secondheadingtext avasttext">
+                    A vast space built for all-round sports excellence.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="bgimagesection">
+            <img src="/images/homepage/bghomepage.png" alt="" />
+          </div>
+        </div>
+
+        {/* Bg-Section */}
       </div>
     </>
   );

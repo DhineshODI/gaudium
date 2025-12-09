@@ -1,4 +1,9 @@
+import Eventcalender from "../Components/EventCalender";
 import Header from "../Components/Header";
+import ProgrammsBuild from "../Components/ProgramsBuild";
+import ShowcaseProject from "../Components/ShowcaseProject";
+import SportsSlider from "../Components/SportsSlider";
+import TheStrenthBehind from "../Components/TheStrengthBehind";
 
 export default function Homepage() {
   return (
@@ -27,16 +32,14 @@ export default function Homepage() {
           <div className="container max-w-7xl mx-auto px-4 ">
             <div className="videosectionmain">
               <div className="firstheading">
-                <h2 class="mainheadingfont uppertextstyle">
-                  <span class="stroke">Success You</span>
-                  <span class="fill">Success You</span>
+                <h2 className="stroke-fill-text mainheadingfont redcolorfont">
+                  Success You
                 </h2>
               </div>
 
               <div className="secondheading">
-                <h2 class="mainheadingfont bottomtextstyle">
-                  <span class="stroke">Can Measure</span>
-                  <span class="fill">Can Measure</span>
+                <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
+                  Can Measure
                 </h2>
               </div>
             </div>
@@ -142,16 +145,14 @@ export default function Homepage() {
           <div className="container max-w-7xl mx-auto px-4 ">
             <div className="videosectionmain">
               <div className="firstheading">
-                <h2 class="mainheadingfont uppertextstyle">
-                  <span class="stroke">India's first integrated</span>
-                  <span class="fill">India's first integrated</span>
+                <h2 className="stroke-fill-text mainheadingfont redcolorfont">
+                  India's first integrated
                 </h2>
               </div>
 
               <div className="secondheading">
-                <h2 class="mainheadingfont bottomtextstyle">
-                  <span class="stroke">residential sports school</span>
-                  <span class="fill">residential sports school</span>
+                <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
+                  residential sports school
                 </h2>
               </div>
             </div>
@@ -167,7 +168,7 @@ export default function Homepage() {
             </div>
 
             <div className="discovermorebutton">
-              <button className="secondheadingtext">Discover More</button>
+              <button className="buttonfont">Discover More</button>
             </div>
 
             <div>
@@ -220,6 +221,16 @@ export default function Homepage() {
             <img src="/images/homepage/bghomepage.png" alt="" />
           </div>
         </div>
+
+        {/* <SportsSlider/> */}
+
+        <ProgrammsBuild />
+
+        <Eventcalender />
+
+        <TheStrenthBehind />
+
+        <ShowcaseProject />
 
         {/* Bg-Section */}
       </div>

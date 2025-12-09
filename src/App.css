@@ -1,3 +1,50 @@
+.stroke-fill-text {
+  color: transparent;
+  width: 101%;
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  -webkit-background-clip: text;
+  animation: fillAnimation 1.5s ease forwards;
+}
+
+@keyframes fillAnimation {
+  0% {
+    background-size: 0% 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+.stroke-fill-text1 {
+  color: transparent;
+  width: 101%;
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 0% 100%;
+  -webkit-background-clip: text;
+  animation: fillAnimation 1.5s ease forwards;
+}
+
+@keyframes fillAnimation {
+  0% {
+    background-size: 0% 100%;
+  }
+  100% {
+    background-size: 100% 100%;
+  }
+}
+
+.redcolorfont {
+  -webkit-text-stroke: 2px #be1e2d;
+  background-image: linear-gradient(to right, #be1e2d 0%, #be1e2d 100%);
+}
+
+.bluecolorfont {
+  -webkit-text-stroke: 2px #005e96;
+  background-image: linear-gradient(to right, #005e96 0%, #005e96 100%);
+}
+
 .mainheadingfont {
   font-family: Arial Black;
   font-style: italic;
@@ -17,10 +64,18 @@
 }
 
 .secondheadingtext {
-  font-family: "arialblack";
+  font-family: "arial";
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
+  letter-spacing: 0px;
+}
+
+.buttonfont {
+  font-family: "arialbd";
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 100%;
   letter-spacing: 0px;
 }
 
@@ -331,7 +386,7 @@
   margin-top: 30px;
 }
 
-.discovermorebutton .secondheadingtext {
+.discovermorebutton .buttonfont {
   color: #be1e2d;
   text-transform: uppercase;
   text-decoration: underline;
@@ -431,6 +486,377 @@
   margin-top: -133px;
 }
 
+.strengthsectioncard {
+  background-color: #be1e2d;
+  width: 30%;
+  width: 100%;
+  width: 97%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-top: 30px;
+}
+.sportsnamestregnth {
+  font-family: Arial Black;
+  font-weight: 400;
+  font-style: Italic;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-left: 9px;
+}
+
+.slidermainstrength {
+  /* margin: auto 30px; */
+}
+
+.divsportsnamestregnth {
+  width: 101%;
+  display: flex;
+  justify-content: center;
+}
+
+.firststrengthsectioncard {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.roleinstrength {
+  font-family: Arial Black;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 50px;
+  line-height: 100%;
+  letter-spacing: -4px;
+  text-transform: uppercase;
+  width: 103%;
+}
+.whitecolorfont {
+  /* -webkit-text-stroke: 0.5px #fff; */
+  /* background-image: linear-gradient(to right, #fff 0%, #fff 100%); */
+  color: transparent;
+  -webkit-text-stroke: 0.5px #fff;
+
+  /* Prepare gradient but keep it hidden */
+  background-image: linear-gradient(to right, #fff 0%, #fff 100%);
+  background-size: 0% 100%;
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  transition: background-size 0.6s ease;
+}
+
+.strengthsectioncard:hover .whitecolorfont {
+  /* -webkit-text-stroke: 0.5px #fff; */
+  /* background-image: linear-gradient(to right, #fff 0%, #fff 100%); */
+
+  background-size: 100% 100%; /* fill animation */
+}
+
+.gameflexx {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* .sportsnamestregnthimage {
+  width: 80%;
+}
+
+.sportsnamestregnthimage img {
+  width: 100%;
+} */
+
+.nameoftheplayer {
+  font-family: Arial Black;
+  font-weight: 400;
+  font-style: Italic;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: -4px;
+  text-align: center;
+  text-transform: uppercase;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  padding-bottom: 25px;
+  color: #fff;
+  width: 80%;
+}
+
+.divnameoftheplayer {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  background: #be1e2d;
+  background: linear-gradient(180deg, rgba(190, 30, 45, 0) 0%, #be1e2d 75%);
+  height: 46%;
+}
+
+.sportsnamestregnthimage {
+  margin-top: -20px;
+}
+
+.thestrengthsectionslider
+  .slick-track
+  .slick-slide:nth-child(odd)
+  .strengthsectioncard {
+  background-color: #005e96;
+}
+.thestrengthsectionslider
+  .slick-track
+  .slick-slide:nth-child(odd)
+  .divnameoftheplayer {
+  background: linear-gradient(180deg, rgba(0, 94, 150, 0) 0%, #005e96 75%);
+}
+
+/* PROGRESS BAR */
+.strength-progressbar {
+  width: 40%;
+  height: 2px;
+  margin-top: 15px;
+  border-radius: 4px;
+  background: rgba(190, 30, 45, 0.3);
+}
+
+.strength-progressbar-fill {
+  height: 6px;
+  background: #be1e2d;
+  width: 0%;
+  transition: width 0.4s linear;
+  margin-top: -2px;
+}
+
+.buttonandarrowcontrol {
+  margin-top: 60px;
+}
+
+.progressflex {
+  display: flex;
+  justify-content: center;
+}
+.strength-controls {
+  display: flex;
+  justify-content: end;
+  column-gap: 10px;
+  margin-top: -35px;
+  align-items: center;
+}
+
+.strength-controls button {
+  cursor: pointer;
+}
+
+.thestrengthsectionslider {
+  padding-bottom: 50px;
+  padding-top: 70px;
+}
+
+.thestrengthsection {
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.ProgrammsBuildflexsection {
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+  margin-top: 60px;
+}
+
+.cardProgrammsBuildflexsection {
+  width: 30%;
+  /* background-color: #be1e2d; */
+}
+.cardProgrammsBuildflexsection {
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 476px;
+}
+.cardProgrammsBuildflexsection.firstimage1 {
+  background-image: url(/public/images/homepage/buildimage1.png);
+}
+
+.cardProgrammsBuildflexsection.secondimage1 {
+  background-image: url(/public/images/homepage/buildimage2.png);
+}
+.cardProgrammsBuildflexsection.thirdimage1 {
+  background-image: url(/public/images/homepage/buildimage3.png);
+}
+
+.ProgrammsBuildflexsection .roleinstrength {
+  color: #be1e2d;
+  padding-left: 40px;
+}
+
+.ProgrammsBuildflexsection .sportsnamestregnth {
+  color: #be1e2d;
+  padding-left: 50px;
+}
+.ProgrammsBuildflexsection .secondimage1 .roleinstrength {
+  color: #005e96;
+  padding-left: 40px;
+}
+
+.ProgrammsBuildflexsection .secondimage1 .sportsnamestregnth {
+  color: #005e96;
+  padding-left: 50px;
+}
+
+.contentbuildsection {
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0px;
+  color: #fff;
+  width: 44%;
+  margin-top: 50px;
+  padding-left: 40px;
+}
+
+.ProgrammsBuildflexsection .becomeachampion {
+  justify-content: flex-start;
+  padding-left: 40px;
+  margin-top: 20px;
+}
+
+.programsbuildsection {
+  padding-top: 100px;
+}
+
+.eventscalenderrow {
+  background-image: url("/public/images/homepage/events-news-banner.jpg");
+  height: 900px;
+  width: 100%;
+}
+
+.eventscalenderrow .whitefontcolor {
+  -webkit-text-stroke: 2px #fff;
+  background-image: linear-gradient(to right, #fff 0%, #fff 100%);
+  width: 105%;
+}
+
+.eventscalenderrow .whitecolortransperant {
+  color: transparent !important;
+  -webkit-text-stroke: 1px #fff;
+}
+
+.flexeventscalenderrow {
+  display: flex;
+  padding-top: 135px;
+}
+
+.flexeventscalenderrow .paravideosection .paragraphtext {
+  color: #fff;
+  width: 60%;
+}
+
+.flexeventscalenderrow .becomeachampion {
+  margin-top: 20px;
+}
+
+.showcasingcard .showcasigimg {
+  width: 390px;
+  height: 390px;
+}
+
+.showcasigimg-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.showcasigimg-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -17px;
+  width: calc(100% + -4px);
+  height: calc(100% + -2px);
+  background-image: url("/images/homepage/blue-background-line.svg");
+  /* background-image: url("/images/homepage/right-background-line.svg"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 100;
+}
+.showcasingcard p.secondheadingtext {
+  color: #333333;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+}
+
+.showcasingcard {
+  width: 86%;
+  /* width: 100%; */
+}
+
+.mainrowshowcasingcard {
+  display: flex !important;
+  justify-content: center;
+  margin-left: 48%;
+}
+
+.showcasingcard .mainheadingfont {
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -2.86px;
+  text-transform: uppercase;
+  color: #be1e2d;
+}
+
+.showcasingcontainer {
+  margin-right: 0;
+  padding-right: 0;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+.maincontainershowingcontent {
+  margin-top: 24px;
+}
+
+.showcaseprojectrow {
+  padding-bottom: 70px;
+}
+
+.slider-buttonsshowcaseproject {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  position: relative;
+}
+
+.left-btnshowcaseproject {
+  position: relative;
+}
+
+.slider-buttonsshowcaseproject::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 2px;
+  background: #be1e2d;
+  left: 38%;
+  top: 50%;
+}
+
+.slider-buttonsshowcaseproject::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 2px;
+  background: #be1e2d;
+  right: 38%;
+  top: 50%;
+}
 /* Homepage-Css */
 
 /* Footer CSS */
@@ -441,6 +867,8 @@
   background-blend-mode: multiply;
   background-size: cover;
   background-position: center;
+  padding-bottom: 70px;
+  padding-top: 90px;
 }
 
 .firsttextfooter {
@@ -465,14 +893,271 @@
 .becomeachampion {
   display: flex;
   justify-content: center;
+  margin-top: 40px;
 }
 
-.becomeachampion .secondheadingtext {
+.becomeachampion .buttonfont {
   font-weight: 900;
   font-size: 18px;
   line-height: 100%;
   text-transform: uppercase;
   color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 10px;
+}
+.footerendd .mainheadingfont {
+  font-size: 90px;
+  height: 120%;
+}
+
+.footerendd {
+  display: flex;
+  justify-content: center;
+  column-gap: 1%;
+  padding: 25px 0;
+  border: 2px solid rgba(255, 255, 255, 0.14);
+  border-left: 0;
+  border-right: 0;
+  margin-top: 70px;
+}
+
+.footerendd .footerfirstdiv {
+  width: 48%;
+  display: flex;
+  justify-content: center;
+}
+
+.footerfirstfont {
+  -webkit-text-stroke: 2px #ffffff;
+  background-image: linear-gradient(to right, #ffffff 0%, #ffffff 100%);
+  /* width: 94%; */
+  text-align: end;
+}
+
+.footersecondfont {
+  /* color: #ffffff; */
+  -webkit-text-stroke: 2px #fff;
+  background-image: linear-gradient(to right, transparent 0%, transparent 100%);
+}
+
+.footerlistpages li {
+  font-family: "arial";
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 11px;
+}
+
+.footerlistpages {
+  display: flex;
+  column-gap: 30px;
+  position: relative;
+}
+.footerlistpages::before {
+  /* content: "";
+  position: absolute;
+  height: 100%;
+  width: 2px;
+  background-color: #005e96; */
+}
+
+.footericonsflex {
+  display: flex;
+  column-gap: 24px;
+}
+.footericonsflex img {
+  width: 30px;
+  height: 30px;
+}
+.footerwithlogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 50px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.14);
+}
+
+.iconsline {
+  width: 1px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.footercopyrights .paragraphtext {
+  font-style: italic;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.6);
+  letter-spacing: 1px;
+  width: max-content;
+}
+
+.opendesignsflex {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.footercopyrights {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+  margin-top: 50px;
 }
 
 /* Footer CSS */
+
+/* AboutUsPage Css */
+
+.bannerimage {
+  /* height: 500px; */
+}
+
+.bannerimagesection {
+  width: 100%;
+  height: 600px;
+  background-image: url("/public/images/abouts/about-banner.jpg");
+}
+
+.aboutusbannersection .paragraphtext.contentbanner {
+  color: #fff;
+  width: 50%;
+  margin-top: 15px;
+}
+
+.bannercontentflex {
+  display: flex;
+}
+
+.breadcrumbstext {
+  font-family: Arial;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.breadcrumbstext span {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.aboutusbannersection {
+  height: 100%;
+}
+
+.bannercontentflex {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 100%;
+  padding-bottom: 100px;
+}
+
+.aboutusbannersection {
+}
+
+.bannercontentflex .mainheadingfont {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.bannercontentflex hr {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.4);
+  border: none;
+}
+
+.theheartcontent .oursection {
+  font-family: Arial Black;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #be1e2d;
+  padding-left: 5px;
+}
+.theheartcontent .visionsection {
+  font-family: Arial Black;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 100%;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #be1e2d;
+}
+
+.theheartcontentflex {
+  display: flex;
+  justify-content: center;
+  column-gap: 5%;
+  margin-top: 80px;
+}
+.theheartcontentflex .paragraphtext {
+  margin-top: 20px;
+}
+.firstsecheart {
+  width: 24%;
+  margin-top: 60px;
+}
+.thirdsecheart {
+  width: 24%;
+  margin-top: 60px;
+}
+
+.secondsecheart {
+  width: 35%;
+}
+
+.thirdsecheart .oursection {
+  text-align: end;
+}
+
+.thirdsecheart .visionsection {
+  text-align: end;
+}
+
+.thirdsecheart .paragraphtext {
+  text-align: end;
+}
+.highlightssection {
+  background-color: #be1e2d;
+}
+
+.whitefontcolor {
+  -webkit-text-stroke: 2px #fff;
+  background-image: linear-gradient(to right, #fff 0%, #fff 100%);
+  width: 105%;
+}
+
+.whitecolortransperant {
+  color: transparent !important;
+  -webkit-text-stroke: 1px #fff;
+}
+
+.highlightssection .paragraphtext {
+  color: #fff;
+}
+
+.highlightssection .headingtexthighlights.paragraphtext {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.highlightssection .contenthightlights.secondheadingtext {
+  font-weight: 500;
+  color: #fff;
+  margin-top: 5px;
+}
+
+/* AboutUsPage Css */

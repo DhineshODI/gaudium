@@ -3,6 +3,7 @@ import Header from "../Components/Header";
 import ProgrammsBuild from "../Components/ProgramsBuild";
 import ShowcaseProject from "../Components/ShowcaseProject";
 import SportsSlider from "../Components/SportsSlider";
+import SucessYouMore from "../Components/SucessYouMore";
 import TheStrenthBehind from "../Components/TheStrengthBehind";
 
 export default function Homepage() {
@@ -28,7 +29,7 @@ export default function Homepage() {
 
         {/* video-section */}
 
-        <div className="homevideosection">
+        {/* <div className="homevideosection">
           <div className="container max-w-7xl mx-auto px-4 ">
             <div className="videosectionmain">
               <div className="firstheading">
@@ -135,7 +136,9 @@ export default function Homepage() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+
+        <SucessYouMore/>
 
         {/* video-section */}
 

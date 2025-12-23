@@ -55,6 +55,10 @@
   text-transform: uppercase;
 }
 
+.lineheight120 {
+  line-height: 120%;
+}
+
 .paragraphtext {
   font-family: Arial;
   font-weight: 400;
@@ -243,10 +247,11 @@
 }
 
 .homevideosection {
-  margin-top: 900px;
+  margin-top: 830px;
   height: 1000px;
   display: flex;
   align-items: center;
+  background: #e5e5e5;
 }
 .firstheading {
   margin-right: 5%;
@@ -431,6 +436,10 @@
   color: #333333;
   width: 75%;
   margin-top: 11px;
+}
+
+.maingbsectionhome {
+  padding-top: 100px;
 }
 
 .expansivecampsflex {
@@ -1096,6 +1105,10 @@
   color: #be1e2d;
 }
 
+.heartofsection {
+  padding: 100px 0;
+}
+
 .theheartcontentflex {
   display: flex;
   justify-content: center;
@@ -1131,6 +1144,7 @@
 }
 .highlightssection {
   background-color: #be1e2d;
+  padding: 100px 0;
 }
 
 .whitefontcolor {
@@ -1160,4 +1174,544 @@
   margin-top: 5px;
 }
 
+.eachcardsection {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0;
+  row-gap: 0;
+  justify-content: center;
+}
+
+.firstcardhighlights {
+  width: 30%;
+  position: relative;
+  padding: 60px;
+}
+
+.firstcardhighlights::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  right: 0;
+}
+
+.firstcardhighlights::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.3);
+  right: 0;
+  bottom: 0;
+}
+
+.firstcardhighlights:nth-of-type(3)::before {
+  content: none;
+}
+.firstcardhighlights:nth-of-type(6)::before {
+  content: none;
+}
+.firstcardhighlights:nth-of-type(4)::after {
+  content: none;
+}
+
+.firstcardhighlights:nth-of-type(5)::after {
+  content: none;
+}
+
+.firstcardhighlights:nth-of-type(6)::after {
+  content: none;
+}
+
+.firstcardhighlights:nth-of-type(4) {
+  padding-bottom: 0;
+}
+.firstcardhighlights:nth-of-type(5) {
+  padding-bottom: 0;
+}
+.firstcardhighlights:nth-of-type(6) {
+  padding-bottom: 0;
+}
+
+.highlightssection .paravideosection .paragraphtext {
+  width: 40%;
+}
+
+.strengthaboutusflex {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1%;
+  row-gap: 15px;
+  margin-top: 70px;
+}
+
+.strengthaboutusflex .strengthsectioncard {
+  width: 32%;
+}
+
+.strengthaboutusflex .strengthsectioncard:nth-child(2) .divnameoftheplayer {
+  background: linear-gradient(180deg, rgba(0, 94, 150, 0) 0%, #005e96 75%);
+}
+
+.strengthaboutusflex .strengthsectioncard:nth-child(2) {
+  background-color: #005e96;
+}
+
+.strengthaboutusflex .strengthsectioncard:nth-child(5) .divnameoftheplayer {
+  background: linear-gradient(180deg, rgba(0, 94, 150, 0) 0%, #005e96 75%);
+}
+
+.strengthaboutusflex .strengthsectioncard:nth-child(5) {
+  background-color: #005e96;
+}
+
+.aboutusstrengthsecmain {
+  padding: 100px 0;
+}
+
 /* AboutUsPage Css */
+
+/* Our Programs Css */
+
+.bannerimagesection.ourprogramms {
+  background-image: url(/public/images/ourprograms/ourprograms-banner.jpg);
+}
+
+.programsbulidsection {
+  padding: 100px 0;
+}
+
+.programsbuiltcard {
+  background-image: url(/public/images/ourprograms/rookie-image.png);
+  height: 650px;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.programsbuiltcard.secondoneprogrammer {
+  background-image: url(/public/images/ourprograms/stellar-image.png);
+  justify-content: end;
+  margin-top: 50px;
+}
+
+.programsbuiltcard.thirdoneprogrammer {
+  background-image: url(/public/images/ourprograms/ProdigyImage.png);
+  margin-top: 50px;
+}
+
+.programsbuiltcard.secondoneprogrammer .porgramsofferedcontent {
+  margin-right: 100px;
+  margin-left: 0;
+}
+
+.porgramsofferedcontent .nameofthesportsprogramm {
+  font-style: Italic;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  line-height: 22px;
+  height: max-content;
+  /* color: #be1e2d; */
+  color: #fff;
+  font-weight: 800;
+  width: 55%;
+  margin-bottom: 0;
+  font-family: Arial Black;
+  font-size: 22px;
+}
+
+.porgramsofferedcontent {
+  width: 50%;
+  margin-left: 120px;
+  margin-top: 110px;
+}
+
+.porgramsofferedcontent .roleinstrength {
+  color: #fff;
+}
+
+.paragaoneprogram {
+  margin-top: 20px;
+  color: #fff;
+}
+
+.paragatwoprogram {
+  margin-top: 20px;
+  color: #fff;
+}
+
+/* Our Programs Css */
+
+/* Out Door Page Css */
+
+.bannerimagesection.outdoorsports {
+  background-image: url(/public/images/outdoorsports/outdoorsportsbanner.jpg);
+}
+
+.exploremorebutton.buttonfont {
+  color: #be1e2d;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+  font-weight: 900;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.outdoorgamesports {
+  font-family: Arial Black;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  color: #000;
+  transition: all 0.4s ease;
+}
+
+.outdoorsportscards {
+  width: 31%;
+}
+
+.outerdivcontainer {
+  display: flex;
+}
+
+.flexdiourprogrem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #dddddd;
+  border-top: none;
+  padding: 24px 24px 34px 24px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* background animation layer */
+.flexdiourprogrem::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #be1e2d;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 0.4s ease;
+  z-index: -1;
+}
+
+/* hover effect */
+.flexdiourprogrem:hover::before {
+  transform: scaleY(1);
+}
+
+/* optional: text color change */
+
+.flexdiourprogrem:hover .outdoorgamesports {
+  color: #ffffff;
+}
+
+.flexdiourprogrem:hover .secondheadingtext {
+  color: #ffffff;
+}
+
+.flexdiourprogrem:hover .exploremorebutton {
+  color: #ffffff;
+}
+
+.outdoorsportscardsimg {
+  width: 100%;
+}
+
+.flexdiourprogrem .secondheadingtext {
+  margin-top: 16px;
+  margin-bottom: 25px;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.cardsflexcontaineroutdoor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 15px;
+  row-gap: 50px;
+  margin-top: 70px;
+  margin-left: 6%;
+}
+
+.outdoorsportsmain {
+  padding: 100px 0;
+}
+/* Out Door Page Css */
+
+/* InDoor Page Css */
+
+.bannerimagesection.indoorsports {
+  background-image: url(/public/images/indoorsports/indoorsportsbanner.jpg);
+}
+
+/* InDoor Page Css */
+
+/* Best Perfomer Css */
+.bannerimagesection.bestperformer {
+  background-image: url(/public/images/bestperformer/bestperformerbanner.jpg);
+}
+
+.bestperformersucessmore .homevideosection {
+  height: auto;
+  padding: 100px 0 150px;
+  margin-top: 0;
+}
+
+.showcasingpeak {
+  padding: 100px 0;
+}
+
+.bestperformercard {
+  width: 25%;
+}
+
+.nameofthebestformercard {
+  font-style: Italic;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  line-height: 100%;
+  height: max-content;
+  color: #be1e2d;
+  font-weight: 800;
+  width: 50%;
+  margin-bottom: 15px;
+  font-family: Arial Black;
+  font-size: 30px;
+}
+
+/* Best Perfomer Css */
+
+/* DetailPage CSS */
+
+.detailpagebg.badminton {
+  background-image: url(/public/images/detail-page/badminton/main-banner.jpg);
+  height: 1090px;
+}
+
+.detailpagebg .videosectionmain {
+  padding-top: 100px;
+}
+
+.listfaq .paragraphtext {
+  text-transform: uppercase;
+}
+
+.listfaq {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainfaqcontainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 20px;
+  margin-top: 70px;
+}
+
+.containerFaq {
+  width: 950px;
+  border: 1px solid #cccccc;
+  padding: 12px 24px;
+}
+
+.activefaq {
+  background: rgba(190, 30, 45, 0.06);
+  border: 1px solid rgba(190, 30, 45, 0.4);
+  padding-bottom: 30px;
+}
+.activefaq .listfaq .paragraphtext {
+  color: #be1e2d;
+  font-weight: 600;
+}
+
+.faqimagearroww {
+  filter: grayscale(1);
+  transform: rotate(180deg);
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.activefaq .faqimagearroww {
+  transform: rotate(0deg);
+  filter: none;
+}
+
+.faq-answer {
+  list-style: disc;
+  padding-left: 30px;
+  padding-top: 8px;
+}
+
+.faq-answer li::marker {
+  display: none;
+  font-size: 12px;
+}
+
+.faqmaincontainer {
+  padding: 100px 0;
+}
+
+.eventsandtournamentsmain {
+  background-color: #be1e2d;
+  padding: 100px 0;
+}
+
+.eventsandtournamentsmain .paravideosection .paragraphtext {
+  width: 40%;
+  color: #fff;
+}
+
+.eventstournamnetcard {
+  background-color: #fff;
+  width: 100%;
+  padding: 40px;
+  min-height: 195px;
+}
+
+.eventstournamnetsname {
+  font-size: 30px;
+  line-height: 100%;
+  letter-spacing: -1px;
+}
+
+.eventstournamnetcard .secondheadingtext {
+  margin-top: 12px;
+  color: #333333;
+}
+
+.slidercardevents {
+  width: 97% !important;
+}
+
+.eventstournamentsmain {
+  margin-top: 50px;
+}
+
+.eventsandtournamentsmain .btn-prev img {
+  filter: brightness();
+}
+
+.eventsandtournamentsmain .strength-progressbar-fill {
+  background: white;
+}
+
+.eventsandtournamentsmain .strength-progressbar {
+  background: #fff;
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.marquee {
+  overflow: hidden;
+  width: 100%;
+  background: #fff;
+  margin-top: 70px;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 8px;
+  width: max-content;
+  animation: scrollmarquee 100s linear infinite;
+}
+
+.marquee-track img {
+  height: 300px;
+}
+
+@keyframes scrollmarquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee1 {
+  overflow: hidden;
+  width: 100%;
+  background: #fff;
+}
+
+.marquee1-track {
+  display: flex;
+  gap: 8px;
+  width: max-content;
+  animation: marquee1-scroll 100s linear infinite;
+}
+
+.marquee1-track img {
+  height: 300px;
+}
+
+@keyframes marquee1-scroll {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.marqueesectionmain {
+  padding: 100px 0;
+  background-color: rgba(0, 94, 150, 0.04);
+}
+
+.facilityapprovedbg {
+  background: #be1e2d;
+}
+
+.sportstitleslider {
+  font-style: Italic;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  line-height: 22px;
+  color: #fff;
+  font-weight: 800;
+  font-family: Arial Black;
+  padding-left: 10px;
+}
+
+.flexsliderdetail {
+  display: flex;
+  align-items: center;
+  column-gap: 4%;
+}
+
+.sportsheadingg {
+  color: #fff;
+  padding-left: 0px;
+}
+
+.contentcolortext {
+  color: #fff;
+  margin-top: 20px;
+}
+
+.imagesliderimage {
+  width: 60%;
+}
+
+.sliderprojectdetail {
+  width: 40%;
+}
+
+/* DetailPage CSS */

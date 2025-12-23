@@ -1,3 +1,4 @@
+import AboutusTheStrengthSection from "../Components/AboutUsTheStrengthBehind";
 import Header from "../Components/Header";
 
 export default function AboutUsPage() {
@@ -30,7 +31,7 @@ export default function AboutUsPage() {
 
       {/* The Heart Of Section */}
 
-      <div>
+      <div className="heartofsection">
         <div className="videosectionmain">
           <div className="firstheading">
             <h2 className="stroke-fill-text mainheadingfont redcolorfont">
@@ -109,8 +110,63 @@ export default function AboutUsPage() {
         </div>
 
         <div className="container max-w-7xl mx-auto px-4">
-          <div className="highlightssection">
-            <div>
+          <div className="eachcardsection">
+            <div className="firstcardhighlights">
+              <img src="/images/abouts/aboutus-icon.svg" alt="" />
+              <h4 className="headingtexthighlights paragraphtext">
+                Lorem ipsum dolor
+              </h4>
+              <p className="contenthightlights secondheadingtext">
+                Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
+                pellentesq uescelerisque libero malesuada tristique Ultricies
+                leo viverra.
+              </p>
+            </div>
+            <div className="firstcardhighlights">
+              <img src="/images/abouts/aboutus-icon.svg" alt="" />
+              <h4 className="headingtexthighlights paragraphtext">
+                Lorem ipsum dolor
+              </h4>
+              <p className="contenthightlights secondheadingtext">
+                Lorem ipsum dolor sit amet consecteur. Sagi ttis blandit diam
+                sed vulputate ut fermentum sed cursus. Orci enim amet sagittis
+                lacinia ut Lectus sit.
+              </p>
+            </div>
+            <div className="firstcardhighlights">
+              <img src="/images/abouts/aboutus-icon.svg" alt="" />
+              <h4 className="headingtexthighlights paragraphtext">
+                Lorem ipsum dolor
+              </h4>
+              <p className="contenthightlights secondheadingtext">
+                Lorem ipsum dolor sit amet consecteur. Sagi ttis blandit diam
+                sed vulputate ut fermentum sed cursus. Orci enim amet sagittis
+                lacinia ut Lectus sit.
+              </p>
+            </div>
+            <div className="firstcardhighlights">
+              <img src="/images/abouts/aboutus-icon.svg" alt="" />
+              <h4 className="headingtexthighlights paragraphtext">
+                Lorem ipsum dolor
+              </h4>
+              <p className="contenthightlights secondheadingtext">
+                Lorem ipsum dolor sit amet consecteur. Sagi ttis blandit diam
+                sed vulputate ut fermentum sed cursus. Orci enim amet sagittis
+                lacinia ut Lectus sit.
+              </p>
+            </div>
+            <div className="firstcardhighlights">
+              <img src="/images/abouts/aboutus-icon.svg" alt="" />
+              <h4 className="headingtexthighlights paragraphtext">
+                Lorem ipsum dolor
+              </h4>
+              <p className="contenthightlights secondheadingtext">
+                Lorem ipsum dolor sit amet consecteur. Sagi ttis blandit diam
+                sed vulputate ut fermentum sed cursus. Orci enim amet sagittis
+                lacinia ut Lectus sit.
+              </p>
+            </div>
+            <div className="firstcardhighlights">
               <img src="/images/abouts/aboutus-icon.svg" alt="" />
               <h4 className="headingtexthighlights paragraphtext">
                 Lorem ipsum dolor
@@ -126,6 +182,12 @@ export default function AboutUsPage() {
       </div>
 
       {/* Highlights That Inspire */}
+
+      {/* The Strength Slider */}
+
+      <AboutusTheStrengthSection />
+
+      {/* The Strength Slider */}
     </>
   );
 }

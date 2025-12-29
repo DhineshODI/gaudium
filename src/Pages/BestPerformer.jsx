@@ -1,5 +1,7 @@
 import Header from "../Components/Header";
+import JourneyInPictures from "../Components/JourneyInPictures";
 import SucessYouMore from "../Components/SucessYouMore";
+import VoicesofChampion from "../Components/VoicesofChampion";
 
 export default function BestPerformerPage() {
   return (
@@ -59,13 +61,35 @@ export default function BestPerformerPage() {
 
           <div>
             <div className="bestperformercard">
-              <img src="/images/bestperformer/swarna.jpg" alt="" />
+              <img
+                className="cardimageperformersec"
+                src="/images/bestperformer/swarna.jpg"
+                alt=""
+              />
 
-              <p className="nameofthebestformercard">swara kyatham</p>
+              <section className="gradientlayerdiv">
+                <p className="nameofthebestformercard">swara kyatham</p>
+                <div className="hovercontent">
+                  <p className="description">
+                    Lorem ipsum dolor sit amet consectetur. Leo a enim phasellus
+                    lectus tellus vitae mauris lacus. Ipsum interdum id orci
+                    eros amet mattis consequat. Dapibus.
+                  </p>
+                  <p className="description">
+                    Lorem ipsum dolor sit amet consectetur. Leo a enim phasellus
+                    lectus tellus vitae mauris lacus. Ipsum interdum id orci
+                    eros amet mattis consequat. Dapibus.
+                  </p>
+                </div>
+              </section>
             </div>
           </div>
         </div>
       </div>
+
+      <VoicesofChampion />
+
+      <JourneyInPictures/>
     </>
   );
 }

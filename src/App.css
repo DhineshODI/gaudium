@@ -833,7 +833,7 @@
 }
 
 .showcaseprojectrow {
-  padding-bottom: 70px;
+  padding: 100px 0;
 }
 
 .slider-buttonsshowcaseproject {
@@ -1478,6 +1478,7 @@
 
 .bestperformercard {
   width: 25%;
+  position: relative;
 }
 
 .nameofthebestformercard {
@@ -1486,13 +1487,59 @@
   text-transform: uppercase;
   line-height: 100%;
   height: max-content;
-  color: #be1e2d;
+  color: #fff;
   font-weight: 800;
   width: 50%;
-  margin-bottom: 15px;
+  margin-bottom: 24px;
   font-family: Arial Black;
   font-size: 30px;
+  text-align: center;
 }
+
+.bestperformercard .cardimageperformersec {
+  width: 100%;
+  display: block;
+}
+
+.gradientlayerdiv {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  height: 40%;
+  align-items: end;
+  flex-direction: column;
+  align-items: center;
+  height: 45%;
+  background: linear-gradient(
+    180deg,
+    rgba(190, 30, 45, 0) 10.62%,
+    #be1e2d 67.41%
+  );
+  overflow: hidden;
+}
+
+/* hidden hover content */
+.hovercontent {
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+  text-align: center;
+  color: #fff;
+  /* display: none; */
+}
+
+/* hover effect */
+.bestperformercard:hover .gradientlayerdiv {
+  height: 70%;
+  height: 100%;
+}
+
+.bestperformercard:hover .hovercontent {
+  transform: translateY(0);
+}
+
+/* optional text styles */
 
 /* Best Perfomer Css */
 
@@ -1677,6 +1724,7 @@
 
 .facilityapprovedbg {
   background: #be1e2d;
+  padding: 100px 0;
 }
 
 .sportstitleslider {
@@ -1692,8 +1740,9 @@
 
 .flexsliderdetail {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   column-gap: 4%;
+  margin-top: 70px;
 }
 
 .sportsheadingg {
@@ -1711,7 +1760,231 @@
 }
 
 .sliderprojectdetail {
-  width: 40%;
+  width: 33%;
 }
 
+.buttoncontroldetailpage {
+  position: relative;
+}
+
+.buttoncontroldetailpage .buttonandarrowcontrol {
+  margin-top: 0px;
+}
+
+.buttoncontroldetailpage .strength-progressbar-fill {
+  background: white;
+}
+
+.buttoncontroldetailpage .buttonandarrowcontrol {
+  position: absolute;
+  right: 3%;
+  bottom: 0%;
+  z-index: 10000;
+  width: 100%;
+  width: 60%;
+}
+
+.buttoncontroldetailpage .progressflex {
+  justify-content: end;
+}
+
+.buttoncontroldetailpage .strength-progressbar {
+  position: absolute;
+  right: 16%;
+  bottom: 150%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.firstclasssportstext {
+  margin-top: 50px;
+}
 /* DetailPage CSS */
+
+.ts-section-container {
+  width: 100%;
+  max-width: 100vw;
+  overflow-x: hidden;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.ts-carousel-wrapper {
+  width: 100%;
+  max-width: 1200px;
+  height: 450px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ts-track {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px; /* Gives the 3D depth */
+}
+
+.ts-card {
+  position: absolute;
+  width: 320px;
+  height: 430px;
+  background: #fff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  transition: all 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.ts-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Red Overlay */
+.ts-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(190, 30, 45, 0.4);
+  pointer-events: none;
+  transition: opacity 0.5s;
+}
+
+/* Position States */
+.ts-card.ts-center {
+  z-index: 10;
+  transform: scale(1.1) translateZ(0);
+}
+.ts-card.ts-center::after {
+  opacity: 0;
+}
+
+.ts-card.ts-left-1 {
+  z-index: 5;
+  /* transform: translateX(-240px) scale(0.9) translateZ(-100px); */
+  transform: translateX(-260px) translateY(2px) scale(1.05) translateZ(-76px);
+}
+
+.ts-card.ts-left-2 {
+  z-index: 2;
+  /* transform: translateX(-440px) scale(0.8) translateZ(-200px); */
+  transform: translateX(-500px) scale(0.95) translateZ(-147px);
+}
+
+.ts-card.ts-right-1 {
+  z-index: 5;
+  /* transform: translateX(240px) scale(0.9) translateZ(-100px); */
+  transform: translateX(260px) translateY(2px) scale(1.05) translateZ(-100px);
+}
+
+.ts-card.ts-right-2 {
+  z-index: 2;
+  transform: translateX(440px) scale(0.8) translateZ(-200px);
+  transform: translateX(500px) scale(0.95) translateZ(-147px);
+}
+
+.ts-card.ts-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.5);
+}
+
+/* Arrows & UI */
+.ts-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(8, 42, 123, 0.8);
+  color: white;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: none;
+  z-index: 30;
+  cursor: pointer;
+  display: none;
+}
+
+.ts-left {
+  left: 20px;
+}
+.ts-right {
+  right: 20px;
+}
+
+.ts-info {
+  text-align: center;
+  margin-top: 30px;
+  transition: opacity 0.3s;
+}
+.ts-member-name {
+  font-size: 2rem;
+  margin: 0;
+}
+.ts-member-role {
+  font-size: 1.1rem;
+  color: #be1e2d;
+  font-weight: bold;
+}
+
+.ts-dots {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.ts-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+}
+.ts-dot.ts-active {
+  background: #be1e2d;
+}
+
+.voiceofchampionshipbg {
+  background: #be1e2d;
+  padding: 100px 0;
+}
+
+.youtubevoiceicon {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+}
+
+.voiceofchampionshipbg .paravideosection .paragraphtext {
+  width: 40%;
+  color: #fff;
+}
+
+.voiceofchampionshipbg .strength-progressbar-fill {
+  background: white;
+}
+
+.voiceofchampionshipbg .strength-progressbar {
+  background: #fff;
+  background: rgba(255, 255, 255, 0.4);
+}
+.voiceofchampionshipbg .buttonandarrowcontrol {
+  margin-top: 0px;
+}
+
+.journeyinpictures .stroke-fill-text {
+  width: 104%;
+}
+
+.journeyinpictures .paravideosection .paragraphtext {
+  width: 40%;
+  text-align: center;
+}

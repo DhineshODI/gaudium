@@ -14,7 +14,7 @@ export default function DetailPage() {
       <DetailPageBanner />
       <SecondSectionDetail />
       <ExperTeamDetail />
-      <FacilitythatInspire/>
+      <FacilitythatInspire />
       <FaqDetail />
       <EventsandTournaments />
       <JourneyDetail />

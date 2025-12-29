@@ -5,6 +5,7 @@ import ShowcaseProject from "../Components/ShowcaseProject";
 import SportsSlider from "../Components/SportsSlider";
 import SucessYouMore from "../Components/SucessYouMore";
 import TheStrenthBehind from "../Components/TheStrengthBehind";
+import VoicesofChampion from "../Components/VoicesofChampion"
 
 export default function Homepage() {
   return (
@@ -138,7 +139,7 @@ export default function Homepage() {
           </div>
         </div> */}
 
-        <SucessYouMore/>
+        <SucessYouMore />
 
         {/* video-section */}
 
@@ -232,6 +233,8 @@ export default function Homepage() {
         <Eventcalender />
 
         <TheStrenthBehind />
+
+        <VoicesofChampion />
 
         <ShowcaseProject />
 

@@ -69,19 +69,20 @@ export default function FacilitythatInspire() {
   return (
     <>
       <div className="facilityapprovedbg">
-        <div className="videosectionmain">
-          <div className="firstheading">
-            <h2 className="stroke-fill-text mainheadingfont whitefontcolor">
-              Facilities
-            </h2>
-          </div>
-          <div className="secondheading">
-            <h2 className="stroke-fill-text1 mainheadingfont whitecolortransperant">
-              That Inspire
-            </h2>
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="videosectionmain">
+            <div className="firstheading">
+              <h2 className="stroke-fill-text mainheadingfont whitefontcolor">
+                Facilities
+              </h2>
+            </div>
+            <div className="secondheading">
+              <h2 className="stroke-fill-text1 mainheadingfont whitecolortransperant">
+                That Inspire
+              </h2>
+            </div>
           </div>
         </div>
-
         <div className="container max-w-7xl mx-auto px-4">
           <div className="buttoncontroldetailpage">
             <Slider ref={sliderRef} {...settings}>

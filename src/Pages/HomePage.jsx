@@ -1,11 +1,12 @@
 import Eventcalender from "../Components/EventCalender";
 import Header from "../Components/Header";
+import OutDoorSportsFunction from "../Components/OutDoorSports";
 import ProgrammsBuild from "../Components/ProgramsBuild";
 import ShowcaseProject from "../Components/ShowcaseProject";
 import SportsSlider from "../Components/SportsSlider";
 import SucessYouMore from "../Components/SucessYouMore";
 import TheStrenthBehind from "../Components/TheStrengthBehind";
-import VoicesofChampion from "../Components/VoicesofChampion"
+import VoicesofChampion from "../Components/VoicesofChampion";
 
 export default function Homepage() {
   return (
@@ -227,6 +228,8 @@ export default function Homepage() {
         </div>
 
         {/* <SportsSlider/> */}
+
+        <OutDoorSportsFunction/>
 
         <ProgrammsBuild />
 

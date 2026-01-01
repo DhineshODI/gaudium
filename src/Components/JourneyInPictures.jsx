@@ -16,18 +16,21 @@ export default function JourneyInPictures() {
   return (
     <>
       <div className="marqueesectionmain journeyinpictures">
-        <div className="videosectionmain">
-          <div className="firstheading">
-            <h2 className="stroke-fill-text mainheadingfont redcolorfont">
-              Journey
-            </h2>
-          </div>
-          <div className="secondheading">
-            <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
-              in Pictures
-            </h2>
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="videosectionmain">
+            <div className="firstheading">
+              <h2 className="stroke-fill-text mainheadingfont redcolorfont">
+                Journey
+              </h2>
+            </div>
+            <div className="secondheading">
+              <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
+                in Pictures
+              </h2>
+            </div>
           </div>
         </div>
+
         <div className="paravideosection">
           <p className="paragraphtext">
             Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque

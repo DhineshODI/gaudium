@@ -66,16 +66,18 @@ const TeamSlider = () => {
 
   return (
     <div className="voiceofchampionshipbg">
-      <div class="videosectionmain">
-        <div class="firstheading">
-          <h2 class="stroke-fill-text mainheadingfont whitefontcolor">
-            Voices of
-          </h2>
-        </div>
-        <div class="secondheading">
-          <h2 class="stroke-fill-text1 mainheadingfont whitecolortransperant">
-            our Champions
-          </h2>
+      <div className="container max-w-7xl mx-auto px-4">
+        <div class="videosectionmain">
+          <div class="firstheading">
+            <h2 class="stroke-fill-text mainheadingfont whitefontcolor">
+              Voices of
+            </h2>
+          </div>
+          <div class="secondheading">
+            <h2 class="stroke-fill-text1 mainheadingfont whitecolortransperant">
+              our Champions
+            </h2>
+          </div>
         </div>
       </div>
 

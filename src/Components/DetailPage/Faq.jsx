@@ -99,16 +99,18 @@ export default function FaqDetail() {
   return (
     <>
       <div className="faqmaincontainer">
-        <div className="videosectionmain">
-          <div className="firstheading">
-            <h2 className="stroke-fill-text mainheadingfont redcolorfont">
-              Why Badminton
-            </h2>
-          </div>
-          <div className="secondheading">
-            <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
-              Training Matters
-            </h2>
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="videosectionmain">
+            <div className="firstheading">
+              <h2 className="stroke-fill-text mainheadingfont redcolorfont">
+                Why Badminton
+              </h2>
+            </div>
+            <div className="secondheading">
+              <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
+                Training Matters
+              </h2>
+            </div>
           </div>
         </div>
 
@@ -123,7 +125,8 @@ export default function FaqDetail() {
         <div className="container max-w-7xl mx-auto px-4 ">
           <div className="mainfaqcontainer">
             {faqcontents.map((item, index) => (
-              <div key={index}
+              <div
+                key={index}
                 onClick={() => faqopen(item.id)}
                 className={`cursor-pointer containerFaq faq-arrowimage ${
                   openFaqId === item.id ? "activefaq" : ""

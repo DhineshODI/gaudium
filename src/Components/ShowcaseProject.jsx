@@ -11,6 +11,7 @@ export default function ShowcaseProject() {
     slidesToShow: 3.5,
     slidesToScroll: 1,
     arrows: false,
+    loop:false,
 
     responsive: [
       {
@@ -23,12 +24,97 @@ export default function ShowcaseProject() {
       },
     ],
   };
-  const showCaseData = [
+
+  const redsvg = (
+    <svg
+      class="custom-svg svgshowcard "
+      width="402"
+      height="424"
+      viewBox="0 0 402 424"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        class="bg-path"
+        d="M400.297 1.5L346.716 422.5H1.69531L53.3105 1.5H400.297Z"
+        stroke="#BE1E2D"
+        stroke-width="3"
+      />
+
+      <path
+        class="trapezoid-path"
+        d="M400.297 1.5L346.716 422.5H1.69531L53.3105 1.5H400.297Z"
+        stroke="#BE1E2D"
+        stroke-width="3"
+      />
+    </svg>
+  );
+
+  const bluesvg = (
+    <svg
+      class="custom-svg svgshowcard "
+      width="402"
+      height="424"
+      viewBox="0 0 402 424"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        class="bg-path"
+        d="M400.297 1.5L346.716 422.5H1.69531L53.3105 1.5H400.297Z"
+        stroke="#005E96"
+        stroke-width="3"
+      />
+
+      <path
+        class="trapezoid-path"
+        d="M400.297 1.5L346.716 422.5H1.69531L53.3105 1.5H400.297Z"
+        stroke="#005E96"
+        stroke-width="3"
+      />
+    </svg>
+  );
+
+  const showcaseData = [
     {
-      sport: "BADMINTON",
-      role: "chief advisor",
-      img: "/images/homepage/thestrengthimageone.png",
-      name: "pullela gopichand",
+      id: 1,
+      image: "/images/homepage/showcaseproject3.png",
+      title: "student name",
+      description:
+        "of CBSE Grade II won the Bronze Position in the Butterfly Event Inter District Swimming Championship",
+      svgCard: redsvg,
+    },
+    {
+      id: 2,
+      image: "/images/homepage/showcaseproject4.png",
+      title: "student name",
+      description:
+        "of CBSE Grade II won the Bronze Position in the Butterfly Event Inter District Swimming Championship",
+      svgCard: bluesvg,
+    },
+    {
+      id: 3,
+      image: "/images/homepage/showcaseproject4.png",
+      title: "student name",
+      description:
+        "of CBSE Grade II won the Bronze Position in the Butterfly Event Inter District Swimming Championship",
+      svgCard: redsvg,
+    },
+    {
+      id: 4,
+      image: "/images/homepage/showcaseproject4.png",
+      title: "student name",
+      description:
+        "of CBSE Grade II won the Bronze Position in the Butterfly Event Inter District Swimming Championship",
+      svgCard: bluesvg,
+    },
+    {
+      id: 5,
+      image: "/images/homepage/showcaseproject4.png",
+      title: "student name",
+      description:
+        "of CBSE Grade II won the Bronze Position in the Butterfly Event Inter District Swimming Championship",
+      svgCard: redsvg,
     },
   ];
 
@@ -60,86 +146,36 @@ export default function ShowcaseProject() {
 
         <div className="container max-w-7xl mx-auto px-4 showcasingcontainer">
           <Slider ref={sliderRef} {...settings}>
-            <div className="mainrowshowcasingcard">
-              <div className="showcasingcard">
-                <div className="showcasigimg-wrapper">
-                  <img
-                    className="showcasigimg"
-                    src="/images/homepage/showcaseproject3.png"
-                    alt=""
-                  />
-                </div>
+            {showcaseData.map((showcarditem, index) => (
+              <div className="mainrowshowcasingcard">
+                <div className="showcasingcard">
+                  <div className="showcaseimagecard">
+                    {showcarditem.svgCard}
 
-                <div className="maincontainershowingcontent">
-                  <h4 className="secondheadingtext">
-                    <span className="mainheadingfont">student name </span>
-                    of CBSE Grade II won the Bronze Position in the Butterfly
-                    Event Inter District Swimming Championship
-                  </h4>
-                  {/* <p className="secondheadingtext"></p> */}
+                    <div className="imagehovershowcaseper">
+                      <img
+                        className="imageoftheshowcaseper"
+                        src="/images/homepage/showcaseproject3.png"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+
+                  <div className="maincontainershowingcontent">
+                    <h4 className="secondheadingtext">
+                      <span
+                        className={`mainheadingfont ${
+                          index % 2 !== 0 ? "newmainheadingfont" : ""
+                        }`}
+                      >
+                        {showcarditem.title}{" "}
+                      </span>
+                      {showcarditem.description}
+                    </h4>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="mainrowshowcasingcard">
-              <div className="showcasingcard">
-                <div className="showcasigimg-wrapper">
-                  <img
-                    className="showcasigimg"
-                    src="/images/homepage/showcaseproject3.png"
-                    alt=""
-                  />
-                </div>
-
-                <div className="maincontainershowingcontent">
-                  <h4 className="secondheadingtext">
-                    <span className="mainheadingfont">student name </span>
-                    of CBSE Grade II won the Bronze Position in the Butterfly
-                    Event Inter District Swimming Championship
-                  </h4>
-                  {/* <p className="secondheadingtext"></p> */}
-                </div>
-              </div>
-            </div>
-            <div className="mainrowshowcasingcard">
-              <div className="showcasingcard">
-                <div className="showcasigimg-wrapper">
-                  <img
-                    className="showcasigimg"
-                    src="/images/homepage/showcaseproject3.png"
-                    alt=""
-                  />
-                </div>
-
-                <div className="maincontainershowingcontent">
-                  <h4 className="secondheadingtext">
-                    <span className="mainheadingfont">student name </span>
-                    of CBSE Grade II won the Bronze Position in the Butterfly
-                    Event Inter District Swimming Championship
-                  </h4>
-                  {/* <p className="secondheadingtext"></p> */}
-                </div>
-              </div>
-            </div>
-            <div className="mainrowshowcasingcard">
-              <div className="showcasingcard">
-                <div className="showcasigimg-wrapper">
-                  <img
-                    className="showcasigimg"
-                    src="/images/homepage/showcaseproject3.png"
-                    alt=""
-                  />
-                </div>
-
-                <div className="maincontainershowingcontent">
-                  <h4 className="secondheadingtext">
-                    <span className="mainheadingfont">student name </span>
-                    of CBSE Grade II won the Bronze Position in the Butterfly
-                    Event Inter District Swimming Championship
-                  </h4>
-                  {/* <p className="secondheadingtext"></p> */}
-                </div>
-              </div>
-            </div>
+            ))}
           </Slider>
         </div>
 

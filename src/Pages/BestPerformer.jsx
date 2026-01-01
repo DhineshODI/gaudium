@@ -89,7 +89,7 @@ export default function BestPerformerPage() {
 
       <VoicesofChampion />
 
-      <JourneyInPictures/>
+      <JourneyInPictures />
     </>
   );
 }

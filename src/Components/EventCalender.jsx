@@ -7,13 +7,13 @@ export default function Eventcalender() {
             <div className="videosectionmain">
               <div className="firstheading">
                 <h2 className="stroke-fill-text mainheadingfont whitefontcolor">
-                  Event
+                  Book A
                 </h2>
               </div>
 
               <div className="secondheading">
                 <h2 className="stroke-fill-text1 mainheadingfont whitecolortransperant">
-                  Calender
+                  Ground
                 </h2>
               </div>
             </div>
@@ -25,20 +25,20 @@ export default function Eventcalender() {
             </div>
 
             <div className="becomeachampion">
-              <button className="buttonfont">Explore More</button>
+              <button className="buttonfont">Enquiry NOw</button>
             </div>
           </div>
           <div>
             <div className="videosectionmain">
               <div className="firstheading">
                 <h2 className="stroke-fill-text mainheadingfont whitefontcolor">
-                  Event
+                  news &
                 </h2>
               </div>
 
               <div className="secondheading">
                 <h2 className="stroke-fill-text1 mainheadingfont whitecolortransperant">
-                  Calender
+                  Events
                 </h2>
               </div>
             </div>

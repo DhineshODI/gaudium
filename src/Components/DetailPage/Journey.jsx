@@ -18,16 +18,18 @@ export default function JourneyDetail() {
   return (
     <>
       <div className="marqueesectionmain">
-        <div className="videosectionmain">
-          <div className="firstheading">
-            <h2 className="stroke-fill-text mainheadingfont redcolorfont">
-              The Strength
-            </h2>
-          </div>
-          <div className="secondheading">
-            <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
-              Behind the Squad
-            </h2>
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="videosectionmain">
+            <div className="firstheading">
+              <h2 className="stroke-fill-text mainheadingfont redcolorfont">
+                The Strength
+              </h2>
+            </div>
+            <div className="secondheading">
+              <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
+                Behind the Squad
+              </h2>
+            </div>
           </div>
         </div>
         <div className="paravideosection">

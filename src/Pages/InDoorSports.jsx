@@ -68,6 +68,7 @@ export default function InDoorSportsPage() {
                 </p>
               </div>
             </div>
+             <p className="mainheadingfont banneroverlaytextall">indoor Sports</p>
           </div>
         </div>
         {/* Banner-Image */}

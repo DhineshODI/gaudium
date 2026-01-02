@@ -25,6 +25,8 @@ export default function AboutUsPage() {
               </p>
             </div>
           </div>
+
+          <p className="mainheadingfont banneroverlaytextall">About Us</p>
         </div>
       </div>
       {/* Banner-Image */}

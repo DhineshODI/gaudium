@@ -810,8 +810,6 @@
 .mainrowshowcasingcard {
   display: flex !important;
   justify-content: center;
-  margin-left: 48%;
-  /* margin-left: 51%; */
   margin-top: 50px;
 }
 
@@ -922,6 +920,7 @@
 
 .OutDoorSportsBG {
   background-color: #be1e2d;
+  padding: 100px 0;
 }
 
 .trapezoid-path-new {
@@ -944,7 +943,7 @@
 
 .svgshowcardwhite {
   position: absolute;
-  top: 10px;
+  top: 30px;
   right: -35px;
   z-index: -1;
   width: 100%;
@@ -953,6 +952,7 @@
 .cricketslideer {
   position: relative;
   width: 30%;
+  padding-bottom: 50px;
 }
 
 .outdoorsportsimagee {
@@ -966,20 +966,18 @@
   justify-content: center;
   width: 100%;
   position: absolute;
-  bottom: -20px;
+  bottom: 30px;
   left: -10%;
 }
 
 .oursportscontainer {
   margin-right: 0;
   padding-right: 0;
+  padding-left: 0;
 }
-
-
 
 .oursportscontainer .slick-current {
   /* margin-left: 5%; */
-
 }
 /* Homepage-Css */
 
@@ -1148,6 +1146,7 @@
   width: 100%;
   height: 600px;
   background-image: url("/public/images/abouts/about-banner.jpg");
+  position: relative;
 }
 
 .aboutusbannersection .paragraphtext.contentbanner {
@@ -1190,6 +1189,16 @@
 .bannercontentflex .mainheadingfont {
   color: #fff;
   margin-bottom: 10px;
+}
+
+.mainheadingfont.banneroverlaytextall {
+  font-size: 90px;
+  position: absolute;
+  bottom: -10px;
+  color: #fff;
+  right: 0;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
 }
 
 .bannercontentflex hr {
@@ -1912,6 +1921,31 @@
 
 .firstclasssportstext {
   margin-top: 50px;
+}
+
+.detailpagebuttonsucces .slider-buttonsshowcaseproject::before,
+.detailpagebuttonsucces .slider-buttonsshowcaseproject::after {
+  content: none;
+}
+
+.detailpagebuttonsucces {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detailpagebuttonsucces .progressflex {
+  width: 80%;
+}
+
+.detailpagesucess .showcasingcard .mainheadingfont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bannerimagesection.badmintonbannerdetail {
+  background-image: url(/public/images/detail-page/badminton/banner/badminton-banner.jpg);
 }
 /* DetailPage CSS */
 

@@ -28,6 +28,7 @@ export default function BestPerformerPage() {
               </p>
             </div>
           </div>
+           <p className="mainheadingfont banneroverlaytextall">Best Performers</p>
         </div>
       </div>
       {/* Banner-Image */}

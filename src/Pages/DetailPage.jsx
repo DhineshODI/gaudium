@@ -5,6 +5,7 @@ import FacilitythatInspire from "../Components/DetailPage/FacilityDetail";
 import FaqDetail from "../Components/DetailPage/Faq";
 import JourneyDetail from "../Components/DetailPage/Journey";
 import SecondSectionDetail from "../Components/DetailPage/SecondSectionDetail";
+import SucessDetailSlider from "../Components/DetailPage/SucessDetailSlider";
 import Header from "../Components/Header";
 
 export default function DetailPage() {
@@ -18,6 +19,7 @@ export default function DetailPage() {
       <FaqDetail />
       <EventsandTournaments />
       <JourneyDetail />
+      <SucessDetailSlider/>
     </>
   );
 }

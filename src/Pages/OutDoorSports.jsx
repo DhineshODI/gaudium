@@ -68,6 +68,7 @@ export default function OutDoorSportsPage() {
                 </p>
               </div>
             </div>
+            <p className="mainheadingfont banneroverlaytextall">Outdoor Sports</p>
           </div>
         </div>
         {/* Banner-Image */}

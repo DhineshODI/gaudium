@@ -30,7 +30,7 @@ export default function TheStrenthBehind() {
   //   };
   const settings = {
     dots: false,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -72,6 +72,24 @@ export default function TheStrenthBehind() {
       name: "pullela gopichand",
     },
     {
+      sport: "BADMINTON",
+      role: "chief advisor",
+      img: "/images/homepage/thestrengthimageone.png",
+      name: "pullela gopichand",
+    },
+        {
+      sport: "BADMINTON",
+      role: "chief advisor",
+      img: "/images/homepage/thestrengthimageone.png",
+      name: "pullela gopichand",
+    },
+        {
+      sport: "BADMINTON",
+      role: "chief advisor",
+      img: "/images/homepage/thestrengthimageone.png",
+      name: "pullela gopichand",
+    },
+        {
       sport: "BADMINTON",
       role: "chief advisor",
       img: "/images/homepage/thestrengthimageone.png",

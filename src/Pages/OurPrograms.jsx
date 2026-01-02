@@ -24,6 +24,8 @@ export default function OurPrograms() {
               </p>
             </div>
           </div>
+
+          <p className="mainheadingfont banneroverlaytextall">Our Programs</p>
         </div>
       </div>
       {/* Banner-Image */}

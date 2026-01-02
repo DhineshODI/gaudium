@@ -70,10 +70,6 @@ export default function ExperTeamDetail() {
               </div>
             ))}
           </div>
-
-          {/* <div className="discovermorebutton">
-            <button className="buttonfont">Discover More</button>
-          </div> */}
         </div>
       </div>
     </>

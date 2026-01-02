@@ -2,7 +2,7 @@ export default function DetailPageBanner() {
   return (
     <>
       <div className="aboutPage">
-        <div className="bannerimagesection bestperformer">
+        <div className="bannerimagesection badmintonbannerdetail">
           <div className="container max-w-7xl mx-auto px-4 aboutusbannersection">
             <div className="bannercontentflex">
               <p className="breadcrumbstext">
@@ -19,6 +19,8 @@ export default function DetailPageBanner() {
               </p>
             </div>
           </div>
+
+          <p className="mainheadingfont banneroverlaytextall">Badminton</p>
         </div>
       </div>
     </>

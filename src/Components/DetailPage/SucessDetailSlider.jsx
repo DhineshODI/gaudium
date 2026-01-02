@@ -2,28 +2,10 @@ import { useState, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-export default function ShowcaseProject() {
+export default function SucessDetailSlider() {
   const sliderRef = useRef(null);
-  const settings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 3.5,
-    slidesToScroll: 1,
-    arrows: false,
-    loop:false,
 
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 1 },
-      },
-    ],
-  };
+  const [progress, setProgress] = useState(20);
 
   const redsvg = (
     <svg
@@ -118,20 +100,46 @@ export default function ShowcaseProject() {
     },
   ];
 
+  const settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow: 3.5,
+    slidesToScroll: 1,
+    arrows: false,
+    loop: false,
+
+    beforeChange: (oldIndex, newIndex) => {
+      const percent = (newIndex / showcaseData.length) * 100;
+      setProgress(percent);
+    },
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: { slidesToShow: 2 },
+      },
+      {
+        breakpoint: 768,
+        settings: { slidesToShow: 1 },
+      },
+    ],
+  };
+
   return (
     <>
-      <div className="showcaseprojectrow">
+      <div className="detailpagesucess showcaseprojectrow">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="videosectionmain">
             <div className="firstheading">
               <h2 className="stroke-fill-text mainheadingfont redcolorfont">
-                Showcasing Our
+                success
               </h2>
             </div>
 
             <div className="secondheading">
               <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
-                Peak Performance
+                stories
               </h2>
             </div>
           </div>
@@ -170,7 +178,7 @@ export default function ShowcaseProject() {
                       >
                         {showcarditem.title}{" "}
                       </span>
-                      {showcarditem.description}
+                      <div>{showcarditem.description}</div>
                     </h4>
                   </div>
                 </div>
@@ -178,21 +186,32 @@ export default function ShowcaseProject() {
             ))}
           </Slider>
         </div>
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="detailpagebuttonsucces">
+            <div className="progressflex">
+              <div className="strength-progressbar">
+                <div
+                  className="strength-progressbar-fill"
+                  style={{ width: `${progress}%` }}
+                ></div>
+              </div>
+            </div>
+            <div className="slider-buttonsshowcaseproject">
+              <button
+                onClick={() => sliderRef.current.slickPrev()}
+                className="left-btnshowcaseproject"
+              >
+                <img src="/images/icons/arrow-left-circle-red.svg" alt="" />
+              </button>
 
-        <div className="slider-buttonsshowcaseproject">
-          <button
-            onClick={() => sliderRef.current.slickPrev()}
-            className="left-btnshowcaseproject"
-          >
-            <img src="/images/icons/arrow-left-circle-red.svg" alt="" />
-          </button>
-
-          <button
-            onClick={() => sliderRef.current.slickNext()}
-            className="right-btnshowcaseproject"
-          >
-            <img src="/images/icons/arrow-right-circle-red.svg" alt="" />
-          </button>
+              <button
+                onClick={() => sliderRef.current.slickNext()}
+                className="right-btnshowcaseproject"
+              >
+                <img src="/images/icons/arrow-right-circle-red.svg" alt="" />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </>

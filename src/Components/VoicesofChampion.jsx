@@ -68,7 +68,7 @@ const TeamSlider = () => {
     <div className="voiceofchampionshipbg">
       <div className="container max-w-7xl mx-auto px-4">
         <div class="videosectionmain">
-          <div class="firstheading">
+          <div class="firstheading lengthfirstHeading">
             <h2 class="stroke-fill-text mainheadingfont whitefontcolor">
               Voices of
             </h2>

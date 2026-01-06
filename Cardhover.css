@@ -1,0 +1,69 @@
+/* ===== Card Hover Component (Image Version) ===== */
+
+.cardHoverLink {
+  position: relative;
+  display: block;
+  width: 300px;
+  height: 300px;
+  margin: 4px;
+  float: left;
+
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 0 4px #000;
+
+  text-decoration: none;
+}
+
+/* Image */
+.cardHoverImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.cardHoverLink:hover .cardHoverImage {
+  transform: scale(1.1);
+}
+
+/* Overlay */
+.cardHoverOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 16px;
+
+  transform: translateY(70%);
+  transition: transform 0.5s ease;
+}
+
+.cardHoverLink:hover .cardHoverOverlay {
+  transform: translateY(0);
+}
+
+/* Title */
+.cardHoverTitle {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Text */
+.cardHoverText {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #fff;
+
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.cardHoverLink:hover .cardHoverText {
+  opacity: 1;
+}
+
+
+/* ===== Card Hover Component (Image Version) ===== */

@@ -1,4 +1,4 @@
-export default function DetailPageBanner() {
+export default function DetailPageBanner({ data }) {
   return (
     <>
       <div className="aboutPage">
@@ -6,21 +6,19 @@ export default function DetailPageBanner() {
           <div className="container max-w-7xl mx-auto px-4 aboutusbannersection">
             <div className="bannercontentflex">
               <p className="breadcrumbstext">
-                <span>Home</span> &gt; Best Performers
+                <span>{data.breadcrumbstextfirst}</span> &gt; {data.breadcrumbstextSecond}
               </p>
 
-              <h2 className="mainheadingfont">Best Performers</h2>
+              <h2 className="mainheadingfont">{data.bannertitle}</h2>
               <hr />
 
               <p className="paragraphtext contentbanner">
-                Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-                pellentesq uescelerisque libero malesuada tristique Ultricies
-                leo viverra.
+                {data.bannerContent}
               </p>
             </div>
           </div>
 
-          <p className="mainheadingfont banneroverlaytextall">Badminton</p>
+          <p className="mainheadingfont banneroverlaytextall">{data.banneroverlaycontent}</p>
         </div>
       </div>
     </>

@@ -1,12 +1,8 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-export default function SucessDetailSlider() {
-  const sliderRef = useRef(null);
-
-  const [progress, setProgress] = useState(20);
-
+export default function SucessDetailSlider({ data }) {
   const redsvg = (
     <svg
       class="custom-svg svgshowcard "
@@ -57,75 +53,58 @@ export default function SucessDetailSlider() {
     </svg>
   );
 
-  const showcaseData = [
-    {
-      id: 1,
-      image: "/images/homepage/showcaseproject3.png",
-      title: "student name",
-      description:
-        "of CBSE Grade II won the Bronze Position in the Butterfly Event Inter District Swimming Championship",
-      svgCard: redsvg,
-    },
-    {
-      id: 2,
-      image: "/images/homepage/showcaseproject4.png",
-      title: "student name",
-      description:
-        "of CBSE Grade II won the Bronze Position in the Butterfly Event Inter District Swimming Championship",
-      svgCard: bluesvg,
-    },
-    {
-      id: 3,
-      image: "/images/homepage/showcaseproject4.png",
-      title: "student name",
-      description:
-        "of CBSE Grade II won the Bronze Position in the Butterfly Event Inter District Swimming Championship",
-      svgCard: redsvg,
-    },
-    {
-      id: 4,
-      image: "/images/homepage/showcaseproject4.png",
-      title: "student name",
-      description:
-        "of CBSE Grade II won the Bronze Position in the Butterfly Event Inter District Swimming Championship",
-      svgCard: bluesvg,
-    },
-    {
-      id: 5,
-      image: "/images/homepage/showcaseproject4.png",
-      title: "student name",
-      description:
-        "of CBSE Grade II won the Bronze Position in the Butterfly Event Inter District Swimming Championship",
-      svgCard: redsvg,
-    },
-  ];
+  const sliderRef = useRef(null);
+  const showcaseData = data.showcaseData || [];
+  const totalSlides = showcaseData.length;
+
+  const [progress, setProgress] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [slidesToShow, setSlidesToShow] = useState(3.5);
+
+  const isAtStart = currentSlide === 0;
+
+  const isAtEnd = currentSlide >= totalSlides - slidesToShow;
+
+  const updateProgress = (current) => {
+    if (totalSlides <= slidesToShow) {
+      setProgress(100);
+      return;
+    }
+    const maxScrollableIndex = totalSlides - slidesToShow;
+    const percent = (current / maxScrollableIndex) * 100;
+    setProgress(Math.min(Math.max(percent, 0), 100));
+  };
 
   const settings = {
     dots: false,
     infinite: false,
     speed: 500,
-    slidesToShow: 3.5,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
     arrows: false,
-    loop: false,
-
+    swipeToSlide: true,
     beforeChange: (oldIndex, newIndex) => {
-      const percent = (newIndex / showcaseData.length) * 100;
-      setProgress(percent);
+      setCurrentSlide(newIndex);
+      updateProgress(newIndex);
     },
 
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 900,
         settings: { slidesToShow: 2 },
+        onReInit: () => setSlidesToShow(2),
       },
       {
         breakpoint: 768,
         settings: { slidesToShow: 1 },
+        onReInit: () => setSlidesToShow(1),
       },
     ],
   };
 
+  useEffect(() => {
+    updateProgress(currentSlide);
+  }, [slidesToShow, totalSlides, currentSlide]);
   return (
     <>
       <div className="detailpagesucess showcaseprojectrow">
@@ -133,22 +112,18 @@ export default function SucessDetailSlider() {
           <div className="videosectionmain">
             <div className="firstheading">
               <h2 className="stroke-fill-text mainheadingfont redcolorfont">
-                success
+                {data.headingFirst}
               </h2>
             </div>
 
             <div className="secondheading">
               <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
-                stories
+                {data.headingSecond}
               </h2>
             </div>
           </div>
           <div className="paravideosection">
-            <p className="paragraphtext">
-              Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-              pellentesq uescelerisque libero malesuada tristique Ultricies leo
-              viverra.
-            </p>
+            <p className="paragraphtext">{data.description}</p>
           </div>
         </div>
 
@@ -198,15 +173,27 @@ export default function SucessDetailSlider() {
             </div>
             <div className="slider-buttonsshowcaseproject">
               <button
-                onClick={() => sliderRef.current.slickPrev()}
+                onClick={() => sliderRef.current?.slickPrev()}
                 className="left-btnshowcaseproject"
+                disabled={isAtStart}
+                style={{
+                  opacity: isAtStart ? 0.2 : 1,
+                  pointerEvents: isAtStart ? "none" : "auto",
+                  cursor: isAtStart ? "default" : "pointer",
+                }}
               >
                 <img src="/images/icons/arrow-left-circle-red.svg" alt="" />
               </button>
 
               <button
-                onClick={() => sliderRef.current.slickNext()}
+                onClick={() => sliderRef.current?.slickNext()}
                 className="right-btnshowcaseproject"
+                disabled={isAtEnd}
+                style={{
+                  opacity: isAtEnd ? 0.2 : 1,
+                  pointerEvents: isAtEnd ? "none" : "auto",
+                  cursor: isAtEnd ? "default" : "pointer",
+                }}
               >
                 <img src="/images/icons/arrow-right-circle-red.svg" alt="" />
               </button>

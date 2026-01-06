@@ -25,50 +25,60 @@ export default function ProgrammsBuild() {
           </div>
         </div>
 
-        <div className="ProgrammsBuildflexsection">
-          <div className="cardProgrammsBuildflexsection firstimage1">
-            <div>
-              <p className="sportsnamestregnth">Sportopia</p>
-              <h4 className="roleinstrength whitecolorfont">rookie</h4>
-            </div>
+        <div className="responsivecontinerr">
+          <div className="oneresponsivecontinerr">
+            <div className="ProgrammsBuildflexsection">
+              <div className="cardProgrammsBuildflexsection firstimage1">
+                <div>
+                  <p className="sportsnamestregnth">Sportopia</p>
+                  <h4 className="roleinstrength whitecolorfont">rookie</h4>
+                </div>
 
-            <div className="contentbuildsection">
-              Lorem ipsum dolor sit amet consectetur. Tristique ornare dolor
-              odio nulla. Id molestie tristique laoreet velit.
-            </div>
+                <div className="contentbuildsection">
+                  Lorem ipsum dolor sit amet consectetur. Tristique ornare dolor
+                  odio nulla. Id molestie tristique laoreet velit.
+                </div>
 
-            <div className="becomeachampion">
-              <button className="buttonfont">Discover More</button>
-            </div>
-          </div>
-          <div className="cardProgrammsBuildflexsection secondimage1">
-            <div>
-              <p className="sportsnamestregnth">Sportopia</p>
-              <h4 className="roleinstrength whitecolorfont">Stellar</h4>
-            </div>
+                <div className="becomeachampion">
+                  <a className="buttonfont highlightedtextopposite">
+                    Discover More
+                  </a>
+                </div>
+              </div>
+              <div className="cardProgrammsBuildflexsection secondimage1">
+                <div>
+                  <p className="sportsnamestregnth">Sportopia</p>
+                  <h4 className="roleinstrength whitecolorfont">Stellar</h4>
+                </div>
 
-            <div className="contentbuildsection">
-              Lorem ipsum dolor sit amet consectetur. Tristique ornare dolor
-              odio nulla. Id molestie tristique laoreet velit.
-            </div>
+                <div className="contentbuildsection">
+                  Lorem ipsum dolor sit amet consectetur. Tristique ornare dolor
+                  odio nulla. Id molestie tristique laoreet velit.
+                </div>
 
-            <div className="becomeachampion">
-              <button className="buttonfont">Discover More</button>
-            </div>
-          </div>
-          <div className="cardProgrammsBuildflexsection thirdimage1">
-            <div>
-              <p className="sportsnamestregnth">Stellar</p>
-              <h4 className="roleinstrength whitecolorfont">Prodigy</h4>
-            </div>
+                <div className="becomeachampion">
+                  <a className="buttonfont highlightedtextoppositeblue">
+                    Discover More
+                  </a>
+                </div>
+              </div>
+              <div className="cardProgrammsBuildflexsection thirdimage1">
+                <div>
+                  <p className="sportsnamestregnth">Stellar</p>
+                  <h4 className="roleinstrength whitecolorfont">Prodigy</h4>
+                </div>
 
-            <div className="contentbuildsection">
-              Lorem ipsum dolor sit amet consectetur. Tristique ornare dolor
-              odio nulla. Id molestie tristique laoreet velit.
-            </div>
+                <div className="contentbuildsection">
+                  Lorem ipsum dolor sit amet consectetur. Tristique ornare dolor
+                  odio nulla. Id molestie tristique laoreet velit.
+                </div>
 
-            <div className="becomeachampion">
-              <button className="buttonfont">Discover More</button>
+                <div className="becomeachampion">
+                  <a className="buttonfont highlightedtextopposite">
+                    Discover More
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>

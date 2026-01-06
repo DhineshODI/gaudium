@@ -1,84 +1,50 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export default function FacilitythatInspire() {
+export default function FacilitythatInspire({ data }) {
   const sliderRef = useRef(null);
   const [progress, setProgress] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
   const settings = {
     dots: false,
     arrows: false, // we use custom arrows
-    infinite: true,
+    infinite: false,
     speed: 700,
     slidesToShow: 1,
     slidesToScroll: 1,
-
     afterChange: (current) => {
+      setCurrentSlide(current);
       const percent = ((current + 1) / totalSlides) * 100;
       setProgress(percent);
     },
   };
 
-  const sliderDatadetail = [
-    {
-      id: 1,
-      image: "/images/detail-page/badminton/badminton-slider.jpg",
-      sport: "Badminton",
-      title: "Court",
-      description:
-        "Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque pellentesque scelerisque libero malesuada tristique urna. Ultricies leo viverra tincidunt pharetra pretium pulvinar orci. In vel ac magna velit rhoncus nibh etiam. Scelerisque varius pretium elitneque pellentesque Quis cursus elit rhoncus.",
-    },
-    {
-      id: 2,
-      image: "/images/detail-page/badminton/badminton-slider.jpg",
-      sport: "Badminton",
-      title: "Court",
-      description:
-        "Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque pellentesque scelerisque libero malesuada tristique urna. Ultricies leo viverra tincidunt pharetra pretium pulvinar orci.",
-    },
-    {
-      id: 3,
-      image: "/images/detail-page/badminton/badminton-slider.jpg",
-      sport: "Badminton",
-      title: "Court",
-      description:
-        "Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque pellentesque scelerisque libero malesuada tristique urna. Ultricies leo viverra tincidunt pharetra pretium pulvinar orci.",
-    },
-    {
-      id: 4,
-      image: "/images/detail-page/badminton/badminton-slider.jpg",
-      sport: "Badminton",
-      title: "Court",
-      description:
-        "Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque pellentesque scelerisque libero malesuada tristique urna. Ultricies leo viverra tincidunt pharetra pretium pulvinar orci.",
-    },
-    {
-      id: 5,
-      image: "/images/detail-page/badminton/badminton-slider.jpg",
-      sport: "Badminton",
-      title: "Court",
-      description:
-        "Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque pellentesque scelerisque libero malesuada tristique urna. Ultricies leo viverra tincidunt pharetra pretium pulvinar orci.",
-    },
-  ];
+  const sliderDatadetail = data.slides;
 
   const totalSlides = sliderDatadetail.length;
+
+  useEffect(() => {
+    if (totalSlides > 0) {
+      setProgress((1 / totalSlides) * 100);
+    }
+  }, [totalSlides]);
 
   return (
     <>
       <div className="facilityapprovedbg">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="videosectionmain">
-            <div className="firstheading">
+            <div className="firstheading lengthfirstHeading">
               <h2 className="stroke-fill-text mainheadingfont whitefontcolor">
-                Facilities
+                {data.headingFirst}
               </h2>
             </div>
-            <div className="secondheading">
+            <div className="secondheading lengthsecondHeading">
               <h2 className="stroke-fill-text1 mainheadingfont whitecolortransperant">
-                That Inspire
+                {data.headingSecond}
               </h2>
             </div>
           </div>
@@ -132,6 +98,11 @@ export default function FacilitythatInspire() {
                   <button
                     onClick={() => sliderRef.current?.slickPrev()}
                     className="btn-prev"
+                    disabled={currentSlide === 0}
+                    style={{
+                      opacity: currentSlide === 0 ? 0.2 : 1,
+                      pointerEvents: currentSlide === 0 ? "none" : "auto",
+                    }}
                   >
                     <img
                       src="/images/icons/arrow-left-circle-white.svg"
@@ -142,6 +113,12 @@ export default function FacilitythatInspire() {
                   <button
                     onClick={() => sliderRef.current?.slickNext()}
                     className="btn-next"
+                    disabled={currentSlide === totalSlides - 1}
+                    style={{
+                      opacity: currentSlide === totalSlides - 1 ? 0.2 : 1,
+                      pointerEvents:
+                        currentSlide === totalSlides - 1 ? "none" : "auto",
+                    }}
                   >
                     <img
                       src="/images/icons/arrow-right-circle-white.svg"

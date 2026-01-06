@@ -42,13 +42,13 @@ export default function AboutusTheStrengthSection() {
       <div className="aboutusstrengthsecmain">
         <div>
           <div className="videosectionmain">
-            <div className="firstheading">
+            <div className="firstheading lengthfirstHeading">
               <h2 className="stroke-fill-text mainheadingfont redcolorfont">
                 The Strength
               </h2>
             </div>
 
-            <div className="secondheading">
+            <div className="secondheading lengthsecondHeading">
               <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
                 Behind the Squad
               </h2>
@@ -88,7 +88,7 @@ export default function AboutusTheStrengthSection() {
           </div>
 
           <div className="discovermorebutton">
-            <button className="buttonfont">Discover More</button>
+            <a className="buttonfont highlightedtextred">Discover More</a>
           </div>
         </div>
       </div>

@@ -68,7 +68,9 @@ export default function OutDoorSportsPage() {
                 </p>
               </div>
             </div>
-            <p className="mainheadingfont banneroverlaytextall">Outdoor Sports</p>
+            <p className="mainheadingfont banneroverlaytextall">
+              Outdoor Sports
+            </p>
           </div>
         </div>
         {/* Banner-Image */}
@@ -79,12 +81,12 @@ export default function OutDoorSportsPage() {
           <div className="container max-w-7xl mx-auto px-4 ">
             <div className="cardssectionoutdoor">
               <div className="videosectionmain">
-                <div className="firstheading">
+                <div className="firstheading lengthfirstHeading">
                   <h2 className="stroke-fill-text mainheadingfont redcolorfont">
                     Fueling Passion
                   </h2>
                 </div>
-                <div className="secondheading">
+                <div className="secondheading lengthsecondHeading">
                   <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
                     in Outdoor Arenas
                   </h2>
@@ -115,10 +117,8 @@ export default function OutDoorSportsPage() {
                         {game.gameAboutContent}
                       </p>
 
-                      <a href={game.gameLinkL}>
-                        <button className="exploremorebutton buttonfont">
-                          explore More
-                        </button>
+                      <a className="exploremorebutton buttonfont">
+                        explore More
                       </a>
                     </div>
                   </div>

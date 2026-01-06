@@ -1,114 +1,28 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-export default function FaqDetail() {
+export default function FaqDetail({ data }) {
   const [openFaqId, setOpenFaqId] = useState(null);
 
   const faqopen = (id) => {
     setOpenFaqId((prevId) => (prevId === id ? null : id));
   };
 
-  const faqcontents = [
-    {
-      id: 1,
-      faqQuestion: "Physical Development Benefits",
-      faqAnswer: [
-        "Extraordinary self-discipline through adherence to rigorous training schedules.",
-        "Enhanced mental toughness through challenging match situations.",
-        "Development of internal motivation and self-driven excellence.",
-        "Improved emotional regulation through controlled breathing and focus during matches.",
-        "Enhanced self-confidence through measurable skill and performance progression.",
-        "Development of performance routines applicable to non-badminton challenges.",
-        "Stress reduction through the meditative aspects of rhythmic play.",
-        "Improved sleep quality supporting overall cognitive and emotional functioning.",
-        "Anxiety reduction through controlled breathing techniques.",
-        "Enhanced resilience through overcoming performance plateaus and setbacks.",
-        "Development of healthy perfectionism and attention to technical detail.",
-      ],
-    },
-    {
-      id: 2,
-      faqQuestion: "Cognitive Development Benefits",
-      faqAnswer: [
-        "Extraordinary self-discipline through adherence to rigorous training schedules.",
-        "Enhanced mental toughness through challenging match situations.",
-        "Development of internal motivation and self-driven excellence.",
-        "Improved emotional regulation through controlled breathing and focus during matches.",
-        "Enhanced self-confidence through measurable skill and performance progression.",
-        "Development of performance routines applicable to non-badminton challenges.",
-        "Stress reduction through the meditative aspects of rhythmic play.",
-        "Improved sleep quality supporting overall cognitive and emotional functioning.",
-        "Anxiety reduction through controlled breathing techniques.",
-        "Enhanced resilience through overcoming performance plateaus and setbacks.",
-        "Development of healthy perfectionism and attention to technical detail.",
-      ],
-    },
-    {
-      id: 3,
-      faqQuestion: "Psychological Development Benefits",
-      faqAnswer: [
-        "Extraordinary self-discipline through adherence to rigorous training schedules.",
-        "Enhanced mental toughness through challenging match situations.",
-        "Development of internal motivation and self-driven excellence.",
-        "Improved emotional regulation through controlled breathing and focus during matches.",
-        "Enhanced self-confidence through measurable skill and performance progression.",
-        "Development of performance routines applicable to non-badminton challenges.",
-        "Stress reduction through the meditative aspects of rhythmic play.",
-        "Improved sleep quality supporting overall cognitive and emotional functioning.",
-        "Anxiety reduction through controlled breathing techniques.",
-        "Enhanced resilience through overcoming performance plateaus and setbacks.",
-        "Development of healthy perfectionism and attention to technical detail.",
-      ],
-    },
-    {
-      id: 4,
-      faqQuestion: "Social Development Benefits",
-      faqAnswer: [
-        "Extraordinary self-discipline through adherence to rigorous training schedules.",
-        "Enhanced mental toughness through challenging match situations.",
-        "Development of internal motivation and self-driven excellence.",
-        "Improved emotional regulation through controlled breathing and focus during matches.",
-        "Enhanced self-confidence through measurable skill and performance progression.",
-        "Development of performance routines applicable to non-badminton challenges.",
-        "Stress reduction through the meditative aspects of rhythmic play.",
-        "Improved sleep quality supporting overall cognitive and emotional functioning.",
-        "Anxiety reduction through controlled breathing techniques.",
-        "Enhanced resilience through overcoming performance plateaus and setbacks.",
-        "Development of healthy perfectionism and attention to technical detail.",
-      ],
-    },
-    {
-      id: 5,
-      faqQuestion: "Lifestyle Benefits",
-      faqAnswer: [
-        "Extraordinary self-discipline through adherence to rigorous training schedules.",
-        "Enhanced mental toughness through challenging match situations.",
-        "Development of internal motivation and self-driven excellence.",
-        "Improved emotional regulation through controlled breathing and focus during matches.",
-        "Enhanced self-confidence through measurable skill and performance progression.",
-        "Development of performance routines applicable to non-badminton challenges.",
-        "Stress reduction through the meditative aspects of rhythmic play.",
-        "Improved sleep quality supporting overall cognitive and emotional functioning.",
-        "Anxiety reduction through controlled breathing techniques.",
-        "Enhanced resilience through overcoming performance plateaus and setbacks.",
-        "Development of healthy perfectionism and attention to technical detail.",
-      ],
-    },
-  ];
+  const faqcontents = data.items;
 
   return (
     <>
       <div className="faqmaincontainer">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="videosectionmain">
-            <div className="firstheading">
+            <div className="firstheading lengthfirstHeading">
               <h2 className="stroke-fill-text mainheadingfont redcolorfont">
-                Why Badminton
+                {data.headingFirst}
               </h2>
             </div>
-            <div className="secondheading">
+            <div className="secondheading lengthsecondHeading">
               <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
-                Training Matters
+                {data.headingSecond}
               </h2>
             </div>
           </div>
@@ -116,9 +30,7 @@ export default function FaqDetail() {
 
         <div className="paravideosection">
           <p className="paragraphtext">
-            Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-            pellentesq uescelerisque libero malesuada tristique Ultricies leo
-            viverra.
+           {data.description}
           </p>
         </div>
 

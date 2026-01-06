@@ -1,43 +1,25 @@
-export default function JourneyDetail() {
-  const images = [
-    "/images/detail-page/badminton/marquee/marquee-1.jpg",
-    "/images/detail-page/badminton/marquee/marquee-2.jpg",
-    "/images/detail-page/badminton/marquee/marquee-3.jpg",
-    "/images/detail-page/badminton/marquee/marquee-4.jpg",
-    "/images/detail-page/badminton/marquee/marquee-5.jpg",
-  ];
-  const images1 = [
-    "/images/detail-page/badminton/marquee/marquee-6.jpg",
-
-    "/images/detail-page/badminton/marquee/marquee-8.jpg",
-    "/images/detail-page/badminton/marquee/marquee-7.jpg",
-
-    "/images/detail-page/badminton/marquee/marquee-10.jpg",
-    "/images/detail-page/badminton/marquee/marquee-9.jpg",
-  ];
+export default function JourneyDetail({ data }) {
+  const images = data.marqueeRow1;
+  const images1 = data.marqueeRow2;
   return (
     <>
       <div className="marqueesectionmain">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="videosectionmain">
-            <div className="firstheading">
+            <div className="firstheading lengthfirstHeading">
               <h2 className="stroke-fill-text mainheadingfont redcolorfont">
-                The Strength
+                {data.headingFirst}
               </h2>
             </div>
-            <div className="secondheading">
+            <div className="secondheading lengthsecondHeading">
               <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
-                Behind the Squad
+                {data.headingSecond}
               </h2>
             </div>
           </div>
         </div>
         <div className="paravideosection">
-          <p className="paragraphtext">
-            Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-            pellentesq uescelerisque libero malesuada tristique Ultricies leo
-            viverra.
-          </p>
+          <p className="paragraphtext">{data.description}</p>
         </div>
 
         <div className="marquee">

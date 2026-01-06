@@ -3,8 +3,44 @@ export default function Header() {
     <>
       <div className="headerdiv">
         <div className="headerstyle">
-            <img src="/images/gaudium-logo.svg" alt="" />
-            <img src="/images/menu.svg" alt="" />
+          <img src="/images/gaudium-logo.svg" alt="" />
+
+          <svg
+            className="headermenuicon"
+            width="60"
+            height="41"
+            viewBox="0 0 60 41"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              className="breathing-line line-1 pathcolorsvg"
+              y="24.3164"
+              width="60"
+              height="2"
+              fill="black"
+            />
+            <rect
+              className="breathing-line line-2 pathcolorsvg"
+              x="10"
+              y="31.3164"
+              width="40"
+              height="2"
+              fill="black"
+            />
+            <rect
+              className="breathing-line line-3 pathcolorsvg"
+              y="38.3164"
+              width="60"
+              height="2"
+              fill="black"
+            />
+            <path
+              className="pathcolorsvg"
+              d="M2.41602 14.3164V0H6.74219L9.33984 9.76562L11.9082 0H16.2441V14.3164H13.5586V3.04688L10.7168 14.3164H7.93359L5.10156 3.04688V14.3164H2.41602ZM19.1152 14.3164V0H29.7305V2.42188H22.0059V5.5957H29.1934V8.00781H22.0059V11.9043H30.0039V14.3164H19.1152ZM32.4844 14.3164V0H35.2969L41.1562 9.56055V0H43.8418V14.3164H40.9414L35.1699 4.98047V14.3164H32.4844ZM46.8887 0H49.7793V7.75391C49.7793 8.98438 49.8151 9.7819 49.8867 10.1465C50.0104 10.7324 50.3034 11.2044 50.7656 11.5625C51.2344 11.9141 51.8724 12.0898 52.6797 12.0898C53.5 12.0898 54.1185 11.9238 54.5352 11.5918C54.9518 11.2533 55.2025 10.8398 55.2871 10.3516C55.3717 9.86328 55.4141 9.05273 55.4141 7.91992V0H58.3047V7.51953C58.3047 9.23828 58.2266 10.4525 58.0703 11.1621C57.9141 11.8717 57.6243 12.4707 57.2012 12.959C56.7845 13.4473 56.2246 13.8379 55.5215 14.1309C54.8184 14.4173 53.9004 14.5605 52.7676 14.5605C51.4004 14.5605 50.362 14.4043 49.6523 14.0918C48.9492 13.7728 48.3926 13.3626 47.9824 12.8613C47.5723 12.3535 47.3021 11.8229 47.1719 11.2695C46.9831 10.4492 46.8887 9.23828 46.8887 7.63672V0Z"
+              fill="black"
+            />
+          </svg>
         </div>
       </div>
     </>

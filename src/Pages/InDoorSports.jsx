@@ -75,16 +75,16 @@ export default function InDoorSportsPage() {
 
         {/* card-section */}
 
-        <div className="outdoorsportsmain">
+        <div className="outdoorsportsmain indoorsportsmaincss">
           <div className="container max-w-7xl mx-auto px-4 ">
             <div className="cardssectionoutdoor">
               <div className="videosectionmain">
-                <div className="firstheading">
+                <div className="firstheading lengthfirstHeading">
                   <h2 className="stroke-fill-text mainheadingfont redcolorfont lineheight120">
                     Indoor Action,
                   </h2>
                 </div>
-                <div className="secondheading">
+                <div className="secondheading lengthsecondHeading">
                   <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
                     Endless Passion
                   </h2>

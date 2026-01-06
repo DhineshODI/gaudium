@@ -25,7 +25,7 @@ export default function Eventcalender() {
             </div>
 
             <div className="becomeachampion">
-              <button className="buttonfont">Enquiry NOw</button>
+              <a className="buttonfont highlightedtextopposite">Enquiry NOw</a>
             </div>
           </div>
           <div>
@@ -49,7 +49,7 @@ export default function Eventcalender() {
               </p>
             </div>
             <div className="becomeachampion">
-              <button className="buttonfont">Explore More</button>
+              <a className="buttonfont highlightedtextopposite">Explore More</a>
             </div>
           </div>
         </div>

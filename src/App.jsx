@@ -20,7 +20,7 @@ function App() {
         <Route path="/outdoor-sports" element={<OutDoorSportsPage />} />
         <Route path="/indoor-sports" element={<InDoorSportsPage />} />
         <Route path="/best-performer" element={<BestPerformerPage />} />
-        <Route path="/detail-page" element={<DetailPage />} />
+        <Route path="/sport/:slug" element={<DetailPage />} />
       </Routes>
 
       <Footer />

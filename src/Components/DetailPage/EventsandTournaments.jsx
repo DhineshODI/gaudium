@@ -1,52 +1,56 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export default function EventsandTournaments() {
+export default function EventsandTournaments({ data }) {
   const settings = {
     dots: false,
-    infinite: true,
+    infinite: false, // Keep false to ensure progress bar logic is simple
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
-    beforeChange: (oldIndex, newIndex) => {
-      const percent = ((newIndex + 1) / eventstournamentsData.length) * 100;
-      setProgress(percent);
+    // Update progress based on the final index reached
+    afterChange: (current) => {
+      setCurrentSlide(current); // Update the current index
+
+      const totalSteps = totalSlides - currentSlidesToShow + 1;
+      const percent = ((current + 1) / totalSteps) * 100;
+      setProgress(Math.min(percent, 100));
     },
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 900,
         settings: { slidesToShow: 2 },
+        // Update state when breakpoint hits
+        onReInit: () => setCurrentSlidesToShow(2),
       },
       {
         breakpoint: 768,
         settings: { slidesToShow: 1 },
+        onReInit: () => setCurrentSlidesToShow(1),
       },
     ],
   };
+  const eventstournamentsData = data.items || [];
   const sliderRef = useRef(null);
-  const [progress, setProgress] = useState(20);
-  const eventstournamentsData = [
-    {
-      eventnumber: "Event - 01",
-      eventcontent:
-        "Hosted: The Gaudium Junior Badminton Championship 2021/2022/2023.",
-      eventslinks: "/events1link",
-    },
-    {
-      eventnumber: "Event - 02",
-      eventcontent: "ISSO Badminton National 2023.",
-      eventslinks: "/events1link",
-    },
-    {
-      eventnumber: "Event - 03",
-      eventcontent:
-        "Lorem ipsum dolor sit amet consectetur. Maecenas maecenas eget tempor ultrices porttitor tempus auctor viverra. Sed.",
-      eventslinks: "/events1link",
-    },
-  ];
+  const [progress, setProgress] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0); // Track active index
+  const [currentSlidesToShow, setCurrentSlidesToShow] = useState(3);
+
+  const totalSlides = eventstournamentsData.length;
+  // The slider hits the end when the index reaches (Total - Visible)
+  const isAtEnd = currentSlide >= totalSlides - currentSlidesToShow;
+  const isAtStart = currentSlide === 0;
+
+  // Initial Progress Calculation
+  useEffect(() => {
+    const totalSteps = eventstournamentsData.length - currentSlidesToShow + 1;
+    if (totalSteps > 0) {
+      setProgress((1 / totalSteps) * 100);
+    }
+  }, [eventstournamentsData.length, currentSlidesToShow]);
 
   return (
     <>
@@ -55,23 +59,19 @@ export default function EventsandTournaments() {
           <div className="videosectionmain">
             <div className="firstheading">
               <h2 className="stroke-fill-text mainheadingfont whitefontcolor">
-                Events & Tournaments
+                {data.headingFirst}
               </h2>
             </div>
             <div className="secondheading">
               <h2 className="stroke-fill-text1 mainheadingfont whitecolortransperant">
-                @ Gaudium Sportopia
+                {data.headingSecond}
               </h2>
             </div>
           </div>
         </div>
 
         <div className="paravideosection">
-          <p className="paragraphtext">
-            Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-            pellentesq uescelerisque libero malesuada tristique Ultricies leo
-            viverra.
-          </p>
+          <p className="paragraphtext">{data.description}</p>
         </div>
 
         <div className="container max-w-7xl mx-auto px-4">
@@ -103,15 +103,35 @@ export default function EventsandTournaments() {
 
             {/* BUTTONS */}
             <div className="strength-controls">
-              <button
+              {/* <button
                 onClick={() => sliderRef.current.slickPrev()}
                 className="btn-prev"
+              > */}
+              <button
+                onClick={() => sliderRef.current?.slickPrev()}
+                className="btn-prev"
+                disabled={isAtStart}
+                style={{
+                  opacity: isAtStart ? 0.2 : 1,
+                  pointerEvents: isAtStart ? "none" : "auto",
+                  cursor: isAtStart ? "default" : "pointer",
+                }}
               >
                 <img src="/images/icons/arrow-left-circle-white.svg" alt="" />
               </button>
-              <button
+              {/* <button
                 onClick={() => sliderRef.current.slickNext()}
                 className="btn-next"
+              > */}
+              <button
+                onClick={() => sliderRef.current?.slickNext()}
+                className="btn-next"
+                disabled={isAtEnd}
+                style={{
+                  opacity: isAtEnd ? 0.2 : 1,
+                  pointerEvents: isAtEnd ? "none" : "auto",
+                  cursor: isAtEnd ? "default" : "pointer",
+                }}
               >
                 <img src="/images/icons/arrow-right-circle-white.svg" alt="" />
               </button>

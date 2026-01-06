@@ -1,49 +1,27 @@
-const strengthData = [
-  {
-    sport: "BADMINTON",
-    role: "chief advisor",
-    img: "/images/homepage/thestrengthimageone.png",
-    name: "pullela gopichand",
-  },
-  {
-    sport: "GYMNASTICS",
-    role: "mentor",
-    img: "/images/homepage/thestrengthimagetwo.png",
-    name: "Bharathi Dasan",
-  },
-  {
-    sport: "BADMINTON",
-    role: "chief advisor",
-    img: "/images/homepage/thestrengthimageone.png",
-    name: "pullela gopichand",
-  },
-];
-export default function ExperTeamDetail() {
+export default function ExperTeamDetail({ data }) {
+  const strengthData = data.members;
+
   return (
     <>
       <div className="aboutusstrengthsecmain">
         <div>
           <div className="container max-w-7xl mx-auto px-4">
             <div className="videosectionmain">
-              <div className="firstheading">
+              <div className="firstheading lengthfirstHeading">
                 <h2 className="stroke-fill-text mainheadingfont redcolorfont">
-                  The Strength
+                  {data.headingFirst}
                 </h2>
               </div>
 
-              <div className="secondheading">
+              <div className="secondheading lengthsecondHeading">
                 <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
-                  Behind the Squad
+                  {data.headingSecond}
                 </h2>
               </div>
             </div>
           </div>
           <div className="paravideosection">
-            <p className="paragraphtext">
-              Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-              pellentesq uescelerisque libero malesuada tristique Ultricies leo
-              viverra.
-            </p>
+            <p className="paragraphtext">{data.description}</p>
           </div>
         </div>
 

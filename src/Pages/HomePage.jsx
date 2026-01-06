@@ -1,5 +1,6 @@
 import Eventcalender from "../Components/EventCalender";
 import Header from "../Components/Header";
+import InDoorSportsFunction from "../Components/IndoorSports";
 import OutDoorSportsFunction from "../Components/OutDoorSports";
 import ProgrammsBuild from "../Components/ProgramsBuild";
 import ShowcaseProject from "../Components/ShowcaseProject";
@@ -149,13 +150,13 @@ export default function Homepage() {
         <div className="maingbsectionhome">
           <div className="container max-w-7xl mx-auto px-4 ">
             <div className="videosectionmain">
-              <div className="firstheading">
+              <div className="firstheading lengthfirstHeading">
                 <h2 className="stroke-fill-text mainheadingfont redcolorfont">
                   India's first integrated
                 </h2>
               </div>
 
-              <div className="secondheading">
+              <div className="secondheading lengthsecondHeading">
                 <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
                   residential sports school
                 </h2>
@@ -173,7 +174,7 @@ export default function Homepage() {
             </div>
 
             <div className="discovermorebutton">
-              <button className="buttonfont">Discover More</button>
+              <a className="buttonfont highlightedtextred">Discover More</a>
             </div>
 
             <div>
@@ -229,7 +230,10 @@ export default function Homepage() {
 
         {/* <SportsSlider/> */}
 
-        <OutDoorSportsFunction/>
+        <div className="OutDoorSportsBG">
+          <OutDoorSportsFunction />
+          <InDoorSportsFunction />
+        </div>
 
         <ProgrammsBuild />
 

@@ -7,19 +7,25 @@ import JourneyDetail from "../Components/DetailPage/Journey";
 import SecondSectionDetail from "../Components/DetailPage/SecondSectionDetail";
 import SucessDetailSlider from "../Components/DetailPage/SucessDetailSlider";
 import Header from "../Components/Header";
+import { useParams } from "react-router-dom";
+import DetailsData from "../Components/DetailPage/DeatilPageData";
 
 export default function DetailPage() {
+  const { slug } = useParams();
+  const data = DetailsData[slug];
+
+  if (!data) return <h2>Page Not Found</h2>;
   return (
     <>
       <Header />
-      <DetailPageBanner />
-      <SecondSectionDetail />
-      <ExperTeamDetail />
-      <FacilitythatInspire />
-      <FaqDetail />
-      <EventsandTournaments />
-      <JourneyDetail />
-      <SucessDetailSlider/>
+      <DetailPageBanner data={data.DetailPageBanner} />
+      <SecondSectionDetail data={data.SecondSectionDetail} />
+      <ExperTeamDetail data={data.experTeamDetail} />
+      <FacilitythatInspire data={data.facility} />
+      <FaqDetail data={data.faq} />
+      <EventsandTournaments data={data.eventsAndTournaments} />
+      <JourneyDetail data={data.journey} />
+      <SucessDetailSlider data={data.success} />
     </>
   );
 }

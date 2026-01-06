@@ -36,7 +36,7 @@ export default function OurPrograms() {
         <div className="container max-w-7xl mx-auto px-4 ">
           <div>
             <div className="videosectionmain">
-              <div className="firstheading">
+              <div className="firstheading lengthfirstHeading">
                 <h2 className="stroke-fill-text mainheadingfont redcolorfont">
                   Programs That
                 </h2>

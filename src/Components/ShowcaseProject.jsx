@@ -1,30 +1,8 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 export default function ShowcaseProject() {
-  const sliderRef = useRef(null);
-  const settings = {
-    dots: false,
-    infinite: false,
-    speed: 500,
-    slidesToShow: 3.5,
-    slidesToScroll: 1,
-    arrows: false,
-    loop:false,
-
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: { slidesToShow: 2 },
-      },
-      {
-        breakpoint: 768,
-        settings: { slidesToShow: 1 },
-      },
-    ],
-  };
-
   const redsvg = (
     <svg
       class="custom-svg svgshowcard "
@@ -118,18 +96,69 @@ export default function ShowcaseProject() {
     },
   ];
 
+  const sliderRef = useRef(null);
+
+  const totalSlides = showcaseData.length;
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [slidesToShow, setSlidesToShow] = useState(3.5);
+  const [progress, setProgress] = useState(0);
+
+  const isAtStart = currentSlide === 0;
+  const isAtEnd = currentSlide >= totalSlides - slidesToShow;
+
+  const updateProgress = (current) => {
+    if (totalSlides <= slidesToShow) {
+      setProgress(100);
+      return;
+    }
+    const maxScrollableIndex = totalSlides - slidesToShow;
+    const percent = (current / maxScrollableIndex) * 100;
+    setProgress(Math.min(Math.max(percent, 0), 100));
+  };
+
+  const settings = {
+    dots: false,
+    infinite: false,
+    speed: 500,
+    slidesToShow,
+    slidesToScroll: 1,
+    arrows: false,
+    swipeToSlide: true,
+    beforeChange: (_, next) => {
+      setCurrentSlide(next);
+      updateProgress(next);
+    },
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: { slidesToShow: 2 },
+        onReInit: () => setSlidesToShow(2),
+      },
+      {
+        breakpoint: 768,
+        settings: { slidesToShow: 1 },
+        onReInit: () => setSlidesToShow(1),
+      },
+    ],
+  };
+
+  useEffect(() => {
+    updateProgress(currentSlide);
+  }, [slidesToShow, totalSlides, currentSlide]);
+
   return (
     <>
       <div className="showcaseprojectrow">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="videosectionmain">
-            <div className="firstheading">
+            <div className="firstheading lengthfirstHeading ">
               <h2 className="stroke-fill-text mainheadingfont redcolorfont">
                 Showcasing Our
               </h2>
             </div>
 
-            <div className="secondheading">
+            <div className="secondheading lengthsecondHeading">
               <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
                 Peak Performance
               </h2>
@@ -170,7 +199,10 @@ export default function ShowcaseProject() {
                       >
                         {showcarditem.title}{" "}
                       </span>
-                      {showcarditem.description}
+                      <span style={{ marginLeft: "3px" }}>
+                        {" "}
+                        {showcarditem.description}
+                      </span>
                     </h4>
                   </div>
                 </div>
@@ -181,15 +213,24 @@ export default function ShowcaseProject() {
 
         <div className="slider-buttonsshowcaseproject">
           <button
-            onClick={() => sliderRef.current.slickPrev()}
-            className="left-btnshowcaseproject"
+            onClick={() => sliderRef.current?.slickPrev()}
+            disabled={isAtStart}
+            style={{
+              opacity: isAtStart ? 0.3 : 1,
+              pointerEvents: isAtStart ? "none" : "auto",
+              cursor: isAtStart ? "default" : "pointer",
+            }}
           >
             <img src="/images/icons/arrow-left-circle-red.svg" alt="" />
           </button>
-
           <button
-            onClick={() => sliderRef.current.slickNext()}
-            className="right-btnshowcaseproject"
+            onClick={() => sliderRef.current?.slickNext()}
+            disabled={isAtEnd}
+            style={{
+              opacity: isAtEnd ? 0.3 : 1,
+              pointerEvents: isAtEnd ? "none" : "auto",
+              cursor: isAtEnd ? "default" : "pointer",
+            }}
           >
             <img src="/images/icons/arrow-right-circle-red.svg" alt="" />
           </button>

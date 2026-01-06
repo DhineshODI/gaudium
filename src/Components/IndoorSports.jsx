@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-export default function OutDoorSportsFunction() {
+export default function InDoorSportsFunction() {
   const whiteSvg = (
     <svg
       className="custom-svg svgshowcardwhite"
@@ -56,7 +56,6 @@ export default function OutDoorSportsFunction() {
     slidesToScroll: 1,
     arrows: false,
     swipeToSlide: true,
-    cssEase: "ease-out",
 
     beforeChange: () => {
       isScrolling.current = true;
@@ -120,14 +119,13 @@ export default function OutDoorSportsFunction() {
       }
     };
   }, [isAtEnd, isAtStart]); // Dependencies
-
   return (
-    <div className="" ref={parentRef}>
+    <div className="indorrmainbgsec" ref={parentRef}>
       <div className="container max-w-7xl mx-auto px-4">
         <div className="videosectionmain">
           <div className="firstheading">
             <h2 className="stroke-fill-text mainheadingfont whitefontcolor">
-              outdoor
+              indoor
             </h2>
           </div>
           <div className="secondheading">
@@ -145,7 +143,7 @@ export default function OutDoorSportsFunction() {
           </p>
         </div>
       </div>
-      <div className="container max-w-7xl mx-auto px-4 oursportscontainer">
+      <div className="container max-w-7xl mx-auto px-4 inoursportscontainer">
         <Slider ref={sliderRef} {...settings}>
           {sportsSliderData.map((sport, index) => (
             <div key={index} className="cricketslideer">
@@ -163,8 +161,6 @@ export default function OutDoorSportsFunction() {
             </div>
           ))}
         </Slider>
-
-        <div className="hrlineoutdoorsports"></div>
       </div>
     </div>
   );

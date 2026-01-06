@@ -16,7 +16,7 @@ export default function Footer() {
         </div>
 
         <div className="becomeachampion">
-          <button className="buttonfont">Become a Champion</button>
+          <a className="buttonfont highlightedtextwhite">Become a Champion</a>
         </div>
 
         <div className="footerendd">
@@ -41,13 +41,36 @@ export default function Footer() {
           <div className="iconsline"></div>
 
           <ul className="footerlistpages">
-            <li>about us</li>
+            {/* <a href="">
+              <li className="highlightedtextwhite">about us</li>{" "}
+            </a>
             <li>our Programs</li>
             <li>indoor sports</li>
             <li>outdoor sports</li>
             <li>our team</li>
             <li>news & events</li>
-            <li>contact us</li>
+            <li>contact us</li> */}
+            <a href="/about">
+              <li className="highlightedtextwhite">about us</li>
+            </a>
+            <a href="/programs">
+              <li className="highlightedtextwhite">our Programs</li>
+            </a>
+            <a href="/indoor-sports">
+              <li className="highlightedtextwhite">indoor sports</li>
+            </a>
+            <a href="/outdoor-sports">
+              <li className="highlightedtextwhite">outdoor sports</li>
+            </a>
+            <a href="/our-team">
+              <li className="highlightedtextwhite">our team</li>
+            </a>
+            <a href="/news">
+              <li className="highlightedtextwhite">news & events</li>
+            </a>
+            <a href="/contact">
+              <li className="highlightedtextwhite">contact us</li>
+            </a>
           </ul>
           <div className="iconsline"></div>
           <ul className="footericonsflex">

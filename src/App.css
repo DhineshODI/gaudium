@@ -1,6 +1,6 @@
 .stroke-fill-text {
   color: transparent;
-  width: 101%;
+  width: 104%;
   background-repeat: no-repeat;
   background-size: 0% 100%;
   -webkit-background-clip: text;
@@ -37,6 +37,7 @@
 
 .redcolorfont {
   -webkit-text-stroke: 2px #be1e2d;
+  /* -webkit-text-stroke: 0.1px #be1e2d; */
   background-image: linear-gradient(to right, #be1e2d 0%, #be1e2d 100%);
 }
 
@@ -2427,6 +2428,274 @@
   }
 }
 
+/* testimonial-css */
+
+.bannerimagesection.testimonialbg {
+  background-image: url("/public/images/testimonial/testimonial-banner.jpg");
+}
+
+.testicardsmain .mainheadingfont {
+  font-size: 32px;
+  line-height: 40px;
+  margin-top: 20px;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.testicardsmain {
+  background-color: #be1e2d;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 70px 0 25px 0;
+}
+
+.testicardsmain .paragraphtext {
+  width: 80%;
+  text-align: center;
+  color: #fff;
+}
+
+.testimonialimageer {
+  position: absolute;
+  top: -20%;
+}
+
+.testimonialimageer img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.testmonialcardsss {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 85px;
+  margin-left: 4%;
+  margin-top: 100px;
+}
+
+.testminialmainbgs {
+  padding: 100px 0;
+}
+
+/* testimonial-css */
+
+/* ourinfrastructure-css */
+
+.bannerimagesection.ourinfrastructrebg {
+  background-image: url("/public/images/our-infrastructure/our-infrastructure-bg.jpg");
+}
+
+.ourinfrastructurebgdetail {
+  padding-bottom: 100px;
+}
+
+.outdoorsportsFacilitisSection {
+  background-color: #be1e2d;
+  padding: 100px 0;
+}
+
+.mainoutsportssectionouter {
+  display: flex;
+  margin: 0 5%;
+  column-gap: 5%;
+  margin-top: 70px;
+}
+
+.outsportssectionouter {
+  width: 15%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* padding: 10px 0; */
+  height: max-content;
+}
+
+.firstoutsportssectionouter {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.outsportssectionouter .paragraphtext {
+  font-size: 24px;
+  line-height: 100%;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+
+.outsportssectionouter .paragraphtext:last-child {
+  border-bottom: none;
+}
+
+.paragraphtext.activestate {
+  background-color: #fff;
+  font-family: Arial Black;
+  font-style: italic;
+  color: #be1e2d;
+  /* margin-bottom: 10px; */
+  padding-bottom: 10px;
+}
+
+.lightboximagesec {
+  width: 30%;
+  border: 5px solid #fff;
+}
+
+.Indoorfacilitybg {
+  background-color: #fff;
+}
+
+.Indoorfacilitybg .paragraphtext {
+  color: #000;
+  /* border-bottom: 1px solid rgba(0, 0, 0, 0.2); */
+}
+
+.Indoorfacilitybg .paragraphtext.activestate {
+  background-color: #be1e2d;
+  color: #fff;
+}
+
+.Indoorfacilitybg .outsportssectionouter {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.Indoorfacilitybg .outsportssectionouter .paragraphtext {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.Indoorfacilitybg .outsportssectionouter .paragraphtext:last-child {
+  border-bottom: none;
+}
+
+.Indoorfacilitybg .lightboximagesec {
+  border: 0px solid #fff;
+}
+
+/* ourinfrastructure-css */
+
+/* contact us css */
+
+.bannerimagesection.contactusbg {
+  background-image: url("/public/images/contact-us.jpg");
+}
+
+.gaudiumlocationmap {
+  width: 100%;
+  height: 700px;
+}
+
+.contactboxsection {
+  background: linear-gradient(to bottom, #e6e6e6 0%, #ffffff 100%);
+  padding: 100px 0;
+}
+
+.cardscontactus {
+  background-color: #fff;
+  border-radius: 16px;
+  width: 30%;
+  box-shadow: 4px 4px 24px rgba(0, 0, 0, 0.16);
+  padding: 27px 24px;
+  display: flex;
+  align-items: flex-start;
+  column-gap: 16px;
+}
+
+.cardscontactus .paragraphtext {
+  font-family: Arial Black;
+  font-style: italic;
+  line-height: 100%;
+}
+
+.visitus {
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0px;
+  color: #be1e2d;
+}
+
+.addreesstext {
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  color: rgba(51, 51, 51, 0.7);
+  margin-top: 20px;
+}
+
+.cardsfelxcontainer {
+  display: flex;
+  column-gap: 2%;
+  justify-content: center;
+  margin-top: 55px;
+}
+
+.formcontactbgfirst {
+  width: 40%;
+  background-color: #be1e2d;
+}
+
+.mainbgcontactbg {
+  display: flex;
+  height: 700px;
+}
+
+.formmainss {
+  background-color: #fff;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 16px;
+}
+
+.formcontactbgfirst {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textcontntcontact {
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  width: 65%;
+  text-align: center;
+}
+.headphoenecontact {
+  width: 48px;
+}
+
+.whatsappcontact {
+  display: flex;
+  margin-top: 60px;
+}
+
+.whatsappiconsvg {
+
+}
+
+.whatsappcontact .discovermorebutton {
+  margin-top: 0;
+}
+
+.whastappseccontact {
+  height: 30px;
+}
+
+/* contact us css */
+
 @media (max-width: 1600px) and (min-width: 1400px) {
   /* font-style-heading */
   .mainheadingfont {
@@ -4362,6 +4631,6 @@
   /* detail-page-css */
 }
 
-.footerrow {
+/* .footerrow {
   display: none;
-}
+} */

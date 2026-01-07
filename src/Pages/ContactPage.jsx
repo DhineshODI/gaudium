@@ -1,0 +1,157 @@
+import Header from "../Components/Header";
+
+export default function ContactPage() {
+  return (
+    <>
+      <Header />
+
+      {/* Banner-Image */}
+
+      <div className="aboutPage">
+        <div className="bannerimagesection contactusbg ">
+          <div className="container max-w-7xl mx-auto px-4 aboutusbannersection">
+            <div className="bannercontentflex">
+              <p className="breadcrumbstext">
+                <span>Home</span> &gt; contact us
+              </p>
+              <h2 className="mainheadingfont"> contact us</h2>
+              <hr />
+
+              <p className="paragraphtext contentbanner">
+                Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
+                pellentesq uescelerisque libero malesuada tristique Ultricies
+                leo viverra.
+              </p>
+            </div>
+          </div>
+
+          <p className="mainheadingfont banneroverlaytextall">contact us</p>
+        </div>
+      </div>
+      {/* Banner-Image */}
+
+      {/* Contact-Us Details */}
+
+      <div className="contactboxsection">
+        <div className="container max-w-7xl mx-auto px-4">
+          <div className="videosectionmain">
+            <div className="firstheading lengthfirstHeading">
+              <h2 className="stroke-fill-text mainheadingfont redcolorfont">
+                Contact &
+              </h2>
+            </div>
+            <div className="secondheading lengthsecondHeading">
+              <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
+                Join together
+              </h2>
+            </div>
+          </div>
+
+          <div className="paravideosection">
+            <p className="paragraphtext">
+              Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
+              pellentesq uescelerisque libero malesuada tristique Ultricies leo
+              viverra.
+            </p>
+          </div>
+
+          <div className="cardsfelxcontainer">
+            <div className="cardscontactus">
+              <img src="/images/icons/locationicon.svg" alt="" />
+              <div>
+                <h3 className="paragraphtext">LOCATION</h3>
+                <p className="visitus">Visit Us At</p>
+                <p className="addreesstext">
+                  Survey No, 25/A, Velimela Village, Ramchandra Puram Mandal,
+                  Hyderabad, Telangana 502300
+                </p>
+              </div>
+            </div>
+            <div className="cardscontactus">
+              <img src="/images/icons/callicon.svg" alt="" />
+              <div>
+                <h3 className="paragraphtext">24*7 SERVICE</h3>
+                <p className="visitus">Call Us On</p>
+                <p className="addreesstext">
+                  <a href="">Mob : +91 91006 84477</a> <br />
+                  <a href="">Mob : +91 75699 41977</a>
+                </p>
+              </div>
+            </div>
+            <div className="cardscontactus">
+              <img src="/images/icons/mailicon.svg" alt="" />
+              <div>
+                <h3 className="paragraphtext">DROP A MAIL</h3>
+                <p className="visitus">Mail Address</p>
+                <p className="addreesstext">
+                  <a href="sportopia@thegaudium.com">
+                    sportopia@thegaudium.com
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Contact-Us Details */}
+
+      {/* Form  */}
+
+      <div>
+        <div>
+          <div className="mainbgcontactbg">
+            <div className="formcontactbgfirst">
+              <div className="formmainss">
+                <img
+                  className="headphoenecontact"
+                  src="/images/icons/contact-phone-icon.svg"
+                  alt=""
+                />
+                <p className="paragraphtext">Chat with Live !</p>
+                <p className="textcontntcontact">
+                  Lorem ipsum dolor sit amet consectetur. malesuada tristique
+                  Ultricies viverra.
+                </p>
+
+                <div className="whatsappcontact">
+                  <div className="whastappseccontact">
+                    <img
+                      className="whatsappiconsvg"
+                      src="/images/icons/whatsapp-icon.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div className="discovermorebutton">
+                    <a className="buttonfont highlightedtextred">
+                      Discover More
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="formcontactbgsecond"></div>
+          </div>
+        </div>
+      </div>
+
+      {/* Form  */}
+
+      {/* maps */}
+
+      <iframe
+        className="gaudiumlocationmap"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.475195381003!2d78.2422107!3d17.4848152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbed0423f11d1f%3A0xa3bdd1b9b928c05f!2sSportopia%20Sports%20Academy!5e0!3m2!1sen!2sin!4v1767782337062!5m2!1sen!2sin"
+        width="600"
+        height="450"
+        // style="border:0;"
+        style={{ border: "0" }}
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+
+      {/* maps */}
+    </>
+  );
+}

@@ -112,7 +112,7 @@ const DetailsData = {
         },
         {
           id: 2,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image: "/images/detail-page/badminton/football-img-1.jpg",
           sport: "Shuttle Cark",
           title: "Griunds",
           description: "Lorem ipsum dolor sit amet consectetur. ",

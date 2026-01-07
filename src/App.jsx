@@ -9,6 +9,9 @@ import OutDoorSportsPage from "./Pages/OutDoorSports";
 import InDoorSportsPage from "./Pages/InDoorSports";
 import BestPerformerPage from "./Pages/BestPerformer";
 import DetailPage from "./Pages/DetailPage";
+import TestimonialPage from "./Pages/TestimonialPage";
+import OurInfraStructure from "./Pages/OurInfraStructure";
+import ContactPage from "./Pages/ContactPage";
 
 function App() {
   return (
@@ -21,6 +24,9 @@ function App() {
         <Route path="/indoor-sports" element={<InDoorSportsPage />} />
         <Route path="/best-performer" element={<BestPerformerPage />} />
         <Route path="/sport/:slug" element={<DetailPage />} />
+        <Route path="/student-testimonial" element={<TestimonialPage />} />
+        <Route path="/our-infrastructure" element={<OurInfraStructure />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
 
       <Footer />

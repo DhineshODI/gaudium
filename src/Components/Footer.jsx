@@ -9,9 +9,8 @@ export default function Footer() {
         </div>
         <div className="paravideosection">
           <p className="paragraphtext">
-            Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-            pellentesq uescelerisque libero malesuada tristique Ultricies leo
-            viverra.
+            Step into excellence. Join the champions and elevate your game at
+            Gaudium Sportopia.
           </p>
         </div>
 

@@ -19,9 +19,9 @@ export default function AboutUsPage() {
               <hr />
 
               <p className="paragraphtext contentbanner">
-                Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-                pellentesq uescelerisque libero malesuada tristique Ultricies
-                leo viverra.
+                Know about India’s first integrated residential sports school
+                shaping champions through world-class coaching, academics and
+                elite infrastructure.
               </p>
             </div>
           </div>
@@ -54,12 +54,11 @@ export default function AboutUsPage() {
                 <h4 className="oursection">Our</h4>
                 <h2 className="visionsection">Vision</h2>
                 <p className="paragraphtext">
-                  Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-                  pellentesque scelerisque libero malesuada tristique urna.
-                  Ultricies leo viverra tincidunt pharetra pretium pulvinar
-                  orci. In vel ac magna velit rhoncus nibh etiam. Scelerisque
-                  varius pretium elitneque pellentesque Quis cursus elit
-                  rhoncus.
+                  To provide India’s best integrated sports training ecosystem
+                  that nurtures athletic excellence alongside academic growth,
+                  creating future-ready champions through world-class
+                  infrastructure, expert coaching, holistic development and a
+                  lifelong commitment to sport and learning.
                 </p>
               </div>
               <img
@@ -71,12 +70,11 @@ export default function AboutUsPage() {
                 <h4 className="oursection">Our</h4>
                 <h2 className="visionsection">Mission</h2>
                 <p className="paragraphtext">
-                  Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-                  pellentesque scelerisque libero malesuada tristique urna.
-                  Ultricies leo viverra tincidunt pharetra pretium pulvinar
-                  orci. In vel ac magna velit rhoncus nibh etiam. Scelerisque
-                  varius pretium elitneque pellentesque Quis cursus elit
-                  rhoncus.
+                  To build an end-to-end sports training ecosystem uniting
+                  international education and world-class coaching, empowering
+                  all stakeholders to develop consistent excellence, nurture
+                  champions and make sport an integral, disciplined and
+                  enriching part of everyday life.
                 </p>
               </div>
             </div>
@@ -105,9 +103,9 @@ export default function AboutUsPage() {
 
         <div className="paravideosection">
           <p className="paragraphtext">
-            Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-            pellentesq uescelerisque libero malesuada tristique Ultricies leo
-            viverra.
+            World-class sports facilities built to international standards,
+            offering students the infrastructure, coaching and environment to
+            achieve peak performance across multiple disciplines.
           </p>
         </div>
 
@@ -116,67 +114,66 @@ export default function AboutUsPage() {
             <div className="firstcardhighlights">
               <img src="/images/abouts/aboutus-icon.svg" alt="" />
               <h4 className="headingtexthighlights paragraphtext">
-                Lorem ipsum dolor
+                FIG-Standard Facilities
               </h4>
               <p className="contenthightlights secondheadingtext">
-                Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-                pellentesq uescelerisque libero malesuada tristique Ultricies
-                leo viverra.
+                State-of-the-art gymnastics facilities built to FIG standards,
+                supporting technical precision, safe training, skill
+                progression, and competitive readiness for athletes.
               </p>
             </div>
             <div className="firstcardhighlights">
               <img src="/images/abouts/aboutus-icon.svg" alt="" />
               <h4 className="headingtexthighlights paragraphtext">
-                Lorem ipsum dolor
+                FIFA-standard fields
               </h4>
               <p className="contenthightlights secondheadingtext">
-                Lorem ipsum dolor sit amet consecteur. Sagi ttis blandit diam
-                sed vulputate ut fermentum sed cursus. Orci enim amet sagittis
-                lacinia ut Lectus sit.
+                Professional soccer fields built to FIFA standards, enabling
+                skill development, tactical training, competitive matches, and
+                nurturing future football champions.
               </p>
             </div>
             <div className="firstcardhighlights">
               <img src="/images/abouts/aboutus-icon.svg" alt="" />
               <h4 className="headingtexthighlights paragraphtext">
-                Lorem ipsum dolor
+                ITF-compliant courts
               </h4>
               <p className="contenthightlights secondheadingtext">
-                Lorem ipsum dolor sit amet consecteur. Sagi ttis blandit diam
-                sed vulputate ut fermentum sed cursus. Orci enim amet sagittis
-                lacinia ut Lectus sit.
+                World-class tennis courts designed to ITF specifications,
+                providing ideal conditions for coaching, practice, tournaments,
+                and athlete growth.
               </p>
             </div>
             <div className="firstcardhighlights">
               <img src="/images/abouts/aboutus-icon.svg" alt="" />
               <h4 className="headingtexthighlights paragraphtext">
-                Lorem ipsum dolor
+                IAAF-approved tracks
               </h4>
               <p className="contenthightlights secondheadingtext">
-                Lorem ipsum dolor sit amet consecteur. Sagi ttis blandit diam
-                sed vulputate ut fermentum sed cursus. Orci enim amet sagittis
-                lacinia ut Lectus sit.
+                Premium athletics tracks certified by IAAF, supporting
+                sprinting, long-distance, and field events with precision
+                training and performance monitoring.
               </p>
             </div>
             <div className="firstcardhighlights">
               <img src="/images/abouts/aboutus-icon.svg" alt="" />
               <h4 className="headingtexthighlights paragraphtext">
-                Lorem ipsum dolor
+                BWF-standard courts
               </h4>
               <p className="contenthightlights secondheadingtext">
-                Lorem ipsum dolor sit amet consecteur. Sagi ttis blandit diam
-                sed vulputate ut fermentum sed cursus. Orci enim amet sagittis
-                lacinia ut Lectus sit.
+                Badminton courts built to BWF standards, ensuring high-quality
+                training, competitive practice, and development of elite
+                players.
               </p>
             </div>
             <div className="firstcardhighlights">
               <img src="/images/abouts/aboutus-icon.svg" alt="" />
               <h4 className="headingtexthighlights paragraphtext">
-                Lorem ipsum dolor
+                FIBA-certified courts
               </h4>
               <p className="contenthightlights secondheadingtext">
-                Lorem ipsum dolor sit amet consecteur. Sagi ttis blandit diam
-                sed vulputate ut fermentum sed cursus. Orci enim amet sagittis
-                lacinia ut Lectus sit.
+                Basketball courts meeting FIBA regulations, offering optimal
+                space for drills, gameplay and honing professional-level skills.
               </p>
             </div>
           </div>

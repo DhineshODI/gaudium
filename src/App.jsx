@@ -12,6 +12,7 @@ import DetailPage from "./Pages/DetailPage";
 import TestimonialPage from "./Pages/TestimonialPage";
 import OurInfraStructure from "./Pages/OurInfraStructure";
 import ContactPage from "./Pages/ContactPage";
+import NewsandEvents from "./Pages/NewsandEvents";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
         <Route path="/student-testimonial" element={<TestimonialPage />} />
         <Route path="/our-infrastructure" element={<OurInfraStructure />} />
         <Route path="/contact" element={<ContactPage />} />
+        <Route path="/newsandevents" element={<NewsandEvents />} />
       </Routes>
 
       <Footer />

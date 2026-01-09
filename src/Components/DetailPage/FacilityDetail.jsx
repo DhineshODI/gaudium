@@ -48,6 +48,12 @@ export default function FacilitythatInspire({ data }) {
               </h2>
             </div>
           </div>
+
+          <div className="paravideosection">
+            <p className="paragraphtext text-white">
+             {data.facilitytwoline}
+            </p>
+          </div>
         </div>
         <div className="container max-w-7xl mx-auto px-4">
           <div className="buttoncontroldetailpage">

@@ -140,9 +140,8 @@ export default function BestPerformerPage() {
 
           <div className="paravideosection">
             <p className="paragraphtext">
-              Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-              pellentesq uescelerisque libero malesuada tristique Ultricies leo
-              viverra.
+              Take a glance at the champions whose achievements define
+              excellence at Gaudium Sportopia.
             </p>
           </div>
 

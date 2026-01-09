@@ -139,9 +139,9 @@ export default function OutDoorSportsFunction() {
 
         <div className="paravideosection">
           <p className="paragraphtext slidermainsecpara">
-            Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-            pellentesq uescelerisque libero malesuada tristique Ultricies leo
-            viverra.
+            World-class outdoor facilities designed to build strength, skill,
+            teamwork and competitive excellence through structured training and
+            play.
           </p>
         </div>
       </div>

@@ -18,9 +18,8 @@ export default function OurPrograms() {
               <hr />
 
               <p className="paragraphtext contentbanner">
-                Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-                pellentesq uescelerisque libero malesuada tristique Ultricies
-                leo viverra.
+                A structured pathway from discovery to elite performance, guided
+                by champion coaches at every stage level.
               </p>
             </div>
           </div>
@@ -51,9 +50,9 @@ export default function OurPrograms() {
 
             <div className="paravideosection">
               <p className="paragraphtext">
-                Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-                pellentesq uescelerisque libero malesuada tristique Ultricies
-                leo viverra.
+                Structured training programs designed to nurture talent at every
+                stage, from foundational learning to elite, performance-driven
+                excellence
               </p>
             </div>
           </div>
@@ -64,12 +63,12 @@ export default function OurPrograms() {
                 <p className="nameofthesportsprogramm">Sportopia</p>
                 <h3 className="roleinstrength">rookie</h3>
                 <p className="paragraphtext paragaoneprogram">
-                  Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-                  pellentesque scelerisque libero malesuada tristique urna.
-                  Ultricies leo viverra tincidunt pharetra pretium pulvinar
-                  orci. In vel ac magna velit rhoncus nibh etiam. Scelerisque
-                  varius pretium elitneque pellentesque Quis cursus elit
-                  rhoncus.
+                  This program introduces students to chosen sports through
+                  structured after-school coaching sessions. The program builds
+                  strong fundamentals across two levels—movement skills,
+                  sport-specific techniques, and theory. Biannual assessments
+                  track progress, with detailed feedback and development reports
+                  shared during Sportopia PTMs.
                 </p>
 
                 <p className="paragraphtext paragatwoprogram">
@@ -83,12 +82,12 @@ export default function OurPrograms() {
                 <p className="nameofthesportsprogramm">Sportopia</p>
                 <h3 className="roleinstrength">Prodigy</h3>
                 <p className="paragraphtext paragaoneprogram">
-                  Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-                  pellentesque scelerisque libero malesuada tristique urna.
-                  Ultricies leo viverra tincidunt pharetra pretium pulvinar
-                  orci. In vel ac magna velit rhoncus nibh etiam. Scelerisque
-                  varius pretium elitneque pellentesque Quis cursus elit
-                  rhoncus.
+                  This is an intensive, performance-driven program for athletes
+                  aiming to excel competitively. With training before and after
+                  school, it progresses through three levels—Introductory,
+                  Intermediate, and Advanced—focusing on skill refinement, match
+                  exposure, fitness and elite-level competition supported by
+                  high-performance and specialist coaching.
                 </p>
 
                 <p className="paragraphtext paragatwoprogram">
@@ -102,12 +101,12 @@ export default function OurPrograms() {
                 <p className="nameofthesportsprogramm">Sportopia</p>
                 <h3 className="roleinstrength">Prodigy</h3>
                 <p className="paragraphtext paragaoneprogram">
-                  Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-                  pellentesque scelerisque libero malesuada tristique urna.
-                  Ultricies leo viverra tincidunt pharetra pretium pulvinar
-                  orci. In vel ac magna velit rhoncus nibh etiam. Scelerisque
-                  varius pretium elitneque pellentesque Quis cursus elit
-                  rhoncus.
+                  This is a full-time, elite program for high-potential athletes
+                  aspiring to professional sports careers. With intensive
+                  training, personalized academic support and coach-led
+                  selection, progress is measured through tournament
+                  performance, regular competitive matches and continuous
+                  exposure to high-level competition.
                 </p>
 
                 <p className="paragraphtext paragatwoprogram">

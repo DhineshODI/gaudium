@@ -74,16 +74,12 @@
   font-style: normal;
 }
 
-
 @font-face {
   font-family: "arialbd";
   src: url("/Fonts/arialbd.ttf") format("truetype");
   font-weight: 900;
   font-style: normal;
 }
-
-
-
 
 /* Gaudium Fonts */
 
@@ -140,3 +136,4 @@
     padding-right: 1rem;
   }
 }
+

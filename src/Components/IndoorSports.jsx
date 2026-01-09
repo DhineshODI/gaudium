@@ -137,9 +137,7 @@ export default function InDoorSportsFunction() {
 
         <div className="paravideosection">
           <p className="paragraphtext slidermainsecpara">
-            Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-            pellentesq uescelerisque libero malesuada tristique Ultricies leo
-            viverra.
+          Purpose-built indoor facilities enabling year-round training, precision skill development and peak performance across multiple sporting disciplines
           </p>
         </div>
       </div>

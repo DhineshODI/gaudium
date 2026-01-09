@@ -71,9 +71,8 @@ export default function SucessYouMore() {
 
           <div className="paravideosection">
             <p className="paragraphtext">
-              Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-              pellentesq uescelerisque libero malesuada tristique Ultricies leo
-              viverra.
+              From academic excellence to athletic milestones, our students’
+              progress is tracked, nurtured and celebrated.
             </p>
           </div>
 

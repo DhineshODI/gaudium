@@ -83,9 +83,8 @@ const TeamSlider = () => {
 
       <div class="paravideosection">
         <p class="paragraphtext">
-          Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-          pellentesq uescelerisque libero malesuada tristique Ultricies leo
-          viverra.
+          Real stories and experiences shared by our athletes, reflecting their
+          journey, growth and success.
         </p>
       </div>
 

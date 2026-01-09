@@ -1,39 +1,28 @@
 const strengthData = [
   {
-    sport: "BADMINTON",
-    role: "chief advisor",
+    sport: "Tennis ",
+    role: "mentor ",
     img: "/images/homepage/thestrengthimageone.png",
-    name: "pullela gopichand",
+    name: "Vijaykumar",
   },
   {
-    sport: "GYMNASTICS",
-    role: "mentor",
+    sport: "Swimming ",
+    role: "coach ",
     img: "/images/homepage/thestrengthimagetwo.png",
-    name: "Bharathi Dasan",
+    name: "C. JACOB VIJAY KUMAR",
   },
   {
-    sport: "BADMINTON",
-    role: "chief advisor",
+    sport: "Cricket ",
+    role: "coach ",
     img: "/images/homepage/thestrengthimageone.png",
-    name: "pullela gopichand",
+    name: "Omer",
   },
+
   {
-    sport: "BADMINTON",
-    role: "chief advisor",
+    sport: "Football  ",
+    role: "coach  ",
     img: "/images/homepage/thestrengthimageone.png",
-    name: "pullela gopichand",
-  },
-  {
-    sport: "BADMINTON",
-    role: "chief advisor",
-    img: "/images/homepage/thestrengthimageone.png",
-    name: "pullela gopichand",
-  },
-  {
-    sport: "BADMINTON",
-    role: "chief advisor",
-    img: "/images/homepage/thestrengthimageone.png",
-    name: "pullela gopichand",
+    name: "CHINTHA GURUPRASAD",
   },
 ];
 export default function AboutusTheStrengthSection() {
@@ -56,9 +45,8 @@ export default function AboutusTheStrengthSection() {
           </div>
           <div className="paravideosection">
             <p className="paragraphtext">
-              Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-              pellentesq uescelerisque libero malesuada tristique Ultricies leo
-              viverra.
+              A dedicated team of elite coaches and support staff driving
+              performance, discipline and excellence behind every athlete.
             </p>
           </div>
         </div>

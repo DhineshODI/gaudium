@@ -12,15 +12,13 @@ export default function ProgrammsBuild() {
 
             <div className="secondheading">
               <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
-                Build Athletes
+                build Champions
               </h2>
             </div>
           </div>
           <div className="paravideosection">
             <p className="paragraphtext">
-              Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-              pellentesq uescelerisque libero malesuada tristique Ultricies leo
-              viverra.
+             A structured pathway from discovery to elite performance, guided by champion coaches at every stage level.
             </p>
           </div>
         </div>
@@ -35,8 +33,7 @@ export default function ProgrammsBuild() {
                 </div>
 
                 <div className="contentbuildsection">
-                  Lorem ipsum dolor sit amet consectetur. Tristique ornare dolor
-                  odio nulla. Id molestie tristique laoreet velit.
+                  Building strong fundamentals through guided introduction, helping young athletes discover skills, confidence, discipline and love for sport. 
                 </div>
 
                 <div className="becomeachampion">
@@ -52,8 +49,7 @@ export default function ProgrammsBuild() {
                 </div>
 
                 <div className="contentbuildsection">
-                  Lorem ipsum dolor sit amet consectetur. Tristique ornare dolor
-                  odio nulla. Id molestie tristique laoreet velit.
+               Intensive training for committed athletes, sharpening technique, fitness and competitive mindset to consistently elevate performance levels.
                 </div>
 
                 <div className="becomeachampion">

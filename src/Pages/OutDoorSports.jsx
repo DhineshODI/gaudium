@@ -7,7 +7,7 @@ export default function OutDoorSportsPage() {
       gameImage: "/images/ourprograms/athletics.jpg",
       gameName: "Athletics",
       gameAboutContent:
-        "Lorem ipsum dolor sit amet consectetur. Tristiq ue ornare dolor odio nulla. Id molestie tristi.",
+        "A track-and-field sport enhancing speed, endurance, strength, agility, coordination and competitive performance across multiple events.",
       gameLinkL: "/athletics",
     },
     {
@@ -15,7 +15,7 @@ export default function OutDoorSportsPage() {
       gameImage: "/images/ourprograms/cricket.jpg",
       gameName: "Cricket",
       gameAboutContent:
-        "Lorem ipsum dolor sit amet consectetur. Tristiq ue ornare dolor odio nulla. Id molestie tristi.",
+        "A strategic team sport developing batting, bowling, fielding skills, teamwork, focus and match awareness consistently.",
       gameLinkL: "/athletics",
     },
     {
@@ -23,7 +23,7 @@ export default function OutDoorSportsPage() {
       gameImage: "/images/ourprograms/football.jpg",
       gameName: "Football",
       gameAboutContent:
-        "Lorem ipsum dolor sit amet consectetur. Tristiq ue ornare dolor odio nulla. Id molestie tristi.",
+        "A high-intensity team sport improving stamina, coordination, tactical understanding, ball control, teamwork and competitive spirit.",
       gameLinkL: "/athletics",
     },
     {
@@ -31,7 +31,7 @@ export default function OutDoorSportsPage() {
       gameImage: "/images/ourprograms/swimming.png",
       gameName: "Swimming",
       gameAboutContent:
-        "Lorem ipsum dolor sit amet consectetur. Tristiq ue ornare dolor odio nulla. Id molestie tristi.",
+        "A full-body water sport building strength, endurance, technique, flexibility, speed and aquatic confidence for all levels.",
       gameLinkL: "/athletics",
     },
     {
@@ -39,7 +39,7 @@ export default function OutDoorSportsPage() {
       gameImage: "/images/ourprograms/tennis.png",
       gameName: "Tennis",
       gameAboutContent:
-        "Lorem ipsum dolor sit amet consectetur. Tristiq ue ornare dolor odio nulla. Id molestie tristi.",
+        "A fast-paced racquet sport developing agility, precision, strategy, reflexes, stamina and competitive match readiness effectively.",
       gameLinkL: "/athletics",
     },
   ];
@@ -62,9 +62,9 @@ export default function OutDoorSportsPage() {
                 <hr />
 
                 <p className="paragraphtext contentbanner">
-                  Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-                  pellentesq uescelerisque libero malesuada tristique Ultricies
-                  leo viverra.
+                  World-class outdoor facilities designed to build strength,
+                  skill, teamwork and competitive excellence through structured
+                  training and play.
                 </p>
               </div>
             </div>
@@ -95,9 +95,9 @@ export default function OutDoorSportsPage() {
 
               <div className="paravideosection">
                 <p className="paragraphtext">
-                  Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-                  pellentesq uescelerisque libero malesuada tristique Ultricies
-                  leo viverra.
+                  State of the art outdoor facilities designed for skill
+                  development, fitness, teamwork and competitive excellence
+                  across multiple sports disciplines.
                 </p>
               </div>
             </div>

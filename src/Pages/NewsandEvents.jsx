@@ -1,46 +1,46 @@
 import Header from "../Components/Header";
 
-export default function InDoorSportsPage() {
+export default function NewsandEvents() {
   const games = [
     {
       id: 1,
-      gameImage: "/images/indoorsports/badminton.jpg",
-      gameName: "Badminton",
+      gameImage: "/images/ourprograms/athletics.jpg",
+      gameName: "Athletics",
       gameAboutContent:
-        "A fast-paced racquet sport that builds agility, reflexes, endurance, and sharp tactical thinking skills.",
-      gameLinkL: "/badminton",
+        "Lorem ipsum dolor sit amet consectetur. Tristiq ue ornare dolor odio nulla. Id molestie tristi.",
+      gameLinkL: "/athletics",
     },
     {
       id: 2,
-      gameImage: "/images/indoorsports/basketball.jpg",
-      gameName: "Basketball",
+      gameImage: "/images/ourprograms/cricket.jpg",
+      gameName: "Cricket",
       gameAboutContent:
-        "A dynamic team sport focusing on speed, coordination, strategy, and high-intensity athletic performance levels.",
-      gameLinkL: "/basketball",
+        "Lorem ipsum dolor sit amet consectetur. Tristiq ue ornare dolor odio nulla. Id molestie tristi.",
+      gameLinkL: "/athletics",
     },
     {
       id: 3,
-      gameImage: "/images/indoorsports/fenching.jpg",
-      gameName: "Fencing",
+      gameImage: "/images/ourprograms/football.jpg",
+      gameName: "Football",
       gameAboutContent:
-        "A precision-based combat sport developing lightning reflexes, strategy, discipline, and intense mental focus skills.",
-      gameLinkL: "/fenching",
+        "Lorem ipsum dolor sit amet consectetur. Tristiq ue ornare dolor odio nulla. Id molestie tristi.",
+      gameLinkL: "/athletics",
     },
     {
       id: 4,
-      gameImage: "/images/indoorsports/gymastics.jpg",
-      gameName: "Gymnastics",
+      gameImage: "/images/ourprograms/swimming.png",
+      gameName: "Swimming",
       gameAboutContent:
-        "A foundation sport enhancing strength, flexibility, balance, coordination, body control, and technical movement mastery.",
-      gameLinkL: "/gymastics",
+        "Lorem ipsum dolor sit amet consectetur. Tristiq ue ornare dolor odio nulla. Id molestie tristi.",
+      gameLinkL: "/athletics",
     },
     {
       id: 5,
-      gameImage: "/images/indoorsports/skating.jpg",
-      gameName: "Skating",
+      gameImage: "/images/ourprograms/tennis.png",
+      gameName: "Tennis",
       gameAboutContent:
-        "A skill-driven sport improving balance, speed, control, confidence, coordination, and overall movement efficiency development.",
-      gameLinkL: "/skating",
+        "Lorem ipsum dolor sit amet consectetur. Tristiq ue ornare dolor odio nulla. Id molestie tristi.",
+      gameLinkL: "/athletics",
     },
   ];
   return (
@@ -51,25 +51,25 @@ export default function InDoorSportsPage() {
         {/* Banner-Image */}
 
         <div className="aboutPage">
-          <div className="bannerimagesection indoorsports">
+          <div className="bannerimagesection newsandeventsbanner">
             <div className="container max-w-7xl mx-auto px-4 aboutusbannersection">
               <div className="bannercontentflex">
                 <p className="breadcrumbstext">
-                  <span>Home</span> &gt; Indoor Sports
+                  <span>Home</span> &gt; News & Events
                 </p>
 
-                <h2 className="mainheadingfont">Indoor Sports</h2>
+                <h2 className="mainheadingfont">News & Events</h2>
                 <hr />
 
                 <p className="paragraphtext contentbanner">
-                  Purpose-built indoor facilities enabling year-round training,
-                  precision skill development and peak performance across
-                  multiple sporting disciplines
+                  Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
+                  pellentesq uescelerisque libero malesuada tristique Ultricies
+                  leo viverra.
                 </p>
               </div>
             </div>
             <p className="mainheadingfont banneroverlaytextall">
-              indoor Sports
+              News & Events
             </p>
           </div>
         </div>
@@ -77,28 +77,27 @@ export default function InDoorSportsPage() {
 
         {/* card-section */}
 
-        <div className="outdoorsportsmain indoorsportsmaincss">
+        <div className="outdoorsportsmain">
           <div className="container max-w-7xl mx-auto px-4 ">
             <div className="cardssectionoutdoor">
               <div className="videosectionmain">
                 <div className="firstheading lengthfirstHeading">
-                  <h2 className="stroke-fill-text mainheadingfont redcolorfont lineheight120">
-                    Indoor Action,
+                  <h2 className="stroke-fill-text mainheadingfont redcolorfont">
+                    News & 
                   </h2>
                 </div>
                 <div className="secondheading lengthsecondHeading">
                   <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
-                    Endless Passion
+                   Events
                   </h2>
                 </div>
               </div>
 
               <div className="paravideosection">
                 <p className="paragraphtext">
-                  Experience high-energy indoor sports in world-class arenas,
-                  where focused training, year-round play and competitive
-                  intensity fuel skill development and peak athletic
-                  performance.
+                  Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
+                  pellentesq uescelerisque libero malesuada tristique Ultricies
+                  leo viverra.
                 </p>
               </div>
             </div>
@@ -118,10 +117,8 @@ export default function InDoorSportsPage() {
                         {game.gameAboutContent}
                       </p>
 
-                      <a href={game.gameLinkL}>
-                        <button className="exploremorebutton buttonfont">
-                          explore More
-                        </button>
+                      <a className="exploremorebutton buttonfont">
+                        explore More
                       </a>
                     </div>
                   </div>

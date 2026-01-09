@@ -165,11 +165,11 @@ export default function Homepage() {
 
             <div className="paravideosection">
               <p className="paragraphtext">
-                Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-                pellentesque scelerisque libero malesuada tristique urna.
-                Ultricies leo viverra tincidunt pharetra pretium pulvinar orci.
-                In vel ac magna velit rhoncus nibh etiam. Scelerisque varius
-                pretium elitneque pellentesque Quis cursus elit rhoncus.
+                Gaudium is India’s first integrated residential sports school,
+                blending world-class academics with elite athletic training,
+                holistic development, expert mentorship, and future-ready
+                infrastructure for young champions across disciplines and
+                competitive pathways.
               </p>
             </div>
 

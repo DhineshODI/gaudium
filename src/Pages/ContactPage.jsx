@@ -1,3 +1,4 @@
+import ContactForm from "../Components/ContactUsForm";
 import Header from "../Components/Header";
 
 export default function ContactPage() {
@@ -123,14 +124,14 @@ export default function ContactPage() {
                     />
                   </div>
                   <div className="discovermorebutton">
-                    <a className="buttonfont highlightedtextred">
-                      Discover More
-                    </a>
+                    <a className="buttonfont highlightedtextred">whatsapp</a>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="formcontactbgsecond"></div>
+            <div className="formcontactbgsecond">
+             <ContactForm/>
+            </div>
           </div>
         </div>
       </div>
@@ -139,8 +140,11 @@ export default function ContactPage() {
 
       {/* maps */}
 
+      
+
       <iframe
         className="gaudiumlocationmap"
+        id="idgaudiumlocationmap"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.475195381003!2d78.2422107!3d17.4848152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbed0423f11d1f%3A0xa3bdd1b9b928c05f!2sSportopia%20Sports%20Academy!5e0!3m2!1sen!2sin!4v1767782337062!5m2!1sen!2sin"
         width="600"
         height="450"

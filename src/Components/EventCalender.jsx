@@ -19,8 +19,7 @@ export default function Eventcalender() {
             </div>
             <div className="paravideosection">
               <p className="paragraphtext">
-                Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-                pellentesq uescelerisque libero malesuada
+             Reserve world-class sports facilities easily and train on professional grounds built for peak performance.
               </p>
             </div>
 
@@ -44,8 +43,7 @@ export default function Eventcalender() {
             </div>
             <div className="paravideosection">
               <p className="paragraphtext">
-                Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-                pellentesq uescelerisque libero malesuada
+               Latest updates, achievements, tournaments and upcoming events from Gaudium Sportopia.
               </p>
             </div>
             <div className="becomeachampion">

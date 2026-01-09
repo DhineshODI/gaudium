@@ -33,9 +33,7 @@ export default function JourneyInPictures() {
 
         <div className="paravideosection">
           <p className="paragraphtext">
-            Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-            pellentesq uescelerisque libero malesuada tristique Ultricies leo
-            viverra.
+          A glance of our athletes’ growth, training and memorable moments on their path to excellence at Gaudium Sportopia.
           </p>
         </div>
 

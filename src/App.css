@@ -2042,6 +2042,7 @@
   width: 100%;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
 .bannerimagesection.badmintonbannerdetail {
@@ -2640,61 +2641,227 @@
 }
 
 .formcontactbgfirst {
-  width: 40%;
+  width: 38%;
   background-color: #be1e2d;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.formcontactbgsecond {
+  display: flex;
+  justify-content: center;
+  width: 62%;
+  padding-top: 100px;
+  padding-left: 2%;
+  background: rgba(51, 51, 51, 0.05);
+}
 .mainbgcontactbg {
   display: flex;
-  height: 700px;
+  height: 850px;
+  position: relative;
+  height: 890px;
+}
+.conatctformstyle {
+  width: 50%;
+}
+
+.mainbgcontactbg::before {
+  content: "";
+  background-image: url(/public/images/contact-us-bg.png);
+  position: absolute;
+  bottom: 0px;
+  height: 785px;
+  width: 455px;
+  left: 29%;
+  z-index: 1;
 }
 
 .formmainss {
   background-color: #fff;
-  width: 35%;
+  width: 315px;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 16px;
-}
-
-.formcontactbgfirst {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 40px 0px;
+  position: absolute;
+  left: 16%;
 }
 
 .textcontntcontact {
   font-family: Arial;
   font-weight: 400;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 21px;
   letter-spacing: 0px;
   width: 65%;
   text-align: center;
+  margin-top: 15px;
 }
 .headphoenecontact {
   width: 48px;
+  margin-bottom: 10px;
 }
 
 .whatsappcontact {
   display: flex;
-  margin-top: 60px;
+  margin-top: 50px;
+  align-items: center;
+  column-gap: 8px;
 }
 
 .whatsappiconsvg {
-
+  width: 35px;
+  height: 35px;
 }
 
 .whatsappcontact .discovermorebutton {
   margin-top: 0;
+  height: max-content;
 }
 
 .whastappseccontact {
-  height: 30px;
+  /* height: 30px; */
+}
+
+.whatsappcontact .discovermorebutton .buttonfont {
+  text-decoration: none;
+  height: 20px;
+}
+.conatctformstyle .paragraphtext {
+  font-family: Arial Black;
+  font-style: italic;
+  line-height: 100%;
+  text-transform: uppercase;
+}
+
+.conatctformstyle .paragraphtext span {
+  color: #be1e2d;
+}
+
+.conatctformstyle input {
+  border: 1px solid black;
+  height: 56px;
+  width: 246px;
+  border-radius: 4px;
+}
+
+.inputrelativesection {
+  position: relative;
+}
+
+.textoftheinput {
+  position: absolute;
+  left: 20px;
+  top: -16px;
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 34px;
+  letter-spacing: 0px;
+  color: rgb(51, 51, 51);
+  margin-top: 0;
+  z-index: 100;
+  /* background: #fff; */
+  background-color: rgb(243 243 243);
+  padding: 0px 5px;
+}
+
+.inputrelativesection input::placeholder {
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 34px;
+  letter-spacing: 0px;
+  color: rgba(51, 51, 51, 0.3);
+  margin-top: 0;
+  z-index: 100;
+  padding-left: 24px;
+}
+
+.contactformflex {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  row-gap: 30px;
+}
+
+.conatctformstyle form {
+  margin-top: 40px;
+}
+
+.pleasechecktick {
+  font-family: Arial;
+  font-style: italic;
+  line-height: 21px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: none;
+  width: 70%;
+  margin-top: 40px;
+  letter-spacing: 0.5px;
+}
+
+.pleasechecktick span {
+  color: #be1e2d;
+}
+
+.conatctformstyle .toggleclassa {
+  width: 16px;
+  border-radius: 0px;
+  height: 16px;
+  border-color: 1px solid red;
+}
+
+.toggleclassname {
+  font-family: Arial;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 34px;
+  margin-left: 8px;
+}
+
+.maintogglediv {
+  display: flex;
+  align-items: center;
+  min-width: 106px;
+}
+
+.checkboxdisplay {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  margin-top: 20px;
+}
+
+.yesorno {
+  column-gap: 15px;
+}
+
+.conatctformstyle .discovermorebutton {
+  justify-content: flex-start;
+}
+
+.whatsappcontact .highlightedtextred {
+  &::after {
+    bottom: -3px;
+  }
+}
+
+.yesorno .maintogglediv {
+  min-width: max-content;
 }
 
 /* contact us css */
+
+/* news and events css */
+
+.bannerimagesection.newsandeventsbanner {
+  background-image: url("/public/images/newsandevents/newsevenetsbanner.jpg");
+}
+
+/* news and events css */
 
 @media (max-width: 1600px) and (min-width: 1400px) {
   /* font-style-heading */

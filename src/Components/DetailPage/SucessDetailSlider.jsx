@@ -153,7 +153,7 @@ export default function SucessDetailSlider({ data }) {
                       >
                         {showcarditem.title}{" "}
                       </span>
-                      <div>{showcarditem.description}</div>
+                      <div style={{textAlign:"center"}}>{showcarditem.description}</div>
                     </h4>
                   </div>
                 </div>

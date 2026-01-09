@@ -107,9 +107,7 @@ export default function TheStrenthBehind() {
             </div>
             <div className="paravideosection">
               <p className="paragraphtext">
-                Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-                pellentesq uescelerisque libero malesuada tristique Ultricies
-                leo viverra.
+                Meet the expert coaches, mentors, and support team powering every athlete’s journey to excellence.
               </p>
             </div>
 

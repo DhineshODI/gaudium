@@ -1,4 +1,7 @@
+import { useContext } from "react";
+import { MenuContext } from "../Components/MenuContext";
 export default function Header() {
+  const { menuOnclick } = useContext(MenuContext);
   return (
     <>
       <div className="headerdiv">
@@ -6,6 +9,7 @@ export default function Header() {
           <img src="/images/gaudium-logo.svg" alt="" />
 
           <svg
+            onClick={menuOnclick}
             className="headermenuicon"
             width="60"
             height="41"

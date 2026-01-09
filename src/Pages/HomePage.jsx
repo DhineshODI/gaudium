@@ -9,7 +9,7 @@ import SucessYouMore from "../Components/SucessYouMore";
 import TheStrenthBehind from "../Components/TheStrengthBehind";
 import VoicesofChampion from "../Components/VoicesofChampion";
 
-export default function Homepage() {
+export default function Homepage({ menuOnclick }) {
   return (
     <>
       <div className="Homepagestyle">

@@ -2863,6 +2863,112 @@
 
 /* news and events css */
 
+/* ham-burger */
+
+.menuhamfull {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 10000;
+}
+
+.secondhamhalf {
+  width: 36%;
+  width: 40%;
+  background-color: #be1e2d;
+  padding-bottom: 100px;
+  padding-left: 5%;
+}
+
+.firsthamhalf {
+  width: 72%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.mainhamsec {
+  display: flex;
+}
+
+.menubarhamlist {
+  cursor: pointer;
+  font-family: Arial;
+  font-weight: 400;
+  transition: 0.3s ease-out;
+  padding: 10px 0;
+  font-size: 22px;
+  line-height: 34px;
+  letter-spacing: 0px;
+  color: #fff;
+  text-transform: uppercase;
+  border-bottom: 1px solid;
+  border-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0.7) 100%
+    )
+    1;
+}
+
+.menustyles:hover {
+  padding-left: 20px;
+}
+
+.menubarul {
+  width: 55%;
+  /* padding-left: 15%; */
+}
+
+.menubarclosebuttons {
+  cursor: pointer;
+}
+
+.hamclosebutton {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 15%;
+  padding-top: 10%;
+  align-items: flex-end;
+  margin-bottom: 20px;
+}
+
+.bordernonetext {
+  border-bottom: none;
+  padding: 0;
+}
+
+.letstalktext {
+  padding: 0;
+  border-bottom: none;
+  padding-bottom: 8px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.menubarletstalks {
+  margin-top: 40px;
+}
+.menubarletstalks .bordernonetext:last-child {
+  border-bottom: 1px solid;
+  padding-bottom: 12px;
+  border-image: linear-gradient(
+      to left,
+      rgba(255, 255, 255, 0.05) 0%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0.7) 100%
+    )
+    1;
+}
+
+.menunamee {
+  padding: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+  font-style: italic;
+  font-weight: 600;
+  list-style: none;
+}
+/* ham-burger */
+
 @media (max-width: 1600px) and (min-width: 1400px) {
   /* font-style-heading */
   .mainheadingfont {
@@ -3312,6 +3418,141 @@
     width: 85%;
   }
   /* home-page css */
+
+  /* testimonial css */
+
+  .testminialmainbgs {
+    padding: 80px 0;
+  }
+
+  .testmonialcardsss {
+    margin-top: 85px;
+  }
+
+  /* testimonial css */
+
+  /* Contact us css */
+
+  .conatctformstyle {
+    width: 62%;
+  }
+
+  .formmainss {
+    width: 270px;
+    padding: 30px 0px;
+    position: absolute;
+    left: 13%;
+  }
+
+  .mainbgcontactbg {
+    height: 775px;
+  }
+
+  .mainbgcontactbg::before {
+    height: 650px;
+    width: 375px;
+    left: 29%;
+    z-index: 1;
+    background-size: contain;
+  }
+
+  .conatctformstyle input {
+    height: 50px;
+    width: 220px;
+  }
+
+  .formcontactbgsecond {
+    width: 62%;
+    padding-top: 110px;
+    padding-left: 9%;
+  }
+
+  .pleasechecktick {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .conatctformstyle .discovermorebutton {
+    margin-top: 15px;
+  }
+
+  .addreesstext {
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+
+  .cardscontactus {
+    column-gap: 15px;
+  }
+
+  .contactboxsection {
+    padding: 80px 0;
+  }
+
+  .cardsfelxcontainer {
+    margin-top: 45px;
+  }
+
+  .gaudiumlocationmap {
+    height: 500px;
+  }
+
+  /* Contact us css */
+
+  /* Footer css */
+
+  .footerlistpages {
+    column-gap: 20px;
+  }
+
+  .footerimagesize {
+    width: 90%;
+  }
+
+  .footerlistpages li {
+    font-size: 14px;
+  }
+
+  .footericonsflex {
+    column-gap: 20px;
+  }
+
+  .footerlogoimageflex {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footerendd {
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+
+  .footerwithlogo {
+    column-gap: 22px;
+  }
+
+  .footericonsflex img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .footerendd .mainheadingfont {
+    font-size: 60px;
+    height: 120%;
+  }
+
+  .footerrow {
+    padding-bottom: 70px;
+    padding-top: 70px;
+  }
+
+  .footercopyrights {
+    align-items: center;
+    margin-top: 35px;
+  }
+
+  /* Footer css */
 }
 
 @media (max-width: 1400px) and (min-width: 1250px) {
@@ -3822,6 +4063,191 @@
     margin-top: -110px;
   }
   /* home-page css */
+
+  /* testimonial css */
+
+  .bannerimagesection.testimonialbg {
+    background-size: cover;
+  }
+
+  .testminialmainbgs {
+    padding: 60px 0;
+  }
+
+  .testmonialcardsss {
+    margin-top: 85px;
+  }
+
+  .testicardsmain .mainheadingfont {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .testimonialimageer img {
+    width: 90px;
+    height: 90px;
+  }
+
+  /* testimonial css */
+
+  /* Contact us css */
+
+  .conatctformstyle {
+    width: 65%;
+  }
+
+  .formmainss {
+    width: 240px;
+    padding: 20px 0px;
+    position: absolute;
+    left: 12%;
+  }
+
+  .headphoenecontact {
+    width: 45px;
+    margin-bottom: 8px;
+  }
+
+  .textcontntcontact {
+    width: 70%;
+  }
+
+  .toggleclassname {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .checkboxdisplay {
+    column-gap: 18px;
+    margin-top: 15px;
+  }
+
+  .maintogglediv {
+    min-width: 92px;
+  }
+
+  .whatsappcontact {
+    margin-top: 25px;
+  }
+
+  .mainbgcontactbg {
+    height: 700px;
+  }
+
+  .textoftheinput {
+    left: 15px;
+  }
+
+  .mainbgcontactbg::before {
+    height: 600px;
+    width: 347px;
+    left: 27%;
+    z-index: 1;
+    background-size: contain;
+  }
+
+  .conatctformstyle input {
+    height: 48px;
+    width: 200px;
+  }
+
+  .formcontactbgsecond {
+    width: 62%;
+    padding-top: 110px;
+    padding-left: 9%;
+  }
+
+  .pleasechecktick {
+    width: 80%;
+    margin-top: 20px;
+  }
+
+  .conatctformstyle .discovermorebutton {
+    margin-top: 15px;
+  }
+
+  .addreesstext {
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 10px;
+  }
+
+  .cardscontactus {
+    column-gap: 15px;
+    padding: 25px 15px;
+  }
+
+  .contactboxsection {
+    padding: 60px 0;
+  }
+
+  .cardsfelxcontainer {
+    margin-top: 45px;
+  }
+
+  .gaudiumlocationmap {
+    height: 470px;
+  }
+
+  /* Contact us css */
+
+  /* Footer css */
+
+  .footerlistpages {
+    column-gap: 20px;
+  }
+
+  .footerimagesize {
+    width: 70%;
+  }
+
+  .footerlistpages li {
+    font-size: 12px;
+  }
+
+  .footericonsflex {
+    column-gap: 15px;
+  }
+
+  .footerlogoimageflex {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footercopyrights .paragraphtext {
+    font-size: 14px;
+  }
+
+  .footerendd {
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+
+  .footerwithlogo {
+    column-gap: 15px;
+  }
+
+  .footericonsflex img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .footerendd .mainheadingfont {
+    font-size: 51px;
+    height: 120%;
+  }
+
+  .footerrow {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .footercopyrights {
+    align-items: center;
+    margin-top: 35px;
+  }
+
+  /* Footer css */
 }
 
 @media (max-width: 1250px) and (min-width: 1100px) {
@@ -4400,6 +4826,216 @@
   }
 
   /* home-page css */
+
+  /* testimonial css */
+
+  .bannerimagesection.testimonialbg {
+    background-size: cover;
+  }
+
+  .testminialmainbgs {
+    padding: 60px 0;
+  }
+
+  .testmonialcardsss {
+    margin-top: 80px;
+  }
+
+  .testicardsmain .mainheadingfont {
+    font-size: 27px;
+    line-height: 37px;
+  }
+
+  .testimonialimageer img {
+    width: 85px;
+    height: 85px;
+  }
+
+  .testicardsmain {
+    padding: 60px 0 25px 0;
+  }
+
+  /* testimonial css */
+
+  /* Contact us css */
+
+  .conatctformstyle {
+    width: 65%;
+  }
+
+  .formmainss {
+    width: 210px;
+    padding: 20px 0px;
+    position: absolute;
+    left: 12%;
+  }
+
+  .headphoenecontact {
+    width: 45px;
+    margin-bottom: 8px;
+  }
+
+  .textcontntcontact {
+    width: 70%;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 12px;
+  }
+
+  .toggleclassname {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .checkboxdisplay {
+    column-gap: 18px;
+    margin-top: 15px;
+  }
+
+  .maintogglediv {
+    min-width: 92px;
+  }
+
+  .whatsappcontact {
+    margin-top: 20px;
+  }
+
+  .mainbgcontactbg {
+    height: 660px;
+  }
+
+  .textoftheinput {
+    left: 15px;
+    line-height: 25px;
+    top: -12px;
+  }
+
+  .mainbgcontactbg::before {
+    height: 530px;
+    width: 306px;
+    left: 27%;
+    z-index: 1;
+    background-size: contain;
+  }
+
+  .conatctformstyle input {
+    height: 39px;
+    width: 163px;
+  }
+
+  .formcontactbgsecond {
+    width: 62%;
+    padding-top: 75px;
+    padding-left: 9%;
+  }
+
+  .pleasechecktick {
+    width: 80%;
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 17px;
+  }
+
+  .conatctformstyle .discovermorebutton {
+    margin-top: 15px;
+  }
+
+  .addreesstext {
+    font-size: 13px;
+    line-height: 19px;
+    margin-top: 10px;
+  }
+
+  .cardscontactus img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .cardscontactus {
+    column-gap: 10px;
+    padding: 25px 15px;
+  }
+
+  .contactboxsection {
+    padding: 60px 0;
+  }
+
+  .cardsfelxcontainer {
+    margin-top: 45px;
+  }
+
+  .gaudiumlocationmap {
+    height: 450px;
+  }
+
+  /* Contact us css */
+
+  /* Footer css */
+
+  .footerlistpages {
+    column-gap: 20px;
+  }
+
+  .footerimagesize {
+    width: 70%;
+  }
+
+  .footerlistpages li {
+    font-size: 9px;
+  }
+
+  .footericonsflex {
+    column-gap: 15px;
+  }
+
+  .footerlogoimageflex {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footercopyrights .paragraphtext {
+    font-size: 14px;
+  }
+
+  .footerwithlogo .highlightedtextwhite {
+    &:hover {
+      &::after {
+        height: 200%;
+        width: 115%;
+      }
+    }
+  }
+
+  .footerendd {
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+
+  .footerwithlogo {
+    column-gap: 15px;
+  }
+
+  .footericonsflex img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footerendd .mainheadingfont {
+    font-size: 48px;
+    height: 120%;
+  }
+
+  .footerrow {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .footercopyrights {
+    align-items: center;
+    margin-top: 35px;
+  }
+
+  /* Footer css */
 }
 
 @media (max-width: 1100px) and (min-width: 900px) {
@@ -4796,6 +5432,246 @@
     width: 55%;
   }
   /* detail-page-css */
+
+  /* testimonial css */
+
+  .bannerimagesection.testimonialbg {
+    background-size: cover;
+  }
+
+  .testminialmainbgs {
+    padding: 60px 0;
+  }
+
+  .testmonialcardsss {
+    margin-top: 80px;
+  }
+
+  .testicardsmain .mainheadingfont {
+    font-size: 27px;
+    line-height: 37px;
+  }
+
+  .testimonialimageer img {
+    width: 85px;
+    height: 85px;
+  }
+
+  .testicardsmain {
+    padding: 60px 0 25px 0;
+  }
+
+  /* testimonial css */
+
+  /* Contact us css */
+
+  .conatctformstyle {
+    width: 68%;
+  }
+
+  .formmainss {
+    width: 195px;
+    padding: 15px 0px;
+    position: absolute;
+    left: 7%;
+  }
+
+  .headphoenecontact {
+    width: 45px;
+    margin-bottom: 8px;
+  }
+
+  .textcontntcontact {
+    width: 70%;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 12px;
+  }
+
+  .toggleclassname {
+    font-size: 12px;
+    line-height: 27px;
+    margin-left: 5px;
+  }
+
+  .checkboxdisplay {
+    column-gap: 18px;
+    margin-top: 9px;
+  }
+
+  .maintogglediv {
+    min-width: 80px;
+  }
+
+  .whatsappcontact {
+    margin-top: 10px;
+  }
+
+  .conatctformstyle .toggleclassa {
+    width: 12px;
+    height: 12px;
+  }
+
+  .mainbgcontactbg {
+    height: 575px;
+  }
+
+  .textoftheinput {
+    left: 12px;
+    line-height: 25px;
+    top: -12px;
+    font-size: 14px;
+  }
+
+  .conatctformstyle input::placeholder {
+    font-size: 14px;
+    padding-left: 15px;
+  }
+
+  .conatctformstyle form {
+    margin-top: 25px;
+  }
+
+  .mainbgcontactbg::before {
+    height: 485px;
+    width: 280px;
+    left: 24%;
+    z-index: 1;
+    background-size: contain;
+  }
+
+  .conatctformstyle input {
+    height: 38px;
+    width: 150px;
+  }
+
+  .formcontactbgsecond {
+    width: 62%;
+    padding-top: 56px;
+    padding-left: 9%;
+  }
+
+  .pleasechecktick {
+    width: 80%;
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .whatsappiconsvg {
+    width: 29px;
+    height: 29px;
+  }
+  .conatctformstyle .discovermorebutton {
+    margin-top: 15px;
+  }
+
+  .addreesstext {
+    font-size: 11px;
+    line-height: 16px;
+    margin-top: 5px;
+  }
+
+  .cardscontactus img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .cardscontactus {
+    column-gap: 10px;
+    padding: 20px 15px;
+  }
+
+  .visitus {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .contactboxsection {
+    padding: 50px 0;
+  }
+
+  .cardsfelxcontainer {
+    margin-top: 35px;
+  }
+
+  .gaudiumlocationmap {
+    height: 400px;
+  }
+
+  /* Contact us css */
+
+  /* Footer css */
+
+  .footerlistpages {
+    column-gap: 20px;
+    width: 59%;
+  }
+
+  .footerimagesize {
+    width: 82%;
+  }
+
+  .iconsline {
+    height: 70px;
+  }
+
+  .footerlistpages li {
+    font-size: 8px;
+  }
+
+  .footericonsflex {
+    column-gap: 15px;
+  }
+
+  .footerlogoimageflex {
+    display: flex;
+    justify-content: center;
+    width: 18%;
+  }
+
+  .footercopyrights .paragraphtext {
+    font-size: 13px;
+  }
+
+  .footerwithlogo .highlightedtextwhite {
+    &:hover {
+      &::after {
+        height: 200%;
+        width: 115%;
+      }
+    }
+  }
+
+  .footerendd {
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+
+  .footerwithlogo {
+    column-gap: 15px;
+  }
+
+  .footericonsflex img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .footerendd .mainheadingfont {
+    font-size: 36px;
+    height: 120%;
+  }
+
+  .footerrow {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .footercopyrights {
+    align-items: center;
+    margin-top: 35px;
+  }
+
+  /* Footer css */
 }
 
 /* .footerrow {

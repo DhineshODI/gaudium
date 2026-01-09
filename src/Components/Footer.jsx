@@ -33,8 +33,8 @@ export default function Footer() {
         </div>
 
         <div className="footerwithlogo">
-          <div>
-            <img src="/images/footer-logo.svg" alt="" />
+          <div className="footerlogoimageflex">
+            <img className="footerimagesize" src="/images/footer-logo.svg" alt="" />
           </div>
 
           <div className="iconsline"></div>

@@ -15,7 +15,7 @@ export default function Homepage({ menuOnclick }) {
       <div className="Homepagestyle">
         {/* banner */}
         <div className="homepagebanner">
-          <Header />
+          <Header menuOnclick={menuOnclick} />
           <div className="homepageherobanner">
             <img src="/images/homepage/hero-banner.jpg" alt="" />
 

@@ -1,7 +1,5 @@
 import { useContext } from "react";
-import { MenuContext } from "../Components/MenuContext";
-export default function Header() {
-  const { menuOnclick } = useContext(MenuContext);
+export default function Header({ menuOnclick }) {
   return (
     <>
       <div className="headerdiv">

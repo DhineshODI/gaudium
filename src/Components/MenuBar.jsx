@@ -1,14 +1,31 @@
-export default function Menubar({menuOnclick}) {
+import { useEffect, useState } from "react";
+
+export default function Menubar({ menuOnclick }) {
+  const [isBelow600, setIsBelow600] = useState(false);
+
+  useEffect(() => {
+    const checkHeight = () => {
+      setIsBelow600(window.innerHeight < 700);
+    };
+
+    checkHeight(); // run on load
+    window.addEventListener("resize", checkHeight);
+
+    return () => window.removeEventListener("resize", checkHeight);
+  }, []);
+
   return (
-    <div className="menuhamfull">
+    <div
+      // className="menuhamfull">
+      className={`menuhamfull ${isBelow600 ? "overflowclass" : ""}`}
+    >
       <div className="mainhamsec">
         <div className="firsthamhalf"></div>
         <div className="secondhamhalf">
           <div className="hamclosebutton">
             <li className="menubarhamlist menunamee">Menu</li>
-            <img 
-
-            onClick={menuOnclick}
+            <img
+              onClick={menuOnclick}
               className="menubarclosebuttons"
               src="/images/icons/menu-close-icon.svg"
               alt=""

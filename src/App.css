@@ -2967,6 +2967,23 @@
   font-weight: 600;
   list-style: none;
 }
+
+.overflowclass::-webkit-scrollbar {
+  width: 10px;
+}
+
+.overflowclass::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.overflowclass::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.overflowclass::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 /* ham-burger */
 
 @media (max-width: 1600px) and (min-width: 1400px) {
@@ -3553,6 +3570,24 @@
   }
 
   /* Footer css */
+
+  /* hamburger-css */
+
+  .menubarhamlist {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .menubarclosebuttons {
+    width: 65px;
+  }
+
+  .overflowclass .secondhamhalf {
+    overflow: scroll;
+    height: 600px;
+  }
+
+  /* hamburger-css */
 }
 
 @media (max-width: 1400px) and (min-width: 1250px) {
@@ -4248,6 +4283,23 @@
   }
 
   /* Footer css */
+  /* hamburger-css */
+
+  .menubarhamlist {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .menubarclosebuttons {
+    width: 65px;
+  }
+
+  .overflowclass .secondhamhalf {
+    overflow: scroll;
+    height: 600px;
+  }
+
+  /* hamburger-css */
 }
 
 @media (max-width: 1250px) and (min-width: 1100px) {
@@ -5036,6 +5088,26 @@
   }
 
   /* Footer css */
+
+  /* hamburger-css */
+
+  .menubarhamlist {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .menubarclosebuttons {
+    width: 55px;
+  }
+
+  .overflowclass .secondhamhalf {
+    overflow: scroll;
+    height: 600px;
+  }
+  .menubarul {
+    width: 65%;
+  }
+  /* hamburger-css */
 }
 
 @media (max-width: 1100px) and (min-width: 900px) {
@@ -5672,6 +5744,30 @@
   }
 
   /* Footer css */
+
+  /* hamburger-css */
+
+  .firsthamhalf {
+    width: 63%;
+  }
+
+  .menubarhamlist {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .menubarclosebuttons {
+    width: 55px;
+  }
+
+  .overflowclass .secondhamhalf {
+    overflow: scroll;
+    height: 600px;
+  }
+  .menubarul {
+    width: 65%;
+  }
+  /* hamburger-css */
 }
 
 /* .footerrow {

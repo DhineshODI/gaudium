@@ -1,10 +1,32 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 export default function Header({ menuOnclick }) {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // If scroll is more than 50px, set scrolled to true
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on component unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
-      <div className="headerdiv">
+      {/* <div className="headerdiv"> */}
+      <div className={scrolled ? "headerdiv scrollheader" : "headerdiv"}>
         <div className="headerstyle">
-          <img src="/images/gaudium-logo.svg" alt="" />
+          <a href="/">
+            <img src="/images/gaudium-logo.svg" alt="" />
+          </a>
 
           <svg
             onClick={menuOnclick}

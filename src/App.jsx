@@ -17,6 +17,7 @@ import Menubar from "./Components/MenuBar";
 import { useContext, useEffect, useState } from "react";
 import { MenuProvider } from "./Components/MenuContext";
 import { MenuContext } from "./Components/MenuContext";
+import { AnimatePresence, motion } from "framer-motion";
 
 function App() {
   const [menushow, setMenuShow] = useState(false);
@@ -43,7 +44,21 @@ function App() {
   return (
     <>
       <MenuProvider>
-        {menushow && <Menubar menuOnclick={menuOnclick} />}
+       <AnimatePresence>
+        {menushow && (
+          <motion.div
+            initial={{ y: "-100%", opacity: 0 }}
+            animate={{ y: "0%", opacity: 1 }}
+            exit={{ y: "-100%", opacity: 0 }}
+            transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
+            className="menubarWrapper smoothMenu"
+          >
+              <Menubar menuOnclick={menuOnclick} />
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {/* {menushow && <Menubar menuOnclick={menuOnclick} />} */}
 
         <Routes>
           <Route path="/" element={<Homepage menuOnclick={menuOnclick} />} />

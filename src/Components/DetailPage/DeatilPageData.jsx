@@ -107,42 +107,42 @@ const DetailsData = {
         {
           id: 1,
           image: "/images/detail-page/badminton/badminton-slider.jpg",
-          sport: "Safe flooring",
-          title: "Court",
+          sport: "Safe",
+          title: "flooring",
           description:
             "MFMA- (maple flooring manufacturers association) Approved Maple woods used for flooring. It gives proper, equal movements, bounce while playing and avoid knee injuries.",
         },
         {
           id: 2,
           image: "/images/detail-page/badminton/football-img-1.jpg",
-          sport: "BWF-Standard Courts & Lighting",
-          title: "Griunds",
+          sport: "BWF-Standard Courts and",
+          title: "Lighting",
           description:
             "International-standard courts with professional lighting ensure optimal visibility and match-ready playing conditions at all times.",
         },
         {
           id: 3,
           image: "/images/detail-page/badminton/badminton-slider.jpg",
-          sport: "Competition-Ready Arena",
-          title: "Court",
+          sport: "Competition-Ready",
+          title: "Arena",
           description:
             "High-capacity spectator galleries create an authentic competitive atmosphere, preparing athletes for high-pressure tournament environments.",
         },
         {
           id: 4,
           image: "/images/detail-page/badminton/badminton-slider.jpg",
-          sport: "Badminton 4",
-          title: "Court",
+          sport: "Athlete Comfort and",
+          title: "Safety",
           description:
-            "Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque pellentesque scelerisque libero malesuada tristique urna.",
+            "Secure lockers, dedicated changing rooms, and outdoor shower facilities support hygiene, recovery, and seamless training transitions.",
         },
         {
           id: 5,
           image: "/images/detail-page/badminton/badminton-slider.jpg",
-          sport: "Badminton 5",
-          title: "Court",
+          sport: "High-Performance Training",
+          title: "Support",
           description:
-            "Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque pellentesque scelerisque libero malesuada tristique urna.",
+            "Professional practice equipment, shuttle machines, rebound nets, and well-placed hydration stations enable focused, efficient, and intense training sessions.",
         },
       ],
     },
@@ -426,42 +426,42 @@ const DetailsData = {
         {
           id: 1,
           image: "/images/detail-page/badminton/badminton-slider.jpg",
-          sport: "Safe flooring",
-          title: "Court",
+          sport: "FIBA-Standard Indoor and ",
+          title: "Outdoor Courts",
           description:
-            "MFMA- (maple flooring manufacturers association) Approved Maple woods used for flooring. It gives proper, equal movements, bounce while playing and avoid knee injuries.",
+            "Indoor wooden court with cushioned flooring and an outdoor synthetic court, both built for high-performance play.",
         },
         {
           id: 2,
           image: "/images/detail-page/badminton/football-img-1.jpg",
-          sport: "BWF-Standard Courts & Lighting",
-          title: "Griunds",
+          sport: "Professional Match",
+          title: "Environment",
           description:
-            "International-standard courts with professional lighting ensure optimal visibility and match-ready playing conditions at all times.",
+            "High-capacity spectator gallery creates a competitive, game-day atmosphere for players.",
         },
         {
           id: 3,
           image: "/images/detail-page/badminton/badminton-slider.jpg",
-          sport: "Competition-Ready Arena",
-          title: "Court",
+          sport: "Athlete Comfort and",
+          title: "Facilities",
           description:
-            "High-capacity spectator galleries create an authentic competitive atmosphere, preparing athletes for high-pressure tournament environments.",
+            "Dedicated changing rooms, secure lockers, and outdoor showers support hygiene, recovery, and smooth transitions.",
         },
         {
           id: 4,
           image: "/images/detail-page/badminton/badminton-slider.jpg",
-          sport: "Badminton 4",
-          title: "Court",
+          sport: "Elite Training",
+          title: "Equipment",
           description:
-            "Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque pellentesque scelerisque libero malesuada tristique urna.",
+            "Professional shooting machines, rebound nets, and competition-grade equipment enable focused skill development.",
         },
         {
           id: 5,
           image: "/images/detail-page/badminton/badminton-slider.jpg",
-          sport: "Badminton 5",
-          title: "Court",
+          sport: "Lighting & Hydration ",
+          title: "Support",
           description:
-            "Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque pellentesque scelerisque libero malesuada tristique urna.",
+            "Advanced court lighting and strategically placed hydration stations ensure optimal training conditions at all times.",
         },
       ],
     },
@@ -748,43 +748,43 @@ const DetailsData = {
       slides: [
         {
           id: 1,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
-          sport: "Safe flooring",
-          title: "Court",
+          image: "/images/detail-page/fencing/fencing-arena.jpg",
+          sport: "State-of-the-Art",
+          title: "Fencing Arena",
           description:
-            "MFMA- (maple flooring manufacturers association) Approved Maple woods used for flooring. It gives proper, equal movements, bounce while playing and avoid knee injuries.",
+            "Federation-aligned arena with age-appropriate equipment designed for safe, progressive, and high-performance fencing training.",
         },
         {
           id: 2,
-          image: "/images/detail-page/badminton/football-img-1.jpg",
-          sport: "BWF-Standard Courts & Lighting",
-          title: "Griunds",
+          image: "/images/detail-page/fencing/fencing-flooring.jpg",
+          sport: "Professional Flooring &",
+          title: "Training Aids",
           description:
-            "International-standard courts with professional lighting ensure optimal visibility and match-ready playing conditions at all times.",
+            "Maple MAT-finish flooring with double cushioning and mirrored walls support technique refinement, safety, and optimal movement.",
         },
         {
           id: 3,
           image: "/images/detail-page/badminton/badminton-slider.jpg",
-          sport: "Competition-Ready Arena",
-          title: "Court",
+          sport: "Competition-Ready",
+          title: "Environment",
           description:
-            "High-capacity spectator galleries create an authentic competitive atmosphere, preparing athletes for high-pressure tournament environments.",
+            "High-capacity spectator gallery simulates real match conditions, preparing fencers for competitive pressure.",
         },
         {
           id: 4,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
-          sport: "Badminton 4",
-          title: "Court",
+          image: "/images/detail-page/fencing/fencing-comfort.jpg",
+          sport: "Athlete Comfort &",
+          title: "Support",
           description:
-            "Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque pellentesque scelerisque libero malesuada tristique urna.",
+            "Secure lockers, dedicated changing rooms, proper lighting, and hydration monitoring ensure seamless, focused training sessions.",
         },
         {
           id: 5,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
-          sport: "Badminton 5",
-          title: "Court",
+          image: "/images/detail-page/fencing/fencing-equipment.jpg",
+          sport: "Elite Equipment & Cross-Training ",
+          title: "Access",
           description:
-            "Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque pellentesque scelerisque libero malesuada tristique urna.",
+            "Competition-grade fencing gear and access to High-Performance Centres enable comprehensive skill development and conditioning.",
         },
       ],
     },
@@ -1079,42 +1079,42 @@ const DetailsData = {
         {
           id: 1,
           image: "/images/detail-page/badminton/badminton-slider.jpg",
-          sport: "Safe flooring",
-          title: "Court",
+          sport: "Olympic-Size FIG-Approved",
+          title: "Arena",
           description:
-            "MFMA- (maple flooring manufacturers association) Approved Maple woods used for flooring. It gives proper, equal movements, bounce while playing and avoid knee injuries.",
+            "A 21,500 sq. ft. state-of-the-art arena equipped with GYMNOVA and SPIETH apparatus, meeting FIG standards.",
         },
         {
           id: 2,
-          image: "/images/detail-page/badminton/football-img-1.jpg",
-          sport: "BWF-Standard Courts & Lighting",
-          title: "Griunds",
+          image: "/images/detail-page/gymnastics/flooring-safety.jpg",
+          sport: "High-Performance Flooring ",
+          title: "and Safety",
           description:
-            "International-standard courts with professional lighting ensure optimal visibility and match-ready playing conditions at all times.",
+            "Cushioned gymnastics flooring with 19 mm wooden pads ensures resilience, safety, and optimal performance.",
         },
         {
           id: 3,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
-          sport: "Competition-Ready Arena",
-          title: "Court",
+          image: "/images/detail-page/gymnastics/competition-environment.jpg",
+          sport: "Competition-Ready",
+          title: "Environment",
           description:
-            "High-capacity spectator galleries create an authentic competitive atmosphere, preparing athletes for high-pressure tournament environments.",
+            "Large spectator gallery simulates real competitive settings, preparing gymnasts for pressure situations.",
         },
         {
           id: 4,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
-          sport: "Badminton 4",
-          title: "Court",
+          image: "/images/detail-page/gymnastics/athlete-comfort.jpg",
+          sport: "Athlete Comfort and",
+          title: "Support",
           description:
-            "Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque pellentesque scelerisque libero malesuada tristique urna.",
+            "Secure lockers, dedicated changing rooms, proper lighting and hydration monitoring enable seamless training.",
         },
         {
           id: 5,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
-          sport: "Badminton 5",
-          title: "Court",
+          image: "/images/detail-page/gymnastics/elite-equipment.jpg",
+          sport: "Elite Equipment & Cross-Training",
+          title: "Access",
           description:
-            "Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque pellentesque scelerisque libero malesuada tristique urna.",
+            "Professional-grade apparatus and access to High-Performance Centres support complete skill development and conditioning.",
         },
       ],
     },
@@ -1346,42 +1346,42 @@ const DetailsData = {
         {
           id: 1,
           image: "/images/detail-page/badminton/badminton-slider.jpg",
-          sport: "Safe flooring",
-          title: "Court",
+          sport: "High-Performance Indoor",
+          title: "Skating Rink",
           description:
-            "MFMA- (maple flooring manufacturers association) Approved Maple woods used for flooring. It gives proper, equal movements, bounce while playing and avoid knee injuries.",
+            "A 25-meter oval indoor rink with a polished finish ensures safety, speed, and optimal performance.",
         },
         {
           id: 2,
-          image: "/images/detail-page/badminton/football-img-1.jpg",
-          sport: "BWF-Standard Courts & Lighting",
-          title: "Griunds",
+          image: "/images/detail-page/skating/skating-environment.jpg",
+          sport: "Competition-Ready",
+          title: "Environment",
           description:
-            "International-standard courts with professional lighting ensure optimal visibility and match-ready playing conditions at all times.",
+            "Arena grande spectator gallery creates an authentic race-day atmosphere, preparing skaters for competitive pressure.",
         },
         {
           id: 3,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
-          sport: "Competition-Ready Arena",
-          title: "Court",
+          image: "/images/detail-page/skating/skating-comfort.jpg",
+          sport: "Athlete Comfort &",
+          title: "Support",
           description:
-            "High-capacity spectator galleries create an authentic competitive atmosphere, preparing athletes for high-pressure tournament environments.",
+            "Natural ventilation, secure lockers, dedicated changing rooms and proper lighting support focused training sessions.",
         },
         {
           id: 4,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
-          sport: "Badminton 4",
-          title: "Court",
+          image: "/images/detail-page/skating/skating-equipment.jpg",
+          sport: "Professional Training",
+          title: "Equipment",
           description:
-            "Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque pellentesque scelerisque libero malesuada tristique urna.",
+            "Competition-grade cones, barriers and timing systems enable precise skill development and performance tracking.",
         },
         {
           id: 5,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
-          sport: "Badminton 5",
-          title: "Court",
+          image: "/images/detail-page/skating/skating-conditioning.jpg",
+          sport: "Elite Conditioning",
+          title: "Access",
           description:
-            "Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque pellentesque scelerisque libero malesuada tristique urna.",
+            "Hydration monitoring and access to High-Performance Centres support cross-training, recovery and overall athletic conditioning.",
         },
       ],
     },
@@ -1563,6 +1563,544 @@ const DetailsData = {
           description: "ISSO National",
           svgCard: bluesvg,
         },
+      ],
+    },
+  },
+
+  athletics: {
+    DetailPageBanner: {
+      breadcrumbstextfirst: "Home",
+      breadcrumbstextSecond: "athletics",
+      bannertitle: "athletics",
+      bannerContent:
+        "Track-and-field sport enhancing speed, endurance, strength, agility, coordination and competitive performance across multiple events.",
+      banneroverlaycontent: "athletics",
+    },
+
+    SecondSectionDetail: {
+      backgoundclass: "athletics",
+      secondsportstitlefirst: "The vision of",
+      secondsportstitlesecond: "Athletics Excellence",
+      firstparagraphtext:
+        "The Athletics Centre of Excellence at Gaudium Sportopia embodies a bold vision to redefine Indian athletics. Going beyond training, we nurture future Olympic champions through comprehensive programs and world-class coaching. Inspired by India’s legendary athletes, our mission is to transform potential into podium success and help India achieve lasting glory on the global athletics stage.",
+      secondparagraphtext: "",
+    },
+
+    experTeamDetail: {
+      headingFirst: "The Strength",
+      headingSecond: "Behind the Squad",
+      description:
+        "Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque pellentesque libero malesuada tristique Ultricies leo viverra.",
+
+      members: [
+        {
+          sport: "athletics",
+          role: "COACH",
+          img: "/images/homepage/thestrengthimageone.png",
+          name: "Ramulu Korra",
+        },
+        {
+          sport: "athletics",
+          role: "COACH",
+          img: "/images/homepage/thestrengthimageone.png",
+          name: "Likki Teja Vardhan Reddy",
+        },
+        {
+          sport: "athletics",
+          role: "COACH",
+          img: "/images/homepage/thestrengthimageone.png",
+          name: "Laxmiram",
+        },
+      ],
+    },
+
+    facility: {
+      headingFirst: "Facilities",
+      headingSecond: "That Inspire",
+
+      facilitytwoline:
+        "SWorld-class athletics facilities designed to inspire speed, endurance, precision and podium-ready performance across disciplines.",
+
+      slides: [
+        {
+          id: 1,
+          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          sport: "Engineered ",
+          title: "Track Base",
+          description:
+            "Compacted asphalt foundation with anti-termite treatment and Wet Mix Macadam ensures long-term stability and durability.",
+        },
+        {
+          id: 2,
+          image: "/images/detail-page/badminton/football-img-1.jpg",
+          sport: "Professional",
+          title: "Surface Layers",
+          description:
+            "Bituminous and asphaltic concrete layers with seal dust deliver a smooth, competition-ready running surface.",
+        },
+        {
+          id: 3,
+          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          sport: "IAAF-Standard",
+          title: "Synthetic Track",
+          description:
+            "Premium 6-lane, 15mm synthetic track with international-standard line markings for elite training familiarity.",
+        },
+        {
+          id: 4,
+          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          sport: "All-Weather ",
+          title: "Performance",
+          description:
+            "Advanced drainage systems maintain optimal track conditions across varying weather conditions.",
+        },
+        {
+          id: 5,
+          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          sport: "Safety & Precision",
+          title: "Design",
+          description:
+            "Professionally built kerb walls ensure safety, clear track definition and race-ready precision.",
+        },
+      ],
+    },
+
+    faq: {
+      headingFirst: "Why Athletics ",
+      headingSecond: "Training Matters",
+      description:
+        "Explore numerous benefits of athletics and how it helps every aspect of the player’s lifestyle.",
+
+      items: [
+        {
+          id: 1,
+          faqQuestion: "Physical Benefits",
+          faqAnswer: [
+            "Builds strong cardiovascular endurance and aerobic fitness",
+            "Develops muscular strength, speed, and explosive power",
+            "Enhances flexibility, mobility, and full range of motion",
+            "Improves coordination, balance, and body awareness",
+            "Sharpens agility, reaction time, and overall athleticism",
+            "Supports healthy bone density during key growth years",
+            "Promotes correct posture and efficient biomechanical alignment",
+          ],
+        },
+        {
+          id: 2,
+          faqQuestion: "Cognitive Benefits",
+          faqAnswer: [
+            "Enhances concentration, attention span, and mental focus",
+            "Supports improved academic performance through increased cerebral oxygen flow",
+            "Develops strategic thinking and tactical decision-making skills",
+            "Strengthens memory retention and recall abilities",
+            "Sharpens spatial awareness and perceptual skills",
+            "Boosts neural connectivity through diverse and coordinated movement patterns",
+          ],
+        },
+
+        {
+          id: 3,
+          faqQuestion: "Psychological Benefits",
+          faqAnswer: [
+            "Builds self-confidence and a positive self-image",
+            "Supports stress reduction and effective anxiety management",
+            "Encourages goal-setting with a strong achievement mindset",
+            "Develops resilience and mental strength when facing challenges",
+            "Fosters healthy competitiveness and sustained motivation",
+            "Enhances mindfulness and present-moment awareness",
+            "Cultivates pride in personal growth and accomplishments",
+          ],
+        },
+
+        {
+          id: 4,
+          faqQuestion: "Social Benefits",
+          faqAnswer: [
+            "Strengthens teamwork and collaborative abilities",
+            "Nurtures leadership skills and responsibility",
+            "Instils respect for rules, officials, and opponents",
+            "Enhances communication across diverse settings",
+            "Develops healthy conflict-resolution skills",
+            "Builds a sense of community and belonging",
+            "Encourages cross-cultural understanding through the universal language of sport",
+          ],
+        },
+        {
+          id: 5,
+          faqQuestion: "Lifestyle Benefits",
+          faqAnswer: [
+            "Builds lifelong healthy habits and active routines",
+            "Encourages understanding of nutrition and physical well-being",
+            "Develops strong time management and prioritization skills",
+            "Promotes a balanced approach to competition and recreation",
+          ],
+        },
+      ],
+    },
+
+    eventsAndTournaments: {
+      headingFirst: "Events & Tournaments",
+      headingSecond: "@ Gaudium Sportopia",
+      description:
+        "Stay updated on upcoming events, tournaments, competitions and key sporting moments at Gaudium Sportopia.",
+
+      items: [
+        {
+          eventnumber: "Event - 01",
+          eventcontent: "Hyderabad Runners - stadium Run 12hr - 2021.",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 02",
+          eventcontent: "Hyderabad Runners - stadium Run 24hr - 2022.",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 03",
+          eventcontent: "Hyderabad Runners - stadium Run 24hr - 2023.",
+          eventslinks: "/events1link",
+        },
+      ],
+    },
+
+    journey: {
+      headingFirst: "The Strength",
+      headingSecond: "Behind the Squad",
+      description:
+        "A visual journey capturing training, competition and defining moments from our athletes’ path to excellence.",
+
+      marqueeRow1: [
+        "/images/detail-page/badminton/marquee/marquee-1.jpg",
+        "/images/detail-page/badminton/marquee/marquee-2.jpg",
+        "/images/detail-page/badminton/marquee/marquee-3.jpg",
+        "/images/detail-page/badminton/marquee/marquee-4.jpg",
+        "/images/detail-page/badminton/marquee/marquee-5.jpg",
+      ],
+
+      marqueeRow2: [
+        "/images/detail-page/badminton/marquee/marquee-6.jpg",
+        "/images/detail-page/badminton/marquee/marquee-8.jpg",
+        "/images/detail-page/badminton/marquee/marquee-7.jpg",
+        "/images/detail-page/badminton/marquee/marquee-10.jpg",
+        "/images/detail-page/badminton/marquee/marquee-9.jpg",
+      ],
+    },
+
+    success: {
+      headingFirst: "success",
+      headingSecond: "stories",
+      description:
+        "Take a glance at the athletics champions whose achievements define our excellence.",
+
+      showcaseData: [
+        {
+          id: 1,
+          image: "/images/homepage/showcaseproject1.png",
+          title: "SKANDHA",
+          description:
+            "HYDERABAD SAHODAYA SCHOOLS CLUSTER ATHLETIC MEET Under age 16 2024-25",
+          svgCard: redsvg,
+        },
+        {
+          id: 2,
+          image: "/images/homepage/showcaseproject2.png",
+          title: "DIVYANSHI MISHRA",
+          description:
+            "HYDERABAD SAHODAYA SCHOOLS CLUSTER ATHLETIC MEET Under age 16 2024-25",
+          svgCard: bluesvg,
+        },
+        {
+          id: 3,
+          image: "/images/homepage/showcaseproject3.png",
+          title: "MISCHA J",
+          description:
+            "HYDERABAD SAHODAYA SCHOOLS CLUSTER ATHLETIC MEET Under age 16 2024-25",
+          svgCard: redsvg,
+        },
+        {
+          id: 4,
+          image: "/images/homepage/showcaseproject4.png",
+          title: "NAINIKA",
+          description:
+            "HYDERABAD SAHODAYA SCHOOLS CLUSTER ATHLETIC MEET Under age 16 2024-25",
+          svgCard: bluesvg,
+        },
+        {
+          id: 5,
+          image: "/images/homepage/showcaseproject5.png",
+          title: "DIVYANSHI MISHRA",
+          description:
+            "HYDERABAD SAHODAYA SCHOOLS CLUSTER ATHLETIC MEET Under age 16 2024-25",
+          svgCard: redsvg,
+        },
+        {
+          id: 6,
+          image: "/images/homepage/showcaseproject6.png",
+          title: "SKANDHA",
+          description:
+            "HYDERABAD SAHODAYA SCHOOLS CLUSTER ATHLETIC MEET Under age 16 2024-25",
+          svgCard: bluesvg,
+        },
+        {
+          id: 7,
+          image: "/images/homepage/showcaseproject7.png",
+          title: "MISCHA J",
+          description:
+            "HYDERABAD SAHODAYA SCHOOLS CLUSTER ATHLETIC MEET Under age 16 2024-25",
+          svgCard: redsvg,
+        },
+        {
+          id: 8,
+          image: "/images/homepage/showcaseproject8.png",
+          title: "DIVYANSHI MISHRA",
+          description:
+            "HYDERABAD SAHODAYA SCHOOLS CLUSTER ATHLETIC MEET Under age 16 2024-25",
+          svgCard: bluesvg,
+        },
+      ],
+    },
+  },
+
+  cricket: {
+    DetailPageBanner: {
+      breadcrumbstextfirst: "Home",
+      breadcrumbstextSecond: "Cricket",
+      bannertitle: "Cricket",
+      bannerContent:
+        "Strategic team sport developing batting, bowling, fielding skills, teamwork, focus and match awareness consistently.",
+      banneroverlaycontent: "Cricket",
+    },
+
+    SecondSectionDetail: {
+      backgoundclass: "cricket",
+      secondsportstitlefirst: "The vision of",
+      secondsportstitlesecond: "Cricket Excellence",
+      firstparagraphtext:
+        "The Cricket Centre of Excellence at Gaudium Sportopia is dedicated to shaping the next generation of cricketing talent. Our professional-grade facilities and technology-driven practice nets recreate real match conditions, helping young players train like elite professionals. Here, early passion is refined into skill, discipline and confidence, thus laying the foundation for future performances on national and international stages.",
+      secondparagraphtext: "",
+    },
+
+    experTeamDetail: {
+      headingFirst: "The Strength",
+      headingSecond: "Behind the Squad",
+      description:
+        "Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque pellentesque libero malesuada tristique Ultricies leo viverra.",
+
+      members: [
+        {
+          sport: "Cricket",
+          role: "COACH",
+          img: "/images/homepage/thestrengthimageone.png",
+          name: "Omer",
+        },
+        {
+          sport: "Cricket",
+          role: "COACH",
+          img: "/images/homepage/thestrengthimageone.png",
+          name: "Sathish",
+        },
+      ],
+    },
+
+    facility: {
+      headingFirst: "Facilities",
+      headingSecond: "That Inspire",
+
+      facilitytwoline:
+        "World-class cricket facilities designed to simulate professional match conditions, inspiring young players to train, perform and excel confidently.",
+
+      slides: [
+        {
+          id: 1,
+          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          sport: "International-Standard  ",
+          title: "Ground",
+          description:
+            "Full-sized 70-yard cricket ground with natural lawn grass and professionally prepared pitch and outfield.",
+        },
+        {
+          id: 2,
+          image: "/images/detail-page/badminton/football-img-1.jpg",
+          sport: "BCCI-Compliant",
+          title: "Nets",
+          description:
+            "Six high-quality practice nets built to BCCI standards for batting, bowling and fielding drills.",
+        },
+        {
+          id: 3,
+          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          sport: "Technology-Driven",
+          title: "Training",
+          description:
+            "Ball-tracking and video analysis systems to assess technique, speed, trajectory, and performance.",
+        },
+        {
+          id: 4,
+          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          sport: "Specialised Skill",
+          title: "Development",
+          description:
+            "Advanced training equipment and dedicated fitness zones for cricket-specific strength and conditioning.",
+        },
+        {
+          id: 5,
+          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          sport: "Weather Proof ",
+          title: "Infrastructure",
+          description:
+            "Scientific drainage and surface design ensuring consistent performance and year-round usability.",
+        },
+      ],
+    },
+
+    faq: {
+      headingFirst: "Why Cricket",
+      headingSecond: "Training Matters",
+      description:
+        "Explore numerous benefits of cricket and how it helps every aspect of the player’s lifestyle.",
+
+      items: [
+        {
+          id: 1,
+          faqQuestion: "Physical Development Benefits",
+          faqAnswer: [
+            "Enhanced hand–eye coordination through batting, bowling, and fielding drills",
+            "Improved cardiovascular endurance from running between wickets and dynamic fielding",
+            "Targeted muscle development through bowling actions and batting techniques",
+            "Increased flexibility and agility via cricket-specific movement patterns",
+            "Better balance, body control and coordination during complex game skills",
+            "Improved throwing power and precision",
+            "Overall physical fitness through the sport’s varied physical demands",
+          ],
+        },
+
+        {
+          id: 2,
+          faqQuestion: "Cognitive Development Benefits",
+          faqAnswer: [
+            "Strategic thinking developed through field placements and match situations",
+            "Enhanced concentration during extended batting and bowling spells",
+            "Improved spatial awareness through positioning, movement, and shot selection",
+            "Stronger tactical analysis by reading and responding to game dynamics",
+            "Memory development through recalling opponent-specific plans and strategies",
+            "Sharpened problem-solving skills when adapting to changing match conditions",
+            "Improved decision-making under pressure and time constraints",
+          ],
+        },
+        {
+          id: 3,
+          faqQuestion: "Psychological Development Benefits",
+          faqAnswer: [
+            "Resilience developed by overcoming failures, setbacks, and competitive challenges",
+            "Increased confidence through consistent skill mastery and match performances",
+            "Strong self-discipline fostered through regular practice and structured preparation",
+            "Enhanced mental toughness from performing under pressure situations",
+            "Growth mindset encouraged through continuous technique refinement and improvement",
+            "Patience and perseverance built through long-format training and match play",
+            "Positive self-identity shaped through sporting achievements and team belonging",
+          ],
+        },
+
+        {
+          id: 4,
+          faqQuestion: "Social Development Benefits",
+          faqAnswer: [
+            "Strong communication skills built through constant on-field coordination",
+            "Respect for authority cultivated via interactions with coaches and umpires",
+            "Clear understanding of team roles and shared responsibilities",
+            "Appreciation for diversity through inclusive team environments",
+            "Conflict resolution skills learned through competitive situations",
+            "Sense of collective achievement and mutual support during wins and losses",
+            "Lifelong friendships formed through shared sporting journeys",
+          ],
+        },
+        {
+          id: 5,
+          faqQuestion: "Lifestyle Benefits",
+          faqAnswer: [
+            "Knowledge of proper nutrition and hydration for peak performance",
+            "Appreciation for regular physical activity and long-term health benefits",
+            "Strong time-management skills balancing training with academics",
+            "Encouragement of goal-setting and achievement-oriented mindset",
+            "Development of a healthy competitive spirit",
+            "Enhanced media literacy through match analysis and cricket broadcasts",
+            "Exposure to potential career pathways in playing, coaching, administration, or sports science",
+          ],
+        },
+      ],
+    },
+
+    eventsAndTournaments: {
+      headingFirst: "Events & Tournaments",
+      headingSecond: "@ Gaudium Sportopia",
+      description:
+        "Stay updated on upcoming events, tournaments, competitions and key sporting moments at Gaudium Sportopia.",
+
+      items: [
+        {
+          eventnumber: "Event - 01",
+          eventcontent: "U-16 HCA school Tournament - 2024 ",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 02",
+          eventcontent: "Tnter house weekend cricket League Agakhan - 2024",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 03",
+          eventcontent: "Tnter house weekend cricket League DRS - 2024",
+          eventslinks: "/events1link",
+        },
+      ],
+    },
+
+    journey: {
+      headingFirst: "The Strength",
+      headingSecond: "Behind the Squad",
+      description:
+        "A visual journey capturing training, competition and defining moments from our cricket athletes’ path to excellence.",
+
+      marqueeRow1: [
+        "/images/detail-page/badminton/marquee/marquee-1.jpg",
+        "/images/detail-page/badminton/marquee/marquee-2.jpg",
+        "/images/detail-page/badminton/marquee/marquee-3.jpg",
+        "/images/detail-page/badminton/marquee/marquee-4.jpg",
+        "/images/detail-page/badminton/marquee/marquee-5.jpg",
+      ],
+
+      marqueeRow2: [
+        "/images/detail-page/badminton/marquee/marquee-6.jpg",
+        "/images/detail-page/badminton/marquee/marquee-8.jpg",
+        "/images/detail-page/badminton/marquee/marquee-7.jpg",
+        "/images/detail-page/badminton/marquee/marquee-10.jpg",
+        "/images/detail-page/badminton/marquee/marquee-9.jpg",
+      ],
+    },
+
+    success: {
+      headingFirst: "success",
+      headingSecond: "stories",
+      description:
+        "Take a glance at the cricket champions whose achievements define our excellence.",
+
+      showcaseData: [
+        // {
+        //   id: 1,
+        //   image: "/images/homepage/showcaseproject1.png",
+        //   title: "SKANDHA",
+        //   description:
+        //     "HYDERABAD SAHODAYA SCHOOLS CLUSTER ATHLETIC MEET Under age 16 2024-25",
+        //   svgCard: redsvg,
+        // },
+        // {
+        //   id: 2,
+        //   image: "/images/homepage/showcaseproject2.png",
+        //   title: "DIVYANSHI MISHRA",
+        //   description:
+        //     "HYDERABAD SAHODAYA SCHOOLS CLUSTER ATHLETIC MEET Under age 16 2024-25",
+        //   svgCard: bluesvg,
+        // },
       ],
     },
   },

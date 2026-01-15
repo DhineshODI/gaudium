@@ -94,13 +94,23 @@
 
 .headerdiv {
   background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10000;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* THIS MAKES IT SMOOTH */
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .homepagebanner .headerdiv {
   background-color: transparent;
-  z-index: 1;
+  z-index: 100000;
+  position: sticky;
   position: absolute;
   width: 100%;
+  box-shadow: none;
+  position: fixed;
+  top: 0;
 }
 
 .homepagebanner .headerstyle {
@@ -108,6 +118,9 @@
   padding-top: 1.5%;
 }
 
+.scrollheader.headerdiv {
+  background: white;
+}
 /* Header-Css */
 
 /* Homepage-Css */
@@ -2869,7 +2882,7 @@
   height: 100vh;
   width: 100%;
   position: absolute;
-  z-index: 10000;
+  z-index: 10000000;
 }
 
 .secondhamhalf {

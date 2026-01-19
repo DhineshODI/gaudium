@@ -1,10 +1,10 @@
 import Header from "../Components/Header";
 
-export default function TestimonialPage() {
+export default function TestimonialPage({ menuOnclick }) {
   return (
     <>
       <>
-        <Header />
+        <Header  menuOnclick={menuOnclick}/>
 
         {/* Banner-Image */}
 
@@ -19,9 +19,8 @@ export default function TestimonialPage() {
                 <hr />
 
                 <p className="paragraphtext contentbanner">
-                  Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-                  pellentesq uescelerisque libero malesuada tristique Ultricies
-                  leo viverra.
+                  Discover how our students have excelled and achieved their
+                  goals through our programs at Gaudium Sportopia.
                 </p>
               </div>
             </div>
@@ -52,9 +51,8 @@ export default function TestimonialPage() {
 
             <div className="paravideosection">
               <p className="paragraphtext">
-                Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-                pellentesq uescelerisque libero malesuada tristique Ultricies
-                leo viverra.
+                View authentic inspiring stories from students sharing their
+                experiences, successes and personal growth with us
               </p>
             </div>
 

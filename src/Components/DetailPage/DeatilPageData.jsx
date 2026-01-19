@@ -57,6 +57,7 @@ const DetailsData = {
       bannerContent:
         "Fast-paced racquet sport that builds agility, reflexes, endurance and sharp tactical thinking skills.",
       banneroverlaycontent: "Badminton",
+      backgroundClass: "badmintonbannerdetail",
     },
 
     SecondSectionDetail: {
@@ -72,7 +73,7 @@ const DetailsData = {
       headingFirst: "The Strength",
       headingSecond: "Behind the Squad",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque pellentesque libero malesuada tristique Ultricies leo viverra.",
+        "An elite team of nationally certified coaches delivering world-class training, mentorship, and performance-driven development for aspiring athletes.",
 
       members: [
         {
@@ -382,6 +383,7 @@ const DetailsData = {
       bannerContent:
         "Dynamic team sport focusing on speed, coordination, strategy, and high-intensity athletic performance levels.",
       banneroverlaycontent: "Basketball",
+      backgroundClass: "basketballbg",
     },
 
     SecondSectionDetail: {
@@ -397,7 +399,7 @@ const DetailsData = {
       headingFirst: "The Strength",
       headingSecond: "Behind the Squad",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque pellentesque libero malesuada tristique Ultricies leo viverra.",
+        "An elite team of nationally certified coaches delivering world-class training, mentorship, and performance-driven development for aspiring athletes.",
 
       members: [
         {
@@ -580,12 +582,12 @@ const DetailsData = {
           eventslinks: "/events1link",
         },
         {
-          eventnumber: "Event - 03",
+          eventnumber: "Event - 04",
           eventcontent: "Viper Cup 2024.",
           eventslinks: "/events1link",
         },
         {
-          eventnumber: "Event - 03",
+          eventnumber: "Event - 05",
           eventcontent: "Birla Open Mind Tournament U-14 2024.",
           eventslinks: "/events1link",
         },
@@ -711,6 +713,7 @@ const DetailsData = {
       bannerContent:
         "Precision-based combat sport developing lightning reflexes, strategy, discipline and intense mental focus skills.",
       banneroverlaycontent: "Fencing",
+      backgroundClass: "fencingbg",
     },
 
     SecondSectionDetail: {
@@ -726,7 +729,7 @@ const DetailsData = {
       headingFirst: "The Strength",
       headingSecond: "Behind the Squad",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque pellentesque libero malesuada tristique Ultricies leo viverra.",
+        "An elite team of nationally certified coaches delivering world-class training, mentorship, and performance-driven development for aspiring athletes.",
 
       members: [
         {
@@ -1017,6 +1020,7 @@ const DetailsData = {
       bannerContent:
         "Foundation sport enhancing strength, flexibility, balance, coordination, body control and technical movement mastery.",
       banneroverlaycontent: "Gymnastics",
+      backgroundClass: "gymnasticsbg",
     },
 
     SecondSectionDetail: {
@@ -1032,7 +1036,7 @@ const DetailsData = {
       headingFirst: "The Strength",
       headingSecond: "Behind the Squad",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque pellentesque libero malesuada tristique Ultricies leo viverra.",
+        "An elite team of nationally certified coaches delivering world-class training, mentorship, and performance-driven development for aspiring athletes.",
 
       members: [
         {
@@ -1308,6 +1312,7 @@ const DetailsData = {
       bannerContent:
         "Skill-driven sport improving balance, speed, control, confidence, coordination and overall movement efficiency development.",
       banneroverlaycontent: "Skating",
+      backgroundClass: "skatingbg",
     },
 
     SecondSectionDetail: {
@@ -1323,7 +1328,7 @@ const DetailsData = {
       headingFirst: "The Strength",
       headingSecond: "Behind the Squad",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque pellentesque libero malesuada tristique Ultricies leo viverra.",
+        "An elite team of nationally certified coaches delivering world-class training, mentorship, and performance-driven development for aspiring athletes.",
 
       members: [
         {
@@ -1575,6 +1580,7 @@ const DetailsData = {
       bannerContent:
         "Track-and-field sport enhancing speed, endurance, strength, agility, coordination and competitive performance across multiple events.",
       banneroverlaycontent: "athletics",
+      backgroundClass: "athleticsbg",
     },
 
     SecondSectionDetail: {
@@ -1590,7 +1596,7 @@ const DetailsData = {
       headingFirst: "The Strength",
       headingSecond: "Behind the Squad",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque pellentesque libero malesuada tristique Ultricies leo viverra.",
+        "An elite team of nationally certified coaches delivering world-class training, mentorship, and performance-driven development for aspiring athletes.",
 
       members: [
         {
@@ -1869,6 +1875,7 @@ const DetailsData = {
       bannerContent:
         "Strategic team sport developing batting, bowling, fielding skills, teamwork, focus and match awareness consistently.",
       banneroverlaycontent: "Cricket",
+      backgroundClass: "cricketbg",
     },
 
     SecondSectionDetail: {
@@ -1884,7 +1891,7 @@ const DetailsData = {
       headingFirst: "The Strength",
       headingSecond: "Behind the Squad",
       description:
-        "Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque pellentesque libero malesuada tristique Ultricies leo viverra.",
+        "An elite team of nationally certified coaches delivering world-class training, mentorship, and performance-driven development for aspiring athletes.",
 
       members: [
         {
@@ -2101,6 +2108,772 @@ const DetailsData = {
         //     "HYDERABAD SAHODAYA SCHOOLS CLUSTER ATHLETIC MEET Under age 16 2024-25",
         //   svgCard: bluesvg,
         // },
+      ],
+    },
+  },
+
+  football: {
+    DetailPageBanner: {
+      breadcrumbstextfirst: "Home",
+      breadcrumbstextSecond: "football",
+      bannertitle: "football",
+      bannerContent:
+        "High-intensity team sport improving stamina, coordination, tactical understanding, ball control, teamwork and competitive spirit.",
+      banneroverlaycontent: "football",
+      backgroundClass: "footballbg",
+    },
+
+    SecondSectionDetail: {
+      backgoundclass: "football",
+      secondsportstitlefirst: "The vision of",
+      secondsportstitlesecond: "Football Excellence",
+      firstparagraphtext:
+        "The Football Centre of Excellence at Gaudium Sportopia nurtures young talent with a bold vision of national and international success. Supported by elite, national-level coaches and innovative training methodologies, our programme aligns with India’s growing football ecosystem. With rising opportunities through AIFF initiatives and leagues like the ISL, aspiring footballers gain the platform to progress faster and aim for early national representation.",
+      secondparagraphtext: "",
+    },
+
+    experTeamDetail: {
+      headingFirst: "The Strength",
+      headingSecond: "Behind the Squad",
+      description:
+        "An elite team of nationally certified coaches delivering world-class training, mentorship and performance-driven development for aspiring athletes.",
+
+      members: [
+        {
+          sport: "Football",
+          role: "COACH",
+          img: "/images/homepage/thestrengthimageone.png",
+          name: "Chintha Guruprasad",
+        },
+        {
+          sport: "Football",
+          role: "COACH",
+          img: "/images/homepage/thestrengthimageone.png",
+          name: "Sai",
+        },
+      ],
+    },
+
+    facility: {
+      headingFirst: "Facilities",
+      headingSecond: "That Inspire",
+
+      facilitytwoline:
+        "World-class football infrastructure designed to ignite passion, elevate performance, and prepare players for elite competition.",
+
+      slides: [
+        {
+          id: 1,
+          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          sport: "FIFA-Standard Playing",
+          title: "Surface",
+          description:
+            "International artificial turf by LIMONTA SPORT with advanced drainage and professional floodlighting for all-weather play.",
+        },
+        {
+          id: 2,
+          image: "/images/detail-page/badminton/football-img-1.jpg",
+          sport: "Authentic Match",
+          title: "Environment",
+          description:
+            "Spectator seating for 800–1000, creating real competitive atmospheres that prepare players for match pressure.",
+        },
+        {
+          id: 3,
+          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          sport: "High-Performance",
+          title: "Integration",
+          description:
+            "Direct access to elite strength, conditioning, recovery and performance analysis facilities.",
+        },
+        {
+          id: 4,
+          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          sport: "Advanced Training",
+          title: "Ecosystem",
+          description:
+            "Technical analysis zones with video review and specialized areas for shooting, passing, and goalkeeping.",
+        },
+        {
+          id: 5,
+          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          sport: "Holistic Athletic",
+          title: "Development",
+          description:
+            "Proximity to a 400m synthetic track and age-appropriate training pitches supporting multi-stage youth development.",
+        },
+      ],
+    },
+
+    faq: {
+      headingFirst: "Why Football",
+      headingSecond: "Training Matters",
+      description:
+        "Explore numerous benefits of football and how it helps every aspect of the player’s lifestyle.",
+
+      items: [
+        {
+          id: 1,
+          faqQuestion: "Physical Development Benefits",
+          faqAnswer: [
+            "Builds strong cardiovascular endurance through sustained, high-intensity play.",
+            "Enhances agility, balance, speed, and rapid change-of-direction ability.",
+            "Develops lower-body strength, power, and explosive movement capacity.",
+            "Improves coordination and ball control through complex skill execution.",
+            "Supports healthy bone density during key growth and development stages.",
+            "Strengthens both aerobic and anaerobic energy systems.",
+            "Enhances spatial awareness, proprioception, and sport-transferable movement patterns.",
+          ],
+        },
+
+        {
+          id: 2,
+          faqQuestion: "Cognitive Development Benefits",
+          faqAnswer: [
+            "Strengthens quick decision-making under time and pressure constraints.",
+            "Enhances tactical awareness and pattern recognition during gameplay.",
+            "Develops anticipatory skills and the ability to “read the game”.",
+            "Improves concentration and sustained attention across match durations.",
+            "Builds problem-solving skills by adapting to changing game scenarios.",
+            "Enhances spatial intelligence through positioning and movement awareness.",
+            "Improves working memory for retaining tactics and instructions.",
+            "Encourages cognitive flexibility across varied game situations.",
+            "Develops self-regulation, focus, and inhibitory control.",
+          ],
+        },
+        {
+          id: 3,
+          faqQuestion: "Psychological Development Benefits",
+          faqAnswer: [
+            "Builds resilience by overcoming challenges, setbacks, and competitive pressures",
+            "Strengthens confidence through skill mastery and match-day success",
+            "Encourages goal-setting via structured, progressive skill development",
+            "Develops mental toughness through consistent performance under pressure",
+            "Fosters a growth mindset through continuous technique refinement",
+            "Supports identity formation through team belonging and sporting achievement",
+            "Enhances emotional regulation during competitive situations",
+            "Improves stress management in high-pressure game environments",
+            "Sustains motivation and persistence through long-term development pathways",
+          ],
+        },
+
+        {
+          id: 4,
+          faqQuestion: "Social Development Benefits",
+          faqAnswer: [
+            "Strengthens communication through constant on-field coordination",
+            "Develops leadership skills via captaincy and defined team roles",
+            "Encourages cooperation through shared team objectives",
+            "Builds conflict-resolution skills in competitive situations",
+            "Fosters empathy by understanding teammates’ perspectives",
+            "Instills respect for coaches, officials, and game rules",
+            "Clarifies roles and responsibilities within team structures",
+            "Promotes appreciation of diversity through varied team composition",
+            "Creates lasting friendships through shared sporting experiences",
+          ],
+        },
+        {
+          id: 5,
+          faqQuestion: "Lifestyle Benefits",
+          faqAnswer: [
+            "Builds strong understanding of nutrition and hydration for peak performance",
+            "Encourages lifelong appreciation for regular physical activity",
+            "Develops time management by balancing sport with academics",
+            "Instills discipline through consistent training routines",
+            "Nurtures a healthy and positive competitive spirit",
+            "Enhances media literacy through football coverage and match analysis",
+            "Opens potential career pathways in playing, coaching, or sports science",
+          ],
+        },
+      ],
+    },
+
+    eventsAndTournaments: {
+      headingFirst: "Events & Tournaments",
+      headingSecond: "@ Gaudium Sportopia",
+      description:
+        "Stay updated on upcoming events, tournaments, competitions and key sporting moments at Gaudium Sportopia.",
+
+      items: [
+        {
+          eventnumber: "Event - 01",
+          eventcontent: "Farmer Market - Football Championship 2021",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 02",
+          eventcontent: "TFarmer Market - Football Championship 2022",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 03",
+          eventcontent: "Farmer Market - Football Championship 2023",
+          eventslinks: "/events1link",
+        },
+      ],
+    },
+
+    journey: {
+      headingFirst: "The Strength",
+      headingSecond: "Behind the Squad",
+      description:
+        "A visual journey capturing training, competition and defining moments from our football  athletes’ path to excellence.",
+
+      marqueeRow1: [
+        "/images/detail-page/badminton/marquee/marquee-1.jpg",
+        "/images/detail-page/badminton/marquee/marquee-2.jpg",
+        "/images/detail-page/badminton/marquee/marquee-3.jpg",
+        "/images/detail-page/badminton/marquee/marquee-4.jpg",
+        "/images/detail-page/badminton/marquee/marquee-5.jpg",
+      ],
+
+      marqueeRow2: [
+        "/images/detail-page/badminton/marquee/marquee-6.jpg",
+        "/images/detail-page/badminton/marquee/marquee-8.jpg",
+        "/images/detail-page/badminton/marquee/marquee-7.jpg",
+        "/images/detail-page/badminton/marquee/marquee-10.jpg",
+        "/images/detail-page/badminton/marquee/marquee-9.jpg",
+      ],
+    },
+
+    success: {
+      headingFirst: "success",
+      headingSecond: "stories",
+      description:
+        "Take a glance at the football champions whose achievements define our excellence .",
+
+      showcaseData: [
+        {
+          id: 1,
+          image: "/images/homepage/showcaseproject1.png",
+          title: "Ammena Ahmed Babukhan",
+          description: "Selected for Telanga Jr National football team",
+          svgCard: redsvg,
+        },
+        {
+          id: 2,
+          image: "",
+          title: "",
+          description: "",
+          svgCard: "",
+        },
+      ],
+    },
+  },
+
+  swimming: {
+    DetailPageBanner: {
+      breadcrumbstextfirst: "Home",
+      breadcrumbstextSecond: "Swimming",
+      bannertitle: "Swimming",
+      bannerContent:
+        "Full-body water sport building strength, endurance, technique, flexibility, speed and aquatic confidence for all levels.",
+      banneroverlaycontent: "Swimming",
+      backgroundClass: "swimmingbg",
+    },
+
+    SecondSectionDetail: {
+      backgoundclass: "swimming",
+      secondsportstitlefirst: "The vision of",
+      secondsportstitlesecond: "Swimming Excellence",
+      firstparagraphtext:
+        "The Swimming Centre of Excellence at Gaudium Sportopia is designed to nurture the next generation of competitive swimmers. Our world-class pool and expert coaching create an ideal environment for developing technique, strength, and endurance. With India seeking its next international swimming champion, our uncompromising training standards and advanced facilities empower young swimmers to rise, compete, and bring national glory.",
+      secondparagraphtext: "",
+    },
+
+    experTeamDetail: {
+      headingFirst: "The Strength",
+      headingSecond: "Behind the Squad",
+      description:
+        "An elite team of nationally certified coaches delivering world-class training, mentorship and performance-driven development for aspiring athletes.",
+
+      members: [
+        {
+          sport: "Swimming",
+          role: "COACH",
+          img: "/images/homepage/thestrengthimageone.png",
+          name: "Muthyala Hemasri",
+        },
+        {
+          sport: "Swimming",
+          role: "COACH",
+          img: "/images/homepage/thestrengthimageone.png",
+          name: "C. Jacob Vijay Kumar",
+        },
+      ],
+    },
+
+    facility: {
+      headingFirst: "Facilities",
+      headingSecond: "That Inspire",
+
+      facilitytwoline:
+        "World-class swimming facilities designed for safety, performance, endurance training and nurturing future champions with confidence.",
+
+      slides: [
+        {
+          id: 1,
+          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          sport: "Elite Training",
+          title: "Pool",
+          description:
+            "6-lane, 25-meter outdoor pool with varied depths for both competitive training and skill development.",
+        },
+        {
+          id: 2,
+          image: "/images/detail-page/badminton/football-img-1.jpg",
+          sport: "Race-Ready",
+          title: "Infrastructure",
+          description:
+            "FINA-spec starting blocks, wave-reduction lane dividers, pace clocks, and electronic timing systems.",
+        },
+        {
+          id: 3,
+          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          sport: "Athlete & Spectator",
+          title: "Amenities",
+          description:
+            "Gallery for 200 spectators, dedicated changing rooms, outdoor showers, and secure lockers.",
+        },
+        {
+          id: 4,
+          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          sport: "Controlled Aquatic",
+          title: "Environment",
+          description:
+            "Advanced water quality systems and optimal lighting for consistent, all-day training.",
+        },
+        {
+          id: 5,
+          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          sport: "Competition-Focused",
+          title: "Design",
+          description:
+            "High-performance facilities that mirror championship conditions and prepare swimmers for elite competition.",
+        },
+      ],
+    },
+
+    faq: {
+      headingFirst: "Why Swimming",
+      headingSecond: "Training Matters",
+      description:
+        "Explore numerous benefits of swimming and how it helps every aspect of the player’s lifestyle.",
+
+      items: [
+        {
+          id: 1,
+          faqQuestion: "Physical Development Benefits",
+          faqAnswer: [
+            "Builds extraordinary cardiovascular endurance through consistent aerobic training",
+            "Promotes balanced muscular development across upper and lower body",
+            "Enhances pulmonary capacity and efficient oxygen utilization",
+            "Improves flexibility and range of motion through stroke mechanics",
+            "Develops superior core strength via stabilization requirements",
+            "Strengthens coordination through bilateral movement patterns",
+            "Supports proper posture and spinal alignment in swimming positions",
+            "Encourages healthy bone density in a low-impact environment",
+            "Boosts metabolic efficiency and optimizes body composition",
+            "Reduces risk of childhood obesity and related health issues",
+            "Fosters lifelong exercise habits for sustained health and fitness",
+          ],
+        },
+
+        {
+          id: 2,
+          faqQuestion: "Cognitive Development Benefits",
+          faqAnswer: [
+            "Strengthens neural pathways through complex swimming movements and drills",
+            "Improves concentration during sustained training sets and routines",
+            "Develops sequential processing through progressive stroke techniques",
+            "Enhances spatial intelligence with three-dimensional awareness in water",
+            "Boosts processing speed via sprint and interval training",
+            "Encourages time-management skills through structured pace training",
+            "Improves memory by recalling interval sets and training sequences",
+            "Builds mathematical thinking through calculating splits, distances, and timings",
+            "Supports goal-setting and achievement-oriented planning",
+            "Enhances focus by minimizing external distractions during swim practice",
+          ],
+        },
+
+        {
+          id: 3,
+          faqQuestion: "Psychological Development Benefits",
+          faqAnswer: [
+            "Builds extraordinary self-discipline through consistent, rigorous training schedules",
+            "Strengthens mental toughness via challenging swimming protocols",
+            "Fosters internal motivation and self-driven excellence",
+            "Enhances emotional regulation through controlled breathing techniques",
+            "Boosts self-confidence with measurable skill and performance progression",
+            "Develops performance routines transferable to non-swimming challenges",
+            "Reduces stress through meditative aspects of rhythmic swimming",
+            "Supports improved sleep quality for cognitive and emotional health",
+            "Lowers anxiety through focused breathing practices",
+            "Cultivates resilience by overcoming performance plateaus and setbacks",
+            "Encourages healthy perfectionism and attention to technical detail",
+          ],
+        },
+
+        {
+          id: 4,
+          faqQuestion: "Social Development Benefits",
+          faqAnswer: [
+            "Builds understanding of team dynamics within an individually-focused sport",
+            "Fosters training partnerships and supportive peer relationships",
+            "Encourages sportsmanship through competition and race etiquette",
+            "Strengthens communication skills with coaches and teammates",
+            "Instills respect for shared spaces and facility protocols",
+            "Highlights how individual performance impacts team outcomes",
+            "Develops appropriate competitive attitudes and behaviors",
+            "Teaches giving and receiving constructive feedback",
+            "Promotes connections across age groups within swimming clubs",
+            "Provides insight into meet operations through participation and volunteering",
+          ],
+        },
+        {
+          id: 5,
+          faqQuestion: "Lifestyle Benefits",
+          faqAnswer: [
+            "Develops essential water safety skills with lifelong applicability",
+            "Builds understanding of physical conditioning principles transferable to other sports",
+            "Promotes advanced knowledge of hydration and nutrition for optimal performance",
+            "Encourages goal-setting and progressive achievement habits",
+            "Strengthens time management by balancing training with academics",
+            "Cultivates healthy morning routines through early training sessions",
+            "Teaches principles of rest and recovery for sustainable performance",
+            "Opens potential educational opportunities via swimming scholarships",
+            "Prepares for career pathways in competitive swimming, coaching, or aquatic management",
+            "Supports lifelong recreational activity and fitness across all ages",
+          ],
+        },
+      ],
+    },
+
+    eventsAndTournaments: {
+      headingFirst: "Events & Tournaments",
+      headingSecond: "@ Gaudium Sportopia",
+      description:
+        "Stay updated on upcoming events, tournaments, competitions and key sporting moments at Gaudium Sportopia.",
+
+      items: [
+        {
+          eventnumber: "Event - 01",
+          eventcontent: "ISSO National 2024",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 02",
+          eventcontent: "DRS Inter school 2025",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 03",
+          eventcontent: "Inter-state Sikkim 2024",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 04",
+          eventcontent: "Inter school Agakhan 2024",
+          eventslinks: "/events1link",
+        },
+      ],
+    },
+
+    journey: {
+      headingFirst: "The Strength",
+      headingSecond: "Behind the Squad",
+      description:
+        "A visual journey capturing training, competition and defining moments from our swimming  athletes’ path to excellence.",
+
+      marqueeRow1: [
+        "/images/detail-page/badminton/marquee/marquee-1.jpg",
+        "/images/detail-page/badminton/marquee/marquee-2.jpg",
+        "/images/detail-page/badminton/marquee/marquee-3.jpg",
+        "/images/detail-page/badminton/marquee/marquee-4.jpg",
+        "/images/detail-page/badminton/marquee/marquee-5.jpg",
+      ],
+
+      marqueeRow2: [
+        "/images/detail-page/badminton/marquee/marquee-6.jpg",
+        "/images/detail-page/badminton/marquee/marquee-8.jpg",
+        "/images/detail-page/badminton/marquee/marquee-7.jpg",
+        "/images/detail-page/badminton/marquee/marquee-10.jpg",
+        "/images/detail-page/badminton/marquee/marquee-9.jpg",
+      ],
+    },
+
+    success: {
+      headingFirst: "success",
+      headingSecond: "stories",
+      description:
+        "Take a glance at the swimming champions whose achievements define our excellence.",
+
+      showcaseData: [
+        {
+          id: 1,
+          image: "/images/homepage/showcaseproject1.png",
+          title: "Ammena Ahmed Babukhan",
+          description: "Selected for Telanga Jr National football team",
+          svgCard: redsvg,
+        },
+      ],
+    },
+  },
+
+  tennis: {
+    DetailPageBanner: {
+      breadcrumbstextfirst: "Home",
+      breadcrumbstextSecond: "Tennis",
+      bannertitle: "Tennis",
+      bannerContent:
+        "Full-body water sport building strength, endurance, technique, flexibility, speed and aquatic confidence for all levels.",
+      banneroverlaycontent: "Tennis",
+      backgroundClass: "tennisbg",
+    },
+
+    SecondSectionDetail: {
+      backgoundclass: "tennis",
+      secondsportstitlefirst: "The vision of",
+      secondsportstitlesecond: "Tennis Excellence",
+      firstparagraphtext:
+        "The Tennis Centre of Excellence at Gaudium Sportopia offers elite training pathways for young athletes aiming for national and international success. Our world-class facilities foster advanced tennis skills while building agility, strength, and endurance. With uncompromising coaching standards and professional infrastructure, we create an environment where talent is refined, confidence is built, and future champions are shaped for the global stage.",
+      secondparagraphtext: "",
+    },
+
+    experTeamDetail: {
+      headingFirst: "The Strength",
+      headingSecond: "Behind the Squad",
+      description:
+        "An elite team of nationally certified coaches delivering world-class training, mentorship and performance-driven development for aspiring athletes.",
+
+      members: [
+        {
+          sport: "Tennis",
+          role: "Mentor",
+          img: "/images/homepage/thestrengthimageone.png",
+          name: "V.VIJAY KUMAR",
+        },
+      ],
+    },
+
+    facility: {
+      headingFirst: "Facilities",
+      headingSecond: "That Inspire",
+
+      facilitytwoline:
+        "World-class tennis courts and performance-driven infrastructure designed to inspire excellence, precision, resilience and championship-level competitive play.",
+
+      slides: [
+        {
+          id: 1,
+          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          sport: "ITF-Standard",
+          title: "Courts",
+          description:
+            "Three ITF-classified synthetic acrylic courts with eight-layer systems meeting international tournament standards.",
+        },
+        {
+          id: 2,
+          image: "/images/detail-page/badminton/football-img-1.jpg",
+          sport: "Match-Ready",
+          title: "Environment",
+          description:
+            "Spectator gallery for 400 viewers, simulating competitive pressure and real-match conditions.",
+        },
+        {
+          id: 3,
+          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          sport: "Player Comfort and",
+          title: "Safety",
+          description:
+            "Dedicated changing rooms, outdoor showers, secure lockers and well-maintained court surroundings.",
+        },
+        {
+          id: 4,
+          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          sport: "Advanced Training ",
+          title: "Equipment",
+          description:
+            "Professional ball machines and rebound nets designed for precision practice and skill refinement.",
+        },
+        {
+          id: 5,
+          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          sport: "All-Day Play",
+          title: "Support",
+          description:
+            "High-quality court lighting and strategically placed hydration stations for extended training sessions.",
+        },
+      ],
+    },
+
+    faq: {
+      headingFirst: "Why Tennis",
+      headingSecond: "Training Matters",
+      description:
+        "Explore numerous benefits of Tennis and how it helps every aspect of the player’s lifestyle.",
+
+      items: [
+        {
+          id: 1,
+          faqQuestion: "Physical Development Benefits",
+          faqAnswer: [
+            "Builds strong cardiovascular endurance through sustained aerobic and high-intensity anaerobic play",
+            "Promotes balanced muscle development across upper and lower body groups",
+            "Enhances agility, speed and quick directional changes on court",
+            "Improves flexibility and range of motion through dynamic stroke execution",
+            "Strengthens core stability for better balance and power generation",
+            "Develops coordination through bilateral movement and footwork patterns",
+            "Encourages correct posture and spinal alignment through proper technique",
+            "Supports healthy bone density within a controlled, low-impact environment",
+            "Improves metabolism and overall body composition",
+            "Reduces risk of childhood obesity and lifestyle-related health concerns",
+            "Establishes lifelong fitness habits through regular physical activity",
+          ],
+        },
+
+        {
+          id: 2,
+          faqQuestion: "Cognitive Development Benefits",
+          faqAnswer: [
+            "Strengthens neural pathways through complex, coordinated movement patterns",
+            "Improves concentration through sustained focus during matches and drills",
+            "Develops strategic thinking via shot selection and match situations",
+            "Enhances spatial intelligence through court awareness and positioning",
+            "Boosts processing speed through rapid decision-making during rallies",
+            "Builds time-management skills through match pacing and point construction",
+            "Enhances memory by recalling strategies, patterns, and training routines",
+            "Encourages mathematical thinking through scoring, angles, and game tactics",
+            "Improves goal-setting and structured achievement planning",
+            "Sharpens focus by training the mind to block external distractions",
+          ],
+        },
+
+        {
+          id: 3,
+          faqQuestion: "Psychological Development Benefits",
+          faqAnswer: [
+            "Builds exceptional self-discipline through consistent adherence to structured training schedules",
+            "Strengthens mental toughness by navigating high-pressure match situations",
+            "Encourages internal motivation and a mindset of self-driven excellence",
+            "Improves emotional regulation through focused breathing and match awareness",
+            "Boosts self-confidence through visible skill improvement and performance growth",
+            "Develops performance routines transferable to academics and life challenges",
+            "Reduces stress through the rhythmic, meditative nature of play",
+            "Supports better sleep quality, enhancing emotional and cognitive health",
+            "Lowers anxiety through controlled breathing and focused movement",
+            "Enhances resilience by overcoming plateaus, losses, and competitive setbacks",
+            "Cultivates healthy perfectionism and attention to technical detail",
+          ],
+        },
+
+        {
+          id: 4,
+          faqQuestion: "Social Development Benefits",
+          faqAnswer: [
+            "Builds understanding of team dynamics within an individually focused sport",
+            "Encourages strong training partnerships and supportive peer relationships",
+            "Promotes sportsmanship through competitive play and match etiquette",
+            "Enhances communication skills via regular interaction with coaches and teammates",
+            "Instills respect for shared spaces and facility protocols",
+            "Highlights how individual performance contributes to overall team success",
+            "Develops healthy, respectful competitive attitudes",
+            "Teaches giving and receiving constructive feedback effectively",
+            "Builds connections across different age groups within tennis communities",
+            "Familiarizes players with tournament operations through participation and volunteering",
+          ],
+        },
+
+        {
+          id: 5,
+          faqQuestion: "Lifestyle Benefits",
+          faqAnswer: [
+            "Encourages lifelong recreational activity suitable across all ages",
+            "Builds understanding of physical conditioning transferable to other sports",
+            "Develops advanced knowledge of hydration and performance nutrition",
+            "Fosters goal-setting mindset and appreciation for progressive achievement",
+            "Enhances time management by balancing training and academics",
+            "Instills disciplined morning routines through structured training schedules",
+            "Promotes awareness of rest, recovery, and injury prevention",
+            "Opens potential educational opportunities through tennis scholarships",
+            "Introduces career pathways in competitive tennis, coaching, and sports management",
+          ],
+        },
+      ],
+    },
+
+    eventsAndTournaments: {
+      headingFirst: "Events & Tournaments",
+      headingSecond: "@ Gaudium Sportopia",
+      description:
+        "Stay updated on upcoming events, tournaments, competitions and key sporting moments at Gaudium Sportopia.",
+
+      items: [
+        {
+          eventnumber: "Event - 01",
+          eventcontent: "Tennis work shop 2023",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 02",
+          eventcontent: "The Gaudium HDTA 2024",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 03",
+          eventcontent: "Junior Championship -Circuit 2025",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 04",
+          eventcontent: "PYP Hyd Network Indus School 2024",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 05",
+          eventcontent: "ISSO Tennis 2024",
+          eventslinks: "/events1link",
+        },
+      ],
+    },
+
+    journey: {
+      headingFirst: "The Strength",
+      headingSecond: "Behind the Squad",
+      description:
+        "A visual journey capturing training, competition and defining moments from our Tennis athletes’ path to excellence.",
+
+      marqueeRow1: [
+        "/images/detail-page/badminton/marquee/marquee-1.jpg",
+        "/images/detail-page/badminton/marquee/marquee-2.jpg",
+        "/images/detail-page/badminton/marquee/marquee-3.jpg",
+        "/images/detail-page/badminton/marquee/marquee-4.jpg",
+        "/images/detail-page/badminton/marquee/marquee-5.jpg",
+      ],
+
+      marqueeRow2: [
+        "/images/detail-page/badminton/marquee/marquee-6.jpg",
+        "/images/detail-page/badminton/marquee/marquee-8.jpg",
+        "/images/detail-page/badminton/marquee/marquee-7.jpg",
+        "/images/detail-page/badminton/marquee/marquee-10.jpg",
+        "/images/detail-page/badminton/marquee/marquee-9.jpg",
+      ],
+    },
+
+    success: {
+      headingFirst: "success",
+      headingSecond: "stories",
+      description:
+        "Take a glance at the Tennis champions whose achievements define our excellence.",
+
+      showcaseData: [
+        {
+          id: 1,
+          image: "/images/homepage/showcaseproject1.png",
+          title: "Ammena Ahmed Babukhan",
+          description: "Selected for Telanga Jr National football team",
+          svgCard: redsvg,
+        },
       ],
     },
   },

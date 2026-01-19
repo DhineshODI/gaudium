@@ -1,6 +1,6 @@
 import Header from "../Components/Header";
 
-export default function InDoorSportsPage() {
+export default function InDoorSportsPage({ menuOnclick }) {
   const games = [
     {
       id: 1,
@@ -46,7 +46,7 @@ export default function InDoorSportsPage() {
   return (
     <>
       <>
-        <Header />
+        <Header  menuOnclick={menuOnclick}/>
 
         {/* Banner-Image */}
 

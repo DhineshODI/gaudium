@@ -1,9 +1,9 @@
 import Header from "../Components/Header";
 
-export default function OurPrograms() {
+export default function OurPrograms({ menuOnclick }) {
   return (
     <>
-      <Header />
+      <Header menuOnclick={menuOnclick} />
 
       {/* Banner-Image */}
 
@@ -72,8 +72,9 @@ export default function OurPrograms() {
                 </p>
 
                 <p className="paragraphtext paragatwoprogram">
-                  Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-                  pellentesque scelerisque libero malesuada tristique urna.
+                  Designed to nurture confidence, coordination, and a love for
+                  sport in young learners. Ideal for beginners seeking
+                  structured exposure alongside academics.
                 </p>
               </div>
             </div>
@@ -91,8 +92,9 @@ export default function OurPrograms() {
                 </p>
 
                 <p className="paragraphtext paragatwoprogram">
-                  Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-                  pellentesque scelerisque libero malesuada tristique urna.
+                  Built for committed athletes ready to elevate performance
+                  through disciplined training. Emphasizes competitive
+                  readiness, physical conditioning, and tactical development.
                 </p>
               </div>
             </div>
@@ -110,8 +112,10 @@ export default function OurPrograms() {
                 </p>
 
                 <p className="paragraphtext paragatwoprogram">
-                  Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-                  pellentesque scelerisque libero malesuada tristique urna.
+                  Created for future professionals pursuing excellence at
+                  national and international levels. Provides a holistic pathway
+                  combining elite sport, academics, and career-focused
+                  mentorship.
                 </p>
               </div>
             </div>

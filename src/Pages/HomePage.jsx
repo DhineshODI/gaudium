@@ -9,10 +9,14 @@ import SucessYouMore from "../Components/SucessYouMore";
 import TheStrenthBehind from "../Components/TheStrengthBehind";
 import VoicesofChampion from "../Components/VoicesofChampion";
 
+import { useLocation } from "react-router-dom";
+
 export default function Homepage({ menuOnclick }) {
+  const location = useLocation();
+  const isHome = location.pathname === "/";
   return (
     <>
-      <div className="Homepagestyle">
+      <div className={`Homepagestyle ${isHome ? "homePlus" : ""}`}>
         {/* banner */}
         <div className="homepagebanner">
           <Header menuOnclick={menuOnclick} />
@@ -191,32 +195,32 @@ export default function Homepage({ menuOnclick }) {
                 </div>
                 <div className="expansivecards">
                   <div className="expansivefirstsec">
-                    <h5>27</h5>
-                    <p className="secondheadingtext">Acres</p>
+                    <h5>25</h5>
+                    <p className="secondheadingtext">+</p>
                   </div>
-                  <h4 className="paragraphtext">Expansive Campus</h4>
+                  <h4 className="paragraphtext">Sports Programs</h4>
                   <p className="secondheadingtext avasttext">
-                    A vast space built for all-round sports excellence.
+                    Learn, train, and compete across multiple disciplines.
                   </p>
                 </div>
                 <div className="expansivecards">
                   <div className="expansivefirstsec">
-                    <h5>27</h5>
-                    <p className="secondheadingtext">Acres</p>
+                    <h5>1L</h5>
+                    <p className="secondheadingtext">{""}Sq. Ft.</p>
                   </div>
-                  <h4 className="paragraphtext">Expansive Campus</h4>
+                  <h4 className="paragraphtext">Indoor Arena</h4>
                   <p className="secondheadingtext avasttext">
-                    A vast space built for all-round sports excellence.
+                    World-class indoor facilities for uninterrupted training.
                   </p>
                 </div>
                 <div className="expansivecards">
                   <div className="expansivefirstsec">
-                    <h5>27</h5>
-                    <p className="secondheadingtext">Acres</p>
+                    <h5>2L</h5>
+                    <p className="secondheadingtext">Sq. Ft.</p>
                   </div>
-                  <h4 className="paragraphtext">Expansive Campus</h4>
+                  <h4 className="paragraphtext">Outdoor Grounds</h4>
                   <p className="secondheadingtext avasttext">
-                    A vast space built for all-round sports excellence.
+                    Professional fields for top-level practice and play.
                   </p>
                 </div>
               </div>

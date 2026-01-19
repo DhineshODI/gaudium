@@ -1,10 +1,10 @@
 import AboutusTheStrengthSection from "../Components/AboutUsTheStrengthBehind";
 import Header from "../Components/Header";
 
-export default function AboutUsPage() {
+export default function AboutUsPage({ menuOnclick }) {
   return (
     <>
-      <Header />
+      <Header menuOnclick={menuOnclick} />
 
       {/* Banner-Image */}
 

@@ -90,6 +90,11 @@
   justify-content: space-between;
   align-items: center;
   padding: 0.65% 5%;
+  transition: all 0.35s ease-in-out; /* smooth effect */
+}
+
+.headerdiv.scrollheader .headerstyle {
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
 .headerdiv {
@@ -97,7 +102,6 @@
   position: sticky;
   top: 0;
   z-index: 10000;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   /* THIS MAKES IT SMOOTH */
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -938,7 +942,9 @@
 }
 
 .showcasingcard {
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
 }
 
 .showcasingcard:hover {
@@ -992,7 +998,9 @@
   position: relative;
   width: 30%;
   padding-bottom: 50px;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
 }
 .cricketslideer:hover {
   transform: translateY(-10px);
@@ -1824,7 +1832,9 @@
 .faqimagearroww {
   filter: grayscale(1);
   transform: rotate(180deg);
-  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+  transition:
+    transform 0.3s ease-in-out,
+    filter 0.3s ease-in-out;
 }
 
 .activefaq .faqimagearroww {
@@ -2253,7 +2263,9 @@
 }
 
 .highlightedtextred {
-  transition: color 250ms, text-shadow 250ms;
+  transition:
+    color 250ms,
+    text-shadow 250ms;
   position: relative;
   z-index: 0;
   cursor: pointer;
@@ -2284,7 +2296,9 @@
 }
 
 .highlightedtextwhite {
-  transition: color 250ms, text-shadow 250ms;
+  transition:
+    color 250ms,
+    text-shadow 250ms;
   position: relative;
   z-index: 0;
   cursor: pointer;
@@ -2314,7 +2328,9 @@
   }
 }
 .highlightedtextopposite {
-  transition: color 250ms, text-shadow 250ms;
+  transition:
+    color 250ms,
+    text-shadow 250ms;
   position: relative;
   z-index: 0;
   cursor: pointer;
@@ -2345,7 +2361,9 @@
 }
 
 .highlightedtextoppositeblue {
-  transition: color 250ms, text-shadow 250ms;
+  transition:
+    color 250ms,
+    text-shadow 250ms;
   position: relative;
   z-index: 0;
   cursor: pointer;
@@ -2376,7 +2394,9 @@
 }
 
 .highlightedtextwhitered {
-  transition: color 250ms, text-shadow 250ms;
+  transition:
+    color 250ms,
+    text-shadow 250ms;
   position: relative;
   z-index: 0;
   cursor: pointer;
@@ -2515,19 +2535,20 @@
 .mainoutsportssectionouter {
   display: flex;
   margin: 0 5%;
-  column-gap: 5%;
+  column-gap: 4%;
   margin-top: 70px;
 }
 
 .outsportssectionouter {
   width: 15%;
+  width: 20%;
   border: 1px solid rgba(255, 255, 255, 0.2);
   /* padding: 10px 0; */
   height: max-content;
 }
 
 .firstoutsportssectionouter {
-  width: 80%;
+  width: 83%;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -2542,6 +2563,7 @@
   padding: 15px 0;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   cursor: pointer;
+  transition: 0.25s ease-in;
 }
 
 .outsportssectionouter .paragraphtext:last-child {
@@ -2558,7 +2580,7 @@
 }
 
 .lightboximagesec {
-  width: 30%;
+  width: 32%;
   border: 5px solid #fff;
 }
 
@@ -2998,6 +3020,35 @@
   background: #555;
 }
 /* ham-burger */
+
+.plustextcontent {
+  font-size: 35px;
+  font-weight: 100 !important;
+  margin-bottom: 5px !important;
+}
+
+.smoothMenu {
+  will-change: transform, opacity; /* Boost GPU */
+  transform: translate3d(0, 0, 0); /* Force hardware acceleration */
+}
+.menubarWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: transparent;
+  z-index: 1000001;
+  overflow-y: auto;
+}
+
+.Homepagestyle.homePlus .headerdiv.scrollheader .headerstyle {
+  padding: 0.65% 5%;
+}
+
+.yarl__portal_open {
+  z-index: 1000000 !important;
+}
 
 @media (max-width: 1600px) and (min-width: 1400px) {
   /* font-style-heading */

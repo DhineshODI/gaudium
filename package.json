@@ -43,7 +43,7 @@
     "slick-carousel": "^1.8.1",
     "tailwindcss": "^4.1.4",
     "uuid": "^11.1.0",
-    "yet-another-react-lightbox": "^3.25.0"
+    "yet-another-react-lightbox": "^3.28.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",

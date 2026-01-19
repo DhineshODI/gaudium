@@ -3,7 +3,7 @@ import JourneyInPictures from "../Components/JourneyInPictures";
 import SucessYouMore from "../Components/SucessYouMore";
 import VoicesofChampion from "../Components/VoicesofChampion";
 
-export default function BestPerformerPage() {
+export default function BestPerformerPage({ menuOnclick }) {
   const bestPerformers = [
     {
       id: 1,
@@ -90,7 +90,7 @@ export default function BestPerformerPage() {
 
   return (
     <>
-      <Header />
+      <Header menuOnclick={menuOnclick} />
 
       {/* Banner-Image */}
 

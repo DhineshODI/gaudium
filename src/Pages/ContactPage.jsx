@@ -1,10 +1,10 @@
 import ContactForm from "../Components/ContactUsForm";
 import Header from "../Components/Header";
 
-export default function ContactPage() {
+export default function ContactPage({ menuOnclick }) {
   return (
     <>
-      <Header />
+      <Header menuOnclick={menuOnclick} />
 
       {/* Banner-Image */}
 
@@ -19,9 +19,8 @@ export default function ContactPage() {
               <hr />
 
               <p className="paragraphtext contentbanner">
-                Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-                pellentesq uescelerisque libero malesuada tristique Ultricies
-                leo viverra.
+                Reach out to Gaudium Sportopia for admissions, program details
+                or any inquiries about our sports academy.
               </p>
             </div>
           </div>
@@ -50,9 +49,8 @@ export default function ContactPage() {
 
           <div className="paravideosection">
             <p className="paragraphtext">
-              Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-              pellentesq uescelerisque libero malesuada tristique Ultricies leo
-              viverra.
+              Connect with Gaudium Sportopia to join our programs, explore
+              opportunities and start your champion’s journey today.
             </p>
           </div>
 
@@ -111,8 +109,7 @@ export default function ContactPage() {
                 />
                 <p className="paragraphtext">Chat with Live !</p>
                 <p className="textcontntcontact">
-                  Lorem ipsum dolor sit amet consectetur. malesuada tristique
-                  Ultricies viverra.
+                  Chat live with our team for instant support for your queries.
                 </p>
 
                 <div className="whatsappcontact">
@@ -130,7 +127,7 @@ export default function ContactPage() {
               </div>
             </div>
             <div className="formcontactbgsecond">
-             <ContactForm/>
+              <ContactForm />
             </div>
           </div>
         </div>
@@ -139,8 +136,6 @@ export default function ContactPage() {
       {/* Form  */}
 
       {/* maps */}
-
-      
 
       <iframe
         className="gaudiumlocationmap"

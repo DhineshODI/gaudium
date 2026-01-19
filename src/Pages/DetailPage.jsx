@@ -10,14 +10,14 @@ import Header from "../Components/Header";
 import { useParams } from "react-router-dom";
 import DetailsData from "../Components/DetailPage/DeatilPageData";
 
-export default function DetailPage() {
+export default function DetailPage({ menuOnclick }) {
   const { slug } = useParams();
   const data = DetailsData[slug];
 
   if (!data) return <h2>Page Not Found</h2>;
   return (
     <>
-      <Header />
+      <Header  menuOnclick={menuOnclick}/>
       <DetailPageBanner data={data.DetailPageBanner} />
       <SecondSectionDetail data={data.SecondSectionDetail} />
       <ExperTeamDetail data={data.experTeamDetail} />

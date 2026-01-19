@@ -2,10 +2,10 @@ import Header from "../Components/Header";
 import InDoorSportsFacility from "../Components/InDoorSportsFacility";
 import OutDoorSportsFacility from "../Components/OutDoorSportsFacility";
 
-export default function OurInfraStructure() {
+export default function OurInfraStructure({ menuOnclick }) {
   return (
     <>
-      <Header />
+      <Header  menuOnclick={menuOnclick}/>
 
       {/* Banner-Image */}
 
@@ -20,9 +20,9 @@ export default function OurInfraStructure() {
               <hr />
 
               <p className="paragraphtext contentbanner">
-                Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-                pellentesq uescelerisque libero malesuada tristique Ultricies
-                leo viverra.
+                Cutting-edge sports infrastructure combining world-class
+                facilities and expert design for training, performance and
+                athlete development.
               </p>
             </div>
           </div>
@@ -41,24 +41,24 @@ export default function OurInfraStructure() {
           <div className="videosectionmain">
             <div className="firstheading lengthfirstHeading">
               <h2 className="stroke-fill-text mainheadingfont redcolorfont">
-                World-Class Sports
+                World-Class
               </h2>
             </div>
 
             <div className="secondheading lengthsecondHeading">
               <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
-                Infrastructure
+                Sports Infrastructure
               </h2>
             </div>
           </div>
 
           <div className="paravideosection">
             <p className="paragraphtext">
-              Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-              pellentesque scelerisque libero malesuada tristique urna.
-              Ultricies leo viverra tincidunt pharetra pretium pulvinar orci. In
-              vel ac magna rhoncus nibh etiam. Scelerisque pretium elitneque
-              pellentesque Quis cursus elit rhoncus.
+              Gaudium Sportopia offers world-class sports infrastructure,
+              featuring professionally designed courts, fields, arenas and
+              training facilities. Every detail meets international standards,
+              providing athletes with the environment, equipment and technology
+              needed to train and excel at the highest level.
             </p>
           </div>
 
@@ -79,33 +79,33 @@ export default function OurInfraStructure() {
                 </p>
               </div>
               <div className="expansivecards">
-                <div className="expansivefirstsec">
-                  <h5>27</h5>
-                  <p className="secondheadingtext">Acres</p>
+                <div className="expansivefirstsec gap-1">
+                  <h5>25</h5>
+                  <p className="secondheadingtext plustextcontent">+</p>
                 </div>
-                <h4 className="paragraphtext">Expansive Campus</h4>
+                <h4 className="paragraphtext">Sports Programs</h4>
                 <p className="secondheadingtext avasttext">
-                  A vast space built for all-round sports excellence.
+                  Learn, train, and compete across multiple disciplines.
                 </p>
               </div>
               <div className="expansivecards">
-                <div className="expansivefirstsec">
-                  <h5>27</h5>
-                  <p className="secondheadingtext">Acres</p>
+                <div className="expansivefirstsec gap-2.5">
+                  <h5>1L</h5>
+                  <p className="secondheadingtext">Sq. Ft.</p>
                 </div>
-                <h4 className="paragraphtext">Expansive Campus</h4>
+                <h4 className="paragraphtext">Indoor Arena</h4>
                 <p className="secondheadingtext avasttext">
-                  A vast space built for all-round sports excellence.
+                  World-class indoor facilities for uninterrupted training..
                 </p>
               </div>
               <div className="expansivecards">
-                <div className="expansivefirstsec">
-                  <h5>27</h5>
-                  <p className="secondheadingtext">Acres</p>
+                <div className="expansivefirstsec gap-2.5">
+                  <h5>2L</h5>
+                  <p className="secondheadingtext">Sq. Ft.</p>
                 </div>
-                <h4 className="paragraphtext">Expansive Campus</h4>
+                <h4 className="paragraphtext">Outdoor Grounds</h4>
                 <p className="secondheadingtext avasttext">
-                  A vast space built for all-round sports excellence.
+                  Professional fields for top-level practice and play.
                 </p>
               </div>
             </div>
@@ -155,7 +155,7 @@ export default function OurInfraStructure() {
           <div className="videosectionmain">
             <div className="firstheading">
               <h2 className="stroke-fill-text mainheadingfont redcolorfont">
-               indoor sports
+                indoor sports
               </h2>
             </div>
             <div className="secondheading">

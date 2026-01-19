@@ -53,7 +53,10 @@ export default function TheStrenthBehind() {
     }
 
     const maxScrollableIndex = totalSlides - slidesToShow;
-    const percent = (current / maxScrollableIndex) * 100;
+
+    // add 1 step so first slide has progress
+    const percent = ((current + 1) / (maxScrollableIndex + 1)) * 100;
+
     setProgress(Math.min(Math.max(percent, 0), 100));
   };
 
@@ -107,7 +110,8 @@ export default function TheStrenthBehind() {
             </div>
             <div className="paravideosection">
               <p className="paragraphtext">
-                Meet the expert coaches, mentors, and support team powering every athlete’s journey to excellence.
+                Meet the expert coaches, mentors, and support team powering
+                every athlete’s journey to excellence.
               </p>
             </div>
 

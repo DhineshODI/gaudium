@@ -3,6 +3,19 @@ import { useEffect, useState } from "react";
 export default function Menubar({ menuOnclick }) {
   const [isBelow600, setIsBelow600] = useState(false);
 
+  const menuItems = [
+    { label: "Home", path: "/" },
+    { label: "About Us", path: "/about" },
+    { label: "Our Programs", path: "/our-programs" },
+    { label: "Indoor Sports", path: "/indoor-sports" },
+    { label: "Outdoor Sports", path: "/outdoor-sports" },
+    { label: "Best Performer", path: "/best-performer" },
+    { label: "Student Testimonial", path: "/student-testimonial" },
+    { label: "Our Infrastructure", path: "/our-infrastructure" },
+    { label: "News & Events", path: "/newsandevents" },
+    { label: "Contact Us", path: "/contact" },
+  ];
+
   useEffect(() => {
     const checkHeight = () => {
       setIsBelow600(window.innerHeight < 700);
@@ -34,15 +47,18 @@ export default function Menubar({ menuOnclick }) {
 
           <div>
             <ul className="menubarul">
-              <li className="menubarhamlist menustyles">Home</li>
-              <li className="menubarhamlist menustyles">About Us</li>
-              <li className="menubarhamlist menustyles">our Programs</li>
-              <li className="menubarhamlist menustyles">indoor sports</li>
-              <li className="menubarhamlist menustyles">outdoor sports</li>
-              <li className="menubarhamlist menustyles">our team</li>
-              <li className="menubarhamlist menustyles">our team</li>
-              <li className="menubarhamlist menustyles">our team</li>
-              <li className="menubarhamlist menustyles">contact us</li>
+              {menuItems.map((item, index) => (
+                <a
+                  href={item.path}
+                  className={({ isActive }) =>
+                    `menubarhamlist menustyles ${isActive ? "active-menu" : ""}`
+                  }
+                >
+                  <li key={index} className="menubarhamlist menustyles">
+                    {item.label}
+                  </li>
+                </a>
+              ))}
             </ul>
 
             <div>

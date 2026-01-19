@@ -65,8 +65,7 @@ export default function ProgrammsBuild() {
                 </div>
 
                 <div className="contentbuildsection">
-                  Lorem ipsum dolor sit amet consectetur. Tristique ornare dolor
-                  odio nulla. Id molestie tristique laoreet velit.
+                  An elite full-time program nurturing high-potential athletes through intensive training, academic support, coach selection, tournaments.
                 </div>
 
                 <div className="becomeachampion">

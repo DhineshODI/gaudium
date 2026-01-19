@@ -44,15 +44,15 @@ function App() {
   return (
     <>
       <MenuProvider>
-       <AnimatePresence>
-        {menushow && (
-          <motion.div
-            initial={{ y: "-100%", opacity: 0 }}
-            animate={{ y: "0%", opacity: 1 }}
-            exit={{ y: "-100%", opacity: 0 }}
-            transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
-            className="menubarWrapper smoothMenu"
-          >
+        <AnimatePresence>
+          {menushow && (
+            <motion.div
+              initial={{ y: "-100%", opacity: 0 }}
+              animate={{ y: "0%", opacity: 1 }}
+              exit={{ y: "-100%", opacity: 0 }}
+              transition={{ duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
+              className="menubarWrapper smoothMenu"
+            >
               <Menubar menuOnclick={menuOnclick} />
             </motion.div>
           )}
@@ -61,46 +61,47 @@ function App() {
         {/* {menushow && <Menubar menuOnclick={menuOnclick} />} */}
 
         <Routes>
-          <Route path="/" element={<Homepage menuOnclick={menuOnclick} />} />
           <Route
             path="/about"
-            element={<AboutUsPage onClick={menuOnclick} />}
+            element={<AboutUsPage menuOnclick={menuOnclick} />}
           />
+
+          <Route path="/" element={<Homepage menuOnclick={menuOnclick} />} />
           <Route
             path="/our-programs"
-            element={<OurPrograms onClick={menuOnclick} />}
+            element={<OurPrograms menuOnclick={menuOnclick} />}
           />
           <Route
             path="/outdoor-sports"
-            element={<OutDoorSportsPage onClick={menuOnclick} />}
+            element={<OutDoorSportsPage menuOnclick={menuOnclick} />}
           />
           <Route
             path="/indoor-sports"
-            element={<InDoorSportsPage onClick={menuOnclick} />}
+            element={<InDoorSportsPage menuOnclick={menuOnclick} />}
           />
           <Route
             path="/best-performer"
-            element={<BestPerformerPage onClick={menuOnclick} />}
+            element={<BestPerformerPage menuOnclick={menuOnclick} />}
           />
           <Route
             path="/sport/:slug"
-            element={<DetailPage onClick={menuOnclick} />}
+            element={<DetailPage menuOnclick={menuOnclick} />}
           />
           <Route
             path="/student-testimonial"
-            element={<TestimonialPage onClick={menuOnclick} />}
+            element={<TestimonialPage menuOnclick={menuOnclick} />}
           />
           <Route
             path="/our-infrastructure"
-            element={<OurInfraStructure onClick={menuOnclick} />}
+            element={<OurInfraStructure menuOnclick={menuOnclick} />}
           />
           <Route
             path="/contact"
-            element={<ContactPage onClick={menuOnclick} />}
+            element={<ContactPage menuOnclick={menuOnclick} />}
           />
           <Route
             path="/newsandevents"
-            element={<NewsandEvents onClick={menuOnclick} />}
+            element={<NewsandEvents menuOnclick={menuOnclick} />}
           />
         </Routes>
 

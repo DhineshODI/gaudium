@@ -70,9 +70,14 @@ export default function SucessDetailSlider({ data }) {
       setProgress(100);
       return;
     }
-    const maxScrollableIndex = totalSlides - slidesToShow;
-    const percent = (current / maxScrollableIndex) * 100;
-    setProgress(Math.min(Math.max(percent, 0), 100));
+
+    const totalSteps = totalSlides - slidesToShow + 1;
+    const percentPerStep = 100 / totalSteps;
+
+    // +1 so first slide already has progress
+    const percent = (current + 1) * percentPerStep;
+
+    setProgress(Math.min(Math.max(percent, percentPerStep), 100));
   };
 
   const settings = {
@@ -153,7 +158,9 @@ export default function SucessDetailSlider({ data }) {
                       >
                         {showcarditem.title}{" "}
                       </span>
-                      <div style={{textAlign:"center"}}>{showcarditem.description}</div>
+                      <div style={{ textAlign: "center" }}>
+                        {showcarditem.description}
+                      </div>
                     </h4>
                   </div>
                 </div>

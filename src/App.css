@@ -3219,6 +3219,10 @@
   .indoorsportsmaincss .lineheight120 {
     line-height: 116%;
   }
+
+  .indoorcardsconatinre .flexdiourprogrem .secondheadingtext {
+    min-height: 100px;
+  }
   /* indoor-sports */
 
   /* detail-page-css */
@@ -3326,6 +3330,22 @@
 
   /* home-page css */
 
+  .expansivecards .expansivefirstsec {
+    column-gap: 10px;
+  }
+
+  .expansivecampsflex .expansivecards:first-child .expansivefirstsec {
+    column-gap: 0px;
+  }
+
+  .expansivecampsflex
+    .expansivecards:nth-child(2)
+    .expansivefirstsec
+    .secondheadingtext {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+
   .slider-buttonsshowcaseproject::after {
     right: 34%;
   }
@@ -3422,8 +3442,8 @@
     font-size: 14px;
     line-height: 20px;
     width: 44%;
-    margin-top: 44px;
-    padding-left: 15px;
+    margin-top: 33px;
+    padding-left: 20px;
   }
 
   .ProgrammsBuildflexsection .becomeachampion {
@@ -3652,6 +3672,48 @@
   }
 
   /* hamburger-css */
+
+  /* best-performer-css */
+  .cardHoverTitle {
+    font-size: 26px;
+    line-height: 26px;
+    margin-bottom: 24px;
+  }
+
+  .cardHoverLink:hover .cardHoverOverlay {
+    padding-top: 25px;
+    overflow-y: scroll;
+    height: auto;
+  }
+  .cardHoverOverlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(190, 30, 45, 0) 0.9%,
+      rgba(190, 30, 45, 1) 11%
+    );
+    padding-top: 30px;
+  }
+
+  .showcasingpeak {
+    padding: 80px 0;
+  }
+  /* best-performer-css */
+
+  /* ourinfrastructure-css */
+
+  .outdoorsportsFacilitisSection {
+    padding: 80px 0;
+  }
+
+  .lightboximagesec img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .outsportssectionouter .paragraphtext {
+    font-size: 22px;
+  }
+  /* ourinfrastructure-css */
 }
 
 @media (max-width: 1400px) and (min-width: 1250px) {
@@ -3836,6 +3898,9 @@
   .outdoorgamesports {
     font-size: 28px;
   }
+  .outdoorcardsconatinre .flexdiourprogrem .secondheadingtext {
+    min-height: 85px;
+  }
   /* outdoor-sports */
 
   /* indoor-sports */
@@ -3846,6 +3911,10 @@
 
   .indoorsportsmaincss .lineheight120 {
     line-height: 116%;
+  }
+
+  .indoorcardsconatinre .flexdiourprogrem .secondheadingtext {
+    min-height: 85px;
   }
   /* indoor-sports */
 
@@ -3973,6 +4042,24 @@
 
   /* home-page css */
 
+  .expansivecards .expansivefirstsec {
+    column-gap: 8px;
+  }
+  .expansivefirstsec .secondheadingtext {
+    margin-bottom: 5px;
+  }
+  .expansivecampsflex .expansivecards:first-child .expansivefirstsec {
+    column-gap: 0px;
+  }
+
+  .expansivecampsflex
+    .expansivecards:nth-child(2)
+    .expansivefirstsec
+    .secondheadingtext {
+    font-size: 25px;
+    margin-bottom: 1px;
+  }
+
   .slider-buttonsshowcaseproject::after {
     right: 32%;
   }
@@ -4014,7 +4101,7 @@
     line-height: 18px;
   }
   .homevideosection {
-    height: 750px;
+    height: 685px;
   }
 
   .maingbsectionhome {
@@ -4069,7 +4156,7 @@
     font-size: 14px;
     line-height: 20px;
     width: 44%;
-    margin-top: 44px;
+    margin-top: 35px;
     padding-left: 15px;
   }
 
@@ -4079,7 +4166,7 @@
 
   .ProgrammsBuildflexsection .becomeachampion {
     padding-left: 15px;
-    margin-top: 18px;
+    margin-top: 10px;
   }
   .becomeachampion .buttonfont {
     font-size: 15px;
@@ -4113,7 +4200,7 @@
 
   .ProgrammsBuildflexsection {
     max-width: 1250px;
-    margin-top: 40px;
+    margin-top: 50px;
   }
 
   .programsbuildsection {
@@ -4133,9 +4220,9 @@
   }
 
   .exploreacademey button {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 100%;
-    padding: 17px 35px;
+    padding: 15px 32px;
   }
 
   .exploresectiondiv {
@@ -4155,7 +4242,7 @@
     width: 80%;
   }
   .expansivecampsflex {
-    margin-top: 40px;
+    margin-top: 50px;
   }
 
   .bgimagesection {
@@ -4364,6 +4451,56 @@
   }
 
   /* hamburger-css */
+
+  /* best-performer-css */
+  .cardHoverTitle {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 20px;
+  }
+
+  .cardHoverLink:hover .cardHoverOverlay {
+    padding-top: 25px;
+    overflow-y: scroll;
+    height: auto;
+  }
+  .cardHoverOverlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(190, 30, 45, 0) 0.9%,
+      rgba(190, 30, 45, 1) 11%
+    );
+    padding-top: 30px;
+  }
+
+  .showcasingpeak {
+    padding: 60px 0;
+  }
+  /* best-performer-css */
+
+  /* ourinfrastructure-css */
+
+  .outdoorsportsFacilitisSection {
+    padding: 60px 0;
+  }
+
+  .lightboximagesec img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .outsportssectionouter .paragraphtext {
+    font-size: 20px;
+  }
+
+  .mainoutsportssectionouter {
+    margin-top: 60px;
+  }
+
+  .ourinfrastructurebgdetail {
+    padding-bottom: 80px;
+  }
+  /* ourinfrastructure-css */
 }
 
 @media (max-width: 1250px) and (min-width: 1100px) {
@@ -4578,6 +4715,10 @@
   .flexdiourprogrem {
     padding: 20px 20px 34px 20px;
   }
+
+  .outdoorcardsconatinre .flexdiourprogrem .secondheadingtext {
+    min-height: 101px;
+  }
   /* outdoor-sports */
 
   /* indoor-sports */
@@ -4588,6 +4729,10 @@
 
   .indoorsportsmaincss .lineheight120 {
     line-height: 116%;
+  }
+
+  .indoorcardsconatinre .flexdiourprogrem .secondheadingtext {
+    min-height: 80px;
   }
   /* indoor-sports */
 
@@ -4733,37 +4878,56 @@
 
   /* home-page css */
 
+  .expansivecards .expansivefirstsec {
+    column-gap: 7px;
+  }
+  .expansivefirstsec .secondheadingtext {
+    margin-bottom: 5px;
+  }
+  .expansivecampsflex .expansivecards:first-child .expansivefirstsec {
+    column-gap: 0px;
+  }
+
+  .expansivecampsflex
+    .expansivecards:nth-child(2)
+    .expansivefirstsec
+    .secondheadingtext {
+    font-size: 25px;
+    margin-bottom: 1px;
+  }
+
   .slider-buttonsshowcaseproject::after {
-    right: 32%;
+    right: 31%;
   }
   .slider-buttonsshowcaseproject::before {
-    left: 32%;
+    left: 31%;
   }
 
   .ts-card {
     position: absolute;
-    width: 300px;
-    height: 400px;
+    width: 260px;
+    height: 350px;
   }
 
   .ts-card.ts-left-1 {
-    transform: translateX(-255px) translateY(2px) scale(1.05) translateZ(-76px);
+    transform: translateX(-218px) translateY(2px) scale(1.05) translateZ(-72px);
   }
 
   .ts-card.ts-right-1 {
-    transform: translateX(255px) translateY(2px) scale(1.05) translateZ(-100px);
+    transform: translateX(218px) translateY(2px) scale(1.05) translateZ(-100px);
   }
 
   .ts-card.ts-left-2 {
-    transform: translateX(-480px) scale(0.95) translateZ(-147px);
+    transform: translateX(-410px) scale(0.95) translateZ(-147px);
   }
 
   .ts-card.ts-right-2 {
-    transform: translateX(480px) scale(0.95) translateZ(-147px);
+    transform: translateX(410px) scale(0.95) translateZ(-147px);
   }
 
   .ts-section-container {
-    padding-bottom: 65px;
+    padding-bottom: 45px;
+    padding-top: 50px;
   }
 
   .countingsection {
@@ -4775,13 +4939,16 @@
     width: 60%;
   }
   .homevideosection {
-    height: 750px;
+    height: 650px;
   }
 
   .maingbsectionhome {
     padding-top: 50px;
+    padding-top: 65px;
   }
-
+  .strength-controls button {
+    width: 40px;
+  }
   .expansivefirstsec h5 {
     font-size: 40px;
     line-height: 100%;
@@ -4822,8 +4989,17 @@
     padding-bottom: 30px;
   }
 
+  .strength-controls {
+    margin-top: -25px;
+  }
+
+  .slider-buttonsshowcaseproject button {
+    width: 40px;
+  }
+
   .thestrengthsectionslider {
     padding-top: 40px;
+    padding-bottom: 35px;
   }
   .inoursportscontainer .slick-track {
     margin-top: 35px;
@@ -4837,14 +5013,14 @@
   }
 
   .mainrowshowcasingcard {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .contentbuildsection {
-    font-size: 14px;
-    line-height: 20px;
-    width: 44%;
-    margin-top: 44px;
+    font-size: 12px;
+    line-height: 18px;
+    width: 45%;
+    margin-top: 30px;
     padding-left: 15px;
   }
 
@@ -4854,10 +5030,10 @@
 
   .ProgrammsBuildflexsection .becomeachampion {
     padding-left: 15px;
-    margin-top: 18px;
+    margin-top: 12px;
   }
   .becomeachampion .buttonfont {
-    font-size: 15px;
+    font-size: 12px;
   }
 
   .ProgrammsBuildflexsection .roleinstrength {
@@ -4877,7 +5053,7 @@
   }
 
   .cardProgrammsBuildflexsection {
-    height: 325px;
+    height: 290px;
     width: 32%;
   }
 
@@ -4888,7 +5064,7 @@
 
   .ProgrammsBuildflexsection {
     max-width: 1250px;
-    margin-top: 40px;
+    margin-top: 50px;
   }
 
   .programsbuildsection {
@@ -4923,7 +5099,7 @@
   }
 
   .avasttext {
-    width: 85%;
+    width: 95%;
   }
 
   .maingbsectionhome .paravideosection .paragraphtext {
@@ -5172,13 +5348,64 @@
     width: 65%;
   }
   /* hamburger-css */
+
+  /* best-performer-css */
+  .cardHoverTitle {
+    font-size: 21px;
+    line-height: 21px;
+    margin-bottom: 20px;
+  }
+
+  .cardHoverLink:hover .cardHoverOverlay {
+    padding: 17px;
+    padding-top: 25px;
+    overflow-y: scroll;
+    height: auto;
+  }
+  .cardHoverOverlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(190, 30, 45, 0) 0.9%,
+      rgba(190, 30, 45, 1) 11%
+    );
+    padding-top: 15px;
+  }
+
+  .showcasingpeak {
+    padding: 50px 0;
+  }
+  /* best-performer-css */
+
+  /* ourinfrastructure-css */
+
+  .outdoorsportsFacilitisSection {
+    padding: 50px 0;
+  }
+
+  .lightboximagesec img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .outsportssectionouter .paragraphtext {
+    font-size: 18px;
+  }
+
+  .mainoutsportssectionouter {
+    margin-top: 50px;
+  }
+
+  .ourinfrastructurebgdetail {
+    padding-bottom: 60px;
+  }
+  /* ourinfrastructure-css */
 }
 
 @media (max-width: 1100px) and (min-width: 900px) {
   /* font-style-heading */
   .mainheadingfont {
     font-size: 40px;
-    line-height: 100%;
+    line-height: 110%;
     letter-spacing: 0px;
   }
 
@@ -5404,6 +5631,10 @@
   .bannerimagesection.outdoorsports {
     background-size: cover;
   }
+
+  .outdoorcardsconatinre .flexdiourprogrem .secondheadingtext {
+    min-height: 101px;
+  }
   /* outdoor-sports */
 
   /* indoor-sports */
@@ -5414,6 +5645,10 @@
 
   .indoorsportsmaincss .lineheight120 {
     line-height: 116%;
+  }
+
+  .indoorcardsconatinre .flexdiourprogrem .secondheadingtext {
+    min-height: 100px;
   }
   /* indoor-sports */
 
@@ -5832,6 +6067,1354 @@
     width: 65%;
   }
   /* hamburger-css */
+
+  /* best-performer-css */
+  .cardHoverTitle {
+    font-size: 21px;
+    line-height: 21px;
+    margin-bottom: 20px;
+  }
+
+  .cardHoverLink:hover .cardHoverOverlay {
+    padding: 17px;
+    padding-top: 25px;
+    overflow-y: scroll;
+    height: auto;
+  }
+  .cardHoverOverlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(190, 30, 45, 0) 0.9%,
+      rgba(190, 30, 45, 1) 11%
+    );
+    padding-top: 25px;
+  }
+
+  .showcasingpeak {
+    padding: 50px 0;
+  }
+
+  .cardHoverLink {
+    width: 30%;
+  }
+
+  .hovermaindid {
+    padding-left: 6%;
+  }
+
+  .hoveredimagesectionbg {
+    margin-top: 45px;
+  }
+
+  .bannerimagesection.bestperformer {
+    background-position: top;
+  }
+  /* best-performer-css */
+
+  /* home-page css */
+
+  .expansivecards .expansivefirstsec {
+    column-gap: 7px;
+  }
+  .expansivefirstsec .secondheadingtext {
+    margin-bottom: 5px;
+  }
+  .expansivecampsflex .expansivecards:first-child .expansivefirstsec {
+    column-gap: 0px;
+  }
+
+  .expansivecampsflex
+    .expansivecards:nth-child(2)
+    .expansivefirstsec
+    .secondheadingtext {
+    font-size: 25px;
+    margin-bottom: 1px;
+  }
+
+  .slider-buttonsshowcaseproject::after {
+    right: 27%;
+  }
+  .slider-buttonsshowcaseproject::before {
+    left: 27%;
+  }
+
+  .ts-card {
+    position: absolute;
+    width: 240px;
+    height: 320px;
+  }
+
+  .ts-card.ts-left-1 {
+    transform: translateX(-175px) translateY(2px) scale(1.05) translateZ(-72px);
+  }
+
+  .ts-card.ts-right-1 {
+    transform: translateX(175px) translateY(2px) scale(1.05) translateZ(-100px);
+  }
+
+  .ts-card.ts-left-2 {
+    transform: translateX(-350px) scale(0.95) translateZ(-147px);
+  }
+
+  .ts-card.ts-right-2 {
+    transform: translateX(350px) scale(0.95) translateZ(-147px);
+  }
+
+  .ts-section-container {
+    padding-bottom: 0px;
+    padding-top: 10px;
+  }
+
+  .countingsection {
+    font-size: 50px;
+  }
+
+  .homepagecompanythere .paragraphtext {
+    line-height: 16px;
+    width: 57%;
+    font-size: 13px;
+    line-height: 14px;
+    margin-bottom: 8px;
+  }
+  .homevideosection {
+    height: 650px;
+  }
+
+  .maingbsectionhome {
+    padding-top: 50px;
+    padding-top: 65px;
+  }
+  .strength-controls button {
+    width: 40px;
+  }
+  .expansivefirstsec h5 {
+    font-size: 30px;
+    line-height: 100%;
+  }
+
+  .expansivecards .paragraphtext {
+    font-size: 15px;
+    line-height: 100%;
+    margin-top: 5px;
+  }
+
+  .expansivefirstsec .secondheadingtext {
+    margin-bottom: 5px;
+  }
+
+  .expansivecampsflex {
+    column-gap: 6%;
+  }
+
+  .OutDoorSportsBG {
+    padding: 50px 0;
+  }
+
+  .svgshowcardwhite {
+    top: -52px;
+    right: -26px;
+  }
+
+  .eventscalenderrow {
+    height: 520px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .thestrengthsection {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .strength-controls {
+    margin-top: -25px;
+  }
+
+  .slider-buttonsshowcaseproject button {
+    width: 40px;
+  }
+
+  .thestrengthsectionslider {
+    padding-top: 40px;
+    padding-bottom: 35px;
+  }
+  .inoursportscontainer .slick-track {
+    margin-top: 35px;
+  }
+
+  .oursportscontainer .slick-track {
+    margin-top: 35px;
+  }
+  .voiceofchampionshipbg {
+    padding: 50px 0;
+  }
+
+  .mainrowshowcasingcard {
+    margin-top: -10px;
+  }
+
+  .contentbuildsection {
+    font-size: 10px;
+    line-height: 12px;
+    width: 45%;
+    margin-top: 24px;
+    padding-left: 15px;
+  }
+
+  .homepageaboutcompany {
+    margin-top: 50px;
+  }
+
+  .ProgrammsBuildflexsection .becomeachampion {
+    padding-left: 15px;
+    margin-top: 12px;
+  }
+  .becomeachampion .buttonfont {
+    font-size: 12px;
+  }
+
+  .ProgrammsBuildflexsection .roleinstrength {
+    padding-left: 15px;
+  }
+
+  .ProgrammsBuildflexsection .secondimage1 .roleinstrength {
+    padding-left: 15px;
+  }
+
+  .ProgrammsBuildflexsection .sportsnamestregnth {
+    padding-left: 20px;
+  }
+
+  .ProgrammsBuildflexsection .secondimage1 .sportsnamestregnth {
+    padding-left: 20px;
+  }
+
+  .cardProgrammsBuildflexsection {
+    height: 236px;
+    width: 32%;
+  }
+
+  .responsivecontinerr {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ProgrammsBuildflexsection {
+    max-width: 900px;
+    margin-top: 35px;
+  }
+
+  .programsbuildsection {
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
+
+  .flexeventscalenderrow {
+    padding-top: 70px;
+  }
+
+  .indorrmainbgsec {
+    margin-top: 60px;
+  }
+  .hrlineoutdoorsports {
+    margin-top: 35px;
+  }
+
+  .exploreacademey button {
+    font-size: 13px;
+    line-height: 100%;
+    padding: 14px 25px;
+  }
+
+  .exploresectiondiv {
+    bottom: 44px;
+  }
+
+  .flexhomepageabout {
+    column-gap: 6%;
+    row-gap: 35px;
+  }
+
+  .widthhomepagecompanythere .bottomlinesection {
+    margin-top: 5px;
+  }
+
+  .avasttext {
+    width: 104%;
+  }
+
+  .maingbsectionhome .paravideosection .paragraphtext {
+    width: 80%;
+  }
+  .expansivecampsflex {
+    margin-top: 50px;
+  }
+
+  .cricketslideer .roleinstrength {
+    bottom: 41px;
+  }
+
+  .bgimagesection {
+    margin-top: -70px;
+  }
+
+  /* home-page css */
+
+  /* ourinfrastructure-css */
+
+  .outdoorsportsFacilitisSection {
+    padding: 50px 0;
+  }
+
+  .lightboximagesec img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .outsportssectionouter .paragraphtext {
+    font-size: 18px;
+  }
+
+  .mainoutsportssectionouter {
+    margin-top: 50px;
+  }
+
+  .ourinfrastructurebgdetail {
+    padding-bottom: 60px;
+  }
+  /* ourinfrastructure-css */
+}
+
+@media (max-width: 900px) and (min-width: 800px) {
+  /* font-style-heading */
+  .mainheadingfont {
+    font-size: 35px;
+    line-height: 110%;
+    letter-spacing: 0px;
+  }
+
+  .paragraphtext {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .breadcrumbstext {
+    font-size: 12px;
+  }
+
+  .mainheadingfont.banneroverlaytextall {
+    font-size: 50px;
+  }
+
+  /* font-style-heading */
+
+  /* header-css */
+
+  .headerstyle {
+    padding: 1% 3%;
+  }
+
+  .headerstyle img {
+    width: 190px;
+  }
+
+  .headermenuicon {
+    width: 40px;
+  }
+
+  .Homepagestyle.homePlus .headerdiv.scrollheader .headerstyle {
+    padding: 1% 5%;
+    padding-top: 2%;
+  }
+  /* header-css */
+
+  /* aboutus-Page */
+
+  .aboutusbannersection .paragraphtext.contentbanner {
+    width: 60%;
+    margin-top: 10px;
+  }
+
+  .bannerimagesection {
+    width: 100%;
+    height: 380px;
+    background-position: center;
+  }
+
+  .paravideosection .paragraphtext {
+    width: 45%;
+  }
+
+  .bannercontentflex {
+    padding-bottom: 70px;
+  }
+
+  .sportsnamestregnthimage {
+    margin-top: -8px;
+  }
+
+  .bannercontentflex hr {
+    width: 72%;
+  }
+
+  .theheartcontent .visionsection {
+    font-size: 40px;
+    letter-spacing: -2px;
+  }
+
+  .theheartcontent .oursection {
+    font-size: 17px;
+  }
+
+  .secondheadingtext {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .secondsecheart {
+    width: 33%;
+  }
+
+  .heartofsection {
+    padding: 45px 0;
+  }
+
+  .theheartcontentflex {
+    margin-top: 45px;
+  }
+
+  .highlightssection {
+    padding: 45px 0;
+    padding-bottom: 75px;
+  }
+  .highlightssection .paravideosection .paragraphtext {
+    width: 48%;
+  }
+
+  .firstcardhighlights {
+    padding: 25px;
+     width: 33%;
+  }
+
+
+
+  .firstcardhighlights img {
+      width: 40px;
+  }
+
+  .aboutusstrengthsecmain {
+    padding: 45px 0;
+  }
+
+  .strengthaboutusflex {
+    margin-top: 40px;
+  }
+
+  .roleinstrength {
+    font-size: 30px;
+    letter-spacing: -1px;
+  }
+
+  .nameoftheplayer {
+    font-size: 23px;
+    line-height: 24px;
+    width: 74%;
+    letter-spacing: -2px;
+  }
+
+  .sportsnamestregnthimage img {
+    width: 140px;
+  }
+
+  .sportsnamestregnth {
+    font-size: 12px;
+    padding-left: 3px;
+  }
+  .strengthaboutusflex {
+    row-gap: 9px;
+  }
+  .eachcardsection {
+    margin-top: 30px;
+  }
+
+  .buttonfont {
+    font-size: 16px;
+  }
+
+  .firstsecheart {
+    margin-top: 25px;
+  }
+
+  .thirdsecheart {
+    margin-top: 25px;
+  }
+  /* aboutus-Page */
+
+  /* our-programms */
+  .programsbulidsection {
+    padding: 50px 0;
+  }
+
+  .programsbuiltcard {
+    height: 366px;
+    background-position: center;
+    background-size: contain;
+    background-size: cover;
+  }
+
+  .paragaoneprogram {
+    margin-top: 10px;
+  }
+
+  .porgramsofferedcontent {
+    margin-left: 39px;
+    margin-top: 15px;
+  }
+
+  .porgramsofferedcontent .nameofthesportsprogramm {
+    font-size: 14px;
+  }
+
+  .programsbuiltcard.thirdoneprogrammer .paragatwoprogram {
+    width: 57%;
+  }
+
+  .programsbuiltcard.secondoneprogrammer .porgramsofferedcontent {
+    margin-right: 80px;
+  }
+  .bannerimagesection.ourprogramms {
+    background-position: center;
+    background-size: cover;
+  }
+
+  .programsbuiltcard.thirdoneprogrammer {
+    height: 368px;
+    background-position: center;
+    background-size: cover;
+  }
+  /* our-programms */
+
+  /* outdoor-sports */
+
+  .outdoorsportsmain {
+    padding: 60px 0;
+  }
+
+  .cardsflexcontaineroutdoor {
+    margin-top: 50px;
+    row-gap: 35px;
+  }
+
+  .flexdiourprogrem .secondheadingtext {
+    margin-bottom: 15px;
+  }
+
+  .buttonfont {
+    font-size: 14px;
+    line-height: 100%;
+  }
+  .outdoorgamesports {
+    font-size: 22px;
+  }
+
+  .flexdiourprogrem {
+    padding: 15px 15px 30px 15px;
+  }
+
+  .bannerimagesection.outdoorsports {
+    background-size: cover;
+  }
+
+  .outdoorcardsconatinre .flexdiourprogrem .secondheadingtext {
+    min-height: 101px;
+  }
+  /* outdoor-sports */
+
+  /* indoor-sports */
+
+  .bannerimagesection.indoorsports {
+    background-size: cover;
+  }
+
+  .indoorsportsmaincss .lineheight120 {
+    line-height: 116%;
+  }
+
+  .indoorcardsconatinre .flexdiourprogrem .secondheadingtext {
+    min-height: 100px;
+  }
+  /* indoor-sports */
+
+  /* detail-page-css */
+
+  .sportstitleslider {
+    padding-left: 5px;
+  }
+
+  .detaipagefirstheading {
+    margin-right: 35%;
+  }
+  .detaipagesecondheading {
+    margin-left: 10%;
+  }
+  .detailpagebg .videosectionmain {
+    padding-top: 50px;
+    margin-bottom: 40px;
+  }
+
+  .detailpagebg .paravideosection .paragraphtext {
+    width: 75%;
+    text-align: center;
+  }
+
+  .detailpagebg {
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+  }
+.firstclasssportstext {
+    margin-top: 0;
+}
+  .facilityapprovedbg {
+    padding: 50px 0;
+  }
+
+  .faqmaincontainer {
+    padding: 50px 0;
+  }
+  .mainfaqcontainer {
+    margin-top: 30px;
+    row-gap: 15px;
+  }
+
+  .mainheadingfont.eventstournamnetsname {
+    font-size: 25px;
+    line-height: 100%;
+    letter-spacing: -1px;
+  }
+
+  .eventstournamnetcard {
+    padding: 20px;
+    min-height: 157px;
+  }
+  .buttonandarrowcontrol {
+    margin-top: 50px;
+  }
+  .eventsandtournamentsmain {
+    padding: 50px 0;
+  }
+
+  .paravideosection {
+    margin-top: 30px;
+  }
+  .sportsnamestregnthimage {
+    margin-top: -5px;
+  }
+  .marqueesectionmain {
+    padding: 50px 0;
+  }
+
+  .marquee-track img {
+    height: 160px;
+  }
+
+  .marquee1-track img {
+    height: 160px;
+  }
+
+  .marquee {
+    margin-top: 45px;
+  }
+  .showcaseprojectrow {
+    padding: 50px 0;
+  }
+
+  .imagehovershowcaseper {
+    bottom: 120px;
+    left: 17px;
+        bottom: 70px;
+    left: 16px;
+  }
+
+  .showcasingcard .mainheadingfont {
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 5px;
+    letter-spacing: -1px;
+  }
+
+  .maincontainershowingcontent {
+     margin-top: -30px;
+  }
+
+  .showcasingcontainer {
+    margin-bottom: 30px;
+    margin-top: -30px;
+  }
+
+  .right-btnshowcaseproject,
+  .left-btnshowcaseproject {
+    width: 40px;
+  }
+
+  .strength-controls .btn-next,
+  .strength-controls .btn-prev {
+    width: 40px;
+  }
+
+  .bannerimagesection.badmintonbannerdetail {
+    background-size: cover;
+  }
+
+  .mainrowshowcasingcard {
+    margin-top: 0;
+  }
+
+  .buttoncontroldetailpage .strength-progressbar {
+    right: 25%;
+    bottom: 19px;
+  }
+
+  .containerFaq {
+    width: 520px;
+    padding: 10px 20px;
+  }
+
+  .containerFaq.activefaq {
+    padding-bottom: 25px;
+  }
+
+  .faqimagearroww {
+    width: 35px;
+  }
+  .eventstournamentsmain {
+    margin-top: 40px;
+  }
+
+  .flexsliderdetail {
+    margin-top: 50px;
+  }
+
+  .buttoncontroldetailpage .buttonandarrowcontrol {
+    right: 0%;
+    width: 55%;
+  }
+  /* detail-page-css */
+
+  /* testimonial css */
+
+  .bannerimagesection.testimonialbg {
+    background-size: cover;
+  }
+
+  .testminialmainbgs {
+    padding: 50px 0;
+  }
+
+  .testmonialcardsss {
+    margin-top: 80px;
+    margin-left: 0;
+    row-gap: 70px;
+  }
+
+  .testicardsmain .mainheadingfont {
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 10px;
+  }
+
+  .testimonialimageer img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .testicardsmain {
+    padding: 50px 0 20px 0;
+    width: 31%;
+  }
+
+  /* testimonial css */
+
+  /* Contact us css */
+
+  .conatctformstyle {
+    width: 68%;
+  }
+
+  .formmainss {
+    width: 182px;
+    padding: 15px 0px;
+    left: 3%;
+  }
+
+  .headphoenecontact {
+    width: 45px;
+    margin-bottom: 8px;
+  }
+
+  .textcontntcontact {
+    width: 70%;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 12px;
+  }
+
+  .toggleclassname {
+    font-size: 12px;
+    line-height: 27px;
+    margin-left: 5px;
+  }
+
+  .checkboxdisplay {
+    column-gap: 18px;
+    margin-top: 9px;
+  }
+
+  .maintogglediv {
+    min-width: 80px;
+  }
+
+  .whatsappcontact {
+    margin-top: 10px;
+  }
+
+  .conatctformstyle .toggleclassa {
+    width: 12px;
+    height: 12px;
+  }
+
+  .mainbgcontactbg {
+    height: 575px;
+  }
+
+  .textoftheinput {
+    left: 12px;
+    line-height: 25px;
+    top: -12px;
+    font-size: 14px;
+  }
+
+  .conatctformstyle input::placeholder {
+    font-size: 14px;
+    padding-left: 15px;
+  }
+
+  .conatctformstyle form {
+    margin-top: 25px;
+  }
+
+  .mainbgcontactbg::before {
+    height: 390px;
+    width: 229px;
+    left: 24%;
+    z-index: 1;
+    background-size: contain;
+  }
+
+  .conatctformstyle input {
+    height: 35px;
+    width: 132px;
+  }
+
+  .formcontactbgsecond {
+    width: 70%;
+    padding-top: 48px;
+    padding-left: 13%;
+  }
+
+  .pleasechecktick {
+    width: 80%;
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 17px;
+  }
+  .whatsappiconsvg {
+    width: 29px;
+    height: 29px;
+  }
+  .conatctformstyle .discovermorebutton {
+    margin-top: 15px;
+  }
+
+  .addreesstext {
+    font-size: 11px;
+    line-height: 16px;
+    margin-top: 5px;
+  }
+
+  .cardscontactus img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .cardscontactus {
+    column-gap: 9px;
+    padding: 20px 15px;
+    width: 34%;
+    padding-bottom: 15px;
+  }
+
+  .formcontactbgfirst {
+    width: 32%;
+
+}
+
+  .visitus {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .contactboxsection {
+    padding: 50px 0;
+  }
+
+  .cardsfelxcontainer {
+    margin-top: 35px;
+  }
+
+  .gaudiumlocationmap {
+    height: 400px;
+  }
+
+  /* Contact us css */
+
+  /* Footer css */
+
+  .footerlistpages {
+    column-gap: 20px;
+    width: auto;
+  }
+
+  .footerimagesize {
+     width: 100%;
+  }
+
+  .iconsline {
+    height: 1px;
+    width: 100%;
+  }
+
+  .footerlistpages li {
+    font-size: 12px;
+  }
+
+  .footericonsflex {
+    column-gap: 15px;
+  }
+
+  .footerlogoimageflex {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 48px;
+    /* margin-top: 20px; */
+  }
+
+  .footercopyrights .paragraphtext {
+    font-size: 13px;
+  }
+
+  .footerwithlogo .highlightedtextwhite {
+    &:hover {
+      &::after {
+        height: 200%;
+        width: 115%;
+      }
+    }
+  }
+
+  .footerendd {
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+
+  .footerwithlogo {
+    column-gap: 15px;
+    flex-direction: column;
+    row-gap: 30px;
+    padding: 40px 0;
+  }
+
+  .footericonsflex img {
+    width: 29px;
+    height: 29px;
+  }
+
+  .footerendd .mainheadingfont {
+    font-size: 36px;
+    height: 120%;
+  }
+
+  .footerrow {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+
+  .footercopyrights {
+    align-items: center;
+    margin-top: 35px;
+  }
+
+  /* Footer css */
+
+  /* hamburger-css */
+
+  .firsthamhalf {
+      width: 60%;
+  }
+
+  .menubarhamlist {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .menubarclosebuttons {
+    width: 55px;
+  }
+
+  .overflowclass .secondhamhalf {
+     overflow: scroll;
+    height: 600px;
+    width: 40%;
+  }
+  .menubarul {
+      width: 70%;
+    margin-top: 20px;
+  }
+  /* hamburger-css */
+
+  /* best-performer-css */
+  .cardHoverTitle {
+    font-size: 21px;
+    line-height: 21px;
+    margin-bottom: 20px;
+  }
+
+  .cardHoverLink:hover .cardHoverOverlay {
+    padding: 17px;
+    padding-top: 25px;
+    overflow-y: scroll;
+    height: auto;
+  }
+  .cardHoverOverlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(190, 30, 45, 0) 0.9%,
+      rgba(190, 30, 45, 1) 11%
+    );
+    padding-top: 10px;
+  }
+
+  .showcasingpeak {
+    padding: 50px 0;
+  }
+
+  .cardHoverLink {
+    width: 30%;
+  }
+
+  .hovermaindid {
+    padding-left: 6%;
+        padding-left: 0%;
+  }
+
+  .hoveredimagesectionbg {
+    margin-top: 45px;
+  }
+
+  .bannerimagesection.bestperformer {
+    background-position: top;
+  }
+  /* best-performer-css */
+
+  /* home-page css */
+
+  .expansivecards .expansivefirstsec {
+    column-gap: 7px;
+  }
+  .expansivefirstsec .secondheadingtext {
+    margin-bottom: 5px;
+  }
+  .expansivecampsflex .expansivecards:first-child .expansivefirstsec {
+    column-gap: 0px;
+  }
+
+  .expansivecampsflex
+    .expansivecards:nth-child(2)
+    .expansivefirstsec
+    .secondheadingtext {
+    font-size: 25px;
+    margin-bottom: 1px;
+  }
+
+  .slider-buttonsshowcaseproject::after {
+    right: 23%;
+  }
+  .slider-buttonsshowcaseproject::before {
+       left: 23%;
+  }
+
+  .ts-card {
+    position: absolute;
+    width: 240px;
+    height: 320px;
+  }
+
+  .ts-card.ts-left-1 {
+    transform: translateX(-175px) translateY(2px) scale(1.05) translateZ(-72px);
+  }
+
+  .ts-card.ts-right-1 {
+    transform: translateX(175px) translateY(2px) scale(1.05) translateZ(-100px);
+  }
+
+  .ts-card.ts-left-2 {
+    transform: translateX(-350px) scale(0.95) translateZ(-147px);
+  }
+
+  .ts-card.ts-right-2 {
+    transform: translateX(350px) scale(0.95) translateZ(-147px);
+  }
+
+  .ts-section-container {
+    padding-bottom: 0px;
+    padding-top: 10px;
+  }
+
+  .countingsection {
+    font-size: 50px;
+  }
+
+  .homepagecompanythere .paragraphtext {
+    line-height: 16px;
+    width: 57%;
+    font-size: 13px;
+    line-height: 14px;
+    margin-bottom: 8px;
+  }
+
+  .widthhomepagecompanythere {
+    width: 28%;
+}
+  .homevideosection {
+    height: 650px;
+  }
+
+  .maingbsectionhome {
+    padding-top: 50px;
+    padding-top: 65px;
+  }
+  .strength-controls button {
+    width: 40px;
+  }
+  .expansivefirstsec h5 {
+    font-size: 30px;
+    line-height: 100%;
+  }
+
+  .expansivecards .paragraphtext {
+    font-size: 13px;
+    line-height: 100%;
+    margin-top: 5px;
+  }
+
+  .expansivefirstsec .secondheadingtext {
+    margin-bottom: 5px;
+  }
+
+  .expansivecampsflex {
+    column-gap: 6%;
+  }
+
+  .OutDoorSportsBG {
+    padding: 50px 0;
+  }
+
+  .svgshowcardwhite {
+    top: -52px;
+    right: -26px;
+  }
+
+  .eventscalenderrow {
+    height: 620px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .thestrengthsection {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+
+  .strength-controls {
+    margin-top: -25px;
+  }
+
+  .slider-buttonsshowcaseproject button {
+    width: 40px;
+  }
+
+  .thestrengthsectionslider {
+    padding-top: 40px;
+    padding-bottom: 35px;
+  }
+  .inoursportscontainer .slick-track {
+    margin-top: 35px;
+  }
+
+  .oursportscontainer .slick-track {
+    margin-top: 35px;
+  }
+  .voiceofchampionshipbg {
+    padding: 50px 0;
+  }
+
+  .mainrowshowcasingcard {
+    margin-top: 40px;
+  }
+
+  .contentbuildsection {
+    font-size: 13px;
+    line-height: 18px;
+    width: 45%;
+    margin-top: 40px;
+    padding-left: 15px;
+  }
+
+  .homepageaboutcompany {
+    margin-top: 40px;
+  }
+
+  .ProgrammsBuildflexsection .becomeachampion {
+    padding-left: 15px;
+    margin-top: 12px;
+  }
+  .becomeachampion .buttonfont {
+    font-size: 12px;
+  }
+
+  .ProgrammsBuildflexsection .roleinstrength {
+    padding-left: 15px;
+  }
+
+  .ProgrammsBuildflexsection .secondimage1 .roleinstrength {
+    padding-left: 15px;
+  }
+
+  .ProgrammsBuildflexsection .sportsnamestregnth {
+    padding-left: 20px;
+  }
+
+  .ProgrammsBuildflexsection .secondimage1 .sportsnamestregnth {
+    padding-left: 20px;
+  }
+
+  .cardProgrammsBuildflexsection {
+    height: 310px;
+    width: 45%;
+    background-size: cover;
+  }
+
+  .responsivecontinerr {
+    display: flex;
+    justify-content: center;
+  }
+
+  .ProgrammsBuildflexsection {
+    max-width: 800px;
+    margin-top: 45px;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    padding-bottom: 45px;
+  }
+
+  .programsbuildsection {
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
+
+  .flexeventscalenderrow {
+    padding-top: 70px;
+  }
+
+  .indorrmainbgsec {
+    margin-top: 60px;
+  }
+  .hrlineoutdoorsports {
+    margin-top: 35px;
+  }
+
+  .exploreacademey button {
+    font-size: 12px;
+    line-height: 100%;
+    padding: 13px 22px;
+  }
+
+  .exploresectiondiv {
+    bottom: 44px;
+  }
+
+  .flexhomepageabout {
+    column-gap: 6%;
+    row-gap: 35px;
+  }
+
+  .widthhomepagecompanythere .bottomlinesection {
+    margin-top: 5px;
+  }
+
+  .avasttext {
+    width: 104%;
+  }
+
+  .maingbsectionhome .paravideosection .paragraphtext {
+    width: 80%;
+  }
+  .expansivecampsflex {
+    margin-top: 40px;
+  }
+
+  .cricketslideer .roleinstrength {
+    bottom: 41px;
+  }
+
+  .bgimagesection {
+    margin-top: -70px;
+  }
+
+  /* home-page css */
+
+  /* ourinfrastructure-css */
+
+  .outdoorsportsFacilitisSection {
+    padding: 50px 0;
+  }
+
+  .lightboximagesec img {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .outsportssectionouter .paragraphtext {
+     font-size: 14px;
+     padding: 12px 0;
+  }
+
+  .mainoutsportssectionouter {
+    margin-top: 40px;
+  }
+
+  .ourinfrastructurebgdetail {
+    padding-bottom: 60px;
+  }
+
+  .lightboximagesec {
+    width: 31%;
+    border: 2px solid #fff;
+}
+  /* ourinfrastructure-css */
 }
 
 /* .footerrow {

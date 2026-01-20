@@ -131,7 +131,7 @@ export default function ShowcaseProject() {
     },
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 900,
         settings: { slidesToShow: 2 },
         onReInit: () => setSlidesToShow(2),
       },

@@ -103,7 +103,7 @@ export default function InDoorSportsPage({ menuOnclick }) {
               </div>
             </div>
 
-            <div className="outerdivcontainer">
+            <div className="outerdivcontainer indoorcardsconatinre">
               <div className="cardsflexcontaineroutdoor">
                 {games.map((game) => (
                   <div className="outdoorsportscards">

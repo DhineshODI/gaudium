@@ -71,11 +71,11 @@ export default function OurPrograms({ menuOnclick }) {
                   shared during Sportopia PTMs.
                 </p>
 
-                <p className="paragraphtext paragatwoprogram">
+                {/* <p className="paragraphtext paragatwoprogram">
                   Designed to nurture confidence, coordination, and a love for
                   sport in young learners. Ideal for beginners seeking
                   structured exposure alongside academics.
-                </p>
+                </p> */}
               </div>
             </div>
             <div className="programsbuiltcard secondoneprogrammer">
@@ -91,11 +91,11 @@ export default function OurPrograms({ menuOnclick }) {
                   high-performance and specialist coaching.
                 </p>
 
-                <p className="paragraphtext paragatwoprogram">
+                {/* <p className="paragraphtext paragatwoprogram">
                   Built for committed athletes ready to elevate performance
                   through disciplined training. Emphasizes competitive
                   readiness, physical conditioning, and tactical development.
-                </p>
+                </p> */}
               </div>
             </div>
             <div className="programsbuiltcard thirdoneprogrammer">
@@ -111,12 +111,12 @@ export default function OurPrograms({ menuOnclick }) {
                   exposure to high-level competition.
                 </p>
 
-                <p className="paragraphtext paragatwoprogram">
+                {/* <p className="paragraphtext paragatwoprogram">
                   Created for future professionals pursuing excellence at
                   national and international levels. Provides a holistic pathway
                   combining elite sport, academics, and career-focused
                   mentorship.
-                </p>
+                </p> */}
               </div>
             </div>
           </div>

@@ -234,10 +234,10 @@ export default function Homepage({ menuOnclick }) {
 
         {/* <SportsSlider/> */}
 
-        <div className="OutDoorSportsBG">
+        {/* <div className="OutDoorSportsBG">
           <OutDoorSportsFunction />
           <InDoorSportsFunction />
-        </div>
+        </div> */}
 
         <ProgrammsBuild />
 

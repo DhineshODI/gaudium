@@ -5,7 +5,7 @@ import OutDoorSportsFacility from "../Components/OutDoorSportsFacility";
 export default function OurInfraStructure({ menuOnclick }) {
   return (
     <>
-      <Header  menuOnclick={menuOnclick}/>
+      <Header menuOnclick={menuOnclick} />
 
       {/* Banner-Image */}
 
@@ -137,9 +137,9 @@ export default function OurInfraStructure({ menuOnclick }) {
           </div>
           <div className="paravideosection">
             <p className="paragraphtext slidermainsecpara">
-              Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-              pellentesq uescelerisque libero malesuada tristique Ultricies leo
-              viverra.
+              Expansive outdoor sports facilities designed to international
+              standards, enabling athletes to train, compete and excel
+              confidently.
             </p>
           </div>
           <OutDoorSportsFacility />
@@ -166,9 +166,9 @@ export default function OurInfraStructure({ menuOnclick }) {
           </div>
           <div className="paravideosection">
             <p className="paragraphtext">
-              Lorem ipsum dolor sit amet consectetur. Facilisi scelerisque
-              pellentesq uescelerisque libero malesuada tristique Ultricies leo
-              viverra.
+              State-of-the-art indoor sports facilities delivering safe,
+              climate-controlled environments for focused training, performance
+              and skill development.
             </p>
           </div>
           <InDoorSportsFacility />

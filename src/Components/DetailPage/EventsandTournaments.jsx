@@ -27,7 +27,7 @@ export default function EventsandTournaments({ data }) {
         onReInit: () => setCurrentSlidesToShow(2),
       },
       {
-        breakpoint: 768,
+        breakpoint: 600,
         settings: { slidesToShow: 1 },
         onReInit: () => setCurrentSlidesToShow(1),
       },

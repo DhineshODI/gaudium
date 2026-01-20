@@ -136,7 +136,7 @@ export default function ShowcaseProject() {
         onReInit: () => setSlidesToShow(2),
       },
       {
-        breakpoint: 768,
+        breakpoint: 600,
         settings: { slidesToShow: 1 },
         onReInit: () => setSlidesToShow(1),
       },

@@ -153,15 +153,15 @@ export default function Homepage({ menuOnclick }) {
 
         <div className="maingbsectionhome">
           <div className="container max-w-7xl mx-auto px-4 ">
-            <div className="videosectionmain">
-              <div className="firstheading lengthfirstHeading">
-                <h2 className="stroke-fill-text mainheadingfont redcolorfont">
+            <div className="videosectionmain homepageindiasresidental">
+              <div className="firstheading lengthfirstHeading indiasfirst">
+                <h2 className="stroke-fill-text mainheadingfont redcolorfont ">
                   India's first integrated
                 </h2>
               </div>
 
-              <div className="secondheading lengthsecondHeading">
-                <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
+              <div className="secondheading lengthsecondHeading residentalsports">
+                <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont ">
                   residential sports school
                 </h2>
               </div>

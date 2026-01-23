@@ -9712,13 +9712,16 @@ body {
 
   .firsttextfooter {
     -webkit-text-stroke: 1px #fff;
+    margin-bottom: 5px;
   }
   .secondtextfooter {
     -webkit-text-stroke: 1px #fff;
+    margin-bottom: 5px;
   }
 
   .footerfirstfont {
     -webkit-text-stroke: 1px #ffffff;
+    margin-bottom: 5px;
   }
   .mainheadingfont {
     font-size: 30px;
@@ -9755,13 +9758,17 @@ body {
   .residentalsports {
     margin: 0;
     width: 100%;
-    margin-left: 0%;
+    margin-left: 10%;
     max-width: 360px;
   }
 
   .bluecolorfont {
     -webkit-text-stroke: 1px #005e96;
   }
+
+  .lengthfirstHeading {
+    margin-right: 0;
+}
 
   /* font-style-heading */
 
@@ -10629,9 +10636,7 @@ body {
     height: 123%;
     text-align: center;
 
- 
     -webkit-text-stroke: 1px #fff;
-   
   }
 
   .footerrow {
@@ -10916,6 +10921,10 @@ body {
     width: 54%;
     margin-top: 45px;
     padding-left: 15px;
+  }
+
+  .thirdimage1 .contentbuildsection {
+    margin-top: 20px;
   }
 
   .homepageaboutcompany {

@@ -32,19 +32,19 @@ export default function ContactForm() {
                 <div className="inputrelativesection">
                   <input type="text" placeholder="Enter Your Name" />
                   <label className="textoftheinput" htmlFor="">
-                    Name
+                   Parent’s Name
                   </label>
                 </div>
                 <div className="inputrelativesection">
-                  <input type="text" placeholder="Enter Your Name" />
+                  <input type="text" placeholder="Enter Your Email" />
                   <label className="textoftheinput" htmlFor="">
-                    Name
+                   Email
                   </label>
                 </div>
                 <div className="inputrelativesection">
-                  <input type="text" placeholder="Enter Your Name" />
+                  <input type="text" placeholder="Enter Your Phone Number" />
                   <label className="textoftheinput" htmlFor="">
-                    Name
+                    Phone Number
                   </label>
                 </div>
               </div>

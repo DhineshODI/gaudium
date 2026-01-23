@@ -57,7 +57,7 @@ export default function ShowcaseProject() {
     {
       id: 1,
       image: "/images/homepage/showcaseproject3.png",
-      title: "student name",
+      title: "arya marda",
       description:
         "of CBSE Grade II won the Bronze Position in the Butterfly Event Inter District Swimming Championship",
       svgCard: redsvg,
@@ -65,7 +65,7 @@ export default function ShowcaseProject() {
     {
       id: 2,
       image: "/images/homepage/showcaseproject4.png",
-      title: "student name",
+      title: "arya marda",
       description:
         "of CBSE Grade II won the Bronze Position in the Butterfly Event Inter District Swimming Championship",
       svgCard: bluesvg,
@@ -73,7 +73,7 @@ export default function ShowcaseProject() {
     {
       id: 3,
       image: "/images/homepage/showcaseproject4.png",
-      title: "student name",
+      title: "arya marda",
       description:
         "of CBSE Grade II won the Bronze Position in the Butterfly Event Inter District Swimming Championship",
       svgCard: redsvg,
@@ -81,7 +81,7 @@ export default function ShowcaseProject() {
     {
       id: 4,
       image: "/images/homepage/showcaseproject4.png",
-      title: "student name",
+      title: "arya marda",
       description:
         "of CBSE Grade II won the Bronze Position in the Butterfly Event Inter District Swimming Championship",
       svgCard: bluesvg,
@@ -89,7 +89,7 @@ export default function ShowcaseProject() {
     {
       id: 5,
       image: "/images/homepage/showcaseproject4.png",
-      title: "student name",
+      title: "arya marda",
       description:
         "of CBSE Grade II won the Bronze Position in the Butterfly Event Inter District Swimming Championship",
       svgCard: redsvg,

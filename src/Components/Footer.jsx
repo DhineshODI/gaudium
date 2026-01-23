@@ -34,7 +34,11 @@ export default function Footer() {
 
         <div className="footerwithlogo">
           <div className="footerlogoimageflex">
-            <img className="footerimagesize" src="/images/footer-logo.svg" alt="" />
+            <img
+              className="footerimagesize"
+              src="/images/footer-logo.svg"
+              alt=""
+            />
           </div>
 
           <div className="iconsline"></div>
@@ -52,7 +56,7 @@ export default function Footer() {
             <a href="/about">
               <li className="highlightedtextwhite">about us</li>
             </a>
-            <a href="/programs">
+            <a href="/our-programs">
               <li className="highlightedtextwhite">our Programs</li>
             </a>
             <a href="/indoor-sports">
@@ -61,12 +65,12 @@ export default function Footer() {
             <a href="/outdoor-sports">
               <li className="highlightedtextwhite">outdoor sports</li>
             </a>
-            <a href="/our-team">
-              <li className="highlightedtextwhite">our team</li>
+            <a href="/best-performer">
+              <li className="highlightedtextwhite">Best performer</li>
             </a>
-            <a href="/news">
+            {/* <a href="/news">
               <li className="highlightedtextwhite">news & events</li>
-            </a>
+            </a> */}
             <a href="/contact">
               <li className="highlightedtextwhite">contact us</li>
             </a>

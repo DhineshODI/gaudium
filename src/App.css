@@ -40,14 +40,14 @@ body {
 }
 
 .redcolorfont {
-  -webkit-text-stroke: 2px #be1e2d;
-  /* -webkit-text-stroke: 0.1px #be1e2d; */
-  background-image: linear-gradient(to right, #be1e2d 0%, #be1e2d 100%);
+  /* -webkit-text-stroke: 2px #be1e2d; */
+  /* background-image: linear-gradient(to right, #be1e2d 0%, #be1e2d 100%); */
+  color: #be1e2d;
 }
 
 .bluecolorfont {
-  -webkit-text-stroke: 2px #005e96;
-  background-image: linear-gradient(to right, #005e96 0%, #005e96 100%);
+  -webkit-text-stroke: 1.5px #005e96;
+  /* background-image: linear-gradient(to right, #005e96 0%, #005e96 100%); */
 }
 
 .mainheadingfont {
@@ -289,7 +289,7 @@ body {
   opacity: 0.16;
   /* height: 1000px; */
   width: 100%;
-  z-index: -1;
+  /* z-index: -1; */
 }
 
 .bgvideohomepage {
@@ -809,8 +809,8 @@ body {
 }
 
 .eventscalenderrow .whitefontcolor {
-  -webkit-text-stroke: 2px #fff;
-  background-image: linear-gradient(to right, #fff 0%, #fff 100%);
+  /* -webkit-text-stroke: 2px #fff; */
+  /* background-image: linear-gradient(to right, #fff 0%, #fff 100%); */
   width: 105%;
 }
 
@@ -1373,8 +1373,9 @@ body {
 }
 
 .whitefontcolor {
-  -webkit-text-stroke: 2px #fff;
-  background-image: linear-gradient(to right, #fff 0%, #fff 100%);
+  /* -webkit-text-stroke: 2px #fff; */
+  /* background-image: linear-gradient(to right, #fff 0%, #fff 100%); */
+  color: #fff;
   width: 105%;
 }
 
@@ -3424,7 +3425,7 @@ body {
 
   .homepagecompanythere {
     column-gap: 12px;
-}
+  }
   .homevideosection {
     height: 870px;
   }
@@ -4137,13 +4138,12 @@ body {
   }
 
   .countingsection {
-     font-size: 60px;
+    font-size: 60px;
   }
 
   .homepagecompanythere {
     column-gap: 10px;
-}
-
+  }
 
   .homepagecompanythere .paragraphtext {
     line-height: 18px;
@@ -4984,7 +4984,7 @@ body {
   }
 
   .countingsection {
-     font-size: 50px;
+    font-size: 50px;
   }
 
   .homepagecompanythere .paragraphtext {
@@ -4996,7 +4996,7 @@ body {
 
   .homepagecompanythere {
     column-gap: 12px;
-}
+  }
   .homevideosection {
     height: 650px;
   }
@@ -7271,8 +7271,8 @@ body {
   }
 
   .bgvideohomepage {
-  height: 650px;
-}
+    height: 650px;
+  }
 
   .maingbsectionhome {
     padding-top: 50px;
@@ -7547,7 +7547,7 @@ body {
   }
 
   .paravideosection .paragraphtext {
-      width: 84%;
+    width: 84%;
   }
 
   .bannercontentflex {
@@ -8331,7 +8331,7 @@ body {
     height: 600px;
   }
 
-    .bgvideohomepage {
+  .bgvideohomepage {
     height: 600px;
   }
 
@@ -9461,7 +9461,7 @@ body {
   }
 
   .widthhomepagecompanythere {
-     width: 40%;
+    width: 40%;
   }
   .homevideosection {
     height: 600px;
@@ -9469,9 +9469,9 @@ body {
 
   .homevideosection .secondparacontent {
     margin-top: 10px;
-}
+  }
 
-    .bgvideohomepage {
+  .bgvideohomepage {
     height: 600px;
   }
 
@@ -9709,10 +9709,22 @@ body {
 
 @media (max-width: 600px) {
   /* font-style-heading */
+
+  .firsttextfooter {
+    -webkit-text-stroke: 1px #fff;
+  }
+  .secondtextfooter {
+    -webkit-text-stroke: 1px #fff;
+  }
+
+  .footerfirstfont {
+    -webkit-text-stroke: 1px #ffffff;
+  }
   .mainheadingfont {
     font-size: 30px;
     line-height: 110%;
-    letter-spacing: 1px;
+    line-height: 95%;
+    letter-spacing: 0px;
   }
 
   .paragraphtext {
@@ -9743,8 +9755,12 @@ body {
   .residentalsports {
     margin: 0;
     width: 100%;
-    margin-left: 15%;
+    margin-left: 0%;
     max-width: 360px;
+  }
+
+  .bluecolorfont {
+    -webkit-text-stroke: 1px #005e96;
   }
 
   /* font-style-heading */
@@ -9754,7 +9770,7 @@ body {
     width: 100%;
     object-fit: cover;
     object-position: center;
-}
+  }
 
   /* header-css */
 
@@ -9763,16 +9779,21 @@ body {
   }
 
   .headerstyle img {
-    width: 150px;
+    width: 135px;
   }
 
   .headermenuicon {
-    width: 40px;
+    width: 33px;
   }
 
   .Homepagestyle.homePlus .headerdiv.scrollheader .headerstyle {
     padding: 1% 5%;
     padding-top: 2%;
+  }
+
+  .homepagebanner .headerstyle {
+    padding: 1% 5%;
+    padding-top: 1.5%;
   }
   /* header-css */
 
@@ -10274,7 +10295,7 @@ body {
 
   .right-btnshowcaseproject,
   .left-btnshowcaseproject {
-      width: 37px;
+    width: 37px;
   }
 
   .strength-controls .btn-next,
@@ -10607,6 +10628,10 @@ body {
     font-size: 25px;
     height: 123%;
     text-align: center;
+
+ 
+    -webkit-text-stroke: 1px #fff;
+   
   }
 
   .footerrow {
@@ -10779,7 +10804,7 @@ body {
 
   .homepagecompanythere {
     column-gap: 10px;
-}
+  }
   .voiceofchampionshipbg .paravideosection .paragraphtext {
     width: 80%;
   }
@@ -10790,17 +10815,17 @@ body {
   }
 
   .bhomevideosectionvideo {
-  opacity: 1;
+    opacity: 1;
     position: unset;
     height: 100%;
     width: 100%;
-}
+  }
   .homevideosection {
-     height: auto;
+    height: auto;
     padding: 40px 0;
   }
 
-    .bgvideohomepage {
+  .bgvideohomepage {
     height: auto;
   }
 
@@ -10867,7 +10892,7 @@ body {
   }
 
   .slider-buttonsshowcaseproject button {
-       width: 38px;
+    width: 38px;
   }
 
   .thestrengthsectionslider {

@@ -37,7 +37,7 @@ export default function ProgrammsBuild() {
                 </div>
 
                 <div className="becomeachampion">
-                  <a className="buttonfont highlightedtextopposite">
+                  <a href="/our-programs" className="buttonfont highlightedtextopposite">
                     Discover More
                   </a>
                 </div>
@@ -53,7 +53,7 @@ export default function ProgrammsBuild() {
                 </div>
 
                 <div className="becomeachampion">
-                  <a className="buttonfont highlightedtextoppositeblue">
+                  <a href="/our-programs" className="buttonfont highlightedtextoppositeblue">
                     Discover More
                   </a>
                 </div>
@@ -69,7 +69,7 @@ export default function ProgrammsBuild() {
                 </div>
 
                 <div className="becomeachampion">
-                  <a className="buttonfont highlightedtextopposite">
+                  <a href="/our-programs" className="buttonfont highlightedtextopposite">
                     Discover More
                   </a>
                 </div>

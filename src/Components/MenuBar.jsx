@@ -12,7 +12,7 @@ export default function Menubar({ menuOnclick }) {
     { label: "Best Performer", path: "/best-performer" },
     { label: "Student Testimonial", path: "/student-testimonial" },
     { label: "Our Infrastructure", path: "/our-infrastructure" },
-    { label: "News & Events", path: "/newsandevents" },
+    // { label: "News & Events", path: "/newsandevents" },
     { label: "Contact Us", path: "/contact" },
   ];
 

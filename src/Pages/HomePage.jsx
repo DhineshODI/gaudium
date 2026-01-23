@@ -71,7 +71,7 @@ export default function Homepage({ menuOnclick }) {
             </div>
 
             <div className="discovermorebutton">
-              <a className="buttonfont highlightedtextred">Discover More</a>
+              <a href="/about" className="buttonfont highlightedtextred">Discover More</a>
             </div>
 
             <div>

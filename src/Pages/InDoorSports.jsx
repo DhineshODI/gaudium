@@ -8,7 +8,7 @@ export default function InDoorSportsPage({ menuOnclick }) {
       gameName: "Badminton",
       gameAboutContent:
         "A fast-paced racquet sport that builds agility, reflexes, endurance, and sharp tactical thinking skills.",
-      gameLinkL: "/badminton",
+      gameLinkL: "/sport/badminton",
     },
     {
       id: 2,
@@ -16,7 +16,7 @@ export default function InDoorSportsPage({ menuOnclick }) {
       gameName: "Basketball",
       gameAboutContent:
         "A dynamic team sport focusing on speed, coordination, strategy, and high-intensity athletic performance levels.",
-      gameLinkL: "/basketball",
+      gameLinkL: "/sport/basketball",
     },
     {
       id: 3,
@@ -24,7 +24,7 @@ export default function InDoorSportsPage({ menuOnclick }) {
       gameName: "Fencing",
       gameAboutContent:
         "A precision-based combat sport developing lightning reflexes, strategy, discipline, and intense mental focus skills.",
-      gameLinkL: "/fenching",
+      gameLinkL: "/sport/fenching",
     },
     {
       id: 4,
@@ -32,7 +32,7 @@ export default function InDoorSportsPage({ menuOnclick }) {
       gameName: "Gymnastics",
       gameAboutContent:
         "A foundation sport enhancing strength, flexibility, balance, coordination, body control, and technical movement mastery.",
-      gameLinkL: "/gymastics",
+      gameLinkL: "/sport/gymnastics",
     },
     {
       id: 5,
@@ -40,7 +40,7 @@ export default function InDoorSportsPage({ menuOnclick }) {
       gameName: "Skating",
       gameAboutContent:
         "A skill-driven sport improving balance, speed, control, confidence, coordination, and overall movement efficiency development.",
-      gameLinkL: "/skating",
+      gameLinkL: "/sport/skating",
     },
   ];
   return (

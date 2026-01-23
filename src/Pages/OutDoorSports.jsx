@@ -8,7 +8,7 @@ export default function OutDoorSportsPage({ menuOnclick }) {
       gameName: "Athletics",
       gameAboutContent:
         "A track-and-field sport enhancing speed, endurance, strength, agility, coordination and competitive performance across multiple events.",
-      gameLinkL: "/athletics",
+      gameLinkL: "/sport/athletics",
     },
     {
       id: 2,
@@ -16,7 +16,7 @@ export default function OutDoorSportsPage({ menuOnclick }) {
       gameName: "Cricket",
       gameAboutContent:
         "A strategic team sport developing batting, bowling, fielding skills, teamwork, focus and match awareness consistently.",
-      gameLinkL: "/athletics",
+      gameLinkL: "/sport/cricket",
     },
     {
       id: 3,
@@ -24,7 +24,7 @@ export default function OutDoorSportsPage({ menuOnclick }) {
       gameName: "Football",
       gameAboutContent:
         "A high-intensity team sport improving stamina, coordination, tactical understanding, ball control, teamwork and competitive spirit.",
-      gameLinkL: "/athletics",
+      gameLinkL: "/sport/football",
     },
     {
       id: 4,
@@ -32,7 +32,7 @@ export default function OutDoorSportsPage({ menuOnclick }) {
       gameName: "Swimming",
       gameAboutContent:
         "A full-body water sport building strength, endurance, technique, flexibility, speed and aquatic confidence for all levels.",
-      gameLinkL: "/athletics",
+      gameLinkL: "/sport/swimming",
     },
     {
       id: 5,
@@ -40,7 +40,7 @@ export default function OutDoorSportsPage({ menuOnclick }) {
       gameName: "Tennis",
       gameAboutContent:
         "A fast-paced racquet sport developing agility, precision, strategy, reflexes, stamina and competitive match readiness effectively.",
-      gameLinkL: "/athletics",
+      gameLinkL: "/sport/tennis",
     },
   ];
   return (
@@ -117,7 +117,7 @@ export default function OutDoorSportsPage({ menuOnclick }) {
                         {game.gameAboutContent}
                       </p>
 
-                      <a className="exploremorebutton buttonfont">
+                      <a  href={game.gameLinkL} className="exploremorebutton buttonfont">
                         explore More
                       </a>
                     </div>

@@ -116,7 +116,7 @@ export default function TheStrenthBehind() {
             </div>
 
             <div className="thestrengthsectionslider">
-              <div>
+              <div className="sliderwithhome">
                 <Slider ref={sliderRef} {...settings}>
                   {strengthData.map((item, index) => (
                     <div className="slidermainstrength" key={index}>

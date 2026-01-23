@@ -1,3 +1,7 @@
+body {
+  /* overflow: hidden !important; */
+}
+
 .stroke-fill-text {
   color: transparent;
   width: 104%;
@@ -272,7 +276,28 @@
   display: flex;
   align-items: center;
   background: #e5e5e5;
+  /* background: url("/public/images/background-image.mp4"); */
 }
+
+.homevideomainbg {
+  position: relative;
+}
+
+.bhomevideosectionvideo {
+  position: absolute;
+  top: 0;
+  opacity: 0.16;
+  /* height: 1000px; */
+  width: 100%;
+  z-index: -1;
+}
+
+.bgvideohomepage {
+  height: 1000px;
+  width: 100%;
+  object-fit: cover;
+}
+
 .firstheading {
   margin-right: 5%;
 }
@@ -309,7 +334,7 @@
 .countingsection {
   font-family: Arial;
   font-weight: 700;
-  font-size: 120px;
+  font-size: 100px;
   line-height: 100%;
   letter-spacing: -2px;
   text-transform: uppercase;
@@ -1788,6 +1813,10 @@
 
 .detailpagebg.badminton {
   background-image: url(/public/images/detail-page/badminton/main-banner.jpg);
+}
+.detailpagebg.athletics {
+  background-image: url(/public/images/detail-page/badminton/athletic-banner.jpeg);
+  /* background-image: url(/public/images/detail-page/badminton/main-banner.jpg); */
 }
 
 .detailpagebg .videosectionmain {
@@ -3380,13 +3409,27 @@
   }
 
   .countingsection {
-    font-size: 75px;
+    font-size: 60px;
+  }
+
+  .homepageaboutcompany .secondheadingtext {
+    font-size: 16px;
+    line-height: 22px;
   }
 
   .homepagecompanythere .paragraphtext {
     line-height: 18px;
+    margin-bottom: 9px;
   }
+
+  .homepagecompanythere {
+    column-gap: 12px;
+}
   .homevideosection {
+    height: 870px;
+  }
+
+  .bgvideohomepage {
     height: 870px;
   }
 
@@ -3511,7 +3554,7 @@
   }
 
   .flexhomepageabout {
-    column-gap: 8%;
+    column-gap: 5%;
     row-gap: 45px;
   }
 
@@ -4094,13 +4137,23 @@
   }
 
   .countingsection {
-    font-size: 75px;
+     font-size: 60px;
   }
+
+  .homepagecompanythere {
+    column-gap: 10px;
+}
+
 
   .homepagecompanythere .paragraphtext {
     line-height: 18px;
+    margin-bottom: 9px;
   }
   .homevideosection {
+    height: 685px;
+  }
+
+  .bgvideohomepage {
     height: 685px;
   }
 
@@ -4230,7 +4283,7 @@
   }
 
   .flexhomepageabout {
-    column-gap: 8%;
+    column-gap: 6%;
     row-gap: 35px;
   }
 
@@ -4931,14 +4984,23 @@
   }
 
   .countingsection {
-    font-size: 65px;
+     font-size: 50px;
   }
 
   .homepagecompanythere .paragraphtext {
-    line-height: 16px;
-    width: 60%;
+    line-height: 14px;
+    font-size: 13px;
+    width: 53%;
+    margin-bottom: 10px;
   }
+
+  .homepagecompanythere {
+    column-gap: 12px;
+}
   .homevideosection {
+    height: 650px;
+  }
+  .bgvideohomepage {
     height: 650px;
   }
 
@@ -5094,8 +5156,8 @@
   }
 
   .flexhomepageabout {
-    column-gap: 8%;
-    row-gap: 35px;
+    column-gap: 6%;
+    row-gap: 20px;
   }
 
   .avasttext {
@@ -6180,6 +6242,12 @@
     height: 650px;
   }
 
+  .bgvideohomepage {
+    height: 650px;
+    width: 100%;
+    object-fit: cover;
+  }
+
   .maingbsectionhome {
     padding-top: 50px;
     padding-top: 65px;
@@ -7202,6 +7270,10 @@
     height: 650px;
   }
 
+  .bgvideohomepage {
+  height: 650px;
+}
+
   .maingbsectionhome {
     padding-top: 50px;
     padding-top: 65px;
@@ -7475,7 +7547,7 @@
   }
 
   .paravideosection .paragraphtext {
-    width: 45%;
+      width: 84%;
   }
 
   .bannercontentflex {
@@ -8249,13 +8321,17 @@
     width: 66%;
     font-size: 13px;
     line-height: 14px;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
   }
 
   .widthhomepagecompanythere {
-    width: 28%;
+    width: 31%;
   }
   .homevideosection {
+    height: 600px;
+  }
+
+    .bgvideohomepage {
     height: 600px;
   }
 
@@ -8415,7 +8491,7 @@
   }
 
   .flexhomepageabout {
-    column-gap: 6%;
+    column-gap: 10%;
     row-gap: 35px;
   }
 
@@ -9373,21 +9449,29 @@
   }
 
   .countingsection {
-    font-size: 35px;
+    font-size: 40px;
   }
 
   .homepagecompanythere .paragraphtext {
     line-height: 16px;
-    width: 66%;
-    font-size: 11px;
-    line-height: 14px;
-    margin-bottom: 0px;
+    width: 52%;
+    font-size: 13px;
+    line-height: 13px;
+    margin-bottom: 6px;
   }
 
   .widthhomepagecompanythere {
-    width: 28%;
+     width: 40%;
   }
   .homevideosection {
+    height: 600px;
+  }
+
+  .homevideosection .secondparacontent {
+    margin-top: 10px;
+}
+
+    .bgvideohomepage {
     height: 600px;
   }
 
@@ -9554,12 +9638,12 @@
   }
 
   .flexhomepageabout {
-    column-gap: 6%;
+    column-gap: 10%;
     row-gap: 25px;
   }
 
   .widthhomepagecompanythere .bottomlinesection {
-    margin-top: 10px;
+    margin-top: 5px;
   }
 
   .avasttext {
@@ -9641,13 +9725,16 @@
   }
 
   .mainheadingfont.banneroverlaytextall {
-    font-size: 35px;
+    font-size: 30px;
     bottom: -3px;
+    text-align: end;
+    right: 10px;
   }
 
   .indiasfirst {
-    margin-right: 20%;
-    width: 50%;
+    margin-right: 0;
+    width: 100%;
+    max-width: 360px;
   }
 
   .homepageindiasresidental {
@@ -9655,11 +9742,19 @@
   }
   .residentalsports {
     margin: 0;
-    width: 60%;
-    margin-left: 10%;
+    width: 100%;
+    margin-left: 15%;
+    max-width: 360px;
   }
 
   /* font-style-heading */
+
+  .homepageherobanner img {
+    height: 450px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
 
   /* header-css */
 
@@ -9839,17 +9934,30 @@
   }
 
   .roleinstrength {
-    font-size: 25px;
+    font-size: 30px;
     letter-spacing: 0;
-    margin-top: -2px;
+    margin-top: 3px;
   }
 
   .nameoftheplayer {
-    font-size: 22px;
-    line-height: 22px;
+    font-size: 27px;
+    line-height: 28px;
     width: 74%;
     letter-spacing: 0px;
-    padding-bottom: 8px;
+    padding-bottom: 20px;
+  }
+
+  .sliderwithhome {
+  }
+
+  .slidermainstrength {
+    display: flex !important;
+    justify-content: center;
+  }
+
+  .strengthsectioncard {
+    /* width: 90%; */
+    max-width: 300px;
   }
 
   .contentcolortext {
@@ -9863,12 +9971,12 @@
   }
 
   .sportsnamestregnthimage img {
-    width: 120px;
+    width: 195px;
   }
 
   .sportsnamestregnth {
-    font-size: 15px;
-    padding-left: 5px;
+    font-size: 19px;
+    padding-left: 6px;
     letter-spacing: 0;
   }
 
@@ -9971,7 +10079,8 @@
   /* outdoor-sports */
 
   .outdoorsportscards {
-    width: 48%;
+    width: 90%;
+    max-width: 360px;
   }
 
   .outdoorsportsmain {
@@ -9982,6 +10091,13 @@
     margin-top: 40px;
     row-gap: 25px;
     margin-left: 0;
+    justify-content: center;
+  }
+
+  .outdoorsportscardsimg {
+    height: 287px;
+    object-fit: cover;
+    object-position: center;
   }
 
   .flexdiourprogrem .secondheadingtext {
@@ -9993,11 +10109,11 @@
     line-height: 100%;
   }
   .outdoorgamesports {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .flexdiourprogrem {
-    padding: 15px 15px 30px 15px;
+    padding: 25px 20px 35px 20px;
   }
 
   .bannerimagesection.outdoorsports {
@@ -10005,7 +10121,8 @@
   }
 
   .outdoorcardsconatinre .flexdiourprogrem .secondheadingtext {
-    min-height: 95px;
+    min-height: auto;
+    font-size: 14px;
   }
   /* outdoor-sports */
 
@@ -10024,8 +10141,10 @@
   }
 
   .outsportssectionouter {
-    width: 25%;
+    width: 100%;
     height: max-content;
+    display: flex;
+    overflow-x: scroll;
   }
   /* indoor-sports */
 
@@ -10118,23 +10237,34 @@
     margin-top: 45px;
   }
   .showcaseprojectrow {
-    padding: 50px 0;
+    padding: 40px 0;
   }
 
   .imagehovershowcaseper {
-    bottom: 110px;
-    left: 19px;
+    bottom: 16px;
+    left: 16px;
   }
 
+  .imageoftheshowcaseper {
+    width: 90%;
+  }
+  .showcasingcard {
+    width: 320px;
+  }
+
+  .showcaseimagecard svg {
+    width: 88%;
+    height: auto;
+  }
   .showcasingcard .mainheadingfont {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 22px;
     margin-bottom: 5px;
     letter-spacing: -1px;
   }
 
   .maincontainershowingcontent {
-    margin-top: -70px;
+    margin-top: 15px;
   }
 
   .showcasingcontainer {
@@ -10144,12 +10274,12 @@
 
   .right-btnshowcaseproject,
   .left-btnshowcaseproject {
-    width: 40px;
+      width: 37px;
   }
 
   .strength-controls .btn-next,
   .strength-controls .btn-prev {
-    width: 30px;
+    width: 37px;
   }
 
   .bannerimagesection.badmintonbannerdetail {
@@ -10157,7 +10287,7 @@
   }
 
   .mainrowshowcasingcard {
-    margin-top: 0;
+    margin-top: 90px;
   }
 
   .buttoncontroldetailpage .strength-progressbar {
@@ -10206,25 +10336,30 @@
   }
 
   .testmonialcardsss {
-    margin-top: 80px;
+    margin-top: 73px;
     margin-left: 0;
     row-gap: 55px;
+    justify-content: center;
   }
 
   .testicardsmain .mainheadingfont {
-    font-size: 18px;
+    font-size: 23px;
     line-height: 24px;
-    margin-top: 10px;
+    margin-top: 12px;
   }
 
   .testimonialimageer img {
-    width: 70px;
-    height: 70px;
+    width: 65px;
+    height: 65px;
   }
 
   .testicardsmain {
     padding: 40px 0 20px 0;
-    width: 31%;
+    width: 87%;
+  }
+
+  .testicardsmain .paragraphtext {
+    width: 100%;
   }
 
   /* testimonial css */
@@ -10236,9 +10371,10 @@
   }
 
   .formmainss {
-    width: 182px;
-    padding: 15px 0px;
-    left: 35%;
+    width: 200px;
+    padding: 23px 0px;
+    left: auto;
+    top: auto;
   }
 
   .headphoenecontact {
@@ -10254,18 +10390,18 @@
   }
 
   .toggleclassname {
-    font-size: 12px;
+    font-size: 15px;
     line-height: 27px;
     margin-left: 5px;
   }
 
   .checkboxdisplay {
     column-gap: 18px;
-    margin-top: 9px;
+    margin-top: 15px;
   }
 
   .maintogglediv {
-    min-width: 80px;
+    min-width: 110px;
   }
 
   .whatsappcontact {
@@ -10286,7 +10422,7 @@
     left: 12px;
     line-height: 25px;
     top: -12px;
-    font-size: 14px;
+    font-size: 17px;
   }
 
   .conatctformstyle input::placeholder {
@@ -10295,21 +10431,23 @@
   }
 
   .conatctformstyle form {
-    margin-top: 25px;
+    margin-top: 35px;
   }
 
   .mainbgcontactbg::before {
     height: 283px;
     width: 164px;
-    right: 0;
     z-index: 1;
     background-size: contain;
-    top: 6.9%;
+    top: 11.2%;
+    right: 0;
+    left: auto;
+    display: none;
   }
 
   .conatctformstyle input {
-    height: 35px;
-    width: 132px;
+    height: 43px;
+    width: 80%;
   }
 
   .formcontactbgsecond {
@@ -10320,14 +10458,15 @@
   }
 
   .pleasechecktick {
-    width: 80%;
-    margin-top: 20px;
-    font-size: 15px;
-    line-height: 17px;
+    width: 100%;
+    margin-top: 25px;
+    font-size: 17px;
+    line-height: 21px;
   }
 
   .conatctformstyle .paragraphtext {
     line-height: 110%;
+    font-size: 18px;
   }
   .whatsappiconsvg {
     width: 29px;
@@ -10358,7 +10497,7 @@
 
   .formcontactbgfirst {
     width: 100%;
-    height: 390px;
+    height: 360px;
   }
 
   .visitus {
@@ -10387,7 +10526,9 @@
   iframe .place-card.place-card-large {
     display: none !important;
   }
-
+  .inputrelativesection {
+    width: 100%;
+  }
   /* Contact us css */
 
   /* Footer css */
@@ -10398,6 +10539,8 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 23px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .footerimagesize {
@@ -10410,7 +10553,7 @@
   }
 
   .footerlistpages li {
-    font-size: 11px;
+    font-size: 13px;
   }
 
   .footericonsflex {
@@ -10421,7 +10564,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 48px;
+    height: 53px;
     /* margin-top: 20px; */
   }
 
@@ -10440,7 +10583,7 @@
 
   .footerendd {
     padding: 20px 0;
-    margin-top: 50px;
+    margin-top: 40px;
     flex-direction: column;
   }
 
@@ -10513,12 +10656,17 @@
     width: 79%;
     margin-top: 20px;
   }
+
+  .secondhamhalf {
+    width: 100%;
+    padding-left: 13%;
+  }
   /* hamburger-css */
 
   /* best-performer-css */
   .cardHoverTitle {
-    font-size: 17px;
-    line-height: 19px;
+    font-size: 27px;
+    line-height: 27px;
     margin-bottom: 20px;
   }
 
@@ -10534,7 +10682,7 @@
       rgba(190, 30, 45, 0) 0.9%,
       rgba(190, 30, 45, 1) 11%
     );
-    padding-top: 15px;
+    padding-top: 27px;
   }
 
   .showcasingpeak {
@@ -10542,12 +10690,13 @@
   }
 
   .cardHoverLink {
-    width: 30%;
+    width: 80%;
   }
 
   .hovermaindid {
     padding-left: 6%;
     padding-left: 0%;
+    justify-content: center;
   }
 
   .hoveredimagesectionbg {
@@ -10580,16 +10729,19 @@
   }
 
   .slider-buttonsshowcaseproject::after {
-    right: 15%;
+    right: 12.5%;
+    width: 90px;
   }
   .slider-buttonsshowcaseproject::before {
-    left: 15%;
+    left: 12.5%;
+
+    width: 90px;
   }
 
   .ts-card {
     position: absolute;
-    width: 240px;
-    height: 320px;
+    width: 222px;
+    height: 300px;
   }
 
   .ts-card.ts-left-1 {
@@ -10614,22 +10766,42 @@
   }
 
   .countingsection {
-    font-size: 35px;
+    font-size: 42px;
   }
 
   .homepagecompanythere .paragraphtext {
     line-height: 16px;
     width: 66%;
-    font-size: 11px;
+    font-size: 14px;
     line-height: 14px;
-    margin-bottom: 0px;
+    margin-bottom: 6px;
+  }
+
+  .homepagecompanythere {
+    column-gap: 10px;
+}
+  .voiceofchampionshipbg .paravideosection .paragraphtext {
+    width: 80%;
   }
 
   .widthhomepagecompanythere {
-    width: 28%;
+    width: 60%;
+    max-width: 240px;
   }
+
+  .bhomevideosectionvideo {
+  opacity: 1;
+    position: unset;
+    height: 100%;
+    width: 100%;
+}
   .homevideosection {
-    height: 600px;
+     height: auto;
+    padding: 40px 0;
+  }
+
+    .bgvideohomepage {
+    height: auto;
   }
 
   .maingbsectionhome {
@@ -10637,7 +10809,7 @@
     padding-top: 65px;
   }
   .strength-controls button {
-    width: 35px;
+    width: 37px;
   }
   .expansivefirstsec h5 {
     font-size: 30px;
@@ -10645,9 +10817,17 @@
   }
 
   .expansivecards .paragraphtext {
-    font-size: 13px;
+    font-size: 12px;
     line-height: 100%;
     margin-top: 5px;
+  }
+
+  .expansivecards::before {
+    left: -13px;
+  }
+
+  .expansivecards::after {
+    left: -15px;
   }
 
   .expansivefirstsec .secondheadingtext {
@@ -10669,7 +10849,7 @@
   }
 
   .eventscalenderrow {
-    height: 520px;
+    height: 685px;
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
@@ -10678,7 +10858,7 @@
   }
 
   .thestrengthsection {
-    padding-top: 50px;
+    padding-top: 40px;
     padding-bottom: 30px;
   }
 
@@ -10687,12 +10867,12 @@
   }
 
   .slider-buttonsshowcaseproject button {
-    width: 35px;
+       width: 38px;
   }
 
   .thestrengthsectionslider {
     padding-top: 40px;
-    padding-bottom: 35px;
+    padding-bottom: 15px;
   }
   .inoursportscontainer .slick-track {
     margin-top: 35px;
@@ -10702,18 +10882,14 @@
     margin-top: 35px;
   }
   .voiceofchampionshipbg {
-    padding: 50px 0;
-  }
-
-  .mainrowshowcasingcard {
-    margin-top: 0;
+    padding: 40px 0;
   }
 
   .contentbuildsection {
-    font-size: 13px;
+    font-size: 14px;
     line-height: 18px;
     width: 54%;
-    margin-top: 60px;
+    margin-top: 45px;
     padding-left: 15px;
   }
 
@@ -10726,7 +10902,7 @@
     margin-top: 12px;
   }
   .becomeachampion .buttonfont {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .ProgrammsBuildflexsection .roleinstrength {
@@ -10746,9 +10922,9 @@
   }
 
   .cardProgrammsBuildflexsection {
-    height: 310px;
-    width: 65%;
-    background-size: contain;
+    height: 292px;
+    width: 100%;
+    background-size: cover;
   }
 
   .responsivecontinerr {
@@ -10757,7 +10933,7 @@
   }
 
   .ProgrammsBuildflexsection {
-    max-width: 600px;
+    max-width: 360px;
     margin-top: 45px;
     flex-wrap: wrap;
     row-gap: 50px;
@@ -10765,7 +10941,7 @@
   }
 
   .programsbuildsection {
-    padding-top: 60px;
+    padding-top: 40px;
     padding-bottom: 10px;
   }
 
@@ -10774,7 +10950,9 @@
   }
 
   .flexeventscalenderrow {
-    padding-top: 70px;
+    padding-top: 40px;
+    flex-direction: column;
+    row-gap: 30px;
   }
 
   .indorrmainbgsec {
@@ -10788,6 +10966,7 @@
     font-size: 10px;
     line-height: 100%;
     padding: 10px 17px;
+    padding: 10px;
   }
 
   .exploresectiondiv {
@@ -10808,7 +10987,7 @@
   }
 
   .maingbsectionhome .paravideosection .paragraphtext {
-    width: 80%;
+    width: 90%;
   }
   .expansivecampsflex {
     margin-top: 40px;
@@ -10819,11 +10998,12 @@
   }
 
   .bgimagesection {
-    margin-top: -40px;
+    margin-top: 0px;
   }
 
   .expansivecards {
-    width: 30%;
+    width: 40%;
+    max-width: 130px;
   }
 
   /* home-page css */
@@ -10840,12 +11020,17 @@
   }
 
   .outsportssectionouter .paragraphtext {
-    font-size: 14px;
-    padding: 12px 0;
+    font-size: 15px;
+    padding: 12px 20px;
+    width: max-content;
+    flex-shrink: 0;
   }
 
   .mainoutsportssectionouter {
+    margin: 0;
     margin-top: 40px;
+    flex-direction: column;
+    row-gap: 40px;
   }
 
   .ourinfrastructurebgdetail {
@@ -10853,13 +11038,15 @@
   }
 
   .lightboximagesec {
-    width: 31%;
+    width: 90%;
     border: 2px solid #fff;
-    height: 105px;
+    height: auto;
   }
 
   .firstoutsportssectionouter {
-    row-gap: 0;
+    width: 100%;
+    justify-content: center;
+    row-gap: 15px;
   }
   /* ourinfrastructure-css */
 }

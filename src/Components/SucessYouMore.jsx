@@ -53,112 +53,98 @@ export default function SucessYouMore() {
 
   return (
     <>
-      <div className="homevideosection">
-        <div className="container max-w-7xl mx-auto px-4 ">
-          <div className="videosectionmain">
-            <div ref={sectionRef} className="firstheading">
-              <h2 className="stroke-fill-text mainheadingfont redcolorfont">
-                Success You
-              </h2>
+      <div className="homevideomainbg">
+        <div className="homevideosection">
+          <div className="container max-w-7xl mx-auto px-4 ">
+            <div className="videosectionmain">
+              <div ref={sectionRef} className="firstheading">
+                <h2 className="stroke-fill-text mainheadingfont redcolorfont">
+                  Success You
+                </h2>
+              </div>
+
+              <div ref={sectionRef1} className="secondheading">
+                <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
+                  Can Measure
+                </h2>
+              </div>
             </div>
 
-            <div ref={sectionRef1} className="secondheading">
-              <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
-                Can Measure
-              </h2>
+            <div className="paravideosection">
+              <p className="paragraphtext">
+                From academic excellence to athletic milestones, our students’
+                progress is tracked, nurtured and celebrated.
+              </p>
             </div>
-          </div>
 
-          <div className="paravideosection">
-            <p className="paragraphtext">
-              From academic excellence to athletic milestones, our students’
-              progress is tracked, nurtured and celebrated.
-            </p>
-          </div>
+            <div className="homepageaboutcompany">
+              <div className="flexhomepageabout">
+                <div className="widthhomepagecompanythere">
+                  <div className="homepagecompanythere">
+                    <h4 className="countingsection">13</h4>
+                    <p className="paragraphtext">International players</p>
+                  </div>
 
-          <div className="homepageaboutcompany">
-            <div className="flexhomepageabout">
-              <div className="widthhomepagecompanythere">
-                <div className="homepagecompanythere">
-                  <h4 className="countingsection">30</h4>
-                  <p className="paragraphtext">common wealth games</p>
+                  <div className="bottomlinesection"></div>
+
+                  <p className="secondheadingtext secondparacontent">
+                    <strong> Representing excellence </strong>
+                    with global exposure, elite performance and international
+                    competitive success.
+                  </p>
+                </div>
+                <div className="widthhomepagecompanythere">
+                  <div className="homepagecompanythere">
+                    <h4 className="countingsection">328</h4>
+                    <p className="paragraphtext"> National players</p>
+                  </div>
+
+                  <div className="bottomlinesection"></div>
+
+                  <p className="secondheadingtext secondparacontent">
+                    <strong> Competing at the highest </strong>
+                    national platforms with consistency and championship-level
+                    experience.
+                  </p>
+                </div>
+                <div className="widthhomepagecompanythere">
+                  <div className="homepagecompanythere">
+                    <h4 className="countingsection">515</h4>
+                    <p className="paragraphtext"> State level Players</p>
+                  </div>
+
+                  <div className="bottomlinesection"></div>
+
+                  <p className="secondheadingtext secondparacontent">
+                    <strong> Demonstrating strong </strong>
+                    regional dominance, advanced skills and structured
+                    competitive progression.
+                  </p>
                 </div>
 
-                <div className="bottomlinesection"></div>
+                <div className="widthhomepagecompanythere">
+                  <div className="homepagecompanythere">
+                    <h4 className="countingsection">408</h4>
+                    <p className="paragraphtext"> District level Players</p>
+                  </div>
 
-                <p className="secondheadingtext secondparacontent">
-                  <strong> Lorem ipsum dolor </strong>
-                  sit amet consectetur. Velit nullam tincidunt nibh morbi.
-                </p>
-              </div>
-              <div className="widthhomepagecompanythere">
-                <div className="homepagecompanythere">
-                  <h4 className="countingsection">25</h4>
-                  <p className="paragraphtext">world championships</p>
+                  <div className="bottomlinesection"></div>
+
+                  <p className="secondheadingtext secondparacontent">
+                    <strong>Building foundational excellence </strong>
+                    through competitive exposure, structured training and
+                    performance growth.
+                  </p>
                 </div>
-
-                <div className="bottomlinesection"></div>
-
-                <p className="secondheadingtext secondparacontent">
-                  <strong> Lorem ipsum dolor </strong>
-                  sit amet consectetur. Velit nullam tincidunt nibh morbi.
-                </p>
-              </div>
-              <div className="widthhomepagecompanythere">
-                <div className="homepagecompanythere">
-                  <h4 className="countingsection">30</h4>
-                  <p className="paragraphtext">National Games of India</p>
-                </div>
-
-                <div className="bottomlinesection"></div>
-
-                <p className="secondheadingtext secondparacontent">
-                  <strong> Lorem ipsum dolor </strong>
-                  sit amet consectetur. Velit nullam tincidunt nibh morbi.
-                </p>
-              </div>
-              <div className="widthhomepagecompanythere">
-                <div className="homepagecompanythere">
-                  <h4 className="countingsection">30</h4>
-                  <p className="paragraphtext">common wealth games</p>
-                </div>
-
-                <div className="bottomlinesection"></div>
-
-                <p className="secondheadingtext secondparacontent">
-                  <strong> Lorem ipsum dolor </strong>
-                  sit amet consectetur. Velit nullam tincidunt nibh morbi.
-                </p>
-              </div>
-              <div className="widthhomepagecompanythere">
-                <div className="homepagecompanythere">
-                  <h4 className="countingsection">30</h4>
-                  <p className="paragraphtext">common wealth games</p>
-                </div>
-
-                <div className="bottomlinesection"></div>
-
-                <p className="secondheadingtext secondparacontent">
-                  <strong> Lorem ipsum dolor </strong>
-                  sit amet consectetur. Velit nullam tincidunt nibh morbi.
-                </p>
-              </div>
-              <div className="widthhomepagecompanythere">
-                <div className="homepagecompanythere">
-                  <h4 className="countingsection">30</h4>
-                  <p className="paragraphtext">common wealth games</p>
-                </div>
-
-                <div className="bottomlinesection"></div>
-
-                <p className="secondheadingtext secondparacontent">
-                  <strong> Lorem ipsum dolor </strong>
-                  sit amet consectetur. Velit nullam tincidunt nibh morbi.
-                </p>
               </div>
             </div>
           </div>
         </div>
+        <section className="bhomevideosectionvideo">
+          <video className="bgvideohomepage" autoPlay muted loop playsInline>
+            <source src="/images/background-image.mp4" type="video/mp4" />
+          </video>
+        </section>
       </div>
     </>
   );

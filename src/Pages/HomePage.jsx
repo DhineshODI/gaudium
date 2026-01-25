@@ -1,4 +1,5 @@
 import Eventcalender from "../Components/EventCalender";
+import HorizontalSlider from "../Components/GsapSlider";
 import Header from "../Components/Header";
 import InDoorSportsFunction from "../Components/IndoorSports";
 import OutDoorSportsFunction from "../Components/OutDoorSports";
@@ -36,8 +37,6 @@ export default function Homepage({ menuOnclick }) {
 
         {/* video-section */}
 
-
-
         <SucessYouMore />
 
         {/* video-section */}
@@ -71,7 +70,9 @@ export default function Homepage({ menuOnclick }) {
             </div>
 
             <div className="discovermorebutton">
-              <a href="/about" className="buttonfont highlightedtextred">Discover More</a>
+              <a href="/about" className="buttonfont highlightedtextred">
+                Discover More
+              </a>
             </div>
 
             <div>
@@ -127,12 +128,16 @@ export default function Homepage({ menuOnclick }) {
 
         {/* <SportsSlider/> */}
 
-        {/* <div className="OutDoorSportsBG">
+        <div className="OutDoorSportsBG">
           <OutDoorSportsFunction />
           <InDoorSportsFunction />
-        </div> */}
+        </div>
+
+        {/* <HorizontalSlider/> */}
 
         <ProgrammsBuild />
+
+        {/* <HorizontalSlider /> */}
 
         <Eventcalender />
 

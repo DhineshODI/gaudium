@@ -986,6 +986,10 @@ body {
   padding: 100px 0;
 }
 
+.oudoorsportsmainconatiner {
+  margin-top: 70px;
+}
+
 .trapezoid-path-new {
   /* Set the dash to the new calculated length */
   stroke-dasharray: 1770;
@@ -1014,6 +1018,10 @@ body {
 
 .oursportscontainer .slick-track {
   margin-top: 50px;
+}
+
+.inoursportscontainer {
+  margin-top: 70px;
 }
 
 .inoursportscontainer .slick-track {
@@ -1752,7 +1760,7 @@ body {
   padding-top: 42px;
 }
 
-.cardHoverLink:hover .cardHoverOverlay {
+/* .cardHoverLink:hover .cardHoverOverlay {
   transform: translateY(0);
   padding-top: 0;
   background: linear-gradient(
@@ -1762,7 +1770,7 @@ body {
   );
   padding: 24px;
   padding-top: 50px;
-}
+} */
 
 .para2hover {
   margin-top: 15px;
@@ -1817,7 +1825,31 @@ body {
 }
 .detailpagebg.athletics {
   background-image: url(/public/images/detail-page/badminton/athletic-banner.jpeg);
-  /* background-image: url(/public/images/detail-page/badminton/main-banner.jpg); */
+}
+
+.detailpagebg.Skating {
+  background-image: url(/public/images/detail-page/skating/skating-rink-in-banner.jpg);
+}
+.detailpagebg.basketball {
+  background-image: url(/public/images/detail-page/basketball/baskerball-in-banner.jpg);
+}
+.detailpagebg.cricket {
+  background-image: url(/public/images/detail-page/cricket/cricket-in-banner.jpg);
+}
+.detailpagebg.fencing {
+  background-image: url(/public/images/detail-page/fencing/fencing-in-banner.jpg);
+}
+.detailpagebg.football {
+  background-image: url(/public/images/detail-page/football/football-in-banner.jpg);
+}
+.detailpagebg.gymnastics {
+  background-image: url(/public/images/detail-page/gymnastic/gymnastics-in-banner.jpg);
+}
+.detailpagebg.swimming {
+  background-image: url(/public/images/detail-page/swimming/swimming-in-banner.jpg);
+}
+.detailpagebg.tennis {
+  background-image: url(/public/images/detail-page/tennis/tennis-in-banner.jpg);
 }
 
 .detailpagebg .videosectionmain {
@@ -2101,6 +2133,34 @@ body {
 .bannerimagesection.badmintonbannerdetail {
   background-image: url(/public/images/detail-page/badminton/banner/badminton-banner.jpg);
 }
+.bannerimagesection.skatingbg {
+  background-image: url(/public/images/detail-page/skating/skating-banner.jpg);
+}
+.bannerimagesection.athleticsbg {
+  background-image: url(/public/images/detail-page/athletics/athletics-banner.jpg);
+}
+.bannerimagesection.cricketbg {
+  background-image: url(/public/images/detail-page//cricket/cricket-banner.jpg);
+}
+.bannerimagesection.fencingbg {
+  background-image: url(/public/images/detail-page/fencing/fencing-banner.jpg);
+}
+.bannerimagesection.footballbg {
+  background-image: url(/public/images/detail-page/football/football-banner.jpg);
+}
+.bannerimagesection.gymnasticsbg {
+  background-image: url(/public/images/detail-page/gymnastic/gymnastic-banner.jpg);
+}
+.bannerimagesection.swimmingbg {
+  background-image: url(/public/images/detail-page/swimming/swimming-banner.jpg);
+}
+.bannerimagesection.tennisbg {
+  background-image: url(/public/images/detail-page/tennis/tennis-banner.jpg);
+}
+.bannerimagesection.basketballbg {
+  background-image: url(/public/images/detail-page/basketball/basketball-banner.jpg);
+}
+
 /* DetailPage CSS */
 
 .ts-section-container {
@@ -9731,8 +9791,8 @@ body {
   }
 
   .paragraphtext {
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 14px;
+    line-height: 21px;
   }
 
   .breadcrumbstext {
@@ -9768,7 +9828,7 @@ body {
 
   .lengthfirstHeading {
     margin-right: 0;
-}
+  }
 
   /* font-style-heading */
 
@@ -9962,9 +10022,9 @@ body {
   }
 
   .roleinstrength {
-    font-size: 30px;
+    font-size: 25px;
     letter-spacing: 0;
-    margin-top: 3px;
+    margin-top: 0px;
   }
 
   .nameoftheplayer {
@@ -9999,7 +10059,8 @@ body {
   }
 
   .sportsnamestregnthimage img {
-    width: 195px;
+    /* width: 195px; */
+        width: 150px;
   }
 
   .sportsnamestregnth {
@@ -10165,7 +10226,7 @@ body {
   }
 
   .indoorcardsconatinre .flexdiourprogrem .secondheadingtext {
-    min-height: 75px;
+       min-height: auto;
   }
 
   .outsportssectionouter {
@@ -10179,15 +10240,15 @@ body {
   /* detail-page-css */
 
   .imagesliderimage {
-    width: 50%;
+     width: 90%;
   }
 
   .sliderprojectdetail {
-    width: 50%;
+   width: 90%;
   }
 
   .sportstitleslider {
-    padding-left: 5px;
+    padding-left: 3px;
   }
 
   .detaipagefirstheading {
@@ -10207,7 +10268,7 @@ body {
   }
 
   .detailpagebg {
-    height: 580px;
+    height: 835px;
     background-position: center;
     background-size: cover;
   }
@@ -10254,13 +10315,16 @@ body {
   }
 
   .marquee-track img {
-    height: 135px;
+    height: 175px;
   }
 
   .marquee1-track img {
-    height: 135px;
+    height: 175px;
   }
-
+.eventsandtournamentsmain .paravideosection .paragraphtext {
+    width: 80%;
+    
+}
   .marquee {
     margin-top: 45px;
   }
@@ -10302,12 +10366,12 @@ body {
 
   .right-btnshowcaseproject,
   .left-btnshowcaseproject {
-    width: 37px;
+    width: 30px;
   }
 
   .strength-controls .btn-next,
   .strength-controls .btn-prev {
-    width: 37px;
+      width: 30px;
   }
 
   .bannerimagesection.badmintonbannerdetail {
@@ -10319,12 +10383,13 @@ body {
   }
 
   .buttoncontroldetailpage .strength-progressbar {
-    right: 25%;
-    bottom: 14px;
+    right: 0;
+    bottom: 16px;
+    left: 30%;
   }
 
   .containerFaq {
-    width: 520px;
+    width: 100%;
     padding: 8px 15px;
   }
 
@@ -10337,19 +10402,31 @@ body {
   }
 
   .faqimagearroww {
-    width: 30px;
+    width: 25px;
   }
   .eventstournamentsmain {
     margin-top: 40px;
   }
 
+  .strength-progressbar {
+    width: 70%;
+}
+.detailpagebuttonsucces .progressflex {
+    height: 33px;
+    width: 250px;
+}
   .flexsliderdetail {
     margin-top: 50px;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
   }
 
   .buttoncontroldetailpage .buttonandarrowcontrol {
-    right: 8%;
-    width: 55%;
+    right: 0;
+    width: 100%;
+    position: unset;
+    margin-top: 45px;
   }
   /* detail-page-css */
 
@@ -10831,7 +10908,7 @@ body {
   }
 
   .bgvideohomepage {
-    height: auto;
+    height: 350px;
   }
 
   .maingbsectionhome {
@@ -10839,7 +10916,7 @@ body {
     padding-top: 65px;
   }
   .strength-controls button {
-    width: 37px;
+    width: 30px;
   }
   .expansivefirstsec h5 {
     font-size: 30px;
@@ -10897,7 +10974,7 @@ body {
   }
 
   .slider-buttonsshowcaseproject button {
-    width: 38px;
+    width: 30px;
   }
 
   .thestrengthsectionslider {
@@ -10967,7 +11044,7 @@ body {
   }
 
   .ProgrammsBuildflexsection {
-    max-width: 360px;
+    max-width: 340px;
     margin-top: 45px;
     flex-wrap: wrap;
     row-gap: 50px;
@@ -11088,3 +11165,5 @@ body {
 /* .footerrow {
   display: none;
 } */
+
+

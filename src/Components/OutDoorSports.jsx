@@ -1,9 +1,11 @@
-import { useState, useRef, useEffect } from "react";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import { useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 
 export default function OutDoorSportsFunction() {
+  const triggerRef = useRef(null);
+  const sectionRef = useRef(null);
   const whiteSvg = (
     <svg
       className="custom-svg svgshowcardwhite"
@@ -27,102 +29,63 @@ export default function OutDoorSportsFunction() {
       />
     </svg>
   );
+
+  useGSAP(
+    () => {
+      const totalSlides = 5;
+      const scrollWidth = (totalSlides - 1) * 20;
+
+      gsap.fromTo(
+        sectionRef.current,
+        { x: 0 },
+        {
+          x: `-${scrollWidth}vw`,
+          ease: "none",
+          scrollTrigger: {
+            trigger: triggerRef.current,
+            start: "top top",
+            end: `+=${totalSlides * 180}`, // Duration of the scroll
+            scrub: 1,
+            pin: true,
+            invalidateOnRefresh: true,
+          },
+        },
+      );
+    },
+    { scope: triggerRef },
+  );
+
   const sportsSliderData = [
-    { id: 1, title: "Cricket", image: "/images/homepage/cricket-slider.png" },
-    { id: 2, title: "Football", image: "/images/homepage/football.png" },
-    { id: 3, title: "Swimming", image: "/images/homepage/swimming.png" },
-    { id: 4, title: "Tennis", image: "/images/homepage/tennis.png" },
-    { id: 5, title: "Athletics", image: "/images/homepage/athletics.png" },
+    {
+      id: 1,
+      title: "Cricket",
+      image: "/images/homepage/cricket-slider.png",
+      link: "/sport/cricket",
+    },
+    {
+      id: 2,
+      title: "Football",
+      image: "/images/homepage/football.png",
+      link: "/sport/football",
+    },
+    {
+      id: 3,
+      title: "Swimming",
+      image: "/images/homepage/swimming.png",
+      link: "/sport/swimming",
+    },
+    { id: 4, title: "Tennis", image: "/images/homepage/tennis.png", link: "/sport/tennis" },
+    {
+      id: 5,
+      title: "Athletics",
+      image: "/images/homepage/athletics.png",
+      link: "/sport/athletics",
+    },
     { id: "spacer", isSpacer: true },
   ];
-  const sliderRef = useRef(null);
-  const isScrolling = useRef(false);
-
-  const parentRef = useRef(null);
-
-  const totalSlides = sportsSliderData.length;
-
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const [slidesToShow, setSlidesToShow] = useState(3.5);
-
-  const isAtStart = currentSlide === 0;
-  const isAtEnd = currentSlide >= totalSlides - slidesToShow - 1;
-
-  const settings = {
-    dots: false,
-    infinite: false,
-    speed: 800,
-    slidesToShow,
-    slidesToScroll: 1,
-    arrows: false,
-    swipeToSlide: true,
-    cssEase: "ease-out",
-
-    beforeChange: () => {
-      isScrolling.current = true;
-    },
-
-    afterChange: (index) => {
-      setCurrentSlide(index);
-      isScrolling.current = false;
-    },
-
-    responsive: [
-      {
-        breakpoint: 900,
-        settings: { slidesToShow: 2 },
-        onReInit: () => setSlidesToShow(2),
-      },
-      {
-        breakpoint: 600,
-        settings: { slidesToShow: 1 },
-        onReInit: () => setSlidesToShow(1),
-      },
-    ],
-  };
-
-  useEffect(() => {
-    const parentNode = parentRef.current;
-    let lastScrollTime = 0;
-    const scrollCooldown = 200; // Time in ms between allowed slide changes
-
-    const handleWheel = (e) => {
-      const now = Date.now();
-      const scrollingDown = e.deltaY > 0;
-      const scrollingUp = e.deltaY < 0;
-
-      // 1. Check if we should let the page scroll normally
-      if ((isAtEnd && scrollingDown) || (isAtStart && scrollingUp)) {
-        return;
-      }
-
-      // 2. Lock the page scroll so we can move the slider
-      e.preventDefault();
-
-      // 3. Fast-scroll logic: only trigger if enough time has passed
-      if (now - lastScrollTime > scrollCooldown) {
-        if (scrollingDown) {
-          sliderRef.current?.slickNext();
-        } else if (scrollingUp) {
-          sliderRef.current?.slickPrev();
-        }
-        lastScrollTime = now; // Update the last scroll time
-      }
-    };
-
-    if (parentNode) {
-      parentNode.addEventListener("wheel", handleWheel, { passive: false });
-    }
-
-    return () => {
-      if (parentNode) {
-        parentNode.removeEventListener("wheel", handleWheel);
-      }
-    };
-  }, [isAtEnd, isAtStart]); // Dependencies
 
   return (
-    <div className="" ref={parentRef}>
+    <div ref={triggerRef} className="overflow-hidden">
       <div className="container max-w-7xl mx-auto px-4">
         <div className="videosectionmain">
           <div className="firstheading">
@@ -146,23 +109,29 @@ export default function OutDoorSportsFunction() {
         </div>
       </div>
       <div className="container max-w-7xl mx-auto px-4 oursportscontainer">
-        <Slider ref={sliderRef} {...settings}>
+        <div
+          ref={sectionRef}
+          className="flex flex-row gap-10 px-[10vw] will-change-transform oudoorsportsmainconatiner"
+          style={{ width: "max-content" }}
+        >
           {sportsSliderData.map((sport, index) => (
             <div key={index} className="cricketslideer">
               {!sport.isSpacer && (
-                <>
-                  <img
-                    className="outdoorsportsimagee"
-                    src={sport.image}
-                    alt={sport.title}
-                  />
-                  {whiteSvg}
-                  <p className="roleinstrength">{sport.title}</p>
-                </>
+                <a href={sport.link}>
+                  <>
+                    <img
+                      className="outdoorsportsimagee"
+                      src={sport.image}
+                      alt={sport.title}
+                    />
+                    {whiteSvg}
+                    <p className="roleinstrength">{sport.title}</p>
+                  </>
+                </a>
               )}
             </div>
           ))}
-        </Slider>
+        </div>
 
         <div className="hrlineoutdoorsports"></div>
       </div>

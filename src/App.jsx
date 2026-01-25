@@ -61,12 +61,12 @@ function App() {
         {/* {menushow && <Menubar menuOnclick={menuOnclick} />} */}
 
         <Routes>
+          <Route path="/" element={<Homepage menuOnclick={menuOnclick} />} />
+
           <Route
             path="/about"
             element={<AboutUsPage menuOnclick={menuOnclick} />}
           />
-
-          <Route path="/" element={<Homepage menuOnclick={menuOnclick} />} />
           <Route
             path="/our-programs"
             element={<OurPrograms menuOnclick={menuOnclick} />}

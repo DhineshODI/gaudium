@@ -115,7 +115,7 @@ const DetailsData = {
         },
         {
           id: 2,
-          image: "/images/detail-page/badminton/football-img-1.jpg",
+          image: "/images/detail-page/badminton/badminton-slider.jpg",
           sport: "BWF-Standard Courts and",
           title: "Lighting",
           description:
@@ -601,19 +601,19 @@ const DetailsData = {
         "A visual journey capturing training, competition and defining moments from our basketball athletes’ path to excellence.",
 
       marqueeRow1: [
-        "/images/detail-page/badminton/marquee/marquee-1.jpg",
-        "/images/detail-page/badminton/marquee/marquee-2.jpg",
-        "/images/detail-page/badminton/marquee/marquee-3.jpg",
-        "/images/detail-page/badminton/marquee/marquee-4.jpg",
-        "/images/detail-page/badminton/marquee/marquee-5.jpg",
+        "/images/detail-page/basketball/marquee/basketball-gallery-01.jpg", // Sq 1
+        "/images/detail-page/basketball/marquee/basketball-gallery-05.jpg", // Rect 5
+        "/images/detail-page/basketball/marquee/basketball-gallery-02.jpg", // Sq 2
+        "/images/detail-page/basketball/marquee/basketball-gallery-06.jpg", // Rect 6
+        "/images/detail-page/basketball/marquee/basketball-gallery-03.jpg", // Sq 3
       ],
 
       marqueeRow2: [
-        "/images/detail-page/badminton/marquee/marquee-6.jpg",
-        "/images/detail-page/badminton/marquee/marquee-8.jpg",
-        "/images/detail-page/badminton/marquee/marquee-7.jpg",
-        "/images/detail-page/badminton/marquee/marquee-10.jpg",
-        "/images/detail-page/badminton/marquee/marquee-9.jpg",
+        "/images/detail-page/basketball/marquee/basketball-gallery-07.jpg", // Rect 7
+        "/images/detail-page/basketball/marquee/basketball-gallery-04.jpg", // Sq 4
+        "/images/detail-page/basketball/marquee/basketball-gallery-08.jpg", // Rect 8
+        "/images/detail-page/basketball/marquee/basketball-gallery-01.jpg", // Sq 1 (The only repeat needed to fill 10 slots)
+        "/images/detail-page/basketball/marquee/basketball-gallery-09.jpg", // Rect 9
       ],
     },
 
@@ -908,19 +908,19 @@ const DetailsData = {
         "A visual journey capturing training, competition and defining moments from our Fencing athletes’ path to excellence.",
 
       marqueeRow1: [
-        "/images/detail-page/badminton/marquee/marquee-1.jpg",
-        "/images/detail-page/badminton/marquee/marquee-2.jpg",
-        "/images/detail-page/badminton/marquee/marquee-3.jpg",
-        "/images/detail-page/badminton/marquee/marquee-4.jpg",
-        "/images/detail-page/badminton/marquee/marquee-5.jpg",
+        "/images/detail-page/fencing/marquee/fencing-03.jpg", // Square
+        "/images/detail-page/fencing/marquee/fencing-01.jpg", // Rectangle
+        "/images/detail-page/fencing/marquee/fencing-04.jpg", // Square
+        "/images/detail-page/fencing/marquee/fencing-02.jpg", // Rectangle
+        "/images/detail-page/fencing/marquee/fencing-05.jpg", // Square
       ],
 
       marqueeRow2: [
-        "/images/detail-page/badminton/marquee/marquee-6.jpg",
-        "/images/detail-page/badminton/marquee/marquee-8.jpg",
-        "/images/detail-page/badminton/marquee/marquee-7.jpg",
-        "/images/detail-page/badminton/marquee/marquee-10.jpg",
-        "/images/detail-page/badminton/marquee/marquee-9.jpg",
+        "/images/detail-page/fencing/marquee/fencing-02.jpg", // Rectangle
+        "/images/detail-page/fencing/marquee/fencing-05.jpg", // Square
+        "/images/detail-page/fencing/marquee/fencing-01.jpg", // Rectangle
+        "/images/detail-page/fencing/marquee/fencing-03.jpg", // Square
+        "/images/detail-page/fencing/marquee/fencing-02.jpg", // Rectangle (Repeat)
       ],
     },
 
@@ -1249,19 +1249,21 @@ const DetailsData = {
         "A visual journey capturing training, competition and defining moments from our gymnastics athletes’ path to excellence.",
 
       marqueeRow1: [
-        "/images/detail-page/badminton/marquee/marquee-1.jpg",
-        "/images/detail-page/badminton/marquee/marquee-2.jpg",
-        "/images/detail-page/badminton/marquee/marquee-3.jpg",
-        "/images/detail-page/badminton/marquee/marquee-4.jpg",
-        "/images/detail-page/badminton/marquee/marquee-5.jpg",
+        "/images/detail-page/gymnastic/marquee/gymnastics-gallery-01.jpg", // Square
+        "/images/detail-page/gymnastic/marquee/gymnastics-gallery-06.jpg", // Rect
+        "/images/detail-page/gymnastic/marquee/gymnastics-gallery-02.jpg", // Square
+        "/images/detail-page/gymnastic/marquee/gymnastics-gallery-07.jpg", // Rect
+        "/images/detail-page/gymnastic/marquee/gymnastics-gallery-03.jpg", // Square
+        "/images/detail-page/gymnastic/marquee/gymnastics-gallery-08.jpg", // Rect
       ],
 
       marqueeRow2: [
-        "/images/detail-page/badminton/marquee/marquee-6.jpg",
-        "/images/detail-page/badminton/marquee/marquee-8.jpg",
-        "/images/detail-page/badminton/marquee/marquee-7.jpg",
-        "/images/detail-page/badminton/marquee/marquee-10.jpg",
-        "/images/detail-page/badminton/marquee/marquee-9.jpg",
+        "/images/detail-page/gymnastic/marquee/gymnastics-gallery-09.jpg", // Rect
+        "/images/detail-page/gymnastic/marquee/gymnastics-gallery-04.jpg", // Square
+        "/images/detail-page/gymnastic/marquee/gymnastics-gallery-10.jpg", // Rect
+        "/images/detail-page/gymnastic/marquee/gymnastics-gallery-05.jpg", // Square
+        "/images/detail-page/gymnastic/marquee/gymnastics-gallery-11.jpg", // Rect
+        "/images/detail-page/gymnastic/marquee/gymnastics-gallery-01.jpg",
       ],
     },
 
@@ -1350,7 +1352,8 @@ const DetailsData = {
       slides: [
         {
           id: 1,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image:
+            "/images/detail-page/skating/facility/Skating-rink-facilities-01.jpg",
           sport: "High-Performance Indoor",
           title: "Skating Rink",
           description:
@@ -1358,7 +1361,8 @@ const DetailsData = {
         },
         {
           id: 2,
-          image: "/images/detail-page/skating/skating-environment.jpg",
+          image:
+            "/images/detail-page/skating/facility/Skating-rink-facilities-02.jpg",
           sport: "Competition-Ready",
           title: "Environment",
           description:
@@ -1366,7 +1370,8 @@ const DetailsData = {
         },
         {
           id: 3,
-          image: "/images/detail-page/skating/skating-comfort.jpg",
+          image:
+            "/images/detail-page/skating/facility/Skating-rink-facilities-03.jpg",
           sport: "Athlete Comfort &",
           title: "Support",
           description:
@@ -1517,19 +1522,19 @@ const DetailsData = {
         "A visual journey capturing training, competition and defining moments from our gymnastics athletes’ path to excellence.",
 
       marqueeRow1: [
-        "/images/detail-page/badminton/marquee/marquee-1.jpg",
-        "/images/detail-page/badminton/marquee/marquee-2.jpg",
-        "/images/detail-page/badminton/marquee/marquee-3.jpg",
-        "/images/detail-page/badminton/marquee/marquee-4.jpg",
-        "/images/detail-page/badminton/marquee/marquee-5.jpg",
+        "/images/detail-page/skating/marquee/skating-rink-gallery-01.jpg",
+        "/images/detail-page/skating/marquee/skating-rink-gallery-02.jpg",
+        "/images/detail-page/skating/marquee/skating-rink-gallery-03.jpg",
+        "/images/detail-page/skating/marquee/skating-rink-gallery-01.jpg",
+        "/images/detail-page/skating/marquee/skating-rink-gallery-02.jpg",
       ],
 
       marqueeRow2: [
-        "/images/detail-page/badminton/marquee/marquee-6.jpg",
-        "/images/detail-page/badminton/marquee/marquee-8.jpg",
-        "/images/detail-page/badminton/marquee/marquee-7.jpg",
-        "/images/detail-page/badminton/marquee/marquee-10.jpg",
-        "/images/detail-page/badminton/marquee/marquee-9.jpg",
+        "/images/detail-page/skating/marquee/skating-rink-gallery-01.jpg",
+        "/images/detail-page/skating/marquee/skating-rink-gallery-02.jpg",
+        "/images/detail-page/skating/marquee/skating-rink-gallery-03.jpg",
+        "/images/detail-page/skating/marquee/skating-rink-gallery-01.jpg",
+        "/images/detail-page/skating/marquee/skating-rink-gallery-02.jpg",
       ],
     },
 
@@ -1776,19 +1781,19 @@ const DetailsData = {
         "A visual journey capturing training, competition and defining moments from our athletes’ path to excellence.",
 
       marqueeRow1: [
-        "/images/detail-page/badminton/marquee/marquee-1.jpg",
-        "/images/detail-page/badminton/marquee/marquee-2.jpg",
-        "/images/detail-page/badminton/marquee/marquee-3.jpg",
-        "/images/detail-page/badminton/marquee/marquee-4.jpg",
-        "/images/detail-page/badminton/marquee/marquee-5.jpg",
+        "/images/detail-page/athletics/marquee/athletics-gallery-01.jpg", // Sq 1
+        "/images/detail-page/athletics/marquee/athletics-gallery-05.jpg", // Rect 5
+        "/images/detail-page/athletics/marquee/athletics-gallery-02.jpg", // Sq 2
+        "/images/detail-page/athletics/marquee/athletics-gallery-06.jpg", // Rect 6
+        "/images/detail-page/athletics/marquee/athletics-gallery-03.jpg", // Sq 3
       ],
 
       marqueeRow2: [
-        "/images/detail-page/badminton/marquee/marquee-6.jpg",
-        "/images/detail-page/badminton/marquee/marquee-8.jpg",
-        "/images/detail-page/badminton/marquee/marquee-7.jpg",
-        "/images/detail-page/badminton/marquee/marquee-10.jpg",
-        "/images/detail-page/badminton/marquee/marquee-9.jpg",
+        "/images/detail-page/athletics/marquee/athletics-gallery-07.jpg", // Rect 7
+        "/images/detail-page/athletics/marquee/athletics-gallery-04.jpg", // Sq 4
+        "/images/detail-page/athletics/marquee/athletics-gallery-08.jpg", // Rect 8
+        "/images/detail-page/athletics/marquee/athletics-gallery-01.jpg", // Sq 1 (The only repeat needed to fill 10 slots)
+        "/images/detail-page/athletics/marquee/athletics-gallery-09.jpg", // Rect 9
       ],
     },
 
@@ -2069,19 +2074,19 @@ const DetailsData = {
         "A visual journey capturing training, competition and defining moments from our cricket athletes’ path to excellence.",
 
       marqueeRow1: [
-        "/images/detail-page/badminton/marquee/marquee-1.jpg",
-        "/images/detail-page/badminton/marquee/marquee-2.jpg",
-        "/images/detail-page/badminton/marquee/marquee-3.jpg",
-        "/images/detail-page/badminton/marquee/marquee-4.jpg",
-        "/images/detail-page/badminton/marquee/marquee-5.jpg",
+        "/images/detail-page/cricket/marquee/cricket-03.jpg", // Square
+        "/images/detail-page/cricket/marquee/cricket-01.jpg", // Rectangle
+        "/images/detail-page/cricket/marquee/cricket-04.jpg", // Square
+        "/images/detail-page/cricket/marquee/cricket-02.jpg", // Rectangle
+        "/images/detail-page/cricket/marquee/cricket-05.jpg", // Square
       ],
 
       marqueeRow2: [
-        "/images/detail-page/badminton/marquee/marquee-6.jpg",
-        "/images/detail-page/badminton/marquee/marquee-8.jpg",
-        "/images/detail-page/badminton/marquee/marquee-7.jpg",
-        "/images/detail-page/badminton/marquee/marquee-10.jpg",
-        "/images/detail-page/badminton/marquee/marquee-9.jpg",
+        "/images/detail-page/cricket/marquee/cricket-02.jpg", // Rectangle
+        "/images/detail-page/cricket/marquee/cricket-05.jpg", // Square
+        "/images/detail-page/cricket/marquee/cricket-01.jpg", // Rectangle
+        "/images/detail-page/cricket/marquee/cricket-03.jpg", // Square
+        "/images/detail-page/cricket/marquee/cricket-02.jpg",
       ],
     },
 
@@ -2164,7 +2169,8 @@ const DetailsData = {
       slides: [
         {
           id: 1,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image:
+            "/images/detail-page/football/facilites/football-facilities-01.jpg",
           sport: "FIFA-Standard Playing",
           title: "Surface",
           description:
@@ -2172,7 +2178,8 @@ const DetailsData = {
         },
         {
           id: 2,
-          image: "/images/detail-page/badminton/football-img-1.jpg",
+          image:
+            "/images/detail-page/football/facilites/football-facilities-02.jpg",
           sport: "Authentic Match",
           title: "Environment",
           description:
@@ -2180,7 +2187,8 @@ const DetailsData = {
         },
         {
           id: 3,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image:
+            "/images/detail-page/football/facilites/football-facilities-03.jpg",
           sport: "High-Performance",
           title: "Integration",
           description:
@@ -2188,7 +2196,8 @@ const DetailsData = {
         },
         {
           id: 4,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image:
+            "/images/detail-page/football/facilites/football-facilities-04.jpg",
           sport: "Advanced Training",
           title: "Ecosystem",
           description:
@@ -2196,7 +2205,8 @@ const DetailsData = {
         },
         {
           id: 5,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image:
+            "/images/detail-page/football/facilites/football-facilities-05.jpg",
           sport: "Holistic Athletic",
           title: "Development",
           description:
@@ -2320,19 +2330,17 @@ const DetailsData = {
         "A visual journey capturing training, competition and defining moments from our football  athletes’ path to excellence.",
 
       marqueeRow1: [
-        "/images/detail-page/badminton/marquee/marquee-1.jpg",
-        "/images/detail-page/badminton/marquee/marquee-2.jpg",
-        "/images/detail-page/badminton/marquee/marquee-3.jpg",
-        "/images/detail-page/badminton/marquee/marquee-4.jpg",
-        "/images/detail-page/badminton/marquee/marquee-5.jpg",
+        "/images/detail-page/football/marquee/football-gallery-05.jpg", // Square
+        "/images/detail-page/football/marquee/football-gallery-01.jpg", // Rectangle
+        "/images/detail-page/football/marquee/football-gallery-06.jpg", // Square
+        "/images/detail-page/football/marquee/football-gallery-02.jpg", // Rectangle
       ],
 
       marqueeRow2: [
-        "/images/detail-page/badminton/marquee/marquee-6.jpg",
-        "/images/detail-page/badminton/marquee/marquee-8.jpg",
-        "/images/detail-page/badminton/marquee/marquee-7.jpg",
-        "/images/detail-page/badminton/marquee/marquee-10.jpg",
-        "/images/detail-page/badminton/marquee/marquee-9.jpg",
+        "/images/detail-page/football/marquee/football-gallery-03.jpg", // Rectangle
+        "/images/detail-page/football/marquee/football-gallery-07.jpg", // Square
+        "/images/detail-page/football/marquee/football-gallery-04.jpg", // Rectangle
+        "/images/detail-page/football/marquee/football-gallery-08.jpg", // Square
       ],
     },
 
@@ -2586,19 +2594,19 @@ const DetailsData = {
         "A visual journey capturing training, competition and defining moments from our swimming  athletes’ path to excellence.",
 
       marqueeRow1: [
-        "/images/detail-page/badminton/marquee/marquee-1.jpg",
-        "/images/detail-page/badminton/marquee/marquee-2.jpg",
-        "/images/detail-page/badminton/marquee/marquee-3.jpg",
-        "/images/detail-page/badminton/marquee/marquee-4.jpg",
-        "/images/detail-page/badminton/marquee/marquee-5.jpg",
+        "/images/detail-page/swimming/marquee/swimming-gallery-04.jpg", // Square 4
+        "/images/detail-page/swimming/marquee/swimming-gallery-01.jpg", // Rect 1
+        "/images/detail-page/swimming/marquee/swimming-gallery-05.jpg", // Square 5
+        "/images/detail-page/swimming/marquee/swimming-gallery-02.jpg", // Rect 2
+        "/images/detail-page/swimming/marquee/swimming-gallery-06.jpg", // Square 6
       ],
 
       marqueeRow2: [
-        "/images/detail-page/badminton/marquee/marquee-6.jpg",
-        "/images/detail-page/badminton/marquee/marquee-8.jpg",
-        "/images/detail-page/badminton/marquee/marquee-7.jpg",
-        "/images/detail-page/badminton/marquee/marquee-10.jpg",
-        "/images/detail-page/badminton/marquee/marquee-9.jpg",
+        "/images/detail-page/swimming/marquee/swimming-gallery-03.jpg", // Rect 3
+        "/images/detail-page/swimming/marquee/swimming-gallery-04.jpg", // Square 4 (Repeat)
+        "/images/detail-page/swimming/marquee/swimming-gallery-01.jpg", // Rect 1 (Repeat)
+        "/images/detail-page/swimming/marquee/swimming-gallery-05.jpg", // Square 5 (Repeat)
+        "/images/detail-page/swimming/marquee/swimming-gallery-02.jpg",
       ],
     },
 
@@ -2844,19 +2852,19 @@ const DetailsData = {
         "A visual journey capturing training, competition and defining moments from our Tennis athletes’ path to excellence.",
 
       marqueeRow1: [
-        "/images/detail-page/badminton/marquee/marquee-1.jpg",
-        "/images/detail-page/badminton/marquee/marquee-2.jpg",
-        "/images/detail-page/badminton/marquee/marquee-3.jpg",
-        "/images/detail-page/badminton/marquee/marquee-4.jpg",
-        "/images/detail-page/badminton/marquee/marquee-5.jpg",
+        "/images/detail-page/tennis/marquee/tennis-gallery-05.jpg", // Square 5
+        "/images/detail-page/tennis/marquee/tennis-gallery-01.jpg", // Rect 1
+        "/images/detail-page/tennis/marquee/tennis-gallery-06.jpg", // Square 6
+        "/images/detail-page/tennis/marquee/tennis-gallery-02.jpg", // Rect 2
+        "/images/detail-page/tennis/marquee/tennis-gallery-07.jpg", // Square 7
       ],
 
       marqueeRow2: [
-        "/images/detail-page/badminton/marquee/marquee-6.jpg",
-        "/images/detail-page/badminton/marquee/marquee-8.jpg",
-        "/images/detail-page/badminton/marquee/marquee-7.jpg",
-        "/images/detail-page/badminton/marquee/marquee-10.jpg",
-        "/images/detail-page/badminton/marquee/marquee-9.jpg",
+        "/images/detail-page/tennis/marquee/tennis-gallery-03.jpg", // Rect 3
+        "/images/detail-page/tennis/marquee/tennis-gallery-08.jpg", // Square 8
+        "/images/detail-page/tennis/marquee/tennis-gallery-04.jpg", // Rect 4
+        "/images/detail-page/tennis/marquee/tennis-gallery-05.jpg", // Square 5 (Repeat)
+        "/images/detail-page/tennis/marquee/tennis-gallery-01.jpg",
       ],
     },
 

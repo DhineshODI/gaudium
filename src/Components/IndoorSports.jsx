@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
@@ -30,41 +30,44 @@ export default function InDoorSportsFunction() {
   const sportsSliderData = [
     {
       id: 1,
-      title: "Badmintion",
+      title: "Badminton",
       image: "/images/homepage/badminton.png",
-      link: "/",
+      link: "/sport/badminton",
     },
     {
       id: 2,
       title: "Basketball",
       image: "/images/homepage/basketball.png",
-      link: "",
+      link: "/sport/basketball",
     },
     {
       id: 3,
       title: "Fencing",
       image: "/images/homepage/fenching.png",
-      link: "",
+      link: "/sport/fencing",
     },
     {
       id: 4,
       title: "Gymnastics",
       image: "/images/homepage/gymnastics.png",
-      link: "",
+      link: "/sport/gymnastics",
     },
     {
       id: 5,
       title: "Skating",
       image: "/images/homepage/skating.png",
-      link: "",
+      link: "/sport/skating",
     },
     { id: "spacer", isSpacer: true },
   ];
   const triggerRef = useRef(null);
   const sectionRef = useRef(null);
 
+  const isMobile = window.matchMedia("(max-width: 700px)").matches;
+
   useGSAP(
     () => {
+      if (window.innerWidth <= 600) return; // ⛔ disable on mobile
       const totalSlides = 5;
       const scrollWidth = (totalSlides - 1) * 20;
 
@@ -80,6 +83,7 @@ export default function InDoorSportsFunction() {
             end: `+=${totalSlides * 180}`, // Duration of the scroll
             scrub: 1,
             pin: true,
+            pinSpacing: true, // Ithu illana adutha section mela vanthu ottikkum
             invalidateOnRefresh: true,
           },
         },
@@ -88,8 +92,64 @@ export default function InDoorSportsFunction() {
     { scope: triggerRef },
   );
 
+  useEffect(() => {
+    // wait till all images loaded
+    const images = document.querySelectorAll("img");
+    let loaded = 0;
+
+    images.forEach((img) => {
+      if (img.complete) {
+        loaded++;
+      } else {
+        img.addEventListener("load", () => {
+          loaded++;
+          if (loaded === images.length) {
+            ScrollTrigger.refresh();
+          }
+        });
+      }
+    });
+
+    // fallback
+    setTimeout(() => {
+      ScrollTrigger.refresh();
+    }, 500);
+  }, []);
+
+  const currentIndex = useRef(0);
+
+  const slideWidth = 280; // card width + gap (adjust if needed)
+
+  const slideNext = () => {
+    if (currentIndex.current >= sportsSliderData.length - 2) return;
+
+    currentIndex.current += 1;
+
+    gsap.to(sectionRef.current, {
+      x: -currentIndex.current * slideWidth,
+      duration: 0.5,
+      ease: "power3.out",
+    });
+  };
+
+  const slidePrev = () => {
+    if (currentIndex.current <= 0) return;
+
+    currentIndex.current -= 1;
+
+    gsap.to(sectionRef.current, {
+      x: -currentIndex.current * slideWidth,
+      duration: 0.5,
+      ease: "power3.out",
+    });
+  };
+
   return (
-    <div className="indorrmainbgsec overflow-hidden" ref={triggerRef}>
+    <div
+      className="indorrmainbgsec overflow-hidden outdoorsportsheight"
+      ref={triggerRef}
+      // style={{ position: "relative", zIndex: 10 }}
+    >
       <div className="container max-w-7xl mx-auto px-4">
         <div className="videosectionmain">
           <div className="firstheading">
@@ -115,14 +175,14 @@ export default function InDoorSportsFunction() {
       <div className="container max-w-7xl mx-auto px-4 inoursportscontainer">
         <div
           ref={sectionRef}
-          className="flex flex-row gap-10 px-[10vw] will-change-transform"
+          className="flex flex-row gap-10 px-[10vw] will-change-transform oudoorsportsmainconatiner"
           style={{ width: "max-content" }}
         >
           {/* <Slider ref={sliderRef} {...settings}> */}
           {sportsSliderData.map((sport, index) => (
             <div key={index} className="cricketslideer">
               {!sport.isSpacer && (
-                <a href="">
+                <a href={sport.link}>
                   <>
                     <img
                       className="outdoorsportsimagee"
@@ -139,6 +199,24 @@ export default function InDoorSportsFunction() {
         </div>
         {/* </Slider> */}
       </div>
+
+      {isMobile && (
+        <div class="slider-buttonsshowcaseproject">
+          <button
+            onClick={slidePrev}
+            disabled=""
+            // style="opacity: 0.3; pointer-events: none; cursor: default;"
+          >
+            <img src="/images/icons/arrow-left-circle-white.svg" alt="" />
+          </button>
+          <button
+            onClick={slideNext}
+            // style="opacity: 1; pointer-events: auto; cursor: pointer;"
+          >
+            <img src="/images/icons/arrow-right-circle-white.svg" alt="" />
+          </button>
+        </div>
+      )}
     </div>
   );
 }

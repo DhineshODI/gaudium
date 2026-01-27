@@ -1,4 +1,4 @@
-export default function Eventcalender() {
+export default function Eventcalender({ popupFunction }) {
   return (
     <>
       <div className="eventscalenderrow">
@@ -19,12 +19,18 @@ export default function Eventcalender() {
             </div>
             <div className="paravideosection">
               <p className="paragraphtext">
-             Reserve world-class sports facilities easily and train on professional grounds built for peak performance.
+                Reserve world-class sports facilities easily and train on
+                professional grounds built for peak performance.
               </p>
             </div>
 
             <div className="becomeachampion">
-              <a className="buttonfont highlightedtextopposite">Enquiry NOw</a>
+              <a
+                className="buttonfont highlightedtextopposite"
+                onClick={popupFunction}
+              >
+                Enquiry NOw
+              </a>
             </div>
           </div>
           <div>
@@ -43,7 +49,8 @@ export default function Eventcalender() {
             </div>
             <div className="paravideosection">
               <p className="paragraphtext">
-               Latest updates, achievements, tournaments and upcoming events from Gaudium Sportopia.
+                Latest updates, achievements, tournaments and upcoming events
+                from Gaudium Sportopia.
               </p>
             </div>
             <div className="becomeachampion">

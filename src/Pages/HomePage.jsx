@@ -12,7 +12,7 @@ import VoicesofChampion from "../Components/VoicesofChampion";
 
 import { useLocation } from "react-router-dom";
 
-export default function Homepage({ menuOnclick }) {
+export default function Homepage({ menuOnclick, popupFunction }) {
   const location = useLocation();
   const isHome = location.pathname === "/";
   return (
@@ -27,7 +27,7 @@ export default function Homepage({ menuOnclick }) {
             <div className="exploresectiondiv">
               <div className="exploreacademey">
                 <button className="activebutton">Explore Academy</button>
-                <button>Book a Ground</button>
+                <button >Book a Ground</button>
                 <button>Explore Events</button>
               </div>
             </div>
@@ -128,18 +128,18 @@ export default function Homepage({ menuOnclick }) {
 
         {/* <SportsSlider/> */}
 
+        {/* <HorizontalSlider/> */}
+
         <div className="OutDoorSportsBG">
           <OutDoorSportsFunction />
           <InDoorSportsFunction />
         </div>
 
-        {/* <HorizontalSlider/> */}
-
         <ProgrammsBuild />
 
         {/* <HorizontalSlider /> */}
 
-        <Eventcalender />
+        <Eventcalender  popupFunction={popupFunction}/>
 
         <TheStrenthBehind />
 

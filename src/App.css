@@ -3140,6 +3140,52 @@ body {
   z-index: 1000000 !important;
 }
 
+/* popup-css */
+
+.formPopup .conatctformstyle {
+  width: 100%;
+  overflow-y: scroll;
+  max-height: 500px;
+}
+
+.formPopup .animate-modalIn {
+    top: 23%;
+    position: absolute;
+    min-width: 720px;
+    padding: 50px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+    background: #be1e2d;
+}
+
+.formPopup .conatctformstyle .inputrelativesection input {
+  height: 50px;
+  width: 265px;
+}
+
+.formPopup .textoftheinput {
+  background-color: #fff;
+}
+
+.formPopup .contactformflex {
+  column-gap: 30px;
+}
+
+.top-3 {
+  right: 30px;
+  top: 16px;
+}
+
+.formPopup  .conatctformstyle .paragraphtext {
+    width: 87%;
+}
+
+.formPopup  .conatctformstyle .paragraphtext span {
+    color: #fff;
+}
+
+/* popup-css */
+
 @media (max-width: 1600px) and (min-width: 1400px) {
   /* font-style-heading */
   .mainheadingfont {
@@ -3514,8 +3560,25 @@ body {
   }
 
   .svgshowcardwhite {
-    top: -2px;
-    right: -33px;
+    top: -41px;
+    right: -31px;
+  }
+
+  .inoursportscontainer {
+    margin-top: 40px;
+  }
+
+  .outdoorsportsimagee {
+    width: 350px;
+  }
+
+  .oudoorsportsmainconatiner {
+    margin-top: 40px;
+  }
+
+  .outdoorsportsheight .roleinstrength {
+    font-size: 33px;
+    letter-spacing: -1px;
   }
 
   .eventscalenderrow {
@@ -4237,8 +4300,26 @@ body {
   }
 
   .svgshowcardwhite {
-    top: -26px;
-    right: -28px;
+    top: -51px;
+    right: -26px;
+  }
+
+  .inoursportscontainer {
+    margin-top: 40px;
+  }
+
+  .outdoorsportsimagee {
+    width: 325px;
+  }
+
+  .oudoorsportsmainconatiner {
+    margin-top: 40px;
+  }
+
+  .outdoorsportsheight .roleinstrength {
+    font-size: 30px;
+    letter-spacing: -1px;
+    bottom: 37px;
   }
 
   .eventscalenderrow {
@@ -5095,8 +5176,26 @@ body {
   }
 
   .svgshowcardwhite {
-    top: -52px;
-    right: -26px;
+    top: -77px;
+    right: -24px;
+  }
+
+  .inoursportscontainer {
+    margin-top: 40px;
+  }
+
+  .outdoorsportsimagee {
+    width: 270px;
+  }
+
+  .oudoorsportsmainconatiner {
+    margin-top: 40px;
+  }
+
+  .outdoorsportsheight .roleinstrength {
+    font-size: 26px;
+    letter-spacing: 0px;
+    bottom: 40px !important;
   }
 
   .eventscalenderrow {
@@ -6339,8 +6438,26 @@ body {
   }
 
   .svgshowcardwhite {
-    top: -52px;
-    right: -26px;
+    top: -88px;
+    right: -23px;
+  }
+
+  .inoursportscontainer {
+    margin-top: 40px;
+  }
+
+  .outdoorsportsimagee {
+    width: 250px;
+  }
+
+  .oudoorsportsmainconatiner {
+    margin-top: 40px;
+  }
+
+  .outdoorsportsheight .roleinstrength {
+    font-size: 22px;
+    letter-spacing: 0px;
+    bottom: 42px !important;
   }
 
   .eventscalenderrow {
@@ -7365,8 +7482,26 @@ body {
   }
 
   .svgshowcardwhite {
-    top: -52px;
+    top: -100px;
     right: -26px;
+  }
+
+  .inoursportscontainer {
+    margin-top: 40px;
+  }
+
+  .outdoorsportsimagee {
+    width: 230px;
+  }
+
+  .oudoorsportsmainconatiner {
+    margin-top: 40px;
+  }
+
+  .outdoorsportsheight .roleinstrength {
+    font-size: 22px;
+    letter-spacing: 0px;
+    bottom: 42px !important;
   }
 
   .eventscalenderrow {
@@ -8426,8 +8561,26 @@ body {
   }
 
   .svgshowcardwhite {
-    top: -52px;
+    top: -80px;
     right: -26px;
+  }
+
+  .inoursportscontainer {
+    margin-top: 40px;
+  }
+
+  .outdoorsportsimagee {
+    width: 266px;
+  }
+
+  .oudoorsportsmainconatiner {
+    margin-top: 45px;
+  }
+
+  .outdoorsportsheight .roleinstrength {
+    font-size: 26px;
+    letter-spacing: 0px;
+    bottom: 42px !important;
   }
 
   .eventscalenderrow {
@@ -9827,7 +9980,11 @@ body {
   }
 
   .lengthfirstHeading {
-    margin-right: 0;
+    margin-right: 10%;
+  }
+
+  .lengthsecondHeading {
+    margin-left: 13%;
   }
 
   /* font-style-heading */
@@ -10060,7 +10217,7 @@ body {
 
   .sportsnamestregnthimage img {
     /* width: 195px; */
-        width: 150px;
+    width: 150px;
   }
 
   .sportsnamestregnth {
@@ -10226,7 +10383,7 @@ body {
   }
 
   .indoorcardsconatinre .flexdiourprogrem .secondheadingtext {
-       min-height: auto;
+    min-height: auto;
   }
 
   .outsportssectionouter {
@@ -10240,11 +10397,11 @@ body {
   /* detail-page-css */
 
   .imagesliderimage {
-     width: 90%;
+    width: 90%;
   }
 
   .sliderprojectdetail {
-   width: 90%;
+    width: 90%;
   }
 
   .sportstitleslider {
@@ -10253,9 +10410,11 @@ body {
 
   .detaipagefirstheading {
     margin-right: 35%;
+    margin-right: 10%;
   }
   .detaipagesecondheading {
     margin-left: 10%;
+    margin-left: 13%;
   }
   .detailpagebg .videosectionmain {
     padding-top: 50px;
@@ -10321,10 +10480,9 @@ body {
   .marquee1-track img {
     height: 175px;
   }
-.eventsandtournamentsmain .paravideosection .paragraphtext {
+  .eventsandtournamentsmain .paravideosection .paragraphtext {
     width: 80%;
-    
-}
+  }
   .marquee {
     margin-top: 45px;
   }
@@ -10371,7 +10529,7 @@ body {
 
   .strength-controls .btn-next,
   .strength-controls .btn-prev {
-      width: 30px;
+    width: 30px;
   }
 
   .bannerimagesection.badmintonbannerdetail {
@@ -10410,11 +10568,11 @@ body {
 
   .strength-progressbar {
     width: 70%;
-}
-.detailpagebuttonsucces .progressflex {
+  }
+  .detailpagebuttonsucces .progressflex {
     height: 33px;
     width: 250px;
-}
+  }
   .flexsliderdetail {
     margin-top: 50px;
     flex-direction: column;
@@ -10951,8 +11109,25 @@ body {
   }
 
   .svgshowcardwhite {
-    top: -52px;
-    right: -26px;
+    top: -66px;
+    right: -28px;
+  }
+
+  .oudoorsportsmainconatiner {
+    margin-top: 40px;
+    column-gap: 15px;
+    margin-left: 9%;
+  }
+
+  .outdoorsportsheight .slider-buttonsshowcaseproject button {
+    width: 35px;
+  }
+
+  .inoursportscontainer {
+    margin-top: 40px;
+  }
+  .outdoorsportsimagee {
+    width: 300px;
   }
 
   .eventscalenderrow {
@@ -11166,4 +11341,4 @@ body {
   display: none;
 } */
 
-
+/* Outer container-ku min-height kudunga */

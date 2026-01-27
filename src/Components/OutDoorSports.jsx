@@ -1,11 +1,16 @@
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
 
+gsap.registerPlugin(ScrollTrigger);
+
 export default function OutDoorSportsFunction() {
   const triggerRef = useRef(null);
   const sectionRef = useRef(null);
+
+  const isMobile = window.matchMedia("(max-width: 700px)").matches;
+
   const whiteSvg = (
     <svg
       className="custom-svg svgshowcardwhite"
@@ -32,6 +37,7 @@ export default function OutDoorSportsFunction() {
 
   useGSAP(
     () => {
+      if (window.innerWidth <= 600) return; // ⛔ disable on mobile
       const totalSlides = 5;
       const scrollWidth = (totalSlides - 1) * 20;
 
@@ -48,6 +54,7 @@ export default function OutDoorSportsFunction() {
             scrub: 1,
             pin: true,
             invalidateOnRefresh: true,
+            pinSpacing: true, // Ithu illana adutha section mela vanthu ottikkum
           },
         },
       );
@@ -74,7 +81,12 @@ export default function OutDoorSportsFunction() {
       image: "/images/homepage/swimming.png",
       link: "/sport/swimming",
     },
-    { id: 4, title: "Tennis", image: "/images/homepage/tennis.png", link: "/sport/tennis" },
+    {
+      id: 4,
+      title: "Tennis",
+      image: "/images/homepage/tennis.png",
+      link: "/sport/tennis",
+    },
     {
       id: 5,
       title: "Athletics",
@@ -84,8 +96,64 @@ export default function OutDoorSportsFunction() {
     { id: "spacer", isSpacer: true },
   ];
 
+  useEffect(() => {
+    // wait till all images loaded
+    const images = document.querySelectorAll("img");
+    let loaded = 0;
+
+    images.forEach((img) => {
+      if (img.complete) {
+        loaded++;
+      } else {
+        img.addEventListener("load", () => {
+          loaded++;
+          if (loaded === images.length) {
+            ScrollTrigger.refresh();
+          }
+        });
+      }
+    });
+
+    // fallback
+    setTimeout(() => {
+      ScrollTrigger.refresh();
+    }, 500);
+  }, []);
+
+  const currentIndex = useRef(0);
+
+  const slideWidth = 280; // card width + gap (adjust if needed)
+
+  const slideNext = () => {
+    if (currentIndex.current >= sportsSliderData.length - 2) return;
+
+    currentIndex.current += 1;
+
+    gsap.to(sectionRef.current, {
+      x: -currentIndex.current * slideWidth,
+      duration: 0.5,
+      ease: "power3.out",
+    });
+  };
+
+  const slidePrev = () => {
+    if (currentIndex.current <= 0) return;
+
+    currentIndex.current -= 1;
+
+    gsap.to(sectionRef.current, {
+      x: -currentIndex.current * slideWidth,
+      duration: 0.5,
+      ease: "power3.out",
+    });
+  };
+
   return (
-    <div ref={triggerRef} className="overflow-hidden">
+    <div
+      ref={triggerRef}
+      className="overflow-hidden outdoorsportsheight"
+      // style={{ position: "relative", zIndex: 10 }}
+    >
       <div className="container max-w-7xl mx-auto px-4">
         <div className="videosectionmain">
           <div className="firstheading">
@@ -118,20 +186,38 @@ export default function OutDoorSportsFunction() {
             <div key={index} className="cricketslideer">
               {!sport.isSpacer && (
                 <a href={sport.link}>
-                  <>
-                    <img
-                      className="outdoorsportsimagee"
-                      src={sport.image}
-                      alt={sport.title}
-                    />
-                    {whiteSvg}
-                    <p className="roleinstrength">{sport.title}</p>
-                  </>
+                  <img
+                    className="outdoorsportsimagee"
+                    src={sport.image}
+                    alt={sport.title}
+                  />
+                  {whiteSvg}
+                  <p className="roleinstrength">{sport.title}</p>
                 </a>
               )}
             </div>
           ))}
         </div>
+
+        {/* Mobile Controls */}
+
+        {isMobile && (
+          <div class="slider-buttonsshowcaseproject">
+            <button
+              onClick={slidePrev}
+              disabled=""
+              // style="opacity: 0.3; pointer-events: none; cursor: default;"
+            >
+              <img src="/images/icons/arrow-left-circle-white.svg" alt="" />
+            </button>
+            <button
+              onClick={slideNext}
+              // style="opacity: 1; pointer-events: auto; cursor: pointer;"
+            >
+              <img src="/images/icons/arrow-right-circle-white.svg" alt="" />
+            </button>
+          </div>
+        )}
 
         <div className="hrlineoutdoorsports"></div>
       </div>

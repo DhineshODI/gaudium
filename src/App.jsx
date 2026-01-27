@@ -18,15 +18,23 @@ import { useContext, useEffect, useState } from "react";
 import { MenuProvider } from "./Components/MenuContext";
 import { MenuContext } from "./Components/MenuContext";
 import { AnimatePresence, motion } from "framer-motion";
+import ContactForm from "./Components/ContactUsForm";
 
 function App() {
   const [menushow, setMenuShow] = useState(false);
+  const [popupshow, setPopupShow] = useState(false);
 
   const menuOnclick = () => {
     setMenuShow((oldData) => !oldData);
   };
 
-  console.log(menushow);
+  // console.log(menushow);
+
+  const popupFunction = () => {
+    setPopupShow((popupshow) => !popupshow);
+  };
+
+  console.log("popupshow", popupshow);
 
   useEffect(() => {
     if (menushow) {
@@ -40,6 +48,16 @@ function App() {
       document.body.style.overflow = "auto";
     };
   }, [menushow]);
+
+  useEffect(() => {
+    if (popupshow) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => (document.body.style.overflow = "auto");
+  }, [popupshow]);
 
   return (
     <>
@@ -61,7 +79,15 @@ function App() {
         {/* {menushow && <Menubar menuOnclick={menuOnclick} />} */}
 
         <Routes>
-          <Route path="/" element={<Homepage menuOnclick={menuOnclick} />} />
+          <Route
+            path="/"
+            element={
+              <Homepage
+                menuOnclick={menuOnclick}
+                popupFunction={popupFunction}
+              />
+            }
+          />
 
           <Route
             path="/about"
@@ -107,6 +133,36 @@ function App() {
 
         <Footer />
       </MenuProvider>
+
+      {popupshow && (
+        <div className="formPopup">
+          <div className="fixed inset-0 z-50 flex items-center justify-center">
+            {/* Backdrop */}
+            <div
+              className="absolute inset-0 bg-black/60 transition-opacity duration-300"
+              // onClick={onClose}
+            />
+
+            {/* Modal */}
+            <div
+              className="
+          relative z-10 w-[90%] max-w-lg rounded-2xl bg-white p-6
+          transform transition-all duration-300
+          animate-modalIn
+        "
+            >
+              <ContactForm />
+
+              <button
+                onClick={popupFunction}
+                className="absolute top-3 right-3 text-xl font-bold"
+              >
+                ✕
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 }

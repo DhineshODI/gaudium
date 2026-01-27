@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import Eventcalender from "../Components/EventCalender";
 import HorizontalSlider from "../Components/GsapSlider";
 import Header from "../Components/Header";
@@ -9,12 +10,16 @@ import SportsSlider from "../Components/SportsSlider";
 import SucessYouMore from "../Components/SucessYouMore";
 import TheStrenthBehind from "../Components/TheStrengthBehind";
 import VoicesofChampion from "../Components/VoicesofChampion";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 import { useLocation } from "react-router-dom";
 
 export default function Homepage({ menuOnclick, popupFunction }) {
   const location = useLocation();
   const isHome = location.pathname === "/";
+
   return (
     <>
       <div className={`Homepagestyle ${isHome ? "homePlus" : ""}`}>
@@ -27,7 +32,7 @@ export default function Homepage({ menuOnclick, popupFunction }) {
             <div className="exploresectiondiv">
               <div className="exploreacademey">
                 <button className="activebutton">Explore Academy</button>
-                <button >Book a Ground</button>
+                <button>Book a Ground</button>
                 <button>Explore Events</button>
               </div>
             </div>
@@ -139,7 +144,7 @@ export default function Homepage({ menuOnclick, popupFunction }) {
 
         {/* <HorizontalSlider /> */}
 
-        <Eventcalender  popupFunction={popupFunction}/>
+        <Eventcalender popupFunction={popupFunction} />
 
         <TheStrenthBehind />
 

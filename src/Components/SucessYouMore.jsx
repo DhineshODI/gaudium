@@ -1,12 +1,16 @@
-import { useLayoutEffect, useRef } from "react";
+import { useEffect, useLayoutEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
+import { useGSAP } from "@gsap/react";
+import AOS from "aos";
 
 export default function SucessYouMore() {
   const sectionRef = useRef(null);
   const sectionRef1 = useRef(null);
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  const containerRef = useRef(null);
 
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
@@ -51,6 +55,44 @@ export default function SucessYouMore() {
     return () => ctx.revert();
   }, []);
 
+  useGSAP(
+    () => {
+      const countElements = gsap.utils.toArray(".countingsection");
+
+      countElements.forEach((el) => {
+        const endValue = parseInt(el.innerText); // JSX-la iruka number-ah (13, 328, etc.) edukkum
+
+        gsap.fromTo(
+          el,
+          { innerText: 0 }, // 0-la irundhu start aagum
+          {
+            innerText: endValue,
+            duration: 2,
+            ease: "power2.out",
+            snap: { innerText: 1 }, // Decimal illama round numbers-ah varum
+            scrollTrigger: {
+              trigger: el,
+              start: "top 90%", // Element view-ku vandha udane start aagum
+            },
+          },
+        );
+      });
+
+      // Optional: Entire row-ve mella reveal aagura maadhiri
+      gsap.from(".widthhomepagecompanythere", {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".flexhomepageabout",
+          start: "top 80%",
+        },
+      });
+    },
+    { scope: sectionRef },
+  ); // Unga ref-ah inga scope-ah kudunga
+
   return (
     <>
       <div className="homevideomainbg">
@@ -77,7 +119,7 @@ export default function SucessYouMore() {
               </p>
             </div>
 
-            <div className="homepageaboutcompany">
+            <div className="homepageaboutcompany" ref={sectionRef}>
               <div className="flexhomepageabout">
                 <div className="widthhomepagecompanythere">
                   <div className="homepagecompanythere">
@@ -121,7 +163,6 @@ export default function SucessYouMore() {
                     competitive progression.
                   </p>
                 </div>
-
                 <div className="widthhomepagecompanythere">
                   <div className="homepagecompanythere">
                     <h4 className="countingsection">408</h4>
@@ -142,7 +183,7 @@ export default function SucessYouMore() {
         </div>
         <section className="bhomevideosectionvideo">
           <video className="bgvideohomepage" autoPlay muted loop playsInline>
-            <source src="/images/background-image.mp4" type="video/mp4" />
+            <source src="/images/gaudium-background.mp4" type="video/mp4" />
           </video>
         </section>
       </div>

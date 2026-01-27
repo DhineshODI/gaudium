@@ -1,15 +1,42 @@
 import Header from "../Components/Header";
 import InDoorSportsFacility from "../Components/InDoorSportsFacility";
 import OutDoorSportsFacility from "../Components/OutDoorSportsFacility";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function OurInfraStructure({ menuOnclick }) {
+  const sectionRef = useRef();
+
+useGSAP(
+    () => {
+      gsap.to(".bannercontentflex", {
+        // Position-ah mela thalla
+        y: -100, 
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".bannercontentflex",
+          // MUKKIYAM: "top top" kudutha dhaan neenga scroll panna aarambikkum pothu 
+          // adhu irukira idathula irundhe start aagum.
+          start: "top top", 
+          end: "bottom top", 
+          scrub: 1, 
+        },
+      });
+    },
+    { scope: sectionRef },
+  );
+
   return (
     <>
       <Header menuOnclick={menuOnclick} />
 
       {/* Banner-Image */}
 
-      <div className="aboutPage">
+      <div className="aboutPage" ref={sectionRef}>
         <div className="bannerimagesection ourinfrastructrebg ">
           <div className="container max-w-7xl mx-auto px-4 aboutusbannersection">
             <div className="bannercontentflex">

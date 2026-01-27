@@ -30,15 +30,15 @@ export default function ContactForm() {
                   </label>
                 </div>
                 <div className="inputrelativesection">
-                  <input type="text" placeholder="Enter Your Name" />
+                  <input type="text" placeholder="Enter Your Parent’s Name" />
                   <label className="textoftheinput" htmlFor="">
-                   Parent’s Name
+                    Parent’s Name
                   </label>
                 </div>
                 <div className="inputrelativesection">
                   <input type="text" placeholder="Enter Your Email" />
                   <label className="textoftheinput" htmlFor="">
-                   Email
+                    Email
                   </label>
                 </div>
                 <div className="inputrelativesection">
@@ -107,7 +107,7 @@ export default function ContactForm() {
               </div>
 
               <div className="discovermorebutton">
-                <a  className="buttonfont highlightedtextred">Submit</a>
+                <a className="buttonfont highlightedtextred">Submit</a>
               </div>
             </div>
           </form>

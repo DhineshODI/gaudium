@@ -1,3 +1,10 @@
+import { useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
+
 const strengthData = [
   {
     sport: "Tennis ",
@@ -25,7 +32,33 @@ const strengthData = [
     name: "CHINTHA GURUPRASAD",
   },
 ];
+
 export default function AboutusTheStrengthSection() {
+  const coachContainer = useRef();
+
+  useGSAP(
+    () => {
+      // Select all coach cards
+      const cards = gsap.utils.toArray(".strengthsectioncard");
+
+      gsap.from(cards, {
+        y: 150, // 150px bottom-la irundhu varum
+        opacity: 0, // Mella reveal aagum
+        scale: 0.9, // Konjam chinathula irundhu perusaagum
+        duration: 1.2,
+        ease: "power4.out", // Smooth ending
+        stagger: {
+          amount: 0.5, // Total time for all cards to start
+          from: "start", // Left to right order-la varum
+        },
+        scrollTrigger: {
+          trigger: coachContainer.current,
+          start: "top 80%", // Screen center varadhuku munnadiye start aagum
+        },
+      });
+    },
+    { scope: coachContainer },
+  );
   return (
     <>
       <div className="aboutusstrengthsecmain">
@@ -51,7 +84,7 @@ export default function AboutusTheStrengthSection() {
           </div>
         </div>
 
-        <div className="container max-w-7xl mx-auto px-4">
+        <div className="container max-w-7xl mx-auto px-4" ref={coachContainer}>
           <div className="strengthaboutusflex">
             {strengthData.map((item) => (
               <div className="strengthsectioncard">
@@ -75,9 +108,9 @@ export default function AboutusTheStrengthSection() {
             ))}
           </div>
 
-          <div className="discovermorebutton">
+          {/* <div className="discovermorebutton">
             <a className="buttonfont highlightedtextred">Discover More</a>
-          </div>
+          </div> */}
         </div>
       </div>
     </>

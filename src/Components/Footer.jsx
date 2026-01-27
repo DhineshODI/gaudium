@@ -77,10 +77,26 @@ export default function Footer() {
           </ul>
           <div className="iconsline"></div>
           <ul className="footericonsflex">
-            <img src="/images/icons/instagram.svg" alt="" />
-            <img src="/images/icons/fb-icon.svg" alt="" />
-            <img src="/images/icons/x-twitter.svg" alt="" />
-            <img src="/images/icons/likedin.svg" alt="" />
+            <a
+              href="https://www.instagram.com/thesportopia/?hl=en"
+              target="_blank"
+            >
+              <img src="/images/icons/instagram.svg" alt="" />
+            </a>
+
+            <a href="https://www.facebook.com/thesportopia/" target="_blank">
+              <img src="/images/icons/fb-icon.svg" alt="" />
+            </a>
+            <a href="https://x.com/thesportopia" target="_blank">
+              <img src="/images/icons/x-twitter.svg" alt="" />
+            </a>
+
+            <a
+              href="https://in.linkedin.com/company/thegaudium"
+              target="_blank"
+            >
+              <img src="/images/icons/likedin.svg" alt="" />
+            </a>
           </ul>
         </div>
 

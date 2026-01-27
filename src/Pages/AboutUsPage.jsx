@@ -1,7 +1,57 @@
+import { useRef } from "react";
 import AboutusTheStrengthSection from "../Components/AboutUsTheStrengthBehind";
 import Header from "../Components/Header";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function AboutUsPage({ menuOnclick }) {
+  const container = useRef();
+  const sectionRef = useRef();
+  const coachContainer = useRef();
+  useGSAP(
+    () => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: container.current,
+          start: "top center", // Section center-ku varum pothu start aagum
+          end: "bottom center+=50%",
+          scrub: 1, // Scroll speed-ku etha maathiri animation move aagum
+        },
+      });
+
+      // Vision slide in
+      tl.from(".firstsecheart", { x: -100, opacity: 0 })
+        // Image scale up
+        .from(".secondsecheart", { scale: 0.5, opacity: 0 }, "<") // "<" potta mela iruka animation koodave nadakkum
+        // Mission slide in
+        .from(".thirdsecheart", { x: 100, opacity: 0 }, "<");
+    },
+    { scope: container },
+  );
+
+  useGSAP(
+    () => {
+      // Card-gal ovvonnum oru gap-la ulla vara 'stagger' use pandrom
+      gsap.from(".firstcardhighlights", {
+        y: 100, // 100px keela irundhu start aagum
+        opacity: 0, // Transparent-ah irukkum
+        duration: 0.8,
+        stagger: 0.2, // Ovvoru card-kum 0.2s gap irukkum
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 75%", // Section screen-oda 75%-ku varum pothu trigger aagum
+          toggleActions: "play none none reverse", // Scroll back pannuna thirumba animate aagum
+        },
+      });
+    },
+    { scope: sectionRef },
+  );
+
+ 
+
   return (
     <>
       <Header menuOnclick={menuOnclick} />
@@ -48,7 +98,10 @@ export default function AboutUsPage({ menuOnclick }) {
           </div>
         </div>
         <div>
-          <div className="container max-w-7xl mx-auto px-4 theheartcontent">
+          <div
+            className="container max-w-7xl mx-auto px-4 theheartcontent"
+            ref={container}
+          >
             <div className="theheartcontentflex">
               <div className="firstsecheart">
                 <h4 className="oursection">Our</h4>
@@ -109,7 +162,7 @@ export default function AboutUsPage({ menuOnclick }) {
           </p>
         </div>
 
-        <div className="container max-w-7xl mx-auto px-4">
+        <div className="container max-w-7xl mx-auto px-4" ref={sectionRef}>
           <div className="eachcardsection">
             <div className="firstcardhighlights">
               <img src="/images/abouts/aboutus-icon.svg" alt="" />

@@ -19,6 +19,9 @@ import { MenuProvider } from "./Components/MenuContext";
 import { MenuContext } from "./Components/MenuContext";
 import { AnimatePresence, motion } from "framer-motion";
 import ContactForm from "./Components/ContactUsForm";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 function App() {
   const [menushow, setMenuShow] = useState(false);
@@ -58,6 +61,42 @@ function App() {
 
     return () => (document.body.style.overflow = "auto");
   }, [popupshow]);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.utils.toArray(".videosectionmain").forEach((section) => {
+        const first = section.querySelector(".firstheading h2");
+        const second = section.querySelector(".secondheading h2");
+
+        if (!first || !second) return;
+
+        gsap
+          .timeline({
+            scrollTrigger: {
+              trigger: section,
+              start: "top bottom", // section enters viewport
+              end: "bottom top+=40%", // 🔥 finish earlier
+              scrub: true, // exact scroll sync
+              invalidateOnRefresh: true,
+            },
+          })
+          .fromTo(
+            first,
+            { x: -250, opacity: 1 },
+            { x: 0, opacity: 1, ease: "none" },
+          )
+          .fromTo(
+            second,
+            { x: 250, opacity: 1 },
+            { x: 0, opacity: 1, ease: "none" },
+            "<",
+          );
+      });
+    });
+
+    ScrollTrigger.refresh();
+    return () => ctx.revert();
+  }, []);
 
   return (
     <>
@@ -155,7 +194,7 @@ function App() {
 
               <button
                 onClick={popupFunction}
-                className="absolute top-3 right-3 text-xl font-bold"
+                className="absolute top-3 right-3 text-xl font-bold cursor-pointer"
               >
                 ✕
               </button>

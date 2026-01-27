@@ -1,9 +1,47 @@
 import ContactForm from "../Components/ContactUsForm";
 import Header from "../Components/Header";
+import { useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function ContactPage({ menuOnclick }) {
+  const container = useRef();
+
+  useGSAP(
+    () => {
+      gsap.from(".scroll-box", {
+        y: 100,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.2,
+        scrollTrigger: {
+          trigger: ".scroll-box",
+          start: "top 85%",
+          toggleActions: "play none none reverse",
+        },
+      });
+
+      // Section coming from Left to Right
+      gsap.from(".left-to-right", {
+        scrollTrigger: {
+          trigger: ".left-to-right",
+          start: "top 80%", // Element screen-oda 80% height varumbo start aagum
+          toggleActions: "play none none reverse",
+        },
+        x: -200, // Left side-la 200px thalli irunthu start aagum
+        opacity: 0, // Light-ah fade-in aagum
+        duration: 1.5, // Animation speed
+        ease: "power2.out",
+      });
+    },
+    { scope: container },
+  );
+
   return (
-    <>
+    <div ref={container}>
       <Header menuOnclick={menuOnclick} />
 
       {/* Banner-Image */}
@@ -55,7 +93,7 @@ export default function ContactPage({ menuOnclick }) {
           </div>
 
           <div className="cardsfelxcontainer">
-            <div className="cardscontactus">
+            <div className="scroll-box cardscontactus ">
               <img src="/images/icons/locationicon.svg" alt="" />
               <div>
                 <h3 className="paragraphtext">LOCATION</h3>
@@ -66,7 +104,7 @@ export default function ContactPage({ menuOnclick }) {
                 </p>
               </div>
             </div>
-            <div className="cardscontactus">
+            <div className="scroll-box cardscontactus">
               <img src="/images/icons/callicon.svg" alt="" />
               <div>
                 <h3 className="paragraphtext">24*7 SERVICE</h3>
@@ -77,7 +115,7 @@ export default function ContactPage({ menuOnclick }) {
                 </p>
               </div>
             </div>
-            <div className="cardscontactus">
+            <div className="scroll-box cardscontactus">
               <img src="/images/icons/mailicon.svg" alt="" />
               <div>
                 <h3 className="paragraphtext">DROP A MAIL</h3>
@@ -101,7 +139,7 @@ export default function ContactPage({ menuOnclick }) {
         <div>
           <div className="mainbgcontactbg">
             <div className="formcontactbgfirst">
-              <div className="formmainss">
+              <div className="formmainss left-to-right">
                 <img
                   className="headphoenecontact"
                   src="/images/icons/contact-phone-icon.svg"
@@ -151,6 +189,6 @@ export default function ContactPage({ menuOnclick }) {
       ></iframe>
 
       {/* maps */}
-    </>
+    </div>
   );
 }

@@ -1,5 +1,5 @@
 body {
-  /* overflow: hidden !important; */
+  overflow-x: hidden !important;
 }
 
 .stroke-fill-text {
@@ -1205,6 +1205,15 @@ body {
 .footericonsflex img {
   width: 30px;
   height: 30px;
+  transition:
+    transform 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+.footericonsflex img:hover {
+  filter: brightness(0.4);
+  transform: translateY(-5px);
+  /* box-shadow: 0 18px 40px rgba(0, 0, 0, 0.15); */
 }
 .footerwithlogo {
   display: flex;
@@ -1308,7 +1317,23 @@ body {
   right: 0;
   color: transparent;
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
+  animation: fillText 3s infinite alternate;
 }
+
+/* @keyframes fillText {
+    0% {
+        color: transparent; 
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
+    }
+    50% {
+        color: rgba(255, 255, 255, 0.5);
+        -webkit-text-stroke: 1px rgba(255, 255, 255, 0.15);
+    }
+    100% {
+        color: #fff;
+        -webkit-text-stroke: 0px transparent; 
+    }
+} */
 
 .bannercontentflex hr {
   height: 1px;
@@ -3149,22 +3174,36 @@ body {
 }
 
 .formPopup .animate-modalIn {
-    top: 23%;
-    position: absolute;
-    min-width: 720px;
-    padding: 50px;
-    padding-right: 20px;
-    padding-bottom: 60px;
-    background: #be1e2d;
+  top: 23%;
+  position: absolute;
+  min-width: 720px;
+  padding: 50px;
+  padding-right: 20px;
+  padding-bottom: 60px;
+  background: #be1e2d;
+  border: 2px solid white;
+  padding-top: 70px;
+  background: rgba(190, 30, 45, 0.84);
+}
+
+.formPopup .discovermorebutton .buttonfont {
+  color: #fff;
 }
 
 .formPopup .conatctformstyle .inputrelativesection input {
   height: 50px;
   width: 265px;
+  border: 1px solid #fff;
+  color: #fff;
 }
-
+.formPopup .conatctformstyle .inputrelativesection input::placeholder {
+  color: #fff;
+}
+.formPopup .conatctformstyle .inputrelativesection input:focus-visible {
+  outline: none;
+}
 .formPopup .textoftheinput {
-  background-color: #fff;
+  display: none;
 }
 
 .formPopup .contactformflex {
@@ -3174,14 +3213,32 @@ body {
 .top-3 {
   right: 30px;
   top: 16px;
+  color: #fff;
 }
 
-.formPopup  .conatctformstyle .paragraphtext {
-    width: 87%;
+.formPopup .conatctformstyle .paragraphtext {
+  width: 87%;
+  color: #fff;
 }
 
-.formPopup  .conatctformstyle .paragraphtext span {
-    color: #fff;
+.formPopup .conatctformstyle .paragraphtext span {
+  color: #fff;
+}
+.formPopup .pleasechecktick {
+  color: #fff;
+  font-weight: 300;
+  margin-top: 20px;
+}
+.formPopup .pleasechecktick span {
+  color: #fff;
+}
+
+.formPopup .toggleclassname {
+  color: #fff;
+}
+
+.formPopup .conatctformstyle .discovermorebutton {
+  margin-top: 15px;
 }
 
 /* popup-css */
@@ -3881,6 +3938,41 @@ body {
     font-size: 22px;
   }
   /* ourinfrastructure-css */
+
+  /* popup-css */
+
+  .formPopup .animate-modalIn {
+    top: 10%;
+    position: absolute;
+    min-width: 620px;
+    padding: 40px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    background: #be1e2d;
+    padding-top: 50px;
+  }
+
+  .formPopup .conatctformstyle .inputrelativesection input {
+    height: 45px;
+    width: 220px;
+  }
+
+  .formPopup .contactformflex {
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .formPopup .toggleclassname {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .formPopup .checkboxdisplay {
+    column-gap: 30px;
+    margin-top: 20px;
+  }
+
+  /* popup-css */
 }
 
 @media (max-width: 1400px) and (min-width: 1250px) {
@@ -4695,6 +4787,47 @@ body {
     padding-bottom: 80px;
   }
   /* ourinfrastructure-css */
+
+  /* popup-css */
+
+  .formPopup .animate-modalIn {
+    top: 17%;
+    position: absolute;
+    min-width: 620px;
+    padding: 40px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    background: #be1e2d;
+    padding-top: 50px;
+  }
+
+  .formPopup .conatctformstyle .inputrelativesection input {
+    height: 43px;
+    width: 213px;
+  }
+
+  .formPopup .conatctformstyle .inputrelativesection input::placeholder {
+    font-size: 15px;
+  }
+
+  .formPopup .contactformflex {
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .formPopup .toggleclassname {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .formPopup .checkboxdisplay {
+    column-gap: 30px;
+    margin-top: 20px;
+  }
+  .formPopup .maintogglediv {
+    min-width: 96px;
+  }
+  /* popup-css */
 }
 
 @media (max-width: 1250px) and (min-width: 1100px) {
@@ -5620,6 +5753,48 @@ body {
     padding-bottom: 60px;
   }
   /* ourinfrastructure-css */
+
+  /* popup-css */
+
+  .formPopup .animate-modalIn {
+    top: 12%;
+    position: absolute;
+    min-width: 620px;
+    padding: 40px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    background: #be1e2d;
+    padding-top: 50px;
+  }
+
+  .formPopup .conatctformstyle .inputrelativesection input {
+    height: 43px;
+    width: 213px;
+  }
+
+  .formPopup .conatctformstyle .inputrelativesection input::placeholder {
+    font-size: 15px;
+  }
+
+  .formPopup .contactformflex {
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .formPopup .toggleclassname {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .formPopup .checkboxdisplay {
+    column-gap: 30px;
+    margin-top: 20px;
+  }
+  .formPopup .maintogglediv {
+    min-width: 96px;
+  }
+
+  /* popup-css */
 }
 
 @media (max-width: 1100px) and (min-width: 900px) {
@@ -6629,6 +6804,48 @@ body {
     padding-bottom: 60px;
   }
   /* ourinfrastructure-css */
+
+  /* popup-css */
+
+  .formPopup .animate-modalIn {
+    top: 12%;
+    position: absolute;
+    min-width: 620px;
+    padding: 40px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    background: #be1e2d;
+    padding-top: 50px;
+  }
+
+  .formPopup .conatctformstyle .inputrelativesection input {
+    height: 43px;
+    width: 213px;
+  }
+
+  .formPopup .conatctformstyle .inputrelativesection input::placeholder {
+    font-size: 15px;
+  }
+
+  .formPopup .contactformflex {
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .formPopup .toggleclassname {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .formPopup .checkboxdisplay {
+    column-gap: 30px;
+    margin-top: 20px;
+  }
+  .formPopup .maintogglediv {
+    min-width: 96px;
+  }
+
+  /* popup-css */
 }
 
 @media (max-width: 900px) and (min-width: 800px) {
@@ -7683,6 +7900,48 @@ body {
     border: 2px solid #fff;
   }
   /* ourinfrastructure-css */
+
+  /* popup-css */
+
+  .formPopup .animate-modalIn {
+    top: 12%;
+    position: absolute;
+    min-width: 620px;
+    padding: 40px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    background: #be1e2d;
+    padding-top: 50px;
+  }
+
+  .formPopup .conatctformstyle .inputrelativesection input {
+    height: 43px;
+    width: 213px;
+  }
+
+  .formPopup .conatctformstyle .inputrelativesection input::placeholder {
+    font-size: 15px;
+  }
+
+  .formPopup .contactformflex {
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .formPopup .toggleclassname {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .formPopup .checkboxdisplay {
+    column-gap: 30px;
+    margin-top: 20px;
+  }
+  .formPopup .maintogglediv {
+    min-width: 96px;
+  }
+
+  /* popup-css */
 }
 
 @media (max-width: 800px) and (min-width: 700px) {
@@ -8767,6 +9026,48 @@ body {
     row-gap: 0;
   }
   /* ourinfrastructure-css */
+
+  /* popup-css */
+
+  .formPopup .animate-modalIn {
+    top: 12%;
+    position: absolute;
+    min-width: 620px;
+    padding: 40px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    background: #be1e2d;
+    padding-top: 50px;
+  }
+
+  .formPopup .conatctformstyle .inputrelativesection input {
+    height: 43px;
+    width: 213px;
+  }
+
+  .formPopup .conatctformstyle .inputrelativesection input::placeholder {
+    font-size: 15px;
+  }
+
+  .formPopup .contactformflex {
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .formPopup .toggleclassname {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .formPopup .checkboxdisplay {
+    column-gap: 30px;
+    margin-top: 20px;
+  }
+  .formPopup .maintogglediv {
+    min-width: 96px;
+  }
+
+  /* popup-css */
 }
 
 @media (max-width: 700px) and (min-width: 600px) {
@@ -9918,6 +10219,48 @@ body {
     row-gap: 0;
   }
   /* ourinfrastructure-css */
+
+  /* popup-css */
+
+  .formPopup .animate-modalIn {
+    top: 12%;
+    position: absolute;
+    min-width: 500px;
+    padding: 40px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    background: #be1e2d;
+    padding-top: 50px;
+  }
+
+  .formPopup .conatctformstyle .inputrelativesection input {
+    height: 43px;
+    width: 190px;
+  }
+
+  .formPopup .conatctformstyle .inputrelativesection input::placeholder {
+    font-size: 14px;
+  }
+
+  .formPopup .contactformflex {
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .formPopup .toggleclassname {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .formPopup .checkboxdisplay {
+    column-gap: 30px;
+    margin-top: 20px;
+  }
+  .formPopup .maintogglediv {
+    min-width: 96px;
+  }
+
+  /* popup-css */
 }
 
 @media (max-width: 600px) {
@@ -11335,6 +11678,64 @@ body {
     row-gap: 15px;
   }
   /* ourinfrastructure-css */
+
+  /* popup-css */
+
+  .formPopup .animate-modalIn {
+    top: 12%;
+    position: absolute;
+    min-width: 90%;
+    padding: 30px;
+    padding-right: 0;
+    padding-bottom: 40px;
+    background: #be1e2d;
+    padding-top: 50px;
+  }
+
+  .formPopup .conatctformstyle .paragraphtext {
+    width: 100%;
+  }
+
+  .formPopup .conatctformstyle .inputrelativesection input {
+    height: 43px;
+    width: 100%;
+  }
+
+  .top-3 {
+    right: 20px;
+    top: 10px;
+    color: #fff;
+  }
+
+  .formPopup .conatctformstyle .inputrelativesection input::placeholder {
+    font-size: 14px;
+  }
+
+  .formPopup .pleasechecktick {
+    margin-top: 25px;
+  }
+
+  .formPopup .contactformflex {
+    column-gap: 20px;
+    row-gap: 20px;
+    justify-content: center;
+    width: 90%;
+  }
+
+  .formPopup .toggleclassname {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
+  .formPopup .checkboxdisplay {
+    column-gap: 30px;
+    margin-top: 20px;
+  }
+  .formPopup .maintogglediv {
+    min-width: 96px;
+  }
+
+  /* popup-css */
 }
 
 /* .footerrow {

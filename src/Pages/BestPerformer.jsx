@@ -2,6 +2,12 @@ import Header from "../Components/Header";
 import JourneyInPictures from "../Components/JourneyInPictures";
 import SucessYouMore from "../Components/SucessYouMore";
 import VoicesofChampion from "../Components/VoicesofChampion";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function BestPerformerPage({ menuOnclick }) {
   const bestPerformers = [
@@ -88,13 +94,67 @@ export default function BestPerformerPage({ menuOnclick }) {
     },
   ];
 
+  const sectionRef = useRef();
+  const sectionRef1 = useRef();
+
+  useGSAP(
+    () => {
+      gsap.to(".bannercontentflex", {
+        // Position-ah mela thalla
+        y: -100,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".bannercontentflex",
+          // MUKKIYAM: "top top" kudutha dhaan neenga scroll panna aarambikkum pothu
+          // adhu irukira idathula irundhe start aagum.
+          start: "top top",
+          end: "bottom top",
+          scrub: 1,
+        },
+      });
+    },
+    { scope: sectionRef },
+  );
+
+
+  useGSAP(
+    () => {
+      const cards = gsap.utils.toArray(".cardHoverLink");
+
+      cards.forEach((card, index) => {
+        gsap.fromTo(card, 
+          { 
+            y: 200,             // Keela irundhu start aagum
+            opacity: 1, 
+            rotateX: -20,       // 3D tilt start
+            scale: 0.8          // Chinna size
+          },
+          {
+            y: 0,               // Original position
+            opacity: 1,
+            rotateX: 0,         // Settle aagumbodhu straight aagum
+            scale: 1,           // Full size
+            ease: "none",       // Scrub-ku "none" dhaan smooth-ah irukkum
+            scrollTrigger: {
+              trigger: card,
+              start: "top 95%",  // Card bottom-la varumbodhu start aagum
+              end: "top 50%",    // Screen center-ku varumbodhu animation mudiyum
+              scrub: 1.5,        // Scroll speed-ah nalla smooth-ah follow pannum
+            },
+          }
+        );
+      });
+    },
+    { scope: sectionRef1 }
+  );
+
   return (
     <>
       <Header menuOnclick={menuOnclick} />
 
       {/* Banner-Image */}
 
-      <div className="aboutPage">
+      <div className="aboutPage" ref={sectionRef}>
         <div className="bannerimagesection bestperformer">
           <div className="container max-w-7xl mx-auto px-4 aboutusbannersection">
             <div className="bannercontentflex">
@@ -145,7 +205,7 @@ export default function BestPerformerPage({ menuOnclick }) {
             </p>
           </div>
 
-          <div className="hoveredimagesectionbg">
+          <div className="hoveredimagesectionbg" ref={sectionRef1}>
             <div className="hovermaindid">
               {bestPerformers.map((item) => (
                 <a href={item.link} className="cardHoverLink" key={item.id}>

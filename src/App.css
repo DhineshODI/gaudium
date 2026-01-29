@@ -47,13 +47,15 @@ body {
 
 .bluecolorfont {
   -webkit-text-stroke: 1.5px #005e96;
+  /* font-family: Arial Black; */
   /* background-image: linear-gradient(to right, #005e96 0%, #005e96 100%); */
 }
 
 .mainheadingfont {
-  font-family: Arial Black;
+  /* font-family: Arial Black; */
+  font-family: "ArialBlack", sans-serif;
   font-style: italic;
-  font-weight: 400;
+  font-weight: 900;
   font-size: 80px;
   line-height: 100%;
   letter-spacing: -1px;
@@ -134,6 +136,7 @@ body {
 /* Homepage-Css */
 .homepagebanner {
   position: relative;
+  
 }
 
 .homepagebanner .homepageherobanner {
@@ -154,7 +157,7 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.exploreacademey button {
+/* .exploreacademey button {
   padding: 25px 49px;
   padding: 17px 49px;
   font-size: 18px;
@@ -167,13 +170,91 @@ body {
   text-transform: uppercase;
   color: #fff;
   backdrop-filter: blur(24px);
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
 }
+
+.exploreacademey button:hover {
+  background-color: #ffffff;
+  color: #be1e2d;
+  font-weight: 600;
+  cursor: pointer;
+} */
+
+/* Buttonstyle */
+/* 1. YOUR ORIGINAL BUTTON STYLE */
+.exploreacademey button {
+  position: relative; /* Required for absolute panels */
+  overflow: hidden; /* Clips the panels when they slide out */
+  padding: 17px 49px;
+  font-family: Arial;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  color: #fff;
+  background: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ); /* Added a base color for the blur effect */
+  backdrop-filter: blur(24px);
+  border: none; /* Removed default border */
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: color 0.35s; /* Smooth text color change */
+}
+
+/* 2. TEXT LAYER (Keeps text above the sliding panels) */
+.exploreacademey button span {
+  position: relative;
+  z-index: 2;
+}
+
+/* 3. THE ANIMATED PANELS (::before = Top, ::after = Bottom) */
+.exploreacademey button::before,
+.exploreacademey button::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #ffffff; /* The color that slides in */
+  transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 1;
+}
+
+/* Top panel slides from Left */
+.exploreacademey button::before {
+  top: 0;
+  transform: translateX(-100%);
+}
+
+/* Bottom panel slides from Right */
+.exploreacademey button::after {
+  bottom: 0;
+  transform: translateX(100%);
+}
+
+/* 4. HOVER STATES */
+.exploreacademey button:hover::before,
+.exploreacademey button:hover::after {
+  transform: translateX(0);
+}
+
+.exploreacademey button:hover {
+  color: #be1e2d; /* Your client's requested hover text color */
+  font-weight: 600;
+}
+
+/* Buttonstyle */
+
 .exploreacademey button.activebutton {
   background-color: #ffffff;
   color: #be1e2d;
   font-weight: 600;
 }
-
 .exploresectiondiv {
   position: absolute;
   bottom: 80px;
@@ -357,7 +438,8 @@ body {
   font-weight: 800;
   width: 55%;
   margin-bottom: 15px;
-  font-family: Arial Black;
+  /* font-family: Arial Black; */
+  font-family: "ArialBlack", sans-serif;
 }
 
 .widthhomepagecompanythere {
@@ -567,8 +649,10 @@ body {
   padding-top: 30px;
 }
 .sportsnamestregnth {
-  font-family: Arial Black;
+  /* font-family: Arial Black; */
+  font-family: "ArialBlack", sans-serif;
   font-weight: 400;
+  font-weight: 800;
   font-style: Italic;
   font-size: 14px;
   line-height: 100%;
@@ -595,8 +679,10 @@ body {
 }
 
 .roleinstrength {
-  font-family: Arial Black;
+  /* font-family: Arial Black; */
+  font-family: "ArialBlack", sans-serif;
   font-weight: 400;
+  font-weight: 800;
   font-style: italic;
   font-size: 50px;
   line-height: 100%;
@@ -642,8 +728,10 @@ body {
 } */
 
 .nameoftheplayer {
-  font-family: Arial Black;
+  /* font-family: Arial Black; */
+  font-family: "ArialBlack", sans-serif;
   font-weight: 400;
+  font-weight: 800;
   font-style: Italic;
   font-size: 50px;
   line-height: 50px;
@@ -1342,9 +1430,11 @@ body {
 }
 
 .theheartcontent .oursection {
-  font-family: Arial Black;
+  /* font-family: Arial Black; */
+  font-family: "ArialBlack", sans-serif;
   font-style: italic;
   font-weight: 400;
+  font-weight: 800;
   font-size: 24px;
   line-height: 100%;
   letter-spacing: -1px;
@@ -1353,9 +1443,11 @@ body {
   padding-left: 5px;
 }
 .theheartcontent .visionsection {
-  font-family: Arial Black;
+  /* font-family: Arial Black; */
+  font-family: "ArialBlack", sans-serif;
   font-style: italic;
   font-weight: 400;
+  font-weight: 800;
   font-size: 56px;
   line-height: 100%;
   letter-spacing: -1px;
@@ -1577,7 +1669,8 @@ body {
   font-weight: 800;
   width: 55%;
   margin-bottom: 0;
-  font-family: Arial Black;
+  /* font-family: Arial Black; */
+  font-family: "ArialBlack", sans-serif;
   font-size: 22px;
 }
 
@@ -1620,9 +1713,11 @@ body {
 }
 
 .outdoorgamesports {
-  font-family: Arial Black;
+  /* font-family: Arial Black; */
+  font-family: "ArialBlack", sans-serif;
   font-style: italic;
   font-weight: 400;
+  font-weight: 800;
   font-size: 30px;
   line-height: 100%;
   letter-spacing: -1px;
@@ -1735,6 +1830,10 @@ body {
   padding: 100px 0;
 }
 
+.bestperformersucessmore .bhomevideosectionvideo .bgvideohomepage {
+  display: none;
+}
+
 /* ===== Card Hover Component (Image Version) ===== */
 
 .cardHoverLink {
@@ -1812,7 +1911,8 @@ body {
   font-weight: 800;
   width: 100%;
   margin-bottom: 15px;
-  font-family: Arial Black;
+  /* font-family: Arial Black; */
+  font-family: "ArialBlack", sans-serif;
   line-height: 30px;
   margin-bottom: 24px;
 }
@@ -2068,7 +2168,8 @@ body {
   line-height: 22px;
   color: #fff;
   font-weight: 800;
-  font-family: Arial Black;
+  /* font-family: Arial Black; */
+  font-family: "ArialBlack", sans-serif;
   padding-left: 10px;
 }
 
@@ -2687,7 +2788,9 @@ body {
 
 .paragraphtext.activestate {
   background-color: #fff;
-  font-family: Arial Black;
+  /* font-family: Arial Black; */
+  font-family: "ArialBlack", sans-serif;
+  font-weight: 800;
   font-style: italic;
   color: #be1e2d;
   /* margin-bottom: 10px; */
@@ -2759,7 +2862,9 @@ body {
 }
 
 .cardscontactus .paragraphtext {
-  font-family: Arial Black;
+  /* font-family: Arial Black; */
+  font-family: "ArialBlack", sans-serif;
+  font-weight: 800;
   font-style: italic;
   line-height: 100%;
 }
@@ -2880,7 +2985,9 @@ body {
   height: 20px;
 }
 .conatctformstyle .paragraphtext {
-  font-family: Arial Black;
+  /* font-family: Arial Black; */
+  font-family: "ArialBlack", sans-serif;
+  font-weight: 800;
   font-style: italic;
   line-height: 100%;
   text-transform: uppercase;
@@ -2895,6 +3002,11 @@ body {
   height: 56px;
   width: 246px;
   border-radius: 4px;
+  padding-left: 10px;
+}
+
+.conatctformstyle input::placeholder {
+  padding-left: 20px;
 }
 
 .inputrelativesection {
@@ -3195,7 +3307,9 @@ body {
   width: 265px;
   border: 1px solid #fff;
   color: #fff;
+  padding-left: 0;
 }
+
 .formPopup .conatctformstyle .inputrelativesection input::placeholder {
   color: #fff;
 }
@@ -3214,6 +3328,11 @@ body {
   right: 30px;
   top: 16px;
   color: #fff;
+  background: #005e96;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  border: 1px solid #fff;
 }
 
 .formPopup .conatctformstyle .paragraphtext {
@@ -3239,6 +3358,28 @@ body {
 
 .formPopup .conatctformstyle .discovermorebutton {
   margin-top: 15px;
+}
+
+.formPopup .conatctformstyle::-webkit-scrollbar {
+  width: 8px; /* scrollbar width */
+}
+
+.formPopup .conatctformstyle::-webkit-scrollbar-track {
+  background: #f1f1f1; /* scrollbar background */
+  border-radius: 10px;
+}
+
+.formPopup .conatctformstyle::-webkit-scrollbar-thumb {
+  background: #005e96; /* scrollbar color */
+  border-radius: 10px;
+}
+
+.formPopup .conatctformstyle::-webkit-scrollbar-thumb:hover {
+  background: #005e96; /* hover color */
+}
+
+.formPopup .fixed {
+  z-index: 10000000;
 }
 
 /* popup-css */
@@ -10303,7 +10444,8 @@ body {
   }
 
   .indiasfirst {
-    margin-right: 0;
+    margin-right: 0 !important;
+    margin-left: 10%;
     width: 100%;
     max-width: 360px;
   }
@@ -10314,7 +10456,7 @@ body {
   .residentalsports {
     margin: 0;
     width: 100%;
-    margin-left: 10%;
+    margin-left: 20% !important;
     max-width: 360px;
   }
 
@@ -10843,6 +10985,7 @@ body {
   }
   .showcasingcard {
     width: 320px;
+        width: 250px;
   }
 
   .showcaseimagecard svg {
@@ -11694,6 +11837,8 @@ body {
 
   .formPopup .conatctformstyle .paragraphtext {
     width: 100%;
+    line-height: 110%;
+    font-size: 16px;
   }
 
   .formPopup .conatctformstyle .inputrelativesection input {
@@ -11713,6 +11858,9 @@ body {
 
   .formPopup .pleasechecktick {
     margin-top: 25px;
+    font-size: 15px;
+    line-height: 19px;
+    width: 89%;
   }
 
   .formPopup .contactformflex {
@@ -11720,6 +11868,10 @@ body {
     row-gap: 20px;
     justify-content: center;
     width: 90%;
+  }
+
+  .formPopup .inputrelativesection {
+    width: 86%;
   }
 
   .formPopup .toggleclassname {
@@ -11736,6 +11888,13 @@ body {
   }
 
   /* popup-css */
+
+  body,
+  html {
+    overflow-x: hidden;
+    /* width: 100%; */
+    position: relative;
+  }
 }
 
 /* .footerrow {

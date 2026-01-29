@@ -11,19 +11,19 @@ gsap.registerPlugin(ScrollTrigger);
 export default function OurInfraStructure({ menuOnclick }) {
   const sectionRef = useRef();
 
-useGSAP(
+  useGSAP(
     () => {
       gsap.to(".bannercontentflex", {
         // Position-ah mela thalla
-        y: -100, 
+        y: -100,
         ease: "none",
         scrollTrigger: {
           trigger: ".bannercontentflex",
-          // MUKKIYAM: "top top" kudutha dhaan neenga scroll panna aarambikkum pothu 
+          // MUKKIYAM: "top top" kudutha dhaan neenga scroll panna aarambikkum pothu
           // adhu irukira idathula irundhe start aagum.
-          start: "top top", 
-          end: "bottom top", 
-          scrub: 1, 
+          start: "top top",
+          end: "bottom top",
+          scrub: 1,
         },
       });
     },

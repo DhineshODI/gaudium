@@ -1,4 +1,80 @@
-export default function Footer() {
+import { useState, useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
+export default function Footer({ popupFunction }) {
+  // useEffect(() => {
+  //   const ctx = gsap.context(() => {
+  //     gsap.utils.toArray(".footerendd").forEach((section) => {
+  //       const first = section.querySelector(".footerfirstdiv h2");
+  //       const second = section.querySelector(".footerfirstdiv h2");
+
+  //       if (!first || !second) return;
+
+  //       gsap
+  //         .timeline({
+  //           scrollTrigger: {
+  //             trigger: section,
+  //             start: "top bottom", // section enters viewport
+  //             end: "bottom top+=40%", // 🔥 finish earlier
+  //             scrub: true, // exact scroll sync
+  //             invalidateOnRefresh: true,
+  //           },
+  //         })
+  //         .fromTo(
+  //           first,
+  //           { x: -250, opacity: 1 },
+  //           { x: 0, opacity: 1, ease: "none" },
+  //         )
+  //         .fromTo(
+  //           second,
+  //           { x: 250, opacity: 1 },
+  //           { x: 0, opacity: 1, ease: "none" },
+  //           "<",
+  //         );
+  //     });
+  //   });
+
+  //   ScrollTrigger.refresh();
+  //   return () => ctx.revert();
+  // }, []);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.utils.toArray(".footerendd").forEach((section) => {
+        const firstLine = section.querySelector(".footerfirstfont");
+        const secondLine = section.querySelector(".footersecondfont");
+
+        if (!firstLine || !secondLine) return;
+
+        gsap
+          .timeline({
+            scrollTrigger: {
+              trigger: section,
+              start: "top 95%", // Footer screen-oda bottom-la nuzhaiyum pothu start aagum
+              end: "bottom bottom", // Footer full-ah screen-kulla vandhu settle aagumbothu mudiyum
+              scrub: 1.5, // Scroll panna panna mella position-ku varum
+              invalidateOnRefresh: true,
+            },
+          })
+          .fromTo(
+            firstLine,
+            { x: -500, opacity: 0 }, // Romba thoorathula irundhu start aagum
+            { x: 0, opacity: 1, ease: "none" },
+          )
+          .fromTo(
+            secondLine,
+            { x: 500, opacity: 0 }, // Right side thoorathula irundhu start aagum
+            { x: 0, opacity: 1, ease: "none" },
+            "<", // Rendu line-um ore nerathula meet aagum
+          );
+      });
+    });
+
+    return () => ctx.revert();
+  }, []);
+
   return (
     <>
       <div className="footerrow">
@@ -15,7 +91,12 @@ export default function Footer() {
         </div>
 
         <div className="becomeachampion">
-          <a className="buttonfont highlightedtextwhite">Become a Champion</a>
+          <a
+            onClick={popupFunction}
+            className="buttonfont highlightedtextwhite"
+          >
+            Become a Champion
+          </a>
         </div>
 
         <div className="footerendd">
@@ -102,7 +183,7 @@ export default function Footer() {
 
         <div className="footercopyrights">
           <p className="paragraphtext">
-            © 2025 gaudium sportopia. all rights reserved.
+            © 2026 gaudium sportopia. all rights reserved.
           </p>
 
           <div className="opendesignsflex">

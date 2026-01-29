@@ -3,6 +3,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
+
 export default function FacilitythatInspire({ data }) {
   const sliderRef = useRef(null);
   const [progress, setProgress] = useState(0);
@@ -32,6 +36,42 @@ export default function FacilitythatInspire({ data }) {
     }
   }, [totalSlides]);
 
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.utils.toArray(".videosectionmain").forEach((section) => {
+        const first = section.querySelector(".firstheading h2");
+        const second = section.querySelector(".secondheading h2");
+
+        if (!first || !second) return;
+
+        gsap
+          .timeline({
+            scrollTrigger: {
+              trigger: section,
+              start: "top bottom", // section enters viewport
+              end: "bottom top+=40%", // 🔥 finish earlier
+              scrub: true, // exact scroll sync
+              invalidateOnRefresh: true,
+            },
+          })
+          .fromTo(
+            first,
+            { x: -250, opacity: 1 },
+            { x: 0, opacity: 1, ease: "none" },
+          )
+          .fromTo(
+            second,
+            { x: 250, opacity: 1 },
+            { x: 0, opacity: 1, ease: "none" },
+            "<",
+          );
+      });
+    });
+
+    ScrollTrigger.refresh();
+    return () => ctx.revert();
+  }, []);
+
   return (
     <>
       <div className="facilityapprovedbg">
@@ -50,9 +90,7 @@ export default function FacilitythatInspire({ data }) {
           </div>
 
           <div className="paravideosection">
-            <p className="paragraphtext text-white">
-             {data.facilitytwoline}
-            </p>
+            <p className="paragraphtext text-white">{data.facilitytwoline}</p>
           </div>
         </div>
         <div className="container max-w-7xl mx-auto px-4">

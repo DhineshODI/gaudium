@@ -1,13 +1,69 @@
 import Header from "../Components/Header";
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function OurPrograms({ menuOnclick }) {
+  const sectionRef = useRef();
+  const sectionRef1 = useRef();
+
+  useGSAP(
+    () => {
+      gsap.to(".bannercontentflex", {
+        // Position-ah mela thalla
+        y: -100,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".bannercontentflex",
+          // MUKKIYAM: "top top" kudutha dhaan neenga scroll panna aarambikkum pothu
+          // adhu irukira idathula irundhe start aagum.
+          start: "top top",
+          end: "bottom top",
+          scrub: 1,
+        },
+      });
+    },
+    { scope: sectionRef },
+  );
+
+  useGSAP(
+    () => {
+      const cards = gsap.utils.toArray(".programsbuiltcard");
+
+      cards.forEach((card) => {
+        gsap.fromTo(
+          card,
+          {
+            y: 100, // Keela irundhu start aagum
+            opacity: 0,
+          },
+          {
+            y: 0, // Normal position-ku varum
+            opacity: 1,
+            ease: "none",
+            scrollTrigger: {
+              trigger: card,
+              start: "top 100%", // Card bottom-la nuzhaiyum pothu start aagum
+              end: "top 20%", // Konjam scroll pannona animation mudiyum
+              scrub: 1, // IDHU MUKKIYAM: Scroll speed-ku etha maadhiri mela varum
+            },
+          },
+        );
+      });
+    },
+    { scope: sectionRef1 },
+  );
+
   return (
     <>
       <Header menuOnclick={menuOnclick} />
 
       {/* Banner-Image */}
 
-      <div className="aboutPage">
+      <div className="aboutPage" ref={sectionRef}>
         <div className="bannerimagesection ourprogramms">
           <div className="container max-w-7xl mx-auto px-4 aboutusbannersection">
             <div className="bannercontentflex">
@@ -57,7 +113,7 @@ export default function OurPrograms({ menuOnclick }) {
             </div>
           </div>
 
-          <div>
+          <div ref={sectionRef1}>
             <div className="programsbuiltcard">
               <div className="porgramsofferedcontent">
                 <p className="nameofthesportsprogramm">Sportopia</p>

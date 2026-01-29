@@ -9,6 +9,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 export default function ContactPage({ menuOnclick }) {
   const container = useRef();
+  const sectionRef = useRef();
 
   useGSAP(
     () => {
@@ -40,13 +41,32 @@ export default function ContactPage({ menuOnclick }) {
     { scope: container },
   );
 
+  useGSAP(
+    () => {
+      gsap.to(".bannercontentflex", {
+        // Position-ah mela thalla
+        y: -100,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".bannercontentflex",
+          // MUKKIYAM: "top top" kudutha dhaan neenga scroll panna aarambikkum pothu
+          // adhu irukira idathula irundhe start aagum.
+          start: "top top",
+          end: "bottom top",
+          scrub: 1,
+        },
+      });
+    },
+    { scope: sectionRef },
+  );
+
   return (
     <div ref={container}>
       <Header menuOnclick={menuOnclick} />
 
       {/* Banner-Image */}
 
-      <div className="aboutPage">
+      <div className="aboutPage" ref={sectionRef}>
         <div className="bannerimagesection contactusbg ">
           <div className="container max-w-7xl mx-auto px-4 aboutusbannersection">
             <div className="bannercontentflex">

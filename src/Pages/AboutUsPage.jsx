@@ -10,6 +10,8 @@ gsap.registerPlugin(ScrollTrigger);
 export default function AboutUsPage({ menuOnclick }) {
   const container = useRef();
   const sectionRef = useRef();
+
+    const sectionRef1 = useRef();
   const coachContainer = useRef();
   useGSAP(
     () => {
@@ -30,6 +32,25 @@ export default function AboutUsPage({ menuOnclick }) {
         .from(".thirdsecheart", { x: 100, opacity: 0 }, "<");
     },
     { scope: container },
+  );
+
+    useGSAP(
+    () => {
+      gsap.to(".bannercontentflex", {
+        // Position-ah mela thalla
+        y: -100,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".bannercontentflex",
+          // MUKKIYAM: "top top" kudutha dhaan neenga scroll panna aarambikkum pothu
+          // adhu irukira idathula irundhe start aagum.
+          start: "top top",
+          end: "bottom top",
+          scrub: 1,
+        },
+      });
+    },
+    { scope: sectionRef1},
   );
 
   useGSAP(
@@ -58,7 +79,7 @@ export default function AboutUsPage({ menuOnclick }) {
 
       {/* Banner-Image */}
 
-      <div className="aboutPage">
+      <div className="aboutPage" ref={sectionRef1}>
         <div className="bannerimagesection">
           <div className="container max-w-7xl mx-auto px-4 aboutusbannersection">
             <div className="bannercontentflex">

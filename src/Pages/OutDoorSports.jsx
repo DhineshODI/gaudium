@@ -1,5 +1,12 @@
 import Header from "../Components/Header";
 
+import gsap from "gsap";
+import { useGSAP } from "@gsap/react";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useRef } from "react";
+
+gsap.registerPlugin(ScrollTrigger);
+
 export default function OutDoorSportsPage({ menuOnclick }) {
   const games = [
     {
@@ -43,6 +50,53 @@ export default function OutDoorSportsPage({ menuOnclick }) {
       gameLinkL: "/sport/tennis",
     },
   ];
+
+  const sectionRef = useRef();
+  const sectionRef1 = useRef();
+
+  useGSAP(
+    () => {
+      gsap.to(".bannercontentflex", {
+        // Position-ah mela thalla
+        y: -100,
+        ease: "none",
+        scrollTrigger: {
+          trigger: ".bannercontentflex",
+          // MUKKIYAM: "top top" kudutha dhaan neenga scroll panna aarambikkum pothu
+          // adhu irukira idathula irundhe start aagum.
+          start: "top top",
+          end: "bottom top",
+          scrub: 1,
+        },
+      });
+    },
+    { scope: sectionRef },
+  );
+
+  useGSAP(
+    () => {
+      // Parent container kulla irukira cards-ah array-ah edukkom
+      const cards = gsap.utils.toArray(".outdoorsportscards");
+
+      gsap.from(cards, {
+        y: 100, // 100px keela irundhu start aagum
+        opacity: 0, // Mella reveal aagum
+        duration: 1.5,
+        ease: "power2.out",
+
+        // Cards ovvonna delay aagi vara (Dynamic cards-ku idhu dhaan best)
+        stagger: 0.4,
+
+        scrollTrigger: {
+          trigger: ".cardsflexcontaineroutdoor", // Cards irukira parent div
+          start: "top 85%", // Viewport-kulla varumbodhu trigger aagum
+          toggleActions: "play none none reverse", // Scroll back pannuna thirumba animate aagum
+        },
+      });
+    },
+    { scope: sectionRef1 }, // Unga outer container ref
+  );
+
   return (
     <>
       <>
@@ -50,7 +104,7 @@ export default function OutDoorSportsPage({ menuOnclick }) {
 
         {/* Banner-Image */}
 
-        <div className="aboutPage">
+        <div className="aboutPage" ref={sectionRef}>
           <div className="bannerimagesection outdoorsports">
             <div className="container max-w-7xl mx-auto px-4 aboutusbannersection">
               <div className="bannercontentflex">
@@ -102,7 +156,10 @@ export default function OutDoorSportsPage({ menuOnclick }) {
               </div>
             </div>
 
-            <div className="outerdivcontainer outdoorcardsconatinre">
+            <div
+              className="outerdivcontainer outdoorcardsconatinre"
+              ref={sectionRef1}
+            >
               <div className="cardsflexcontaineroutdoor">
                 {games.map((game) => (
                   <div className="outdoorsportscards">
@@ -117,7 +174,10 @@ export default function OutDoorSportsPage({ menuOnclick }) {
                         {game.gameAboutContent}
                       </p>
 
-                      <a  href={game.gameLinkL} className="exploremorebutton buttonfont">
+                      <a
+                        href={game.gameLinkL}
+                        className="exploremorebutton buttonfont"
+                      >
                         explore More
                       </a>
                     </div>

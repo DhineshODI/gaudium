@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Eventcalender from "../Components/EventCalender";
 import HorizontalSlider from "../Components/GsapSlider";
 import Header from "../Components/Header";
@@ -12,13 +12,34 @@ import TheStrenthBehind from "../Components/TheStrengthBehind";
 import VoicesofChampion from "../Components/VoicesofChampion";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(ScrollTrigger);
 
 import { useLocation } from "react-router-dom";
 
 export default function Homepage({ menuOnclick, popupFunction }) {
   const location = useLocation();
+
+  const sectionRef2 = useRef(null);
   const isHome = location.pathname === "/";
+
+  useGSAP(
+    () => {
+      // Card-gal ovvonnum oru gap-la ulla vara 'stagger' use pandrom
+      gsap.from(".expansivecards", {
+        y: 100, // 100px keela irundhu start aagum
+        opacity: 0, // Transparent-ah irukkum
+        duration: 0.8,
+        stagger: 0.2, // Ovvoru card-kum 0.2s gap irukkum
+        scrollTrigger: {
+          trigger: sectionRef2.current,
+          start: "top 75%", // Section screen-oda 75%-ku varum pothu trigger aagum
+          toggleActions: "play none none reverse", // Scroll back pannuna thirumba animate aagum
+        },
+      });
+    },
+    { scope: sectionRef2 },
+  );
 
   return (
     <>
@@ -27,13 +48,28 @@ export default function Homepage({ menuOnclick, popupFunction }) {
         <div className="homepagebanner">
           <Header menuOnclick={menuOnclick} />
           <div className="homepageherobanner">
-            <img src="/images/homepage/hero-banner.jpg" alt="" />
+            <img
+              src="/images/homepage/hero-banner.jpg"
+              alt=""
+              loading="eager"
+              fetchpriority="high"
+            />
 
             <div className="exploresectiondiv">
-              <div className="exploreacademey">
-                <button className="activebutton">Explore Academy</button>
-                <button>Book a Ground</button>
-                <button>Explore Events</button>
+              <div className="exploreacademey click-btn btn-style511">
+                <button
+                  //  className="activebutton"
+
+                  onClick={popupFunction}
+                >
+                  <span>Explore Academy</span>
+                </button>
+                <button onClick={popupFunction}>
+                  <span>Book a Ground</span>
+                </button>
+                <button onClick={popupFunction}>
+                  <span> Explore Events</span>
+                </button>
               </div>
             </div>
           </div>
@@ -80,7 +116,7 @@ export default function Homepage({ menuOnclick, popupFunction }) {
               </a>
             </div>
 
-            <div>
+            {/* <div>
               <div className="expansivecampsflex">
                 <div className="expansivecards">
                   <div className="expansivefirstsec">
@@ -114,6 +150,51 @@ export default function Homepage({ menuOnclick, popupFunction }) {
                 </div>
                 <div className="expansivecards">
                   <div className="expansivefirstsec">
+                    <h5>2L</h5>
+                    <p className="secondheadingtext">Sq. Ft.</p>
+                  </div>
+                  <h4 className="paragraphtext">Outdoor Grounds</h4>
+                  <p className="secondheadingtext avasttext">
+                    Professional fields for top-level practice and play.
+                  </p>
+                </div>
+              </div>
+            </div> */}
+
+            <div>
+              <div className="expansivecampsflex" ref={sectionRef2}>
+                <div className="expansivecards">
+                  <div className="expansivefirstsec">
+                    <h5>27</h5>
+                    <p className="secondheadingtext">Acres</p>
+                  </div>
+                  <h4 className="paragraphtext">Expansive Campus</h4>
+                  <p className="secondheadingtext avasttext">
+                    A vast space built for all-round sports excellence.
+                  </p>
+                </div>
+                <div className="expansivecards">
+                  <div className="expansivefirstsec gap-1">
+                    <h5>25</h5>
+                    <p className="secondheadingtext plustextcontent">+</p>
+                  </div>
+                  <h4 className="paragraphtext">Sports Programs</h4>
+                  <p className="secondheadingtext avasttext">
+                    Learn, train, and compete across multiple disciplines.
+                  </p>
+                </div>
+                <div className="expansivecards">
+                  <div className="expansivefirstsec gap-2.5">
+                    <h5>1L</h5>
+                    <p className="secondheadingtext">Sq. Ft.</p>
+                  </div>
+                  <h4 className="paragraphtext">Indoor Arena</h4>
+                  <p className="secondheadingtext avasttext">
+                    World-class indoor facilities for uninterrupted training..
+                  </p>
+                </div>
+                <div className="expansivecards">
+                  <div className="expansivefirstsec gap-2.5">
                     <h5>2L</h5>
                     <p className="secondheadingtext">Sq. Ft.</p>
                   </div>

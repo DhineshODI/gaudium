@@ -55,44 +55,61 @@ export default function SucessYouMore() {
     return () => ctx.revert();
   }, []);
 
+  // useGSAP(
+  //   () => {
+  //     const countElements = gsap.utils.toArray(".countingsection");
+
+  //     countElements.forEach((el) => {
+  //       const endValue = parseInt(el.innerText); // JSX-la iruka number-ah (13, 328, etc.) edukkum
+
+  //       gsap.fromTo(
+  //         el,
+  //         { innerText: 0 }, // 0-la irundhu start aagum
+  //         {
+  //           innerText: endValue,
+  //           duration: 2,
+  //           ease: "power2.out",
+  //           snap: { innerText: 1 }, // Decimal illama round numbers-ah varum
+  //           scrollTrigger: {
+  //             trigger: el,
+  //             start: "top 90%", // Element view-ku vandha udane start aagum
+  //           },
+  //         },
+  //       );
+  //     });
+
+  //     // Optional: Entire row-ve mella reveal aagura maadhiri
+  //     gsap.from(".widthhomepagecompanythere", {
+  //       y: 50,
+  //       opacity: 0,
+  //       duration: 1,
+  //       stagger: 0.2,
+  //       scrollTrigger: {
+  //         trigger: ".flexhomepageabout",
+  //         start: "top 80%",
+  //       },
+  //     });
+  //   },
+  //   { scope: sectionRef },
+  // ); // Unga ref-ah inga scope-ah kudunga
+
   useGSAP(
     () => {
-      const countElements = gsap.utils.toArray(".countingsection");
-
-      countElements.forEach((el) => {
-        const endValue = parseInt(el.innerText); // JSX-la iruka number-ah (13, 328, etc.) edukkum
-
-        gsap.fromTo(
-          el,
-          { innerText: 0 }, // 0-la irundhu start aagum
-          {
-            innerText: endValue,
-            duration: 2,
-            ease: "power2.out",
-            snap: { innerText: 1 }, // Decimal illama round numbers-ah varum
-            scrollTrigger: {
-              trigger: el,
-              start: "top 90%", // Element view-ku vandha udane start aagum
-            },
-          },
-        );
-      });
-
-      // Optional: Entire row-ve mella reveal aagura maadhiri
+      // Card-gal ovvonnum oru gap-la ulla vara 'stagger' use pandrom
       gsap.from(".widthhomepagecompanythere", {
-        y: 50,
-        opacity: 0,
-        duration: 1,
-        stagger: 0.2,
+        y: 100, // 100px keela irundhu start aagum
+        opacity: 0, // Transparent-ah irukkum
+        duration: 0.8,
+        stagger: 0.2, // Ovvoru card-kum 0.2s gap irukkum
         scrollTrigger: {
-          trigger: ".flexhomepageabout",
-          start: "top 80%",
+          trigger: sectionRef.current,
+          start: "top 75%", // Section screen-oda 75%-ku varum pothu trigger aagum
+          toggleActions: "play none none reverse", // Scroll back pannuna thirumba animate aagum
         },
       });
     },
     { scope: sectionRef },
-  ); // Unga ref-ah inga scope-ah kudunga
-
+  );
   return (
     <>
       <div className="homevideomainbg">

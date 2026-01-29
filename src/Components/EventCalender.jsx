@@ -54,7 +54,7 @@ export default function Eventcalender({ popupFunction }) {
               </p>
             </div>
             <div className="becomeachampion">
-              <a className="buttonfont highlightedtextopposite">Explore More</a>
+              <a className="buttonfont highlightedtextopposite"  onClick={popupFunction}>Explore More</a>
             </div>
           </div>
         </div>

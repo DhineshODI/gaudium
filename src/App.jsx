@@ -170,7 +170,7 @@ function App() {
           />
         </Routes>
 
-        <Footer />
+        <Footer    popupFunction={popupFunction} />
       </MenuProvider>
 
       {popupshow && (

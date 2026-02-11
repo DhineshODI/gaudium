@@ -255,6 +255,11 @@ body {
   color: #be1e2d;
   font-weight: 600;
 }
+
+.exploresectiondiv {
+  display: none !important;
+}
+
 .exploresectiondiv {
   position: absolute;
   bottom: 80px;
@@ -820,6 +825,11 @@ body {
 .thestrengthsection {
   padding-top: 100px;
   padding-bottom: 50px;
+    background-image: url("/public/images/background-images/mentor.svg");
+  /* background-image: url("/public/images/background-images/programs-that.svg"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .ProgrammsBuildflexsection {
@@ -888,6 +898,11 @@ body {
 
 .programsbuildsection {
   padding-top: 100px;
+  background-image: url("/public/images/background-images/mentor.svg");
+  background-image: url("/public/images/background-images/programs-that.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .eventscalenderrow {
@@ -987,6 +1002,15 @@ body {
 
 .showcaseprojectrow {
   padding: 100px 0;
+      background-image: url("/public/images/background-images/mentor.svg");
+      background-image: url("/public/images/background-images/bg-gaudium-third-img.png");
+
+      
+  /* background-image: url("/public/images/background-images/programs-that.svg");
+  background-image: url("/public/images/background-images/programs-that.png"); */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .slider-buttonsshowcaseproject {
@@ -1226,12 +1250,14 @@ body {
 }
 .footerendd .mainheadingfont {
   font-size: 90px;
+  font-size: 75px;
   height: 120%;
 }
 
 .footerendd {
   display: flex;
   justify-content: center;
+  justify-content: flex-start;
   column-gap: 1%;
   padding: 25px 0;
   border: 2px solid rgba(255, 255, 255, 0.14);
@@ -1457,6 +1483,11 @@ body {
 
 .heartofsection {
   padding: 100px 0;
+    /* background-image: url("/public/images/background-images/mentor.svg"); */
+    background-image: url("/public/images/background-images/programs-that.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .theheartcontentflex {
@@ -3270,8 +3301,11 @@ body {
 }
 
 .Homepagestyle.homePlus .headerdiv.scrollheader .headerstyle {
-  padding: 0.65% 5%;
+  /* padding: 0.65% 5%; */
+  padding: 0.15% 5%;
 }
+
+
 
 .yarl__portal_open {
   z-index: 1000000 !important;

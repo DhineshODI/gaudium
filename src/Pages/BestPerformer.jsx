@@ -116,36 +116,36 @@ export default function BestPerformerPage({ menuOnclick }) {
     { scope: sectionRef },
   );
 
-
   useGSAP(
     () => {
       const cards = gsap.utils.toArray(".cardHoverLink");
 
       cards.forEach((card, index) => {
-        gsap.fromTo(card, 
-          { 
-            y: 200,             // Keela irundhu start aagum
-            opacity: 1, 
-            rotateX: -20,       // 3D tilt start
-            scale: 0.8          // Chinna size
+        gsap.fromTo(
+          card,
+          {
+            y: 200, // Keela irundhu start aagum
+            opacity: 1,
+            rotateX: -20, // 3D tilt start
+            scale: 0.8, // Chinna size
           },
           {
-            y: 0,               // Original position
+            y: 0, // Original position
             opacity: 1,
-            rotateX: 0,         // Settle aagumbodhu straight aagum
-            scale: 1,           // Full size
-            ease: "none",       // Scrub-ku "none" dhaan smooth-ah irukkum
+            rotateX: 0, // Settle aagumbodhu straight aagum
+            scale: 1, // Full size
+            ease: "none", // Scrub-ku "none" dhaan smooth-ah irukkum
             scrollTrigger: {
               trigger: card,
-              start: "top 95%",  // Card bottom-la varumbodhu start aagum
-              end: "top 50%",    // Screen center-ku varumbodhu animation mudiyum
-              scrub: 1.5,        // Scroll speed-ah nalla smooth-ah follow pannum
+              start: "top 95%", // Card bottom-la varumbodhu start aagum
+              end: "top 50%", // Screen center-ku varumbodhu animation mudiyum
+              scrub: 1.5, // Scroll speed-ah nalla smooth-ah follow pannum
             },
-          }
+          },
         );
       });
     },
-    { scope: sectionRef1 }
+    { scope: sectionRef1 },
   );
 
   return (
@@ -159,10 +159,10 @@ export default function BestPerformerPage({ menuOnclick }) {
           <div className="container max-w-7xl mx-auto px-4 aboutusbannersection">
             <div className="bannercontentflex">
               <p className="breadcrumbstext">
-                <span>Home</span> &gt; Best Performers
+                <span>Home</span> &gt; Excellence Awardees
               </p>
 
-              <h2 className="mainheadingfont">Best Performers</h2>
+              <h2 className="mainheadingfont">Excellence Awardees</h2>
               <hr />
 
               <p className="paragraphtext contentbanner">
@@ -173,7 +173,8 @@ export default function BestPerformerPage({ menuOnclick }) {
             </div>
           </div>
           <p className="mainheadingfont banneroverlaytextall">
-            Best Performers
+            {/* Best Performers */}
+            Excellence Awardees
           </p>
         </div>
       </div>
@@ -188,12 +189,14 @@ export default function BestPerformerPage({ menuOnclick }) {
           <div className="videosectionmain">
             <div className="firstheading">
               <h2 className="stroke-fill-text mainheadingfont redcolorfont">
-                Showcasing Our
+                {/* Showcasing Our */}
+               Champions of
               </h2>
             </div>
             <div className="secondheading">
               <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
-                Peak Performance
+                {/* Peak Performance */}
+                Sporting Excellence
               </h2>
             </div>
           </div>

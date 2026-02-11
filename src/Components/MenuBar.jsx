@@ -9,7 +9,7 @@ export default function Menubar({ menuOnclick }) {
     { label: "Our Programs", path: "/our-programs" },
     { label: "Indoor Sports", path: "/indoor-sports" },
     { label: "Outdoor Sports", path: "/outdoor-sports" },
-    { label: "Best Performer", path: "/best-performer" },
+    { label: "Excellence Awardees", path: "/excellence-awardees" },
     { label: "Student Testimonial", path: "/student-testimonial" },
     { label: "Our Infrastructure", path: "/our-infrastructure" },
     // { label: "News & Events", path: "/newsandevents" },

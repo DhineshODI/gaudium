@@ -13,7 +13,7 @@ export default function Eventcalender({ popupFunction }) {
 
               <div className="secondheading">
                 <h2 className="stroke-fill-text1 mainheadingfont whitecolortransperant">
-                  Ground
+                  Facility
                 </h2>
               </div>
             </div>
@@ -54,7 +54,12 @@ export default function Eventcalender({ popupFunction }) {
               </p>
             </div>
             <div className="becomeachampion">
-              <a className="buttonfont highlightedtextopposite"  onClick={popupFunction}>Explore More</a>
+              <a
+                className="buttonfont highlightedtextopposite"
+                onClick={popupFunction}
+              >
+                Explore More
+              </a>
             </div>
           </div>
         </div>

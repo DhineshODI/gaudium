@@ -85,8 +85,10 @@ export default function Footer({ popupFunction }) {
         </div>
         <div className="paravideosection">
           <p className="paragraphtext">
-            Step into excellence. Join the champions and elevate your game at
-            Gaudium Sportopia.
+            {/* Step into excellence. Join the champions and elevate your game at
+            Gaudium Sportopia. */}
+            Train with purpose, compete with confidence, and grow with Gaudium
+            Sportopia.
           </p>
         </div>
 
@@ -108,7 +110,8 @@ export default function Footer({ popupFunction }) {
 
           <div className="footerfirstdiv">
             <h2 className="mainheadingfont stroke-fill-text1 footersecondfont ">
-              Breaking Limits
+              {/* Breaking Limits */}
+              Raising Standards
             </h2>
           </div>
         </div>
@@ -147,7 +150,9 @@ export default function Footer({ popupFunction }) {
               <li className="highlightedtextwhite">outdoor sports</li>
             </a>
             <a href="/best-performer">
-              <li className="highlightedtextwhite">Best performer</li>
+              {/* <li className="highlightedtextwhite">Best performer</li> */}
+              <li className="highlightedtextwhite">Excellence Awardees</li>
+              
             </a>
             {/* <a href="/news">
               <li className="highlightedtextwhite">news & events</li>

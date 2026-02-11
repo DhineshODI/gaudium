@@ -145,7 +145,10 @@ function App() {
             element={<InDoorSportsPage menuOnclick={menuOnclick} />}
           />
           <Route
-            path="/best-performer"
+            // path="/best-performer"
+            path="/excellence-awardees"
+
+            
             element={<BestPerformerPage menuOnclick={menuOnclick} />}
           />
           <Route

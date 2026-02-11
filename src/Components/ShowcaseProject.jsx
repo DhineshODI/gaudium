@@ -154,19 +154,22 @@ export default function ShowcaseProject() {
           <div className="videosectionmain">
             <div className="firstheading lengthfirstHeading ">
               <h2 className="stroke-fill-text mainheadingfont redcolorfont">
-                Showcasing Our
+                {/* Showcasing Our */}
+             Champions of
               </h2>
             </div>
 
             <div className="secondheading lengthsecondHeading">
               <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
-                Peak Performance
+                {/* Peak Performance */}
+                Sporting Excellence
               </h2>
             </div>
           </div>
           <div className="paravideosection">
             <p className="paragraphtext">
-              Take a glance at the champions whose achievements define excellence at Gaudium Sportopia.
+              Take a glance at the champions whose achievements define
+              excellence at Gaudium Sportopia.
             </p>
           </div>
         </div>

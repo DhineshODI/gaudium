@@ -74,6 +74,8 @@ export default function FacilitythatInspire({ data }) {
 
   return (
     <>
+
+    {data.status === true &&
       <div className="facilityapprovedbg">
         <div className="container max-w-7xl mx-auto px-4">
           <div className="videosectionmain">
@@ -175,6 +177,7 @@ export default function FacilitythatInspire({ data }) {
           </div>
         </div>
       </div>
+       }
     </>
   );
 }

@@ -11,6 +11,7 @@ export default function EventsandTournaments({ data }) {
     slidesToShow: 3,
     slidesToScroll: 1,
     arrows: false,
+    autoplay: true,
     // Update progress based on the final index reached
     afterChange: (current) => {
       setCurrentSlide(current); // Update the current index
@@ -33,6 +34,8 @@ export default function EventsandTournaments({ data }) {
       },
     ],
   };
+
+  const [isDesktop, setIsDesktop] = useState(false);
   const eventstournamentsData = data.items || [];
   const sliderRef = useRef(null);
   const [progress, setProgress] = useState(0);
@@ -52,93 +55,118 @@ export default function EventsandTournaments({ data }) {
     }
   }, [eventstournamentsData.length, currentSlidesToShow]);
 
+  useEffect(() => {
+    const handleResize = () => {
+      setIsDesktop(window.innerWidth > 1000);
+    };
+
+    handleResize(); // run once on load
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  console.log("isDesktop", isDesktop);
+
   return (
     <>
-      <div className="eventsandtournamentsmain">
-        <div className="container max-w-7xl mx-auto px-4">
-          <div className="videosectionmain">
-            <div className="firstheading">
-              <h2 className="stroke-fill-text mainheadingfont whitefontcolor">
-                {data.headingFirst}
-              </h2>
-            </div>
-            <div className="secondheading">
-              <h2 className="stroke-fill-text1 mainheadingfont whitecolortransperant">
-                {data.headingSecond}
-              </h2>
-            </div>
-          </div>
-        </div>
-
-        <div className="paravideosection">
-          <p className="paragraphtext">{data.description}</p>
-        </div>
-
-        <div className="container max-w-7xl mx-auto px-4">
-          <div className="eventstournamentsmain">
-            <Slider ref={sliderRef} {...settings}>
-              {eventstournamentsData.map((item, index) => (
-                <section key={index} className="slidercardevents">
-                  <div className="eventstournamnetcard">
-                    <h3 className="mainheadingfont eventstournamnetsname">
-                      {item.eventnumber}
-                    </h3>
-                    <p className="secondheadingtext">{item.eventcontent}</p>
-                  </div>
-                </section>
-              ))}
-            </Slider>
-          </div>
-
-          <div className="buttonandarrowcontrol">
-            {/* PROGRESS BAR */}
-            <div className="progressflex">
-              <div className="strength-progressbar">
-                <div
-                  className="strength-progressbar-fill"
-                  style={{ width: `${progress}%` }}
-                ></div>
+      {data.status === true && (
+        <div className="eventsandtournamentsmain">
+          <div className="container max-w-7xl mx-auto px-4">
+            <div className="videosectionmain">
+              <div className="firstheading">
+                <h2 className="stroke-fill-text mainheadingfont whitefontcolor">
+                  {data.headingFirst}
+                </h2>
+              </div>
+              <div className="secondheading">
+                <h2 className="stroke-fill-text1 mainheadingfont whitecolortransperant">
+                  {data.headingSecond}
+                </h2>
               </div>
             </div>
+          </div>
 
-            {/* BUTTONS */}
-            <div className="strength-controls">
-              {/* <button
+          <div className="paravideosection">
+            <p className="paragraphtext">{data.description}</p>
+          </div>
+
+          <div className="container max-w-7xl mx-auto px-4">
+            <div className="eventstournamentsmain">
+              <Slider ref={sliderRef} {...settings}>
+                {eventstournamentsData.map((item, index) => (
+                  <section key={index} className="slidercardevents">
+                    <div className="eventstournamnetcard">
+                      <h3 className="mainheadingfont eventstournamnetsname">
+                        {item.eventnumber}
+                      </h3>
+                      <p className="secondheadingtext">{item.eventcontent}</p>
+                    </div>
+                  </section>
+                ))}
+              </Slider>
+            </div>
+
+            {eventstournamentsData.length > 3 && isDesktop == true ? (
+              <>
+                <div className="buttonandarrowcontrol">
+                  {/* PROGRESS BAR */}
+                  <div className="progressflex">
+                    <div className="strength-progressbar">
+                      <div
+                        className="strength-progressbar-fill"
+                        style={{ width: `${progress}%` }}
+                      ></div>
+                    </div>
+                  </div>
+
+                  {/* BUTTONS */}
+                  <div className="strength-controls">
+                    {/* <button
                 onClick={() => sliderRef.current.slickPrev()}
                 className="btn-prev"
               > */}
-              <button
-                onClick={() => sliderRef.current?.slickPrev()}
-                className="btn-prev"
-                disabled={isAtStart}
-                style={{
-                  opacity: isAtStart ? 0.2 : 1,
-                  pointerEvents: isAtStart ? "none" : "auto",
-                  cursor: isAtStart ? "default" : "pointer",
-                }}
-              >
-                <img src="/images/icons/arrow-left-circle-white.svg" alt="" />
-              </button>
-              {/* <button
+                    <button
+                      onClick={() => sliderRef.current?.slickPrev()}
+                      className="btn-prev"
+                      disabled={isAtStart}
+                      style={{
+                        opacity: isAtStart ? 0.2 : 1,
+                        pointerEvents: isAtStart ? "none" : "auto",
+                        cursor: isAtStart ? "default" : "pointer",
+                      }}
+                    >
+                      <img
+                        src="/images/icons/arrow-left-circle-white.svg"
+                        alt=""
+                      />
+                    </button>
+                    {/* <button
                 onClick={() => sliderRef.current.slickNext()}
                 className="btn-next"
               > */}
-              <button
-                onClick={() => sliderRef.current?.slickNext()}
-                className="btn-next"
-                disabled={isAtEnd}
-                style={{
-                  opacity: isAtEnd ? 0.2 : 1,
-                  pointerEvents: isAtEnd ? "none" : "auto",
-                  cursor: isAtEnd ? "default" : "pointer",
-                }}
-              >
-                <img src="/images/icons/arrow-right-circle-white.svg" alt="" />
-              </button>
-            </div>
+                    <button
+                      onClick={() => sliderRef.current?.slickNext()}
+                      className="btn-next"
+                      disabled={isAtEnd}
+                      style={{
+                        opacity: isAtEnd ? 0.2 : 1,
+                        pointerEvents: isAtEnd ? "none" : "auto",
+                        cursor: isAtEnd ? "default" : "pointer",
+                      }}
+                    >
+                      <img
+                        src="/images/icons/arrow-right-circle-white.svg"
+                        alt=""
+                      />
+                    </button>
+                  </div>
+                </div>
+              </>
+            ) : null}
           </div>
         </div>
-      </div>
+      )}
     </>
   );
 }

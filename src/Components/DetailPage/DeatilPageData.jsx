@@ -55,7 +55,7 @@ const DetailsData = {
       breadcrumbstextSecond: "Badminton",
       bannertitle: "Badminton",
       bannerContent:
-        "Fast-paced racquet sport that builds agility, reflexes, endurance and sharp tactical thinking skills.",
+        "Join Gaudium Sportopia and train in badminton with structured pathways built for competitive success.",
       banneroverlaycontent: "Badminton",
       backgroundClass: "badmintonbannerdetail",
     },
@@ -77,27 +77,28 @@ const DetailsData = {
 
       members: [
         {
-          sport: "BADMINTON",
-          role: "COACH",
+          sport: "",
+          role: "Chief Advisor",
           img: "/images/homepage/thestrengthimageone.png",
-          name: "Bhanu",
+          name: "Pullela Gopichand",
         },
-        {
-          sport: "BADMINTON",
-          role: "COACH",
-          img: "/images/homepage/thestrengthimagetwo.png",
-          name: "Shaik Babulal",
-        },
-        {
-          sport: "BADMINTON",
-          role: "COACH",
-          img: "/images/homepage/thestrengthimageone.png",
-          name: "Sanupha Rani",
-        },
+        // {
+        //   sport: "BADMINTON",
+        //   role: "COACH",
+        //   img: "/images/homepage/thestrengthimagetwo.png",
+        //   name: "Shaik Babulal",
+        // },
+        // {
+        //   sport: "BADMINTON",
+        //   role: "COACH",
+        //   img: "/images/homepage/thestrengthimageone.png",
+        //   name: "Sanupha Rani",
+        // },
       ],
     },
 
     facility: {
+      status: true,
       headingFirst: "Facilities",
       headingSecond: "That Inspire",
 
@@ -107,7 +108,7 @@ const DetailsData = {
       slides: [
         {
           id: 1,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image: "/images/our-infrastructure/badminton/badminton-01.jpg",
           sport: "Safe",
           title: "flooring",
           description:
@@ -115,7 +116,7 @@ const DetailsData = {
         },
         {
           id: 2,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image: "/images/our-infrastructure/badminton/badminton-02.jpg",
           sport: "BWF-Standard Courts and",
           title: "Lighting",
           description:
@@ -123,7 +124,7 @@ const DetailsData = {
         },
         {
           id: 3,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image: "/images/our-infrastructure/badminton/badminton-03.jpg",
           sport: "Competition-Ready",
           title: "Arena",
           description:
@@ -131,7 +132,7 @@ const DetailsData = {
         },
         {
           id: 4,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image: "/images/our-infrastructure/badminton/badminton-07.jpg",
           sport: "Athlete Comfort and",
           title: "Safety",
           description:
@@ -139,7 +140,7 @@ const DetailsData = {
         },
         {
           id: 5,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image: "/images/our-infrastructure/badminton/badminton-05.jpg",
           sport: "High-Performance Training",
           title: "Support",
           description:
@@ -240,6 +241,7 @@ const DetailsData = {
     },
 
     eventsAndTournaments: {
+      status: true,
       headingFirst: "Events & Tournaments",
       headingSecond: "@ Gaudium Sportopia",
       description:
@@ -265,8 +267,9 @@ const DetailsData = {
     },
 
     journey: {
-      headingFirst: "The Strength",
-      headingSecond: "Behind the Squad",
+      status: true,
+      headingFirst: "Journey",
+      headingSecond: "in Pictures",
       description:
         "A visual journey capturing training, competition and defining moments from our badminton athletes’ path to excellence.",
 
@@ -288,6 +291,7 @@ const DetailsData = {
     },
 
     success: {
+      status: true,
       headingFirst: "success",
       headingSecond: "stories",
       description:
@@ -296,79 +300,89 @@ const DetailsData = {
       showcaseData: [
         {
           id: 1,
-          image: "/images/homepage/showcaseproject3.png",
-          title: "CHAARVI",
-          description: "ISSO National Badminton Championships",
+          image:
+            "/images/detail-page/badminton/sucess-stories/krishav-Puppala-Badminton.png",
+          title: "Krishav Puppala",
+          description:
+            "YONEX-SUNRISE Sri Pc Reddy Memorial 10th Telangana State Sub Junior Badminton Championship 2024",
           svgCard: redsvg,
         },
         {
           id: 2,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "ARCHITA",
-          description: "ISSO National Badminton Championships",
+          image:
+            "/images/detail-page/badminton/sucess-stories/Archita-Nitin.png",
+          title: "Archita Nitin Joshi",
+          description:
+            "In under -17 got Gold medal in team event and individuals got 3rd place ",
           svgCard: bluesvg,
         },
         {
           id: 3,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "ANVITHA",
-          description: "ISSO National Badminton Championships",
+          image:
+            "/images/detail-page/badminton/sucess-stories/avanthika-tallam-.png",
+          title: "Avanthika Tallam ",
+          description: "Bronze - Medal",
           svgCard: redsvg,
         },
         {
           id: 4,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "SRAVAS",
-          description: "ISSO National Badminton Championships",
+          image:
+            "/images/detail-page/badminton/sucess-stories/chaarvi-peta-.png",
+          title: "Chaarvi peta ",
+          description: "In under -17 got Gold medal ",
           svgCard: bluesvg,
         },
         {
           id: 5,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "ASHMIT",
-          description: "ISSO National Badminton Championships",
+          image:
+            "/images/detail-page/badminton/sucess-stories/chinmay-wankhede-.png",
+          title: "Chinmay Wankhede ",
+          description: "Winners- Glod Medal",
           svgCard: redsvg,
         },
         {
           id: 6,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "AARAV",
-          description: "ISSO National Badminton Championships",
+          image:
+            "/images/detail-page/badminton/sucess-stories/nalakanti-guna.png",
+          title: "Nalakanti Guna Manikanta",
+          description: "Winners- Glod Medal",
           svgCard: bluesvg,
         },
         {
           id: 7,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "SHANKAR",
-          description: "BHEL Cluster Tournament",
+          image: "/images/detail-page/badminton/sucess-stories/karthikeya.png",
+          title: "Karthikeya Reddy Goguri",
+          description: "Winners- Glod Medal",
           svgCard: redsvg,
         },
         {
           id: 8,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "ARYAN",
-          description: "BHEL Cluster Tournament",
+          image: "/images/detail-page/badminton/sucess-stories/lakshmi.png",
+          title: "Lakshmi Sai Aaradhya",
+          description: "Bronze - Medel",
           svgCard: bluesvg,
         },
         {
           id: 9,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "GUNA",
-          description: "BHEL Cluster Tournament",
+          image: "/images/detail-page/badminton/sucess-stories/manasvini.png",
+          title: "Manasvini  panga",
+          description:
+            "In under -17 got Gold medal in team event and individuals got 5th place ",
           svgCard: redsvg,
         },
         {
           id: 10,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "SHARAN",
-          description: "BHEL Cluster Tournament",
+          image: "/images/detail-page/badminton/sucess-stories/sathvika.png",
+          title: "Sathvika Lakkativari",
+          description: "Bronze - Medel",
           svgCard: bluesvg,
         },
         {
           id: 11,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "AYAAN",
-          description: "BHEL Cluster Tournament",
+          image:
+            "/images/detail-page/badminton/sucess-stories/sravas-raag-reddy-badminton.png",
+          title: "Sravas Raag Reddy P",
+          description: "In under -19 individuals got 5th place ",
           svgCard: redsvg,
         },
       ],
@@ -381,7 +395,7 @@ const DetailsData = {
       breadcrumbstextSecond: "Basketball",
       bannertitle: "Basketball",
       bannerContent:
-        "Dynamic team sport focusing on speed, coordination, strategy, and high-intensity athletic performance levels.",
+        "Step onto the court at Gaudium Sportopia and grow into a confident, competitive basketball player.",
       banneroverlaycontent: "Basketball",
       backgroundClass: "basketballbg",
     },
@@ -402,22 +416,23 @@ const DetailsData = {
         "An elite team of nationally certified coaches delivering world-class training, mentorship, and performance-driven development for aspiring athletes.",
 
       members: [
-        {
-          sport: "basketball",
-          role: "COACH",
-          img: "/images/homepage/thestrengthimageone.png",
-          name: "Karnika choubey",
-        },
-        {
-          sport: "basketball",
-          role: "COACH",
-          img: "/images/homepage/thestrengthimagetwo.png",
-          name: "Abhijeet",
-        },
+        // {
+        //   sport: "basketball",
+        //   role: "COACH",
+        //   img: "/images/homepage/thestrengthimageone.png",
+        //   name: "Karnika choubey",
+        // },
+        // {
+        //   sport: "basketball",
+        //   role: "COACH",
+        //   img: "/images/homepage/thestrengthimagetwo.png",
+        //   name: "Abhijeet",
+        // },
       ],
     },
 
     facility: {
+      status: true,
       headingFirst: "Facilities",
       headingSecond: "That Inspire",
 
@@ -427,7 +442,7 @@ const DetailsData = {
       slides: [
         {
           id: 1,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image: "/images/our-infrastructure/basketball/basketball-01.jpg",
           sport: "FIBA-Standard Indoor and ",
           title: "Outdoor Courts",
           description:
@@ -435,7 +450,7 @@ const DetailsData = {
         },
         {
           id: 2,
-          image: "/images/detail-page/badminton/football-img-1.jpg",
+          image: "/images/our-infrastructure/basketball/basketball-02.jpg",
           sport: "Professional Match",
           title: "Environment",
           description:
@@ -443,7 +458,7 @@ const DetailsData = {
         },
         {
           id: 3,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image: "/images/our-infrastructure/basketball/basketball-03.jpg",
           sport: "Athlete Comfort and",
           title: "Facilities",
           description:
@@ -451,7 +466,7 @@ const DetailsData = {
         },
         {
           id: 4,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image: "/images/our-infrastructure/basketball/basketball-04.jpg",
           sport: "Elite Training",
           title: "Equipment",
           description:
@@ -459,7 +474,7 @@ const DetailsData = {
         },
         {
           id: 5,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image: "/images/our-infrastructure/basketball/basketball-05.jpg",
           sport: "Lighting & Hydration ",
           title: "Support",
           description:
@@ -560,6 +575,7 @@ const DetailsData = {
     },
 
     eventsAndTournaments: {
+      status: true,
       headingFirst: "Events & Tournaments",
       headingSecond: "@ Gaudium Sportopia",
       description:
@@ -595,8 +611,9 @@ const DetailsData = {
     },
 
     journey: {
-      headingFirst: "The Strength",
-      headingSecond: "Behind the Squad",
+      status: true,
+      headingFirst: "Journey",
+      headingSecond: "in Pictures",
       description:
         "A visual journey capturing training, competition and defining moments from our basketball athletes’ path to excellence.",
 
@@ -618,89 +635,90 @@ const DetailsData = {
     },
 
     success: {
+      status: false,
       headingFirst: "success",
       headingSecond: "stories",
       description:
         "Take a glance at the basketball champions whose achievements define our excellence.",
 
       showcaseData: [
-        {
-          id: 1,
-          image: "/images/homepage/showcaseproject3.png",
-          title: "CHAARVI",
-          description: "ISSO National Badminton Championships",
-          svgCard: redsvg,
-        },
-        {
-          id: 2,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "ARCHITA",
-          description: "ISSO National Badminton Championships",
-          svgCard: bluesvg,
-        },
-        {
-          id: 3,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "ANVITHA",
-          description: "ISSO National Badminton Championships",
-          svgCard: redsvg,
-        },
-        {
-          id: 4,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "SRAVAS",
-          description: "ISSO National Badminton Championships",
-          svgCard: bluesvg,
-        },
-        {
-          id: 5,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "ASHMIT",
-          description: "ISSO National Badminton Championships",
-          svgCard: redsvg,
-        },
-        {
-          id: 6,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "AARAV",
-          description: "ISSO National Badminton Championships",
-          svgCard: bluesvg,
-        },
-        {
-          id: 7,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "SHANKAR",
-          description: "BHEL Cluster Tournament",
-          svgCard: redsvg,
-        },
-        {
-          id: 8,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "ARYAN",
-          description: "BHEL Cluster Tournament",
-          svgCard: bluesvg,
-        },
-        {
-          id: 9,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "GUNA",
-          description: "BHEL Cluster Tournament",
-          svgCard: redsvg,
-        },
-        {
-          id: 10,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "SHARAN",
-          description: "BHEL Cluster Tournament",
-          svgCard: bluesvg,
-        },
-        {
-          id: 11,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "AYAAN",
-          description: "BHEL Cluster Tournament",
-          svgCard: redsvg,
-        },
+        // {
+        //   id: 1,
+        //   image: "/images/homepage/showcaseproject3.png",
+        //   title: "CHAARVI",
+        //   description: "ISSO National Badminton Championships",
+        //   svgCard: redsvg,
+        // },
+        // {
+        //   id: 2,
+        //   image: "/images/homepage/showcaseproject4.png",
+        //   title: "ARCHITA",
+        //   description: "ISSO National Badminton Championships",
+        //   svgCard: bluesvg,
+        // },
+        // {
+        //   id: 3,
+        //   image: "/images/homepage/showcaseproject4.png",
+        //   title: "ANVITHA",
+        //   description: "ISSO National Badminton Championships",
+        //   svgCard: redsvg,
+        // },
+        // {
+        //   id: 4,
+        //   image: "/images/homepage/showcaseproject4.png",
+        //   title: "SRAVAS",
+        //   description: "ISSO National Badminton Championships",
+        //   svgCard: bluesvg,
+        // },
+        // {
+        //   id: 5,
+        //   image: "/images/homepage/showcaseproject4.png",
+        //   title: "ASHMIT",
+        //   description: "ISSO National Badminton Championships",
+        //   svgCard: redsvg,
+        // },
+        // {
+        //   id: 6,
+        //   image: "/images/homepage/showcaseproject4.png",
+        //   title: "AARAV",
+        //   description: "ISSO National Badminton Championships",
+        //   svgCard: bluesvg,
+        // },
+        // {
+        //   id: 7,
+        //   image: "/images/homepage/showcaseproject4.png",
+        //   title: "SHANKAR",
+        //   description: "BHEL Cluster Tournament",
+        //   svgCard: redsvg,
+        // },
+        // {
+        //   id: 8,
+        //   image: "/images/homepage/showcaseproject4.png",
+        //   title: "ARYAN",
+        //   description: "BHEL Cluster Tournament",
+        //   svgCard: bluesvg,
+        // },
+        // {
+        //   id: 9,
+        //   image: "/images/homepage/showcaseproject4.png",
+        //   title: "GUNA",
+        //   description: "BHEL Cluster Tournament",
+        //   svgCard: redsvg,
+        // },
+        // {
+        //   id: 10,
+        //   image: "/images/homepage/showcaseproject4.png",
+        //   title: "SHARAN",
+        //   description: "BHEL Cluster Tournament",
+        //   svgCard: bluesvg,
+        // },
+        // {
+        //   id: 11,
+        //   image: "/images/homepage/showcaseproject4.png",
+        //   title: "AYAAN",
+        //   description: "BHEL Cluster Tournament",
+        //   svgCard: redsvg,
+        // },
       ],
     },
   },
@@ -711,7 +729,7 @@ const DetailsData = {
       breadcrumbstextSecond: "Fencing",
       bannertitle: "Fencing",
       bannerContent:
-        "Precision-based combat sport developing lightning reflexes, strategy, discipline and intense mental focus skills.",
+        "Discover fencing at Gaudium Sportopia and develop focus, speed, and championship mindset early.",
       banneroverlaycontent: "Fencing",
       backgroundClass: "fencingbg",
     },
@@ -732,16 +750,17 @@ const DetailsData = {
         "An elite team of nationally certified coaches delivering world-class training, mentorship, and performance-driven development for aspiring athletes.",
 
       members: [
-        {
-          sport: "fencing",
-          role: "COACH",
-          img: "/images/homepage/thestrengthimageone.png",
-          name: "Smita",
-        },
+        // {
+        //   sport: "fencing",
+        //   role: "COACH",
+        //   img: "/images/homepage/thestrengthimageone.png",
+        //   name: "Smita",
+        // },
       ],
     },
 
     facility: {
+      status: true,
       headingFirst: "Facilities",
       headingSecond: "That Inspire",
 
@@ -751,7 +770,7 @@ const DetailsData = {
       slides: [
         {
           id: 1,
-          image: "/images/detail-page/fencing/fencing-arena.jpg",
+          image: "/images/our-infrastructure/fencing/fencing-01.jpg",
           sport: "State-of-the-Art",
           title: "Fencing Arena",
           description:
@@ -759,7 +778,7 @@ const DetailsData = {
         },
         {
           id: 2,
-          image: "/images/detail-page/fencing/fencing-flooring.jpg",
+          image: "/images/our-infrastructure/fencing/fencing-02.jpg",
           sport: "Professional Flooring &",
           title: "Training Aids",
           description:
@@ -767,7 +786,7 @@ const DetailsData = {
         },
         {
           id: 3,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image: "/images/our-infrastructure/fencing/fencing-03.jpg",
           sport: "Competition-Ready",
           title: "Environment",
           description:
@@ -775,7 +794,7 @@ const DetailsData = {
         },
         {
           id: 4,
-          image: "/images/detail-page/fencing/fencing-comfort.jpg",
+          image: "/images/our-infrastructure/fencing/fencing-04.jpg",
           sport: "Athlete Comfort &",
           title: "Support",
           description:
@@ -783,7 +802,7 @@ const DetailsData = {
         },
         {
           id: 5,
-          image: "/images/detail-page/fencing/fencing-equipment.jpg",
+          image: "/images/our-infrastructure/fencing/fencing-05 .jpg",
           sport: "Elite Equipment & Cross-Training ",
           title: "Access",
           description:
@@ -882,6 +901,7 @@ const DetailsData = {
     },
 
     eventsAndTournaments: {
+      status: true,
       headingFirst: "Events & Tournaments",
       headingSecond: "@ Gaudium Sportopia",
       description:
@@ -902,8 +922,9 @@ const DetailsData = {
     },
 
     journey: {
-      headingFirst: "The Strength",
-      headingSecond: "Behind the Squad",
+      status: true,
+      headingFirst: "Journey",
+      headingSecond: "in Pictures",
       description:
         "A visual journey capturing training, competition and defining moments from our Fencing athletes’ path to excellence.",
 
@@ -925,6 +946,7 @@ const DetailsData = {
     },
 
     success: {
+      status: true,
       headingFirst: "success",
       headingSecond: "stories",
       description:
@@ -933,81 +955,27 @@ const DetailsData = {
       showcaseData: [
         {
           id: 1,
-          image: "/images/homepage/showcaseproject3.png",
-          title: "CHAARVI",
-          description: "ISSO National Badminton Championships",
+          image: "/images/detail-page/fencing/sucess-stories/RIDHIGUTHULA-.png",
+          title: "RIDHI GUTHULA",
+          description: "INDIVIDUAL EVENT BRONZE MEDAL  EVENT/  WEAPON : SABRE ",
           svgCard: redsvg,
         },
         {
           id: 2,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "ARCHITA",
-          description: "ISSO National Badminton Championships",
+          image:
+            "/images/detail-page/fencing/sucess-stories/GRETA-AGARWAL-.png",
+          title: "GRETA AGARWAL",
+          description: "5th Rank",
           svgCard: bluesvg,
         },
         {
           id: 3,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "ANVITHA",
-          description: "ISSO National Badminton Championships",
+          image: "/images/detail-page/fencing/sucess-stories/RIYA-SENCHA-.png",
+          title: "RIYA SENCHA",
+          description: "5th Rank",
           svgCard: redsvg,
         },
-        {
-          id: 4,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "SRAVAS",
-          description: "ISSO National Badminton Championships",
-          svgCard: bluesvg,
-        },
-        {
-          id: 5,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "ASHMIT",
-          description: "ISSO National Badminton Championships",
-          svgCard: redsvg,
-        },
-        {
-          id: 6,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "AARAV",
-          description: "ISSO National Badminton Championships",
-          svgCard: bluesvg,
-        },
-        {
-          id: 7,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "SHANKAR",
-          description: "BHEL Cluster Tournament",
-          svgCard: redsvg,
-        },
-        {
-          id: 8,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "ARYAN",
-          description: "BHEL Cluster Tournament",
-          svgCard: bluesvg,
-        },
-        {
-          id: 9,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "GUNA",
-          description: "BHEL Cluster Tournament",
-          svgCard: redsvg,
-        },
-        {
-          id: 10,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "SHARAN",
-          description: "BHEL Cluster Tournament",
-          svgCard: bluesvg,
-        },
-        {
-          id: 11,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "AYAAN",
-          description: "BHEL Cluster Tournament",
-          svgCard: redsvg,
-        },
+        {},
       ],
     },
   },
@@ -1018,7 +986,7 @@ const DetailsData = {
       breadcrumbstextSecond: "Gymnastics",
       bannertitle: "Gymnastics",
       bannerContent:
-        "Foundation sport enhancing strength, flexibility, balance, coordination, body control and technical movement mastery.",
+        "Shape strength, flexibility, and confidence through guided gymnastics training at Gaudium Sportopia.",
       banneroverlaycontent: "Gymnastics",
       backgroundClass: "gymnasticsbg",
     },
@@ -1039,40 +1007,17 @@ const DetailsData = {
         "An elite team of nationally certified coaches delivering world-class training, mentorship, and performance-driven development for aspiring athletes.",
 
       members: [
-        {
-          sport: "gymnastics",
-          role: "MENTOR",
-          img: "/images/homepage/thestrengthimageone.png",
-          name: "Manoj Rana",
-        },
-        {
-          sport: "gymnastics",
-          role: "COACH",
-          img: "/images/homepage/thestrengthimageone.png",
-          name: "Sona K.B",
-        },
-        {
-          sport: "gymnastics",
-          role: "COACH",
-          img: "/images/homepage/thestrengthimageone.png",
-          name: "Rithik Mishra",
-        },
-        {
-          sport: "gymnastics",
-          role: "COACH",
-          img: "/images/homepage/thestrengthimageone.png",
-          name: "Rishabh Singh",
-        },
-        {
-          sport: "gymnastics",
-          role: "COACH",
-          img: "/images/homepage/thestrengthimageone.png",
-          name: "Lilia padalka",
-        },
+        // {
+        //   sport: "gymnastics",
+        //   role: "MENTOR",
+        //   img: "/images/homepage/thestrengthimageone.png",
+        //   name: "Manoj Rana",
+        // },
       ],
     },
 
     facility: {
+      status: true,
       headingFirst: "Facilities",
       headingSecond: "That Inspire",
 
@@ -1082,7 +1027,7 @@ const DetailsData = {
       slides: [
         {
           id: 1,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image: "/images/our-infrastructure/gymnastics/gymnastics-01.jpg",
           sport: "Olympic-Size FIG-Approved",
           title: "Arena",
           description:
@@ -1090,7 +1035,7 @@ const DetailsData = {
         },
         {
           id: 2,
-          image: "/images/detail-page/gymnastics/flooring-safety.jpg",
+          image: "/images/our-infrastructure/gymnastics/gymnastics-02.jpg",
           sport: "High-Performance Flooring ",
           title: "and Safety",
           description:
@@ -1098,7 +1043,7 @@ const DetailsData = {
         },
         {
           id: 3,
-          image: "/images/detail-page/gymnastics/competition-environment.jpg",
+          image: "/images/our-infrastructure/gymnastics/gymnastics-03.jpg",
           sport: "Competition-Ready",
           title: "Environment",
           description:
@@ -1106,7 +1051,7 @@ const DetailsData = {
         },
         {
           id: 4,
-          image: "/images/detail-page/gymnastics/athlete-comfort.jpg",
+          image: "/images/our-infrastructure/gymnastics/gymnastics-04.jpg",
           sport: "Athlete Comfort and",
           title: "Support",
           description:
@@ -1114,7 +1059,7 @@ const DetailsData = {
         },
         {
           id: 5,
-          image: "/images/detail-page/gymnastics/elite-equipment.jpg",
+          image: "/images/our-infrastructure/gymnastics/gymnastics-05.jpg",
           sport: "Elite Equipment & Cross-Training",
           title: "Access",
           description:
@@ -1213,6 +1158,7 @@ const DetailsData = {
     },
 
     eventsAndTournaments: {
+      status: true,
       headingFirst: "Events & Tournaments",
       headingSecond: "@ Gaudium Sportopia",
       description:
@@ -1243,8 +1189,9 @@ const DetailsData = {
     },
 
     journey: {
-      headingFirst: "The Strength",
-      headingSecond: "Behind the Squad",
+      status: true,
+      headingFirst: "Journey",
+      headingSecond: "in Pictures",
       description:
         "A visual journey capturing training, competition and defining moments from our gymnastics athletes’ path to excellence.",
 
@@ -1268,40 +1215,41 @@ const DetailsData = {
     },
 
     success: {
+      status: false,
       headingFirst: "success",
       headingSecond: "stories",
       description:
         "Take a glance at the gymnastics champions whose achievements define our excellenceKhelo India Junior nationals – Nishka Agarwal",
 
       showcaseData: [
-        {
-          id: 1,
-          image: "/images/homepage/showcaseproject3.png",
-          title: "Narayani Madhusudhan",
-          description: "CBSE National",
-          svgCard: redsvg,
-        },
-        {
-          id: 2,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "Sai Sarayu Madasu",
-          description: "ISSO National",
-          svgCard: bluesvg,
-        },
-        {
-          id: 3,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "Meha Mauthik",
-          description: "ISSO National",
-          svgCard: redsvg,
-        },
-        {
-          id: 4,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "Shikha Pragnya",
-          description: "ISSO National",
-          svgCard: bluesvg,
-        },
+        // {
+        //   id: 1,
+        //   image: "/images/homepage/showcaseproject3.png",
+        //   title: "Narayani Madhusudhan",
+        //   description: "CBSE National",
+        //   svgCard: redsvg,
+        // },
+        // {
+        //   id: 2,
+        //   image: "/images/homepage/showcaseproject4.png",
+        //   title: "Sai Sarayu Madasu",
+        //   description: "ISSO National",
+        //   svgCard: bluesvg,
+        // },
+        // {
+        //   id: 3,
+        //   image: "/images/homepage/showcaseproject4.png",
+        //   title: "Meha Mauthik",
+        //   description: "ISSO National",
+        //   svgCard: redsvg,
+        // },
+        // {
+        //   id: 4,
+        //   image: "/images/homepage/showcaseproject4.png",
+        //   title: "Shikha Pragnya",
+        //   description: "ISSO National",
+        //   svgCard: bluesvg,
+        // },
       ],
     },
   },
@@ -1312,7 +1260,7 @@ const DetailsData = {
       breadcrumbstextSecond: "Skating",
       bannertitle: "Skating",
       bannerContent:
-        "Skill-driven sport improving balance, speed, control, confidence, coordination and overall movement efficiency development.",
+        "Develop speed and balance through professional skating programs built for young competitors.",
       banneroverlaycontent: "Skating",
       backgroundClass: "skatingbg",
     },
@@ -1333,16 +1281,17 @@ const DetailsData = {
         "An elite team of nationally certified coaches delivering world-class training, mentorship, and performance-driven development for aspiring athletes.",
 
       members: [
-        {
-          sport: "Skating",
-          role: "COACH",
-          img: "/images/homepage/thestrengthimageone.png",
-          name: "Valli Sri Sataya Vadlapatla",
-        },
+        // {
+        //   sport: "Skating",
+        //   role: "COACH",
+        //   img: "/images/homepage/thestrengthimageone.png",
+        //   name: "Valli Sri Sataya Vadlapatla",
+        // },
       ],
     },
 
     facility: {
+      status: true,
       headingFirst: "Facilities",
       headingSecond: "That Inspire",
 
@@ -1379,7 +1328,8 @@ const DetailsData = {
         },
         {
           id: 4,
-          image: "/images/detail-page/skating/skating-equipment.jpg",
+          image:
+            "/images/detail-page/skating/facility/Skating-rink-facilities-01.jpg",
           sport: "Professional Training",
           title: "Equipment",
           description:
@@ -1387,7 +1337,8 @@ const DetailsData = {
         },
         {
           id: 5,
-          image: "/images/detail-page/skating/skating-conditioning.jpg",
+          image:
+            "/images/detail-page/skating/facility/Skating-rink-facilities-02.jpg",
           sport: "Elite Conditioning",
           title: "Access",
           description:
@@ -1486,6 +1437,7 @@ const DetailsData = {
     },
 
     eventsAndTournaments: {
+      status: true,
       headingFirst: "Events & Tournaments",
       headingSecond: "@ Gaudium Sportopia",
       description:
@@ -1516,8 +1468,9 @@ const DetailsData = {
     },
 
     journey: {
-      headingFirst: "The Strength",
-      headingSecond: "Behind the Squad",
+      status: true,
+      headingFirst: "Journey",
+      headingSecond: "in Pictures",
       description:
         "A visual journey capturing training, competition and defining moments from our gymnastics athletes’ path to excellence.",
 
@@ -1539,6 +1492,7 @@ const DetailsData = {
     },
 
     success: {
+      status: true,
       headingFirst: "success",
       headingSecond: "stories",
       description:
@@ -1547,31 +1501,105 @@ const DetailsData = {
       showcaseData: [
         {
           id: 1,
-          image: "/images/homepage/showcaseproject3.png",
-          title: "Narayani Madhusudhan",
-          description: "CBSE National",
+          image:
+            "/images/detail-page/skating/sucess-stories/Pparin-Agarwal-skating.png",
+          title: "Pparin",
+          description: "SILVER",
           svgCard: redsvg,
         },
         {
           id: 2,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "Sai Sarayu Madasu",
-          description: "ISSO National",
+          image:
+            "/images/detail-page/skating/sucess-stories/Prayaan-Agarwal-skating.png",
+          title: "Prayaan",
+          description: "BRONZE",
           svgCard: bluesvg,
         },
         {
           id: 3,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "Meha Mauthik",
-          description: "ISSO National",
+          image:
+            "/images/detail-page/skating/sucess-stories/Virat-Krishna-skating.png",
+          title: "Virat Krishna",
+          description: "BRONZE",
           svgCard: redsvg,
         },
         {
           id: 4,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "Shikha Pragnya",
-          description: "ISSO National",
+          image: "",
+          title: "Hridha",
+          description: "SILVER",
           svgCard: bluesvg,
+        },
+        {
+          id: 5,
+          image:
+            "/images/detail-page/skating/sucess-stories/Sasha-Sunkesula-skating.png",
+          title: "Sasha",
+          description: "GOLD",
+          svgCard: redsvg,
+        },
+        {
+          id: 6,
+          image:
+            "/images/detail-page/skating/sucess-stories/Vaishnavi-skating.png",
+          title: "Vaishnavi",
+          description: "GOLD",
+          svgCard: bluesvg,
+        },
+        {
+          id: 7,
+          image:
+            "/images/detail-page/skating/sucess-stories/Aaradhya-skating.png",
+          title: "Aaradhya",
+          description: "SILVER",
+          svgCard: redsvg,
+        },
+        {
+          id: 8,
+          image: "/images/detail-page/skating/sucess-stories/Disha-skating.png",
+          title: "Disha",
+          description: "BRONZE",
+          svgCard: bluesvg,
+        },
+        {
+          id: 9,
+          image:
+            "/images/detail-page/skating/sucess-stories/Vihaan-yadagiri-skating.png",
+          title: "Vihaan",
+          description: "SILVER",
+          svgCard: redsvg,
+        },
+        {
+          id: 10,
+          image:
+            "/images/detail-page/skating/sucess-stories/Parishi-slating.png",
+          title: "Parishi",
+          description: "BRONZE",
+          svgCard: bluesvg,
+        },
+        {
+          id: 11,
+          image:
+            "/images/detail-page/skating/sucess-stories/Aadvi-Veluru-skating.png",
+          title: "Aadvi",
+          description: "SILVER",
+          svgCard: redsvg,
+        },
+        {
+          id: 12,
+          image:
+            "/images/detail-page/skating/sucess-stories/BAIRY-VEEKSHA-skating.png",
+          title: "BAIRY VEEKSHA ",
+          description: "",
+          svgCard: bluesvg,
+        },
+        {
+          id: 13,
+          image:
+            "/images/detail-page/skating/sucess-stories/Harsha-Vardhan-skating.png",
+          title: "HARSHA VARDHAN",
+          description: "",
+          svgCard: redsvg,
         },
       ],
     },
@@ -1583,7 +1611,7 @@ const DetailsData = {
       breadcrumbstextSecond: "athletics",
       bannertitle: "athletics",
       bannerContent:
-        "Track-and-field sport enhancing speed, endurance, strength, agility, coordination and competitive performance across multiple events.",
+        "Begin your competitive athletics journey with professional training designed to unlock sporting potential.",
       banneroverlaycontent: "athletics",
       backgroundClass: "athleticsbg",
     },
@@ -1593,7 +1621,7 @@ const DetailsData = {
       secondsportstitlefirst: "The vision of",
       secondsportstitlesecond: "Athletics Excellence",
       firstparagraphtext:
-        "The Athletics Centre of Excellence at Gaudium Sportopia embodies a bold vision to redefine Indian athletics. Going beyond training, we nurture future Olympic champions through comprehensive programs and world-class coaching. Inspired by India’s legendary athletes, our mission is to transform potential into podium success and help India achieve lasting glory on the global athletics stage.",
+        "The Athletics Centre of Excellence at Gaudium Sportopia prepares young athletes to pursue Olympic dreams through structured, performance-focused training. Inspired by legends like Milkha Singh, P. T. Usha and Hima Das, students develop speed, strength and competitive mindset thus building discipline, resilience, and confidence while mastering running, jumping, and throwing for future national and international success.",
       secondparagraphtext: "",
     },
 
@@ -1604,33 +1632,34 @@ const DetailsData = {
         "An elite team of nationally certified coaches delivering world-class training, mentorship, and performance-driven development for aspiring athletes.",
 
       members: [
-        {
-          sport: "athletics",
-          role: "COACH",
-          img: "/images/homepage/thestrengthimageone.png",
-          name: "Ramulu Korra",
-        },
-        {
-          sport: "athletics",
-          role: "COACH",
-          img: "/images/homepage/thestrengthimageone.png",
-          name: "Likki Teja Vardhan Reddy",
-        },
-        {
-          sport: "athletics",
-          role: "COACH",
-          img: "/images/homepage/thestrengthimageone.png",
-          name: "Laxmiram",
-        },
+        // {
+        //   sport: "athletics",
+        //   role: "COACH",
+        //   img: "/images/homepage/thestrengthimageone.png",
+        //   name: "Ramulu Korra",
+        // },
+        // {
+        //   sport: "athletics",
+        //   role: "COACH",
+        //   img: "/images/homepage/thestrengthimageone.png",
+        //   name: "Likki Teja Vardhan Reddy",
+        // },
+        // {
+        //   sport: "athletics",
+        //   role: "COACH",
+        //   img: "/images/homepage/thestrengthimageone.png",
+        //   name: "Laxmiram",
+        // },
       ],
     },
 
     facility: {
+      status: true,
       headingFirst: "Facilities",
       headingSecond: "That Inspire",
 
       facilitytwoline:
-        "SWorld-class athletics facilities designed to inspire speed, endurance, precision and podium-ready performance across disciplines.",
+        "World-class athletics facilities designed to inspire speed, endurance, precision and podium-ready performance across disciplines.",
 
       slides: [
         {
@@ -1750,6 +1779,7 @@ const DetailsData = {
     },
 
     eventsAndTournaments: {
+      status: true,
       headingFirst: "Events & Tournaments",
       headingSecond: "@ Gaudium Sportopia",
       description:
@@ -1775,8 +1805,9 @@ const DetailsData = {
     },
 
     journey: {
-      headingFirst: "The Strength",
-      headingSecond: "Behind the Squad",
+      status: true,
+      headingFirst: "Journey",
+      headingSecond: "in Pictures",
       description:
         "A visual journey capturing training, competition and defining moments from our athletes’ path to excellence.",
 
@@ -1798,6 +1829,7 @@ const DetailsData = {
     },
 
     success: {
+      status: true,
       headingFirst: "success",
       headingSecond: "stories",
       description:
@@ -1806,68 +1838,94 @@ const DetailsData = {
       showcaseData: [
         {
           id: 1,
-          image: "/images/homepage/showcaseproject1.png",
-          title: "SKANDHA",
-          description:
-            "HYDERABAD SAHODAYA SCHOOLS CLUSTER ATHLETIC MEET Under age 16 2024-25",
+          image:
+            "/images/detail-page/athletics/sucess-stories/aditi-athlete.png",
+          title: "Aditi Reddy",
+          description: "Gold medal-Triathlon B group",
           svgCard: redsvg,
         },
         {
           id: 2,
-          image: "/images/homepage/showcaseproject2.png",
-          title: "DIVYANSHI MISHRA",
-          description:
-            "HYDERABAD SAHODAYA SCHOOLS CLUSTER ATHLETIC MEET Under age 16 2024-25",
+          image: "/images/detail-page/athletics/sucess-stories/kiara.png",
+          title: "Kiara kamat",
+          description: "Gold medal-Triathlon B group",
           svgCard: bluesvg,
         },
         {
           id: 3,
-          image: "/images/homepage/showcaseproject3.png",
-          title: "MISCHA J",
-          description:
-            "HYDERABAD SAHODAYA SCHOOLS CLUSTER ATHLETIC MEET Under age 16 2024-25",
+          image:
+            "/images/detail-page/athletics/sucess-stories/KRISHIV-athlete.png",
+          title: "Krishiv  Balineni",
+          description: "4x100m relay bronze",
           svgCard: redsvg,
         },
         {
           id: 4,
-          image: "/images/homepage/showcaseproject4.png",
-          title: "NAINIKA",
-          description:
-            "HYDERABAD SAHODAYA SCHOOLS CLUSTER ATHLETIC MEET Under age 16 2024-25",
+          image:
+            "/images/detail-page/athletics/sucess-stories/Nikhil-athlete.png",
+          title: "Nikhil Sriram Ravuri",
+          description: "4x100m relay bronze",
           svgCard: bluesvg,
         },
         {
           id: 5,
-          image: "/images/homepage/showcaseproject5.png",
-          title: "DIVYANSHI MISHRA",
-          description:
-            "HYDERABAD SAHODAYA SCHOOLS CLUSTER ATHLETIC MEET Under age 16 2024-25",
+          image:
+            "/images/detail-page/athletics/sucess-stories/Shraddha-Kalaveni-athlete.png",
+          title: "Shraddha  Kalaveni",
+          description: "4X100M RELAY BRONZE",
           svgCard: redsvg,
         },
         {
           id: 6,
-          image: "/images/homepage/showcaseproject6.png",
-          title: "SKANDHA",
-          description:
-            "HYDERABAD SAHODAYA SCHOOLS CLUSTER ATHLETIC MEET Under age 16 2024-25",
+          image:
+            "/images/detail-page/athletics/sucess-stories/Ved-Pathak-athlete.png",
+          title: "Ved  Pathak",
+          description: "4x100m relay bronze",
           svgCard: bluesvg,
         },
         {
           id: 7,
-          image: "/images/homepage/showcaseproject7.png",
-          title: "MISCHA J",
-          description:
-            "HYDERABAD SAHODAYA SCHOOLS CLUSTER ATHLETIC MEET Under age 16 2024-25",
+          image:
+            "/images/detail-page/athletics/sucess-stories/Yuvraj-Gupta-athlete.png",
+          title: "Yuvraj  Gupta",
+          description: "Long Jump - siliver medal",
           svgCard: redsvg,
         },
-        {
-          id: 8,
-          image: "/images/homepage/showcaseproject8.png",
-          title: "DIVYANSHI MISHRA",
-          description:
-            "HYDERABAD SAHODAYA SCHOOLS CLUSTER ATHLETIC MEET Under age 16 2024-25",
-          svgCard: bluesvg,
-        },
+        // {
+        //   id: 8,
+        //   image: "",
+        //   title: "KOTNAK JAKESH",
+        //   description: "Kids Javelin - Gold medal",
+        //   svgCard: bluesvg,
+        // },
+        // {
+        //   id: 9,
+        //   image: "/images/detail-page/athletics/sucess-stories/aditi-athlete.png",
+        //   title: "MESRAM INDRABAN",
+        //   description: "Kids Javelin - Gold medal",
+        //   svgCard: redsvg,
+        // },
+        // {
+        //   id: 10,
+        //   image: "/images/detail-page/athletics/sucess-stories/aditi-athlete.png",
+        //   title: "APPALA VARUN",
+        //   description: "60M SILIVER MEDAL",
+        //   svgCard: bluesvg,
+        // },
+        // {
+        //   id: 11,
+        //   image: "/images/detail-page/athletics/sucess-stories/aditi-athlete.png",
+        //   title: "NAINI SRIKANTH",
+        //   description: "PENTATHLON SILIVER MEDAL",
+        //   svgCard: redsvg,
+        // },
+        // {
+        //   id: 12,
+        //   image: "/images/detail-page/athletics/sucess-stories/aditi-athlete.png",
+        //   title: "ARYAN BABU",
+        //   description: "Kids Javelin - Gold medal",
+        //   svgCard: bluesvg,
+        // },
       ],
     },
   },
@@ -1878,7 +1936,7 @@ const DetailsData = {
       breadcrumbstextSecond: "Cricket",
       bannertitle: "Cricket",
       bannerContent:
-        "Strategic team sport developing batting, bowling, fielding skills, teamwork, focus and match awareness consistently.",
+        "Enroll in cricket training at Gaudium Sportopia that builds match skills, discipline, and future-ready competitive players.",
       banneroverlaycontent: "Cricket",
       backgroundClass: "cricketbg",
     },
@@ -1899,22 +1957,23 @@ const DetailsData = {
         "An elite team of nationally certified coaches delivering world-class training, mentorship, and performance-driven development for aspiring athletes.",
 
       members: [
-        {
-          sport: "Cricket",
-          role: "COACH",
-          img: "/images/homepage/thestrengthimageone.png",
-          name: "Omer",
-        },
-        {
-          sport: "Cricket",
-          role: "COACH",
-          img: "/images/homepage/thestrengthimageone.png",
-          name: "Sathish",
-        },
+        // {
+        //   sport: "Cricket",
+        //   role: "COACH",
+        //   img: "/images/homepage/thestrengthimageone.png",
+        //   name: "Omer",
+        // },
+        // {
+        //   sport: "Cricket",
+        //   role: "COACH",
+        //   img: "/images/homepage/thestrengthimageone.png",
+        //   name: "Sathish",
+        // },
       ],
     },
 
     facility: {
+      status: true,
       headingFirst: "Facilities",
       headingSecond: "That Inspire",
 
@@ -1924,7 +1983,7 @@ const DetailsData = {
       slides: [
         {
           id: 1,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image: "/images/our-infrastructure/cricket/cricket-01.jpg",
           sport: "International-Standard  ",
           title: "Ground",
           description:
@@ -1932,7 +1991,7 @@ const DetailsData = {
         },
         {
           id: 2,
-          image: "/images/detail-page/badminton/football-img-1.jpg",
+          image: "/images/our-infrastructure/cricket/cricket-05.jpg",
           sport: "BCCI-Compliant",
           title: "Nets",
           description:
@@ -1940,7 +1999,7 @@ const DetailsData = {
         },
         {
           id: 3,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image: "/images/our-infrastructure/cricket/cricket-03.jpg",
           sport: "Technology-Driven",
           title: "Training",
           description:
@@ -1948,7 +2007,7 @@ const DetailsData = {
         },
         {
           id: 4,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image: "/images/our-infrastructure/cricket/cricket-04.jpg",
           sport: "Specialised Skill",
           title: "Development",
           description:
@@ -1956,7 +2015,7 @@ const DetailsData = {
         },
         {
           id: 5,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image: "/images/our-infrastructure/cricket/cricket-02.jpg",
           sport: "Weather Proof ",
           title: "Infrastructure",
           description:
@@ -2043,6 +2102,7 @@ const DetailsData = {
     },
 
     eventsAndTournaments: {
+      status: true,
       headingFirst: "Events & Tournaments",
       headingSecond: "@ Gaudium Sportopia",
       description:
@@ -2068,8 +2128,9 @@ const DetailsData = {
     },
 
     journey: {
-      headingFirst: "The Strength",
-      headingSecond: "Behind the Squad",
+      status: true,
+      headingFirst: "Journey",
+      headingSecond: "in Pictures",
       description:
         "A visual journey capturing training, competition and defining moments from our cricket athletes’ path to excellence.",
 
@@ -2091,6 +2152,7 @@ const DetailsData = {
     },
 
     success: {
+      status: false,
       headingFirst: "success",
       headingSecond: "stories",
       description:
@@ -2123,7 +2185,7 @@ const DetailsData = {
       breadcrumbstextSecond: "football",
       bannertitle: "football",
       bannerContent:
-        "High-intensity team sport improving stamina, coordination, tactical understanding, ball control, teamwork and competitive spirit.",
+        "Start your football journey at Gaudium Sportopia with coaching aligned to modern competitive standards.",
       banneroverlaycontent: "football",
       backgroundClass: "footballbg",
     },
@@ -2133,7 +2195,7 @@ const DetailsData = {
       secondsportstitlefirst: "The vision of",
       secondsportstitlesecond: "Football Excellence",
       firstparagraphtext:
-        "The Football Centre of Excellence at Gaudium Sportopia nurtures young talent with a bold vision of national and international success. Supported by elite, national-level coaches and innovative training methodologies, our programme aligns with India’s growing football ecosystem. With rising opportunities through AIFF initiatives and leagues like the ISL, aspiring footballers gain the platform to progress faster and aim for early national representation.",
+        "The Football Centre of Excellence at Gaudium Sportopia makes young athletes train within a professional pathway inspired by the growth of the ISL and India’s evolving football ecosystem. Guided by expert coaches and advanced training systems, students develop match intelligence, technical strength,  and competitive confidence, thus preparing them to pursue excellence and follow the inspiring journey shaped by icons like Sunil Chhetri.",
       secondparagraphtext: "",
     },
 
@@ -2144,22 +2206,23 @@ const DetailsData = {
         "An elite team of nationally certified coaches delivering world-class training, mentorship and performance-driven development for aspiring athletes.",
 
       members: [
-        {
-          sport: "Football",
-          role: "COACH",
-          img: "/images/homepage/thestrengthimageone.png",
-          name: "Chintha Guruprasad",
-        },
-        {
-          sport: "Football",
-          role: "COACH",
-          img: "/images/homepage/thestrengthimageone.png",
-          name: "Sai",
-        },
+        // {
+        //   sport: "Football",
+        //   role: "COACH",
+        //   img: "/images/homepage/thestrengthimageone.png",
+        //   name: "Chintha Guruprasad",
+        // },
+        // {
+        //   sport: "Football",
+        //   role: "COACH",
+        //   img: "/images/homepage/thestrengthimageone.png",
+        //   name: "Sai",
+        // },
       ],
     },
 
     facility: {
+      status: true,
       headingFirst: "Facilities",
       headingSecond: "That Inspire",
 
@@ -2299,6 +2362,7 @@ const DetailsData = {
     },
 
     eventsAndTournaments: {
+      status: true,
       headingFirst: "Events & Tournaments",
       headingSecond: "@ Gaudium Sportopia",
       description:
@@ -2324,8 +2388,9 @@ const DetailsData = {
     },
 
     journey: {
-      headingFirst: "The Strength",
-      headingSecond: "Behind the Squad",
+      status: true,
+      headingFirst: "Journey",
+      headingSecond: "in Pictures",
       description:
         "A visual journey capturing training, competition and defining moments from our football  athletes’ path to excellence.",
 
@@ -2345,26 +2410,27 @@ const DetailsData = {
     },
 
     success: {
+      status: false,
       headingFirst: "success",
       headingSecond: "stories",
       description:
         "Take a glance at the football champions whose achievements define our excellence .",
 
       showcaseData: [
-        {
-          id: 1,
-          image: "/images/homepage/showcaseproject1.png",
-          title: "Ammena Ahmed Babukhan",
-          description: "Selected for Telanga Jr National football team",
-          svgCard: redsvg,
-        },
-        {
-          id: 2,
-          image: "",
-          title: "",
-          description: "",
-          svgCard: "",
-        },
+        // {
+        //   id: 1,
+        //   image: "/images/homepage/showcaseproject1.png",
+        //   title: "Ammena Ahmed Babukhan",
+        //   description: "Selected for Telanga Jr National football team",
+        //   svgCard: redsvg,
+        // },
+        // {
+        //   id: 2,
+        //   image: "",
+        //   title: "",
+        //   description: "",
+        //   svgCard: "",
+        // },
       ],
     },
   },
@@ -2375,7 +2441,7 @@ const DetailsData = {
       breadcrumbstextSecond: "Swimming",
       bannertitle: "Swimming",
       bannerContent:
-        "Full-body water sport building strength, endurance, technique, flexibility, speed and aquatic confidence for all levels.",
+        "Join structured swimming programs designed to build endurance, technique, and competitive readiness.",
       banneroverlaycontent: "Swimming",
       backgroundClass: "swimmingbg",
     },
@@ -2385,7 +2451,7 @@ const DetailsData = {
       secondsportstitlefirst: "The vision of",
       secondsportstitlesecond: "Swimming Excellence",
       firstparagraphtext:
-        "The Swimming Centre of Excellence at Gaudium Sportopia is designed to nurture the next generation of competitive swimmers. Our world-class pool and expert coaching create an ideal environment for developing technique, strength, and endurance. With India seeking its next international swimming champion, our uncompromising training standards and advanced facilities empower young swimmers to rise, compete, and bring national glory.",
+        "The Swimming Centre of Excellence at Gaudium Sportopia makes athletes train in a high-performance aquatic environment designed for competitive excellence. With advanced pool infrastructure and structured coaching aligned to international standards and events like the Asian Games, students build enduranceand technique. This prepares the next generation to elevate India’s success in global swimming arenas, where our country have been facing minimal success. ",
       secondparagraphtext: "",
     },
 
@@ -2396,22 +2462,23 @@ const DetailsData = {
         "An elite team of nationally certified coaches delivering world-class training, mentorship and performance-driven development for aspiring athletes.",
 
       members: [
-        {
-          sport: "Swimming",
-          role: "COACH",
-          img: "/images/homepage/thestrengthimageone.png",
-          name: "Muthyala Hemasri",
-        },
-        {
-          sport: "Swimming",
-          role: "COACH",
-          img: "/images/homepage/thestrengthimageone.png",
-          name: "C. Jacob Vijay Kumar",
-        },
+        // {
+        //   sport: "Swimming",
+        //   role: "COACH",
+        //   img: "/images/homepage/thestrengthimageone.png",
+        //   name: "Muthyala Hemasri",
+        // },
+        // {
+        //   sport: "Swimming",
+        //   role: "COACH",
+        //   img: "/images/homepage/thestrengthimageone.png",
+        //   name: "C. Jacob Vijay Kumar",
+        // },
       ],
     },
 
     facility: {
+      status: true,
       headingFirst: "Facilities",
       headingSecond: "That Inspire",
 
@@ -2421,7 +2488,7 @@ const DetailsData = {
       slides: [
         {
           id: 1,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image: "/images/our-infrastructure/swimming/swimming-01.jpg",
           sport: "Elite Training",
           title: "Pool",
           description:
@@ -2429,7 +2496,7 @@ const DetailsData = {
         },
         {
           id: 2,
-          image: "/images/detail-page/badminton/football-img-1.jpg",
+          image: "/images/our-infrastructure/swimming/swimming-01.jpg",
           sport: "Race-Ready",
           title: "Infrastructure",
           description:
@@ -2437,7 +2504,7 @@ const DetailsData = {
         },
         {
           id: 3,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image: "/images/our-infrastructure/swimming/swimming-01.jpg",
           sport: "Athlete & Spectator",
           title: "Amenities",
           description:
@@ -2558,6 +2625,7 @@ const DetailsData = {
     },
 
     eventsAndTournaments: {
+      status: true,
       headingFirst: "Events & Tournaments",
       headingSecond: "@ Gaudium Sportopia",
       description:
@@ -2588,8 +2656,9 @@ const DetailsData = {
     },
 
     journey: {
-      headingFirst: "The Strength",
-      headingSecond: "Behind the Squad",
+      status: true,
+      headingFirst: "Journey",
+      headingSecond: "in Pictures",
       description:
         "A visual journey capturing training, competition and defining moments from our swimming  athletes’ path to excellence.",
 
@@ -2611,6 +2680,7 @@ const DetailsData = {
     },
 
     success: {
+      status: true,
       headingFirst: "success",
       headingSecond: "stories",
       description:
@@ -2619,22 +2689,169 @@ const DetailsData = {
       showcaseData: [
         {
           id: 1,
-          image: "/images/homepage/showcaseproject1.png",
-          title: "Ammena Ahmed Babukhan",
-          description: "Selected for Telanga Jr National football team",
+          image:
+            "/images/detail-page/swimming/sucess-stories/Arya-Marda-swiming.png",
+          title: "ARYA MARDA",
+          description:
+            "Won the Gold medal In 25 mts Breast Stroke under 11 age group",
+          svgCard: redsvg,
+        },
+        {
+          id: 2,
+          image:
+            "/images/detail-page/swimming/sucess-stories/Jenika-Ranjan-swimming.png",
+          title: "JENIKA ",
+          description:
+            "Won the Bronze medal In 25mts Back Stroke relay in Grade5 group",
+          svgCard: redsvg,
+        },
+        {
+          id: 3,
+          image:
+            "/images/detail-page/swimming/sucess-stories/Laasitha-Machcha-swimming.png",
+          title: "LAASITHA MACHCHA",
+          description:
+            "Won the Silver medal In 4X25 mts Freestyle Relay in Grade5 group",
+          svgCard: redsvg,
+        },
+        {
+          id: 4,
+          image:
+            "/images/detail-page/swimming/sucess-stories/Inika-Reddy Mutyala-swimming.png",
+          title: "INIKA REDDY",
+          description:
+            "Won the Silver medal In 4X25 mts Freestyle Relay in Grade5 group",
+          svgCard: redsvg,
+        },
+        {
+          id: 5,
+          image:
+            "/images/detail-page/swimming/sucess-stories/KRISHA-NALLURI-swimming.png",
+          title: "KRISHA NALLURI",
+          description:
+            "Won the Silver medal In 4X25 mts Freestyle Relay in Grade5 group",
+          svgCard: redsvg,
+        },
+        {
+          id: 6,
+          image:
+            "/images/detail-page/swimming/sucess-stories/Ayara-Machcha-swimming.png",
+          title: "AYARA MACHCHA",
+          description:
+            "Won the Silver medal In 25 mts Breast Stroke in Grade 3 group",
+          svgCard: redsvg,
+        },
+        {
+          id: 8,
+          image: "",
+          title: "NIVRITHI",
+          description:
+            "Won the Bronze medal In 4X25 mts Freestyle Relay in Grade 3 group",
+          svgCard: redsvg,
+        },
+        {
+          id: 9,
+          image:
+            "/images/detail-page/swimming/sucess-stories/HAYATHI-APPA-swimming.png",
+          title: "HAYATHI APPA",
+          description:
+            "Won the Bronze medal In 4X25 mts Freestyle Relay in Grade 3 group",
+          svgCard: redsvg,
+        },
+        {
+          id: 10,
+          image:
+            "/images/detail-page/swimming/sucess-stories/Ishanvi-Sriram-swimming.png",
+          title: "ISHANVI SRIRAM",
+          description:
+            "Won the Bronze medal In 4X25 mts Freestyle Relay in Grade 3 group",
+          svgCard: redsvg,
+        },
+        {
+          id: 11,
+          image:
+            "/images/detail-page/swimming/sucess-stories/Nirvaan-Donempudi-swimming.png",
+          title: "NIRVAAN ",
+          description:
+            "Won the Gold medal In 25 mts Back Stroke in Grade3 group",
+          svgCard: redsvg,
+        },
+
+        {
+          id: 12,
+          image:
+            "/images/detail-page/swimming/sucess-stories/Shreyas-Tenukuntla-swimming.png",
+          title: "SHREYAS ",
+          description:
+            "Won the Bronze medal In 25 mts Butterfly Stroke in Grade3 group",
+          svgCard: redsvg,
+        },
+        {
+          id: 13,
+          image:
+            "/images/detail-page/swimming/sucess-stories/ADVAIT-POILA-swimming.png",
+          title: "ADVAIT POILA",
+          description: "WON GOLD IN 25 MTS BUTTERFLY",
+          svgCard: redsvg,
+        },
+        {
+          id: 14,
+          image:
+            "/images/detail-page/swimming/sucess-stories/advikbollu-swimming.png",
+          title: "ADVIK BOLLU ",
+          description: "WON GOLD IN 25 MTS KICKING WITH KICK BOARD",
+          svgCard: redsvg,
+        },
+        {
+          id: 15,
+          image:
+            "/images/detail-page/swimming/sucess-stories/Arya-Marda-swiming.png",
+          title: "ARYA MARDA ",
+          description: "WON GOLD IN 25 MTS FREESTYLE RELAY",
+          svgCard: redsvg,
+        },
+        {
+          id: 16,
+          image:
+            "/images/detail-page/swimming/sucess-stories/Kirti-Singh-swimming.png",
+          title: "KIRTI SINGH ",
+          description: "WON GOLD IN 25 MTS FREESTYLE RELAY",
+          svgCard: redsvg,
+        },
+        {
+          id: 17,
+          image: "",
+          title: "AKIRA PRASANTH ",
+          description: "WON GOLD IN 25 MTS FREESTYLE RELAY",
+          svgCard: redsvg,
+        },
+        {
+          id: 18,
+          image:
+            "/images/detail-page/swimming/sucess-stories/KRISHA-NALLURI-swimming.png",
+          title: "KRISHA NALLURI",
+          description: "WON GOLD IN 25 MTS FREESTYLE RELAY",
+          svgCard: redsvg,
+        },
+        {
+          id: 19,
+          image:
+            "/images/detail-page/swimming/sucess-stories/shourykotham-swimming.png",
+          title: "SHOURYA KYATHAM",
+          description: "WON SILVER IN 25 MTS BUTTERFLY",
           svgCard: redsvg,
         },
       ],
     },
   },
 
-  tennis: {
+  tabletennis: {
     DetailPageBanner: {
       breadcrumbstextfirst: "Home",
-      breadcrumbstextSecond: "Tennis",
-      bannertitle: "Tennis",
+      breadcrumbstextSecond: "Table Tennis",
+      bannertitle: "Table Tennis",
       bannerContent:
-        "Full-body water sport building strength, endurance, technique, flexibility, speed and aquatic confidence for all levels.",
+        "Master reflexes and game strategy through expert-led table tennis training programs at Gaudium Sportopia.",
       banneroverlaycontent: "Tennis",
       backgroundClass: "tennisbg",
     },
@@ -2642,9 +2859,9 @@ const DetailsData = {
     SecondSectionDetail: {
       backgoundclass: "tennis",
       secondsportstitlefirst: "The vision of",
-      secondsportstitlesecond: "Tennis Excellence",
+      secondsportstitlesecond: "Table Tennis Excellence",
       firstparagraphtext:
-        "The Tennis Centre of Excellence at Gaudium Sportopia offers elite training pathways for young athletes aiming for national and international success. Our world-class facilities foster advanced tennis skills while building agility, strength, and endurance. With uncompromising coaching standards and professional infrastructure, we create an environment where talent is refined, confidence is built, and future champions are shaped for the global stage.",
+        "The Table Tennis Centre of Excellence at Gaudium Sportopia prepares young athletes for fast-paced competitive success in one of the world’s most played sports. Inspired by India’s top-ranked player Sreeja Akula, the program combines precision training, reflex development, and match exposure, helping students progress confidently toward national and international competition pathways.",
       secondparagraphtext: "",
     },
 
@@ -2655,16 +2872,17 @@ const DetailsData = {
         "An elite team of nationally certified coaches delivering world-class training, mentorship and performance-driven development for aspiring athletes.",
 
       members: [
-        {
-          sport: "Tennis",
-          role: "Mentor",
-          img: "/images/homepage/thestrengthimageone.png",
-          name: "V.VIJAY KUMAR",
-        },
+        // {
+        //   sport: "Tennis",
+        //   role: "Mentor",
+        //   img: "/images/homepage/thestrengthimageone.png",
+        //   name: "V.VIJAY KUMAR",
+        // },
       ],
     },
 
     facility: {
+      status: false,
       headingFirst: "Facilities",
       headingSecond: "That Inspire",
 
@@ -2674,7 +2892,7 @@ const DetailsData = {
       slides: [
         {
           id: 1,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image: "/images/our-infrastructure/tennis/tennis-01.jpg",
           sport: "ITF-Standard",
           title: "Courts",
           description:
@@ -2682,7 +2900,7 @@ const DetailsData = {
         },
         {
           id: 2,
-          image: "/images/detail-page/badminton/football-img-1.jpg",
+          image: "/images/our-infrastructure/tennis/tennis-07.jpg",
           sport: "Match-Ready",
           title: "Environment",
           description:
@@ -2690,7 +2908,7 @@ const DetailsData = {
         },
         {
           id: 3,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image: "/images/our-infrastructure/tennis/tennis-05.jpg",
           sport: "Player Comfort and",
           title: "Safety",
           description:
@@ -2698,7 +2916,7 @@ const DetailsData = {
         },
         {
           id: 4,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image: "/images/our-infrastructure/tennis/tennis-06.jpg",
           sport: "Advanced Training ",
           title: "Equipment",
           description:
@@ -2706,7 +2924,263 @@ const DetailsData = {
         },
         {
           id: 5,
-          image: "/images/detail-page/badminton/badminton-slider.jpg",
+          image: "/images/our-infrastructure/tennis/tennis-08.jpg",
+          sport: "All-Day Play",
+          title: "Support",
+          description:
+            "High-quality court lighting and strategically placed hydration stations for extended training sessions.",
+        },
+      ],
+    },
+
+    faq: {
+      headingFirst: "Why Table Tennis",
+      headingSecond: "Training Matters?",
+      description:
+        "Explore numerous benefits of Table Tennis and how it helps every aspect of the player’s lifestyle",
+
+      items: [
+        {
+          id: 1,
+          faqQuestion: "Physical Development Benefits",
+          faqAnswer: [
+            "Enhances hand-eye coordination and reflexes",
+            "Improves agility through fast-paced movement",
+            "Develops quick reaction timing abilities",
+            "Strengthens wrist control and precision",
+            "Builds balance and coordinated footwork",
+            "Improves cardiovascular fitness during rallies",
+            "Enhances fine motor skill development",
+          ],
+        },
+
+        {
+          id: 2,
+          faqQuestion: "Cognitive Development Benefits",
+          faqAnswer: [
+            "Improves rapid decision making abilities",
+            "Enhances concentration during fast gameplay",
+            "Develops strategic shot placement skills",
+            "Builds anticipation of opponent responses",
+            "Strengthens visual tracking and processing",
+            "Encourages tactical planning during matches",
+            "Enhances game intelligence through practice",
+          ],
+        },
+
+        {
+          id: 3,
+          faqQuestion: "Psychological Development Benefits",
+          faqAnswer: [
+            "Builds confidence through competitive participation",
+            "Improves focus consistency during matches",
+            "Enhances emotional balance under pressure",
+            "Develops perseverance during challenging rallies",
+            "Strengthens mental alertness and awareness",
+            "Encourages performance discipline and control",
+            "Builds competitive temperament and resilience",
+          ],
+        },
+
+        {
+          id: 4,
+          faqQuestion: "Social Development Benefits",
+          faqAnswer: [
+            "Encourages respectful competitive sporting culture",
+            "Builds interaction through doubles gameplay formats",
+            "Enhances communication between playing partners",
+            "Promotes sportsmanship during tournament participation",
+            "Develops mutual respect among competitors",
+            "Encourages peer learning through practice matches",
+            "Builds confidence through competitive exposure",
+          ],
+        },
+
+        {
+          id: 5,
+          faqQuestion: "Lifestyle Benefits",
+          faqAnswer: [
+            "Encourages lifelong participation in sport",
+            "Promotes active recreation and engagement",
+            "Reduces sedentary lifestyle habits significantly",
+            "Improves coordination for everyday activities",
+            "Enhances alertness and reaction awareness",
+            "Supports regular physical activity routines",
+            "Builds sustainable fitness lifestyle habits",
+          ],
+        },
+      ],
+    },
+
+    eventsAndTournaments: {
+      status: false,
+      headingFirst: "Events & Tournaments",
+      headingSecond: "@ Gaudium Sportopia",
+      description:
+        "Stay updated on upcoming events, tournaments, competitions and key sporting moments at Gaudium Sportopia.",
+
+      items: [
+        {
+          eventnumber: "Event - 01",
+          eventcontent: "Tennis work shop 2023",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 02",
+          eventcontent: "The Gaudium HDTA 2024",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 03",
+          eventcontent: "Junior Championship -Circuit 2025",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 04",
+          eventcontent: "PYP Hyd Network Indus School 2024",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 05",
+          eventcontent: "ISSO Tennis 2024",
+          eventslinks: "/events1link",
+        },
+      ],
+    },
+
+    journey: {
+      status: false,
+      headingFirst: "Journey",
+      headingSecond: "in Pictures",
+      description:
+        "A visual journey capturing training, competition and defining moments from our Tennis athletes’ path to excellence.",
+
+      marqueeRow1: [
+        "/images/detail-page/tennis/marquee/tennis-gallery-05.jpg", // Square 5
+        "/images/detail-page/tennis/marquee/tennis-gallery-01.jpg", // Rect 1
+        "/images/detail-page/tennis/marquee/tennis-gallery-06.jpg", // Square 6
+        "/images/detail-page/tennis/marquee/tennis-gallery-02.jpg", // Rect 2
+        "/images/detail-page/tennis/marquee/tennis-gallery-07.jpg", // Square 7
+      ],
+
+      marqueeRow2: [
+        "/images/detail-page/tennis/marquee/tennis-gallery-03.jpg", // Rect 3
+        "/images/detail-page/tennis/marquee/tennis-gallery-08.jpg", // Square 8
+        "/images/detail-page/tennis/marquee/tennis-gallery-04.jpg", // Rect 4
+        "/images/detail-page/tennis/marquee/tennis-gallery-05.jpg", // Square 5 (Repeat)
+        "/images/detail-page/tennis/marquee/tennis-gallery-01.jpg",
+      ],
+    },
+
+    success: {
+      status: false,
+      headingFirst: "success",
+      headingSecond: "stories",
+      description:
+        "Take a glance at the Tennis champions whose achievements define our excellence.",
+
+      showcaseData: [
+        {
+          id: 1,
+          image:
+            "/images/detail-page/tennis/sucess-stories/khyathicherukuri-tennis.png",
+          title: "Khyathi Cherukuri",
+          description: "Selected for Telanga Jr National football team",
+          svgCard: redsvg,
+        },
+        {
+          id: 2,
+          image:
+            "/images/detail-page/tennis/sucess-stories/minal-shaik-kalyan-tennis.png",
+          title: "MINAL SHAIK",
+          description: "Selected for Telanga Jr National football team",
+          svgCard: bluesvg,
+        },
+        {},
+      ],
+    },
+  },
+
+  tennis: {
+    DetailPageBanner: {
+      breadcrumbstextfirst: "Home",
+      breadcrumbstextSecond: "Tennis",
+      bannertitle: "Tennis",
+      bannerContent:
+        "Train in tennis at Gaudium Sportopia and progress through structured competitive development pathways.",
+      banneroverlaycontent: "Tennis",
+      backgroundClass: "tennisbg",
+    },
+
+    SecondSectionDetail: {
+      backgoundclass: "tennis",
+      secondsportstitlefirst: "The vision of",
+      secondsportstitlesecond: "Tennis Excellence",
+      firstparagraphtext:
+        "The Tennis Centre of Excellence at Gaudium Sportopia offers a competitive  training ecosystem built to shape future champions. With three professional courts and coaching guided by national-level tournament experience, students  train year-round toward excellence inspired by icons like Leander Paes, Mahesh Bhupathi and Sania Mirza - preparing young athletes to earn their  place on India’s evolving tennis legacy.",
+      secondparagraphtext: "",
+    },
+
+    experTeamDetail: {
+      headingFirst: "The Strength",
+      headingSecond: "Behind the Squad",
+      description:
+        "An elite team of nationally certified coaches delivering world-class training, mentorship and performance-driven development for aspiring athletes.",
+
+      members: [
+        // {
+        //   sport: "Tennis",
+        //   role: "Mentor",
+        //   img: "/images/homepage/thestrengthimageone.png",
+        //   name: "V.VIJAY KUMAR",
+        // },
+      ],
+    },
+
+    facility: {
+      status: true,
+      headingFirst: "Facilities",
+      headingSecond: "That Inspire",
+
+      facilitytwoline:
+        "World-class tennis courts and performance-driven infrastructure designed to inspire excellence, precision, resilience and championship-level competitive play.",
+
+      slides: [
+        {
+          id: 1,
+          image: "/images/our-infrastructure/tennis/tennis-01.jpg",
+          sport: "ITF-Standard",
+          title: "Courts",
+          description:
+            "Three ITF-classified synthetic acrylic courts with eight-layer systems meeting international tournament standards.",
+        },
+        {
+          id: 2,
+          image: "/images/our-infrastructure/tennis/tennis-07.jpg",
+          sport: "Match-Ready",
+          title: "Environment",
+          description:
+            "Spectator gallery for 400 viewers, simulating competitive pressure and real-match conditions.",
+        },
+        {
+          id: 3,
+          image: "/images/our-infrastructure/tennis/tennis-05.jpg",
+          sport: "Player Comfort and",
+          title: "Safety",
+          description:
+            "Dedicated changing rooms, outdoor showers, secure lockers and well-maintained court surroundings.",
+        },
+        {
+          id: 4,
+          image: "/images/our-infrastructure/tennis/tennis-06.jpg",
+          sport: "Advanced Training ",
+          title: "Equipment",
+          description:
+            "Professional ball machines and rebound nets designed for precision practice and skill refinement.",
+        },
+        {
+          id: 5,
+          image: "/images/our-infrastructure/tennis/tennis-08.jpg",
           sport: "All-Day Play",
           title: "Support",
           description:
@@ -2811,6 +3285,7 @@ const DetailsData = {
     },
 
     eventsAndTournaments: {
+      status:true,
       headingFirst: "Events & Tournaments",
       headingSecond: "@ Gaudium Sportopia",
       description:
@@ -2846,8 +3321,9 @@ const DetailsData = {
     },
 
     journey: {
-      headingFirst: "The Strength",
-      headingSecond: "Behind the Squad",
+      status: true,
+      headingFirst: "Journey",
+      headingSecond: "in Pictures",
       description:
         "A visual journey capturing training, competition and defining moments from our Tennis athletes’ path to excellence.",
 
@@ -2869,6 +3345,7 @@ const DetailsData = {
     },
 
     success: {
+      status: true,
       headingFirst: "success",
       headingSecond: "stories",
       description:
@@ -2877,11 +3354,1104 @@ const DetailsData = {
       showcaseData: [
         {
           id: 1,
-          image: "/images/homepage/showcaseproject1.png",
-          title: "Ammena Ahmed Babukhan",
+          image:
+            "/images/detail-page/tennis/sucess-stories/khyathicherukuri-tennis.png",
+          title: "Khyathi Cherukuri",
           description: "Selected for Telanga Jr National football team",
           svgCard: redsvg,
         },
+        {
+          id: 2,
+          image:
+            "/images/detail-page/tennis/sucess-stories/minal-shaik-kalyan-tennis.png",
+          title: "MINAL SHAIK",
+          description: "Selected for Telanga Jr National football team",
+          svgCard: bluesvg,
+        },
+        {},
+      ],
+    },
+  },
+
+  taekwondo: {
+    DetailPageBanner: {
+      breadcrumbstextfirst: "Home",
+      breadcrumbstextSecond: "Taekwondo",
+      bannertitle: "Taekwondo",
+      bannerContent:
+        "Build discipline and competitive spirit through professionally guided taekwondo training programs.",
+      banneroverlaycontent: "Tennis",
+      backgroundClass: "tennisbg",
+    },
+
+    SecondSectionDetail: {
+      backgoundclass: "tennis",
+      secondsportstitlefirst: "The vision of",
+      secondsportstitlesecond: "Taekwondo  Excellence",
+      firstparagraphtext:
+        "The Taekwondo Centre of Excellence at Gaudium Sportopia nurtures future champions through structured Olympic-standard training and expert coaching. Supported by initiatives from India Taekwondo and inspired by achievers like Surendra Bhandari, students gain early competitive advantage, mastering discipline, technique, and mental strength to excel in this fast-growing Olympic combat sport.",
+      secondparagraphtext: "",
+    },
+
+    experTeamDetail: {
+      headingFirst: "The Strength",
+      headingSecond: "Behind the Squad",
+      description:
+        "An elite team of nationally certified coaches delivering world-class training, mentorship and performance-driven development for aspiring athletes.",
+
+      members: [
+        // {
+        //   sport: "Tennis",
+        //   role: "Mentor",
+        //   img: "/images/homepage/thestrengthimageone.png",
+        //   name: "V.VIJAY KUMAR",
+        // },
+      ],
+    },
+
+    facility: {
+      status: false,
+      headingFirst: "Facilities",
+      headingSecond: "That Inspire",
+
+      facilitytwoline:
+        "World-class tennis courts and performance-driven infrastructure designed to inspire excellence, precision, resilience and championship-level competitive play.",
+
+      slides: [
+        {
+          id: 1,
+          image: "/images/our-infrastructure/tennis/tennis-01.jpg",
+          sport: "ITF-Standard",
+          title: "Courts",
+          description:
+            "Three ITF-classified synthetic acrylic courts with eight-layer systems meeting international tournament standards.",
+        },
+        {
+          id: 2,
+          image: "/images/our-infrastructure/tennis/tennis-07.jpg",
+          sport: "Match-Ready",
+          title: "Environment",
+          description:
+            "Spectator gallery for 400 viewers, simulating competitive pressure and real-match conditions.",
+        },
+        {
+          id: 3,
+          image: "/images/our-infrastructure/tennis/tennis-05.jpg",
+          sport: "Player Comfort and",
+          title: "Safety",
+          description:
+            "Dedicated changing rooms, outdoor showers, secure lockers and well-maintained court surroundings.",
+        },
+        {
+          id: 4,
+          image: "/images/our-infrastructure/tennis/tennis-06.jpg",
+          sport: "Advanced Training ",
+          title: "Equipment",
+          description:
+            "Professional ball machines and rebound nets designed for precision practice and skill refinement.",
+        },
+        {
+          id: 5,
+          image: "/images/our-infrastructure/tennis/tennis-08.jpg",
+          sport: "All-Day Play",
+          title: "Support",
+          description:
+            "High-quality court lighting and strategically placed hydration stations for extended training sessions.",
+        },
+      ],
+    },
+
+    faq: {
+      headingFirst: "Why Taekwondo",
+      headingSecond: "Training Matters",
+      description:
+        "Explore numerous benefits of Taekwondo and how it helps every aspect of the player’s lifestyle",
+
+      items: [
+        {
+          id: 1,
+          faqQuestion: "Physical Development Benefits",
+          faqAnswer: [
+            "Improves flexibility through dynamic kicking techniques",
+
+            "Builds powerful lower body muscular strength",
+
+            "Enhances balance and coordinated body control",
+
+            "Develops speed through reaction-based movements",
+
+            "Strengthens core stability during combat training",
+
+            "Improves endurance through structured practice sessions",
+
+            "Boosts overall physical fitness and agility",
+          ],
+        },
+
+        {
+          id: 2,
+          faqQuestion: "Cognitive Development Benefits",
+          faqAnswer: [
+            "Enhances situational awareness during sparring sessions",
+
+            "Improves tactical thinking in combat situations",
+
+            "Develops movement precision and timing accuracy",
+
+            "Strengthens focus through disciplined training methods",
+
+            "Encourages structured learning of combat techniques",
+
+            "Builds quick judgement and reaction decisions",
+
+            "Enhances strategic understanding of competitive sparring",
+          ],
+        },
+
+        {
+          id: 3,
+          faqQuestion: "Psychological Development Benefits",
+          faqAnswer: [
+            "Builds self-confidence through belt progression achievements",
+
+            "Develops discipline through martial arts philosophy",
+
+            "Enhances emotional control during competitive bouts",
+
+            "Encourages perseverance through rigorous training routines",
+
+            "Strengthens courage and mental resilience",
+
+            "Promotes humility and respect for opponents",
+
+            "Improves mental toughness under performance pressure",
+          ],
+        },
+
+        {
+          id: 4,
+          faqQuestion: "Social Development Benefits",
+          faqAnswer: [
+            "Encourages respect towards coaches and peers",
+
+            "Builds strong mentor and student relationships",
+
+            "Promotes ethical conduct during competitions",
+
+            "Enhances leadership through advanced training roles",
+
+            "Encourages teamwork during partner practice drills",
+
+            "Builds community belonging through martial culture",
+
+            "Develops discipline within group learning environments",
+          ],
+        },
+
+        {
+          id: 5,
+          faqQuestion: "Lifestyle Benefits",
+          faqAnswer: [
+            "Promotes disciplined and structured daily routines",
+
+            "Improves personal safety and self-defence awareness",
+
+            "Encourages lifelong physical fitness habits",
+
+            "Builds goal-oriented personal development mindset",
+
+            "Enhances confidence in everyday situations",
+
+            "Supports active and healthy lifestyle choices",
+
+            "Develops responsible and disciplined behaviour patterns",
+          ],
+        },
+      ],
+    },
+
+    eventsAndTournaments: {
+      status: false,
+      headingFirst: "Events & Tournaments",
+      headingSecond: "@ Gaudium Sportopia",
+      description:
+        "Stay updated on upcoming events, tournaments, competitions and key sporting moments at Gaudium Sportopia.",
+
+      items: [
+        {
+          eventnumber: "Event - 01",
+          eventcontent: "Tennis work shop 2023",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 02",
+          eventcontent: "The Gaudium HDTA 2024",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 03",
+          eventcontent: "Junior Championship -Circuit 2025",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 04",
+          eventcontent: "PYP Hyd Network Indus School 2024",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 05",
+          eventcontent: "ISSO Tennis 2024",
+          eventslinks: "/events1link",
+        },
+      ],
+    },
+
+    journey: {
+      status: false,
+      headingFirst: "Journey",
+      headingSecond: "in Pictures",
+      description:
+        "A visual journey capturing training, competition and defining moments from our Tennis athletes’ path to excellence.",
+
+      marqueeRow1: [
+        "/images/detail-page/tennis/marquee/tennis-gallery-05.jpg", // Square 5
+        "/images/detail-page/tennis/marquee/tennis-gallery-01.jpg", // Rect 1
+        "/images/detail-page/tennis/marquee/tennis-gallery-06.jpg", // Square 6
+        "/images/detail-page/tennis/marquee/tennis-gallery-02.jpg", // Rect 2
+        "/images/detail-page/tennis/marquee/tennis-gallery-07.jpg", // Square 7
+      ],
+
+      marqueeRow2: [
+        "/images/detail-page/tennis/marquee/tennis-gallery-03.jpg", // Rect 3
+        "/images/detail-page/tennis/marquee/tennis-gallery-08.jpg", // Square 8
+        "/images/detail-page/tennis/marquee/tennis-gallery-04.jpg", // Rect 4
+        "/images/detail-page/tennis/marquee/tennis-gallery-05.jpg", // Square 5 (Repeat)
+        "/images/detail-page/tennis/marquee/tennis-gallery-01.jpg",
+      ],
+    },
+
+    success: {
+      status: false,
+      headingFirst: "success",
+      headingSecond: "stories",
+      description:
+        "Take a glance at the Tennis champions whose achievements define our excellence.",
+
+      showcaseData: [
+        {
+          id: 1,
+          image:
+            "/images/detail-page/tennis/sucess-stories/khyathicherukuri-tennis.png",
+          title: "Khyathi Cherukuri",
+          description: "Selected for Telanga Jr National football team",
+          svgCard: redsvg,
+        },
+        {
+          id: 2,
+          image:
+            "/images/detail-page/tennis/sucess-stories/minal-shaik-kalyan-tennis.png",
+          title: "MINAL SHAIK",
+          description: "Selected for Telanga Jr National football team",
+          svgCard: bluesvg,
+        },
+        {},
+      ],
+    },
+  },
+
+  chess: {
+    DetailPageBanner: {
+      breadcrumbstextfirst: "Home",
+      breadcrumbstextSecond: "Chess",
+      bannertitle: "Chess",
+      bannerContent:
+        "Strengthen analytical thinking and competitive focus through structured chess learning pathways.",
+      banneroverlaycontent: "Chess",
+      backgroundClass: "Chess",
+    },
+
+    SecondSectionDetail: {
+      backgoundclass: "tennis",
+      secondsportstitlefirst: "The vision of",
+      secondsportstitlesecond: "Chess Excellence",
+      firstparagraphtext:
+        "The Chess Centre of Excellence at Gaudium Sportopia develops strategic thinkers through structured, technology-enabled training. Beyond competition readiness, students strengthen analytical ability, focus, and problem-solving skills, while digital tools support learning and performance tracking, thus preparing young minds to compete thoughtfully at higher competitive levels. Our centre will inspire children to excel in the lines of Viswanathan Anand, Praggnanandhaa and Gukesh.",
+      secondparagraphtext: "",
+    },
+
+    experTeamDetail: {
+      headingFirst: "The Strength",
+      headingSecond: "Behind the Squad",
+      description:
+        "An elite team of nationally certified coaches delivering world-class training, mentorship and performance-driven development for aspiring athletes.",
+
+      members: [
+        // {
+        //   sport: "Tennis",
+        //   role: "Mentor",
+        //   img: "/images/homepage/thestrengthimageone.png",
+        //   name: "V.VIJAY KUMAR",
+        // },
+      ],
+    },
+
+    facility: {
+      status: false,
+      headingFirst: "Facilities",
+      headingSecond: "That Inspire",
+
+      facilitytwoline:
+        "World-class tennis courts and performance-driven infrastructure designed to inspire excellence, precision, resilience and championship-level competitive play.",
+
+      slides: [
+        {
+          id: 1,
+          image: "/images/our-infrastructure/tennis/tennis-01.jpg",
+          sport: "ITF-Standard",
+          title: "Courts",
+          description:
+            "Three ITF-classified synthetic acrylic courts with eight-layer systems meeting international tournament standards.",
+        },
+        {
+          id: 2,
+          image: "/images/our-infrastructure/tennis/tennis-07.jpg",
+          sport: "Match-Ready",
+          title: "Environment",
+          description:
+            "Spectator gallery for 400 viewers, simulating competitive pressure and real-match conditions.",
+        },
+        {
+          id: 3,
+          image: "/images/our-infrastructure/tennis/tennis-05.jpg",
+          sport: "Player Comfort and",
+          title: "Safety",
+          description:
+            "Dedicated changing rooms, outdoor showers, secure lockers and well-maintained court surroundings.",
+        },
+        {
+          id: 4,
+          image: "/images/our-infrastructure/tennis/tennis-06.jpg",
+          sport: "Advanced Training ",
+          title: "Equipment",
+          description:
+            "Professional ball machines and rebound nets designed for precision practice and skill refinement.",
+        },
+        {
+          id: 5,
+          image: "/images/our-infrastructure/tennis/tennis-08.jpg",
+          sport: "All-Day Play",
+          title: "Support",
+          description:
+            "High-quality court lighting and strategically placed hydration stations for extended training sessions.",
+        },
+      ],
+    },
+
+    faq: {
+      headingFirst: "Why Chess ",
+      headingSecond: "Training Matters",
+      description:
+        "Explore numerous benefits of Chess and how it helps every aspect of the player’s lifestyle ",
+
+      items: [
+        {
+          id: 1,
+          faqQuestion: "Physical Development Benefits",
+          faqAnswer: [
+            "Encourages correct posture during extended gameplay",
+
+            "Improves fine motor control and coordination",
+
+            "Builds physical patience during long competitions",
+
+            "Enhances visual focus and eye coordination",
+
+            "Develops endurance for prolonged mental activity",
+
+            "Promotes calm body control during matches",
+
+            "Supports relaxed yet attentive physical presence",
+          ],
+        },
+
+        {
+          id: 2,
+          faqQuestion: "Cognitive Development Benefits",
+          faqAnswer: [
+            "Strengthens analytical and logical reasoning abilities",
+
+            "Enhances long-term memory retention and recall",
+
+            "Develops advanced strategic planning capabilities",
+
+            "Improves complex problem-solving decision skills",
+
+            "Builds concentration over extended time periods",
+
+            "Encourages predictive thinking and move calculation",
+
+            "Enhances pattern recognition and analytical processing",
+          ],
+        },
+
+        {
+          id: 3,
+          faqQuestion: "Psychological Development Benefits",
+          faqAnswer: [
+            "Builds patience through calculated gameplay decisions",
+
+            "Enhances emotional stability during competitive matches",
+
+            "Develops resilience after strategic setbacks",
+
+            "Improves confidence in independent decision making",
+
+            "Encourages perseverance through challenging game situations",
+
+            "Strengthens mental discipline and focus consistency",
+
+            "Promotes calm thinking under competitive pressure",
+          ],
+        },
+
+        {
+          id: 4,
+          faqQuestion: "Social Development Benefits",
+          faqAnswer: [
+            "Encourages respectful intellectual competition environments",
+
+            "Builds interaction through tournament participation opportunities",
+
+            "Enhances communication among fellow chess players",
+
+            "Promotes mutual respect between competitors consistently",
+
+            "Develops sports etiquette in competitive settings",
+
+            "Encourages collaborative learning through analysis sessions",
+
+            "Builds confidence in public competitive environments",
+          ],
+        },
+
+        {
+          id: 5,
+          faqQuestion: "Lifestyle Benefits",
+          faqAnswer: [
+            "Encourages mindful and structured thinking habits",
+
+            "Supports academic discipline and concentration skills",
+
+            "Promotes productive use of leisure time",
+
+            "Reduces impulsive decision making tendencies",
+
+            "Builds lifelong intellectual engagement habits",
+
+            "Enhances focus across academic activities",
+
+            "Encourages balanced mental development routines",
+          ],
+        },
+      ],
+    },
+
+    eventsAndTournaments: {
+      status: false,
+      headingFirst: "Events & Tournaments",
+      headingSecond: "@ Gaudium Sportopia",
+      description:
+        "Stay updated on upcoming events, tournaments, competitions and key sporting moments at Gaudium Sportopia.",
+
+      items: [
+        {
+          eventnumber: "Event - 01",
+          eventcontent: "Tennis work shop 2023",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 02",
+          eventcontent: "The Gaudium HDTA 2024",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 03",
+          eventcontent: "Junior Championship -Circuit 2025",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 04",
+          eventcontent: "PYP Hyd Network Indus School 2024",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 05",
+          eventcontent: "ISSO Tennis 2024",
+          eventslinks: "/events1link",
+        },
+      ],
+    },
+
+    journey: {
+      status: false,
+      headingFirst: "Journey",
+      headingSecond: "in Pictures",
+      description:
+        "A visual journey capturing training, competition and defining moments from our Tennis athletes’ path to excellence.",
+
+      marqueeRow1: [
+        "/images/detail-page/tennis/marquee/tennis-gallery-05.jpg", // Square 5
+        "/images/detail-page/tennis/marquee/tennis-gallery-01.jpg", // Rect 1
+        "/images/detail-page/tennis/marquee/tennis-gallery-06.jpg", // Square 6
+        "/images/detail-page/tennis/marquee/tennis-gallery-02.jpg", // Rect 2
+        "/images/detail-page/tennis/marquee/tennis-gallery-07.jpg", // Square 7
+      ],
+
+      marqueeRow2: [
+        "/images/detail-page/tennis/marquee/tennis-gallery-03.jpg", // Rect 3
+        "/images/detail-page/tennis/marquee/tennis-gallery-08.jpg", // Square 8
+        "/images/detail-page/tennis/marquee/tennis-gallery-04.jpg", // Rect 4
+        "/images/detail-page/tennis/marquee/tennis-gallery-05.jpg", // Square 5 (Repeat)
+        "/images/detail-page/tennis/marquee/tennis-gallery-01.jpg",
+      ],
+    },
+
+    success: {
+      status: false,
+      headingFirst: "success",
+      headingSecond: "stories",
+      description:
+        "Take a glance at the Tennis champions whose achievements define our excellence.",
+
+      showcaseData: [
+        {
+          id: 1,
+          image:
+            "/images/detail-page/tennis/sucess-stories/khyathicherukuri-tennis.png",
+          title: "Khyathi Cherukuri",
+          description: "Selected for Telanga Jr National football team",
+          svgCard: redsvg,
+        },
+        {
+          id: 2,
+          image:
+            "/images/detail-page/tennis/sucess-stories/minal-shaik-kalyan-tennis.png",
+          title: "MINAL SHAIK",
+          description: "Selected for Telanga Jr National football team",
+          svgCard: bluesvg,
+        },
+        {},
+      ],
+    },
+  },
+
+  squash: {
+    DetailPageBanner: {
+      breadcrumbstextfirst: "Home",
+      breadcrumbstextSecond: "squash",
+      bannertitle: "squash",
+      bannerContent:
+        "Strengthen analytical thinking and competitive focus through structured chess learning pathways.",
+      banneroverlaycontent: "squash",
+      backgroundClass: "squash",
+    },
+
+    SecondSectionDetail: {
+      backgoundclass: "tennis",
+      secondsportstitlefirst: "The vision of",
+      secondsportstitlesecond: "squash Excellence",
+      firstparagraphtext:
+        "The Squash Centre of Excellence at Gaudium Sportopia builds future competitors in one of the world’s most demanding racquet sports. With professional-standard courts, certified coaching, and structured high-performance training, students develop agility, reflexes, endurance, and match intelligence, thus progressing confidently from fundamentals to competitive excellence through focused, year-round development pathways.",
+      secondparagraphtext: "",
+    },
+
+    experTeamDetail: {
+      headingFirst: "The Strength",
+      headingSecond: "Behind the Squad",
+      description:
+        "An elite team of nationally certified coaches delivering world-class training, mentorship and performance-driven development for aspiring athletes.",
+
+      members: [
+        // {
+        //   sport: "Tennis",
+        //   role: "Mentor",
+        //   img: "/images/homepage/thestrengthimageone.png",
+        //   name: "V.VIJAY KUMAR",
+        // },
+      ],
+    },
+
+    facility: {
+      status: false,
+      headingFirst: "Facilities",
+      headingSecond: "That Inspire",
+
+      facilitytwoline:
+        "World-class tennis courts and performance-driven infrastructure designed to inspire excellence, precision, resilience and championship-level competitive play.",
+
+      slides: [
+        {
+          id: 1,
+          image: "/images/our-infrastructure/tennis/tennis-01.jpg",
+          sport: "ITF-Standard",
+          title: "Courts",
+          description:
+            "Three ITF-classified synthetic acrylic courts with eight-layer systems meeting international tournament standards.",
+        },
+        {
+          id: 2,
+          image: "/images/our-infrastructure/tennis/tennis-07.jpg",
+          sport: "Match-Ready",
+          title: "Environment",
+          description:
+            "Spectator gallery for 400 viewers, simulating competitive pressure and real-match conditions.",
+        },
+        {
+          id: 3,
+          image: "/images/our-infrastructure/tennis/tennis-05.jpg",
+          sport: "Player Comfort and",
+          title: "Safety",
+          description:
+            "Dedicated changing rooms, outdoor showers, secure lockers and well-maintained court surroundings.",
+        },
+        {
+          id: 4,
+          image: "/images/our-infrastructure/tennis/tennis-06.jpg",
+          sport: "Advanced Training ",
+          title: "Equipment",
+          description:
+            "Professional ball machines and rebound nets designed for precision practice and skill refinement.",
+        },
+        {
+          id: 5,
+          image: "/images/our-infrastructure/tennis/tennis-08.jpg",
+          sport: "All-Day Play",
+          title: "Support",
+          description:
+            "High-quality court lighting and strategically placed hydration stations for extended training sessions.",
+        },
+      ],
+    },
+
+    faq: {
+      headingFirst: "Why Squash ",
+      headingSecond: "Training Matters",
+      description:
+        "Explore numerous benefits of Squash and how it helps every aspect of the player’s lifestyle",
+
+      items: [
+        {
+          id: 1,
+          faqQuestion: "Physical Development Benefits",
+          faqAnswer: [
+            "Builds exceptional cardiovascular endurance and stamina",
+            "Improves agility through multidirectional court movement",
+            "Enhances reflex speed and response timing",
+            "Strengthens lower body muscular performance",
+            "Develops coordination through rapid gameplay",
+            "Improves explosive speed and acceleration",
+            "Boosts overall athletic fitness levels",
+          ],
+        },
+
+        {
+          id: 2,
+          faqQuestion: "Cognitive Development Benefits",
+          faqAnswer: [
+            "Enhances tactical thinking during rallies",
+            "Improves anticipation of opponent strategies",
+            "Develops spatial awareness within court boundaries",
+            "Strengthens decision making under pressure",
+            "Encourages strategic shot selection consistently",
+            "Improves concentration throughout intense matches",
+            "Builds advanced game intelligence skills",
+          ],
+        },
+
+        {
+          id: 3,
+          faqQuestion: "Psychological Development Benefits",
+          faqAnswer: [
+            "Builds mental endurance during long rallies",
+            "Enhances confidence through competitive exposure",
+            "Develops resilience in demanding match conditions",
+            "Encourages determination and performance consistency",
+            "Improves emotional composure during gameplay",
+            "Strengthens competitive mindset and focus",
+            "Promotes self-belief through skill progression",
+          ],
+        },
+
+        {
+          id: 4,
+          faqQuestion: "Social Development Benefits",
+          faqAnswer: [
+            "Encourages respectful one-on-one competition culture",
+            "Builds discipline through structured coaching sessions",
+            "Enhances interaction between coaches and players",
+            "Promotes sportsmanship during competitive matches",
+            "Develops leadership through tournament participation",
+            "Encourages peer motivation during training",
+            "Builds confidence through match experiences",
+          ],
+        },
+
+        {
+          id: 5,
+          faqQuestion: "Lifestyle Benefits",
+          faqAnswer: [
+            "Recognized globally among healthiest sports",
+            "Supports lifelong physical fitness engagement",
+            "Improves energy levels and stamina",
+            "Promotes active and balanced living",
+            "Enhances stress relief through gameplay",
+            "Encourages disciplined fitness routines",
+            "Builds performance-driven healthy lifestyle",
+          ],
+        },
+      ],
+    },
+
+    eventsAndTournaments: {
+      status: false,
+      headingFirst: "Events & Tournaments",
+      headingSecond: "@ Gaudium Sportopia",
+      description:
+        "Stay updated on upcoming events, tournaments, competitions and key sporting moments at Gaudium Sportopia.",
+
+      items: [
+        {
+          eventnumber: "Event - 01",
+          eventcontent: "Tennis work shop 2023",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 02",
+          eventcontent: "The Gaudium HDTA 2024",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 03",
+          eventcontent: "Junior Championship -Circuit 2025",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 04",
+          eventcontent: "PYP Hyd Network Indus School 2024",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 05",
+          eventcontent: "ISSO Tennis 2024",
+          eventslinks: "/events1link",
+        },
+      ],
+    },
+
+    journey: {
+      status: false,
+      headingFirst: "Journey",
+      headingSecond: "in Pictures",
+      description:
+        "A visual journey capturing training, competition and defining moments from our Tennis athletes’ path to excellence.",
+
+      marqueeRow1: [
+        "/images/detail-page/tennis/marquee/tennis-gallery-05.jpg", // Square 5
+        "/images/detail-page/tennis/marquee/tennis-gallery-01.jpg", // Rect 1
+        "/images/detail-page/tennis/marquee/tennis-gallery-06.jpg", // Square 6
+        "/images/detail-page/tennis/marquee/tennis-gallery-02.jpg", // Rect 2
+        "/images/detail-page/tennis/marquee/tennis-gallery-07.jpg", // Square 7
+      ],
+
+      marqueeRow2: [
+        "/images/detail-page/tennis/marquee/tennis-gallery-03.jpg", // Rect 3
+        "/images/detail-page/tennis/marquee/tennis-gallery-08.jpg", // Square 8
+        "/images/detail-page/tennis/marquee/tennis-gallery-04.jpg", // Rect 4
+        "/images/detail-page/tennis/marquee/tennis-gallery-05.jpg", // Square 5 (Repeat)
+        "/images/detail-page/tennis/marquee/tennis-gallery-01.jpg",
+      ],
+    },
+
+    success: {
+      status: false,
+      headingFirst: "success",
+      headingSecond: "stories",
+      description:
+        "Take a glance at the Tennis champions whose achievements define our excellence.",
+
+      showcaseData: [
+        {
+          id: 1,
+          image:
+            "/images/detail-page/tennis/sucess-stories/khyathicherukuri-tennis.png",
+          title: "Khyathi Cherukuri",
+          description: "Selected for Telanga Jr National football team",
+          svgCard: redsvg,
+        },
+        {
+          id: 2,
+          image:
+            "/images/detail-page/tennis/sucess-stories/minal-shaik-kalyan-tennis.png",
+          title: "MINAL SHAIK",
+          description: "Selected for Telanga Jr National football team",
+          svgCard: bluesvg,
+        },
+        {},
+      ],
+    },
+  },
+  volleyball: {
+    DetailPageBanner: {
+      breadcrumbstextfirst: "Home",
+      breadcrumbstextSecond: "volleyball",
+      bannertitle: "volleyball",
+      bannerContent:
+        "Enroll in volleyball at Gaudium Sportopia Volleyball that shapes confident match players through performance-focused development.",
+      banneroverlaycontent: "volleyball",
+      backgroundClass: "volleyball",
+    },
+
+    SecondSectionDetail: {
+      backgoundclass: "tennis",
+      secondsportstitlefirst: "The vision of",
+      secondsportstitlesecond: "Volleyball  Excellence",
+      firstparagraphtext:
+        "The Volleyball Centre of Excellence at Gaudium Sportopia is built for aspiring competitive athletes. Structured after-school training, performance-focused coaching, and professional PU indoor and TURF courts create the ideal pathway toward national and international volleyball arenas, developing game intelligence, teamwork, and match readiness from an early stage.",
+      secondparagraphtext: "",
+    },
+
+    experTeamDetail: {
+      headingFirst: "The Strength",
+      headingSecond: "Behind the Squad",
+      description:
+        "An elite team of nationally certified coaches delivering world-class training, mentorship and performance-driven development for aspiring athletes.",
+
+      members: [
+        // {
+        //   sport: "Tennis",
+        //   role: "Mentor",
+        //   img: "/images/homepage/thestrengthimageone.png",
+        //   name: "V.VIJAY KUMAR",
+        // },
+      ],
+    },
+
+    facility: {
+      status: false,
+      headingFirst: "Facilities",
+      headingSecond: "That Inspire",
+
+      facilitytwoline:
+        "World-class tennis courts and performance-driven infrastructure designed to inspire excellence, precision, resilience and championship-level competitive play.",
+
+      slides: [
+        {
+          id: 1,
+          image: "/images/our-infrastructure/tennis/tennis-01.jpg",
+          sport: "ITF-Standard",
+          title: "Courts",
+          description:
+            "Three ITF-classified synthetic acrylic courts with eight-layer systems meeting international tournament standards.",
+        },
+        {
+          id: 2,
+          image: "/images/our-infrastructure/tennis/tennis-07.jpg",
+          sport: "Match-Ready",
+          title: "Environment",
+          description:
+            "Spectator gallery for 400 viewers, simulating competitive pressure and real-match conditions.",
+        },
+        {
+          id: 3,
+          image: "/images/our-infrastructure/tennis/tennis-05.jpg",
+          sport: "Player Comfort and",
+          title: "Safety",
+          description:
+            "Dedicated changing rooms, outdoor showers, secure lockers and well-maintained court surroundings.",
+        },
+        {
+          id: 4,
+          image: "/images/our-infrastructure/tennis/tennis-06.jpg",
+          sport: "Advanced Training ",
+          title: "Equipment",
+          description:
+            "Professional ball machines and rebound nets designed for precision practice and skill refinement.",
+        },
+        {
+          id: 5,
+          image: "/images/our-infrastructure/tennis/tennis-08.jpg",
+          sport: "All-Day Play",
+          title: "Support",
+          description:
+            "High-quality court lighting and strategically placed hydration stations for extended training sessions.",
+        },
+      ],
+    },
+
+    faq: {
+      headingFirst: "Why Volleyball ",
+      headingSecond: "Training Matters",
+      description:
+        "Explore numerous benefits of volleyball and how it helps every aspect of the player’s lifestyle",
+
+      items: [
+        {
+          id: 1,
+          faqQuestion: "Physical Development Benefits",
+          faqAnswer: [
+            "Improves explosive jumping power and strength",
+            "Enhances full body coordination and movement",
+            "Develops agility through dynamic court movements",
+            "Builds muscular endurance for sustained gameplay",
+            "Strengthens core stability during intense rallies",
+            "Improves cardiovascular fitness through continuous play",
+            "Boosts balance and overall athletic performance",
+          ],
+        },
+
+        {
+          id: 2,
+          faqQuestion: "Cognitive Development Benefits",
+          faqAnswer: [
+            "Enhances rapid decision making during rallies",
+            "Improves spatial awareness across court positions",
+            "Develops tactical thinking in match situations",
+            "Strengthens anticipation and reaction timing skills",
+            "Builds strategic understanding of team formations",
+            "Improves focus under competitive match pressure",
+            "Encourages quick analysis of opponent movements",
+          ],
+        },
+
+        {
+          id: 3,
+          faqQuestion: "Psychological Development Benefits",
+          faqAnswer: [
+            "Builds confidence through competitive match exposure",
+            "Enhances emotional control during high-pressure situations",
+            "Develops resilience after wins and losses",
+            "Strengthens mental toughness during tournaments",
+            "Encourages discipline through structured training routines",
+            "Improves stress management during competitive gameplay",
+            "Promotes achievement-driven performance mindset",
+          ],
+        },
+
+        {
+          id: 4,
+          faqQuestion: "Social Development Benefits",
+          faqAnswer: [
+            "Strengthens teamwork through coordinated group play",
+            "Improves communication among team members consistently",
+            "Encourages leadership responsibilities within team environments",
+            "Builds cooperation through shared performance goals",
+            "Promotes accountability towards collective team success",
+            "Enhances peer bonding through competitive participation",
+            "Develops strong sportsmanship and respect values",
+          ],
+        },
+
+        {
+          id: 5,
+          faqQuestion: "Lifestyle Benefits",
+          faqAnswer: [
+            "Encourages physically active daily lifestyle habits",
+            "Improves stamina supporting everyday physical activities",
+            "Reduces screen dependency through sports engagement",
+            "Promotes long-term fitness and healthy routines",
+            "Builds lifelong interest in active recreation",
+            "Enhances energy levels and physical endurance",
+            "Supports balanced and disciplined lifestyle development",
+          ],
+        },
+      ],
+    },
+
+    eventsAndTournaments: {
+      status: false,
+      headingFirst: "Events & Tournaments",
+      headingSecond: "@ Gaudium Sportopia",
+      description:
+        "Stay updated on upcoming events, tournaments, competitions and key sporting moments at Gaudium Sportopia.",
+
+      items: [
+        {
+          eventnumber: "Event - 01",
+          eventcontent: "Tennis work shop 2023",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 02",
+          eventcontent: "The Gaudium HDTA 2024",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 03",
+          eventcontent: "Junior Championship -Circuit 2025",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 04",
+          eventcontent: "PYP Hyd Network Indus School 2024",
+          eventslinks: "/events1link",
+        },
+        {
+          eventnumber: "Event - 05",
+          eventcontent: "ISSO Tennis 2024",
+          eventslinks: "/events1link",
+        },
+      ],
+    },
+
+    journey: {
+      status: false,
+      headingFirst: "Journey",
+      headingSecond: "in Pictures",
+      description:
+        "A visual journey capturing training, competition and defining moments from our Tennis athletes’ path to excellence.",
+
+      marqueeRow1: [
+        "/images/detail-page/tennis/marquee/tennis-gallery-05.jpg", // Square 5
+        "/images/detail-page/tennis/marquee/tennis-gallery-01.jpg", // Rect 1
+        "/images/detail-page/tennis/marquee/tennis-gallery-06.jpg", // Square 6
+        "/images/detail-page/tennis/marquee/tennis-gallery-02.jpg", // Rect 2
+        "/images/detail-page/tennis/marquee/tennis-gallery-07.jpg", // Square 7
+      ],
+
+      marqueeRow2: [
+        "/images/detail-page/tennis/marquee/tennis-gallery-03.jpg", // Rect 3
+        "/images/detail-page/tennis/marquee/tennis-gallery-08.jpg", // Square 8
+        "/images/detail-page/tennis/marquee/tennis-gallery-04.jpg", // Rect 4
+        "/images/detail-page/tennis/marquee/tennis-gallery-05.jpg", // Square 5 (Repeat)
+        "/images/detail-page/tennis/marquee/tennis-gallery-01.jpg",
+      ],
+    },
+
+    success: {
+      status: false,
+      headingFirst: "success",
+      headingSecond: "stories",
+      description:
+        "Take a glance at the Tennis champions whose achievements define our excellence.",
+
+      showcaseData: [
+        {
+          id: 1,
+          image:
+            "/images/detail-page/tennis/sucess-stories/khyathicherukuri-tennis.png",
+          title: "Khyathi Cherukuri",
+          description: "Selected for Telanga Jr National football team",
+          svgCard: redsvg,
+        },
+        {
+          id: 2,
+          image:
+            "/images/detail-page/tennis/sucess-stories/minal-shaik-kalyan-tennis.png",
+          title: "MINAL SHAIK",
+          description: "Selected for Telanga Jr National football team",
+          svgCard: bluesvg,
+        },
+        {},
       ],
     },
   },

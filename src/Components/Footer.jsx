@@ -149,7 +149,7 @@ export default function Footer({ popupFunction }) {
             <a href="/outdoor-sports">
               <li className="highlightedtextwhite">outdoor sports</li>
             </a>
-            <a href="/best-performer">
+            <a href="/excellence-awardees">
               {/* <li className="highlightedtextwhite">Best performer</li> */}
               <li className="highlightedtextwhite">Excellence Awardees</li>
               
@@ -173,16 +173,8 @@ export default function Footer({ popupFunction }) {
             <a href="https://www.facebook.com/thesportopia/" target="_blank">
               <img src="/images/icons/fb-icon.svg" alt="" />
             </a>
-            <a href="https://x.com/thesportopia" target="_blank">
-              <img src="/images/icons/x-twitter.svg" alt="" />
-            </a>
+        
 
-            <a
-              href="https://in.linkedin.com/company/thegaudium"
-              target="_blank"
-            >
-              <img src="/images/icons/likedin.svg" alt="" />
-            </a>
           </ul>
         </div>
 

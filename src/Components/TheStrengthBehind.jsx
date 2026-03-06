@@ -5,36 +5,19 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function TheStrenthBehind() {
   const strengthData = [
-    {
-      sport: "BADMINTON",
-      role: "chief advisor",
-      img: "/images/homepage/thestrengthimageone.png",
-      name: "pullela gopichand",
-    },
-    {
-      sport: "GYMNASTICS",
-      role: "mentor",
-      img: "/images/homepage/thestrengthimagetwo.png",
-      name: "Bharathi Dasan",
-    },
-    {
-      sport: "BADMINTON",
-      role: "chief advisor",
-      img: "/images/homepage/thestrengthimageone.png",
-      name: "pullela gopichand",
-    },
-    {
-      sport: "BADMINTON",
-      role: "chief advisor",
-      img: "/images/homepage/thestrengthimageone.png",
-      name: "pullela gopichand",
-    },
-    {
-      sport: "BADMINTON",
-      role: "chief advisor",
-      img: "/images/homepage/thestrengthimageone.png",
-      name: "pullela gopichand",
-    },
+  {
+    sport: " ",
+    role: "Chief Advisor ",
+    img: "/images/homepage/thestrengthimageone.png",
+    name: "Pullela Gopichand",
+  },
+  {
+    sport: " ",
+    role: "Mentor",
+    img: "/images/homepage/thestrengthimagetwo.png",
+    name: "Manoj RAna",
+  },
+
   ];
   const sliderRef = useRef(null);
   const totalSlides = strengthData.length;
@@ -142,8 +125,8 @@ export default function TheStrenthBehind() {
                   ))}
                 </Slider>
 
-                <div className="buttonandarrowcontrol">
-                  {/* PROGRESS BAR */}
+                {/* <div className="buttonandarrowcontrol">
+                
                   <div className="progressflex">
                     <div className="strength-progressbar">
                       <div
@@ -153,7 +136,6 @@ export default function TheStrenthBehind() {
                     </div>
                   </div>
 
-                  {/* BUTTONS */}
                   <div className="strength-controls">
                     <button
                       onClick={() => sliderRef.current?.slickPrev()}
@@ -184,7 +166,7 @@ export default function TheStrenthBehind() {
                       />
                     </button>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

@@ -41,8 +41,8 @@ export default function ProgrammsBuild() {
           </div>
           <div className="paravideosection">
             <p className="paragraphtext">
-              A structured pathway from discovery to elite performance, guided
-              by champion coaches at every stage level.
+           Gaudium Sportopia offers three programs designed to 
+match every child’s skill level and sporting journey.
             </p>
           </div>
         </div>

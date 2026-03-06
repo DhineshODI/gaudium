@@ -56,44 +56,49 @@ export default function ShowcaseProject() {
   const showcaseData = [
     {
       id: 1,
-      image: "/images/homepage/showcaseproject3.png",
-      title: "arya marda",
+      image: "/images/detail-page/badminton/sucess-stories/krishav-Puppala-Badminton.png",
+      title: "Krishav Puppala",
       description:
-        "of CBSE Grade II won the Bronze Position in the Butterfly Event Inter District Swimming Championship",
+        "YONEX-SUNRISE Sri Pc Reddy Memorial 10th Telangana State Sub Junior Badminton Championship 2024",
       svgCard: redsvg,
     },
     {
       id: 2,
-      image: "/images/homepage/showcaseproject4.png",
-      title: "arya marda",
+      image: "/images/detail-page/fencing/sucess-stories/RIDHIGUTHULA-.png",
+      title: "RIDHI GUTHULA",
       description:
-        "of CBSE Grade II won the Bronze Position in the Butterfly Event Inter District Swimming Championship",
+        "INDIVIDUAL EVENT BRONZE MEDAL  EVENT/  WEAPON : SABRE ",
       svgCard: bluesvg,
     },
     {
       id: 3,
-      image: "/images/homepage/showcaseproject4.png",
-      title: "arya marda",
-      description:
-        "of CBSE Grade II won the Bronze Position in the Butterfly Event Inter District Swimming Championship",
+      image: "/images/detail-page/skating/sucess-stories/Pparin-Agarwal-skating.png",
+      title: "Pparin",
+      description: "SILVER",
       svgCard: redsvg,
     },
     {
       id: 4,
-      image: "/images/homepage/showcaseproject4.png",
-      title: "arya marda",
-      description:
-        "of CBSE Grade II won the Bronze Position in the Butterfly Event Inter District Swimming Championship",
+      image: "/images/detail-page/athletics/sucess-stories/aditi-athlete.png",
+      title: "Aditi Reddy",
+      description: "Gold medal-Triathlon B group",
       svgCard: bluesvg,
     },
     {
       id: 5,
-      image: "/images/homepage/showcaseproject4.png",
-      title: "arya marda",
-      description:
-        "of CBSE Grade II won the Bronze Position in the Butterfly Event Inter District Swimming Championship",
+      image: "/images/detail-page/swimming/sucess-stories/Arya-Marda-swiming.png",
+      title: "ARYA MARDA",
+      description: "Won the Gold medal In 25 mts Breast Stroke under 11 age group",
       svgCard: redsvg,
     },
+    {
+      id: 6,
+      image: "/images/detail-page/tennis/sucess-stories/khyathicherukuri-tennis.png",
+      title: "Khyathi Cherukuri",
+      description: "TSelected for Telanga Jr National football team",
+      svgCard: bluesvg,
+    },
+ 
   ];
 
   const sliderRef = useRef(null);
@@ -155,7 +160,7 @@ export default function ShowcaseProject() {
             <div className="firstheading lengthfirstHeading ">
               <h2 className="stroke-fill-text mainheadingfont redcolorfont">
                 {/* Showcasing Our */}
-             Champions of
+                Champions of
               </h2>
             </div>
 
@@ -185,7 +190,7 @@ export default function ShowcaseProject() {
                     <div className="imagehovershowcaseper">
                       <img
                         className="imageoftheshowcaseper"
-                        src="/images/homepage/showcaseproject3.png"
+                        src={showcarditem.image}
                         alt=""
                       />
                     </div>
@@ -193,17 +198,17 @@ export default function ShowcaseProject() {
 
                   <div className="maincontainershowingcontent">
                     <h4 className="secondheadingtext">
-                      <span
-                        className={`mainheadingfont ${
+                      <div
+                        className={`mainheadingfont text-center ${
                           index % 2 !== 0 ? "newmainheadingfont" : ""
                         }`}
                       >
                         {showcarditem.title}{" "}
-                      </span>
-                      <span style={{ marginLeft: "3px" }}>
+                      </div>
+                      <div style={{ marginLeft: "0px", textAlign:"center"}}>
                         {" "}
                         {showcarditem.description}
-                      </span>
+                      </div>
                     </h4>
                   </div>
                 </div>

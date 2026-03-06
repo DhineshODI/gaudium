@@ -31,7 +31,7 @@ export default function InDoorSportsPage({ menuOnclick }) {
       gameName: "Fencing",
       gameAboutContent:
         "A precision-based combat sport developing lightning reflexes, strategy, discipline, and intense mental focus skills.",
-      gameLinkL: "/sport/fenching",
+      gameLinkL: "/sport/fencing",
     },
     {
       id: 4,

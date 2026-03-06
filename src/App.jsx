@@ -147,8 +147,6 @@ function App() {
           <Route
             // path="/best-performer"
             path="/excellence-awardees"
-
-            
             element={<BestPerformerPage menuOnclick={menuOnclick} />}
           />
           <Route
@@ -173,7 +171,7 @@ function App() {
           />
         </Routes>
 
-        <Footer    popupFunction={popupFunction} />
+        <Footer popupFunction={popupFunction} />
       </MenuProvider>
 
       {popupshow && (
@@ -205,6 +203,10 @@ function App() {
           </div>
         </div>
       )}
+
+      <div className="enquirenowbutton">
+        <img src="/images/enquire-now.svg" alt="" />
+      </div>
     </>
   );
 }

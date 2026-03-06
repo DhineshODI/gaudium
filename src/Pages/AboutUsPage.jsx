@@ -11,7 +11,7 @@ export default function AboutUsPage({ menuOnclick }) {
   const container = useRef();
   const sectionRef = useRef();
 
-    const sectionRef1 = useRef();
+  const sectionRef1 = useRef();
   const coachContainer = useRef();
   useGSAP(
     () => {
@@ -34,7 +34,7 @@ export default function AboutUsPage({ menuOnclick }) {
     { scope: container },
   );
 
-    useGSAP(
+  useGSAP(
     () => {
       gsap.to(".bannercontentflex", {
         // Position-ah mela thalla
@@ -50,7 +50,7 @@ export default function AboutUsPage({ menuOnclick }) {
         },
       });
     },
-    { scope: sectionRef1},
+    { scope: sectionRef1 },
   );
 
   useGSAP(
@@ -70,8 +70,6 @@ export default function AboutUsPage({ menuOnclick }) {
     },
     { scope: sectionRef },
   );
-
- 
 
   return (
     <>
@@ -144,11 +142,65 @@ export default function AboutUsPage({ menuOnclick }) {
                 <h4 className="oursection">Our</h4>
                 <h2 className="visionsection">Mission</h2>
                 <p className="paragraphtext">
-                  To build an end-to-end sports training ecosystem uniting
-                  international education and world-class coaching, empowering
-                  all stakeholders to develop consistent excellence, nurture
-                  champions and make sport an integral, disciplined and
-                  enriching part of everyday life.
+                  Provide an end-to-end sports training ecosystem for all
+                  stakeholders that enables champions to be consistently
+                  excellent and make sport as an integral part of life.
+                </p>
+              </div>
+              <div className="thirdsecheart newaddedsection">
+                {/* <h4 className="oursection">Our</h4> */}
+                <h2 className="visionsection">Philosophy</h2>
+                <p className="paragraphtext">
+                  There is a dream. A dream that brings together the most
+                  important aspects of life for a child. Education without
+                  pressure. Sports without regret. Arts without boundaries. How
+                  far will the factory conveyor belt go? How long before we stop
+                  mass producing ‘beings’? What does it take for children to
+                  know their dreams? And more importantly what will it take for
+                  them to realise it? The daily grind of studies. The peer
+                  pressure to perform. The societal norms to look ‘enriched’. Is
+                  the goal of education only for a career? Are sports just
+                  hobbies? Are arts deemed too hifi? It takes more than a dream.
+                  It is much more than a vision. And definitely the most
+                  important of all missions. A place where education means
+                  knowledge, sports is more than a hobby and arts is more than
+                  an emotional expression. A place where all come together. Why?
+                  Because there is a bit of everything in everything else. It is
+                  the true amalgamation that creates that well-rounded
+                  personality. A place that enables the true champions to
+                  blossom at one end and builds a healthy lifestyle at the
+                  other. A place where the sports training infrastructure can be
+                  rivaled only by the best in the world. A place that attracts
+                  the best coaches and trainers. A place that will be
+                  one-of-a-kind for its sporting curriculum. A place where
+                  sports training is supported by complete pre and post care. A
+                  place that does not have an equal. A place called Gaudium
+                  Sportopia.
+                </p>
+              </div>
+              <div className="thirdsecheart newaddedsection">
+                {/* <h4 className="oursection">Our</h4> */}
+                <h2 className="visionsection">Director Details </h2>
+                <p className="paragraphtext">
+                  Sports wasn’t looked upon as a career option a decade ago.
+                  Today, youngsters across the length and breadth of the country
+                  have actively taken up sports and are shining at the
+                  international level. And any sport is easy to learn when
+                  young. Unfortunately, most schools focus only on academics,
+                  and a kid who aspires to become a sport star has to seek the
+                  help on small scale Private sports academies that either offer
+                  training during the weekends or during the holidays. Which is
+                  certainly not enough for a talented child to become a
+                  champion. And that’s exactly where the Gaudium Sportopia can
+                  help. Sportopia provides every child the best possible sports
+                  eco system inside the school campus so that each child can
+                  pursue his/ her game of choice in a seamless way and become
+                  champions if they have the talent. With the potential of
+                  offering more than 20+ world class sport academies, Gaudium
+                  Sportopia in its first phase is ready to launch 15 different
+                  sports academies run by champion coaches who are still
+                  actively coaching current champions, Sportopia offers three
+                  level of courses for children.
                 </p>
               </div>
             </div>

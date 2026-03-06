@@ -107,7 +107,7 @@ export default function OurInfraStructure({ menuOnclick }) {
               </div>
               <div className="expansivecards">
                 <div className="expansivefirstsec gap-1">
-                  <h5>25</h5>
+                  <h5>15</h5>
                   <p className="secondheadingtext plustextcontent">+</p>
                 </div>
                 <h4 className="paragraphtext">Sports Programs</h4>

@@ -112,102 +112,106 @@ export default function SucessDetailSlider({ data }) {
   }, [slidesToShow, totalSlides, currentSlide]);
   return (
     <>
-      <div className="detailpagesucess showcaseprojectrow">
-        <div className="container max-w-7xl mx-auto px-4">
-          <div className="videosectionmain">
-            <div className="firstheading">
-              <h2 className="stroke-fill-text mainheadingfont redcolorfont">
-                {data.headingFirst}
-              </h2>
-            </div>
+      {data.status === true && (
+        <div className="detailpagesucess showcaseprojectrow">
+          <div className="container max-w-7xl mx-auto px-4">
+            <div className="videosectionmain">
+              <div className="firstheading">
+                <h2 className="stroke-fill-text mainheadingfont redcolorfont">
+                  {data.headingFirst}
+                </h2>
+              </div>
 
-            <div className="secondheading">
-              <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
-                {data.headingSecond}
-              </h2>
+              <div className="secondheading">
+                <h2 className="stroke-fill-text1 mainheadingfont bluecolorfont">
+                  {data.headingSecond}
+                </h2>
+              </div>
+            </div>
+            <div className="paravideosection">
+              <p className="paragraphtext">{data.description}</p>
             </div>
           </div>
-          <div className="paravideosection">
-            <p className="paragraphtext">{data.description}</p>
-          </div>
-        </div>
 
-        <div className="container max-w-7xl mx-auto px-4 showcasingcontainer">
-          <Slider ref={sliderRef} {...settings}>
-            {showcaseData.map((showcarditem, index) => (
-              <div className="mainrowshowcasingcard">
-                <div className="showcasingcard">
-                  <div className="showcaseimagecard">
-                    {showcarditem.svgCard}
+          <div className="container max-w-7xl mx-auto px-4 showcasingcontainer">
+            <Slider ref={sliderRef} {...settings}>
+              {showcaseData.map((showcarditem, index) => (
+                <div className="mainrowshowcasingcard">
+                  <div className="showcasingcard">
+                    <div className="showcaseimagecard">
+                      {showcarditem.svgCard}
 
-                    <div className="imagehovershowcaseper">
-                      <img
-                        className="imageoftheshowcaseper"
-                        src="/images/homepage/showcaseproject3.png"
-                        alt=""
-                      />
+                      <div className="imagehovershowcaseper">
+                        <img
+                          className="imageoftheshowcaseper"
+                          src={showcarditem.image}
+                          alt=""
+                        />
+                      </div>
+                    </div>
+
+                    <div className="maincontainershowingcontent">
+                      <h4 className="secondheadingtext">
+                        <span
+                          className={`mainheadingfont ${
+                            index % 2 !== 0 ? "newmainheadingfont" : ""
+                          }`}
+                        >
+                          {showcarditem.title}{" "}
+                        </span>
+                        <div style={{ textAlign: "center" }}>
+                          {showcarditem.description}
+                        </div>
+                      </h4>
                     </div>
                   </div>
+                </div>
+              ))}
+            </Slider>
+          </div>
 
-                  <div className="maincontainershowingcontent">
-                    <h4 className="secondheadingtext">
-                      <span
-                        className={`mainheadingfont ${
-                          index % 2 !== 0 ? "newmainheadingfont" : ""
-                        }`}
-                      >
-                        {showcarditem.title}{" "}
-                      </span>
-                      <div style={{ textAlign: "center" }}>
-                        {showcarditem.description}
-                      </div>
-                    </h4>
-                  </div>
+          {data.showcaseData.length > 3  &&  <div className="container max-w-7xl mx-auto px-4">
+            <div className="detailpagebuttonsucces">
+              <div className="progressflex">
+                <div className="strength-progressbar">
+                  <div
+                    className="strength-progressbar-fill"
+                    style={{ width: `${progress}%` }}
+                  ></div>
                 </div>
               </div>
-            ))}
-          </Slider>
-        </div>
-        <div className="container max-w-7xl mx-auto px-4">
-          <div className="detailpagebuttonsucces">
-            <div className="progressflex">
-              <div className="strength-progressbar">
-                <div
-                  className="strength-progressbar-fill"
-                  style={{ width: `${progress}%` }}
-                ></div>
+              <div className="slider-buttonsshowcaseproject">
+                <button
+                  onClick={() => sliderRef.current?.slickPrev()}
+                  className="left-btnshowcaseproject"
+                  disabled={isAtStart}
+                  style={{
+                    opacity: isAtStart ? 0.2 : 1,
+                    pointerEvents: isAtStart ? "none" : "auto",
+                    cursor: isAtStart ? "default" : "pointer",
+                  }}
+                >
+                  <img src="/images/icons/arrow-left-circle-red.svg" alt="" />
+                </button>
+
+                <button
+                  onClick={() => sliderRef.current?.slickNext()}
+                  className="right-btnshowcaseproject"
+                  disabled={isAtEnd}
+                  style={{
+                    opacity: isAtEnd ? 0.2 : 1,
+                    pointerEvents: isAtEnd ? "none" : "auto",
+                    cursor: isAtEnd ? "default" : "pointer",
+                  }}
+                >
+                  <img src="/images/icons/arrow-right-circle-red.svg" alt="" />
+                </button>
               </div>
             </div>
-            <div className="slider-buttonsshowcaseproject">
-              <button
-                onClick={() => sliderRef.current?.slickPrev()}
-                className="left-btnshowcaseproject"
-                disabled={isAtStart}
-                style={{
-                  opacity: isAtStart ? 0.2 : 1,
-                  pointerEvents: isAtStart ? "none" : "auto",
-                  cursor: isAtStart ? "default" : "pointer",
-                }}
-              >
-                <img src="/images/icons/arrow-left-circle-red.svg" alt="" />
-              </button>
-
-              <button
-                onClick={() => sliderRef.current?.slickNext()}
-                className="right-btnshowcaseproject"
-                disabled={isAtEnd}
-                style={{
-                  opacity: isAtEnd ? 0.2 : 1,
-                  pointerEvents: isAtEnd ? "none" : "auto",
-                  cursor: isAtEnd ? "default" : "pointer",
-                }}
-              >
-                <img src="/images/icons/arrow-right-circle-red.svg" alt="" />
-              </button>
-            </div>
-          </div>
+          </div> }
+       
         </div>
-      </div>
+      )}
     </>
   );
 }

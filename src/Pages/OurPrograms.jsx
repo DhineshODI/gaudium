@@ -74,8 +74,8 @@ export default function OurPrograms({ menuOnclick }) {
               <hr />
 
               <p className="paragraphtext contentbanner">
-                A structured pathway from discovery to elite performance, guided
-                by champion coaches at every stage level.
+                Gaudium Sportopia offers three programs designed to match every
+                child’s skill level and sporting journey.
               </p>
             </div>
           </div>
@@ -119,12 +119,12 @@ export default function OurPrograms({ menuOnclick }) {
                 <p className="nameofthesportsprogramm">Sportopia</p>
                 <h3 className="roleinstrength">rookie</h3>
                 <p className="paragraphtext paragaoneprogram">
-                  This program introduces students to chosen sports through
-                  structured after-school coaching sessions. The program builds
-                  strong fundamentals across two levels—movement skills,
-                  sport-specific techniques, and theory. Biannual assessments
-                  track progress, with detailed feedback and development reports
-                  shared during Sportopia PTMs.
+                  <strong>SPORTOPIA ROOKIE PROGRAM : </strong>
+                  This Program introduces students to chosen sports through
+                  structured sessions integrated within school hours. Along with
+                  fundamental skill development, the program emphasizes overall
+                  health, fitness, and wellness, encouraging active habits as an
+                  essential part of everyday student life.
                 </p>
 
                 {/* <p className="paragraphtext paragatwoprogram">
@@ -139,12 +139,13 @@ export default function OurPrograms({ menuOnclick }) {
                 <p className="nameofthesportsprogramm">Sportopia</p>
                 <h3 className="roleinstrength">Prodigy</h3>
                 <p className="paragraphtext paragaoneprogram">
-                  This is an intensive, performance-driven program for athletes
-                  aiming to excel competitively. With training before and after
-                  school, it progresses through three levels—Introductory,
-                  Intermediate, and Advanced—focusing on skill refinement, match
-                  exposure, fitness and elite-level competition supported by
-                  high-performance and specialist coaching.
+                  <strong>SPORTOPIA STELLAR PROGRAM : </strong>
+                  This intensive after-school program is designed for students
+                  aiming to excel in their chosen sport. Offered across
+                  Introductory, Intermediate, and Advanced levels, athletes are
+                  trained by Olympians/international players/ Arjuna Awardees
+                  who have mentored champions and shaped future sporting
+                  excellence.
                 </p>
 
                 {/* <p className="paragraphtext paragatwoprogram">
@@ -159,12 +160,11 @@ export default function OurPrograms({ menuOnclick }) {
                 <p className="nameofthesportsprogramm">Sportopia</p>
                 <h3 className="roleinstrength">Prodigy</h3>
                 <p className="paragraphtext paragaoneprogram">
-                  This is a full-time, elite program for high-potential athletes
-                  aspiring to professional sports careers. With intensive
-                  training, personalized academic support and coach-led
-                  selection, progress is measured through tournament
-                  performance, regular competitive matches and continuous
-                  exposure to high-level competition.
+                  This intensive full-time program is designed for students with
+                  the passion, discipline, and potential to pursue professional
+                  sports careers. Athletes receive personalized academic
+                  support, with admission based on rigorous selection and
+                  evaluation by expert coaching teams.
                 </p>
 
                 {/* <p className="paragraphtext paragatwoprogram">

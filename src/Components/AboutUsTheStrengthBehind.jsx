@@ -7,30 +7,18 @@ gsap.registerPlugin(ScrollTrigger);
 
 const strengthData = [
   {
-    sport: "Tennis ",
-    role: "mentor ",
+    sport: " ",
+    role: "Chief Advisor ",
     img: "/images/homepage/thestrengthimageone.png",
-    name: "Vijaykumar",
+    name: "Pullela Gopichand",
   },
   {
-    sport: "Swimming ",
-    role: "coach ",
+    sport: " ",
+    role: "Mentor",
     img: "/images/homepage/thestrengthimagetwo.png",
-    name: "C. JACOB VIJAY KUMAR",
-  },
-  {
-    sport: "Cricket ",
-    role: "coach ",
-    img: "/images/homepage/thestrengthimageone.png",
-    name: "Omer",
+    name: "Manoj RAna",
   },
 
-  {
-    sport: "Football  ",
-    role: "coach  ",
-    img: "/images/homepage/thestrengthimageone.png",
-    name: "CHINTHA GURUPRASAD",
-  },
 ];
 
 export default function AboutusTheStrengthSection() {
@@ -61,7 +49,7 @@ export default function AboutusTheStrengthSection() {
   );
   return (
     <>
-      <div className="aboutusstrengthsecmain">
+      <div className="aboutusstrengthsecmain aboutusmap">
         <div>
           <div className="videosectionmain">
             <div className="firstheading lengthfirstHeading">

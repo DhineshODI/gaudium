@@ -39,7 +39,7 @@ export default function FaqDetail({ data }) {
             {faqcontents.map((item, index) => (
               <div
                 key={index}
-                onClick={() => faqopen(item.id)}
+                // onClick={() => faqopen(item.id)}
                 className={`cursor-pointer containerFaq faq-arrowimage ${
                   openFaqId === item.id ? "activefaq" : ""
                 }`}

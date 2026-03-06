@@ -77,7 +77,7 @@ const DetailsData = {
 
       members: [
         {
-          sport: "",
+          sport: "( Padma Bhushan )",
           role: "Chief Advisor",
           img: "/images/homepage/thestrengthimageone.png",
           name: "Pullela Gopichand",

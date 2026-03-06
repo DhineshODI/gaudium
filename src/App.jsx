@@ -204,7 +204,7 @@ function App() {
         </div>
       )}
 
-      <div className="enquirenowbutton">
+      <div className="enquirenowbutton cursor-pointer">
         <img src="/images/enquire-now.svg" alt="" />
       </div>
     </>

@@ -7,7 +7,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const strengthData = [
   {
-    sport: " ",
+    sport: "( Padma Bhushan )",
     role: "Chief Advisor ",
     img: "/images/homepage/thestrengthimageone.png",
     name: "Pullela Gopichand",
@@ -18,7 +18,6 @@ const strengthData = [
     img: "/images/homepage/thestrengthimagetwo.png",
     name: "Manoj RAna",
   },
-
 ];
 
 export default function AboutusTheStrengthSection() {

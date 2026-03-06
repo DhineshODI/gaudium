@@ -5,19 +5,18 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function TheStrenthBehind() {
   const strengthData = [
-  {
-    sport: " ",
-    role: "Chief Advisor ",
-    img: "/images/homepage/thestrengthimageone.png",
-    name: "Pullela Gopichand",
-  },
-  {
-    sport: " ",
-    role: "Mentor",
-    img: "/images/homepage/thestrengthimagetwo.png",
-    name: "Manoj RAna",
-  },
-
+    {
+      sport: "( Padma Bhushan )",
+      role: "Chief Advisor ",
+      img: "/images/homepage/thestrengthimageone.png",
+      name: "Pullela Gopichand ",
+    },
+    {
+      sport: " ",
+      role: "Mentor",
+      img: "/images/homepage/thestrengthimagetwo.png",
+      name: "Manoj RAna",
+    },
   ];
   const sliderRef = useRef(null);
   const totalSlides = strengthData.length;

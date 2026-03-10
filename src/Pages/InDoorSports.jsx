@@ -14,7 +14,7 @@ export default function InDoorSportsPage({ menuOnclick }) {
       gameImage: "/images/indoorsports/badminton.jpg",
       gameName: "Badminton",
       gameAboutContent:
-        "A fast-paced racquet sport that builds agility, reflexes, endurance, and sharp tactical thinking skills.",
+        "Join Gaudium Sportopia and train in badminton with structured pathways built for competitive success.",
       gameLinkL: "/sport/badminton",
     },
     {
@@ -22,7 +22,7 @@ export default function InDoorSportsPage({ menuOnclick }) {
       gameImage: "/images/indoorsports/basketball.jpg",
       gameName: "Basketball",
       gameAboutContent:
-        "A dynamic team sport focusing on speed, coordination, strategy, and high-intensity athletic performance levels.",
+        "Step onto the court at Gaudium Sportopia and grow into a confident, competitive basketball player.",
       gameLinkL: "/sport/basketball",
     },
     {
@@ -30,7 +30,7 @@ export default function InDoorSportsPage({ menuOnclick }) {
       gameImage: "/images/indoorsports/fenching.jpg",
       gameName: "Fencing",
       gameAboutContent:
-        "A precision-based combat sport developing lightning reflexes, strategy, discipline, and intense mental focus skills.",
+        "Discover fencing at Gaudium Sportopia and develop focus, speed, and championship mindset early.",
       gameLinkL: "/sport/fencing",
     },
     {
@@ -38,7 +38,7 @@ export default function InDoorSportsPage({ menuOnclick }) {
       gameImage: "/images/indoorsports/gymastics.jpg",
       gameName: "Gymnastics",
       gameAboutContent:
-        "A foundation sport enhancing strength, flexibility, balance, coordination, body control, and technical movement mastery.",
+        "Shape strength, flexibility, and confidence through guided gymnastics training at Gaudium Sportopia.",
       gameLinkL: "/sport/gymnastics",
     },
     {
@@ -46,8 +46,42 @@ export default function InDoorSportsPage({ menuOnclick }) {
       gameImage: "/images/indoorsports/skating.jpg",
       gameName: "Skating",
       gameAboutContent:
-        "A skill-driven sport improving balance, speed, control, confidence, coordination, and overall movement efficiency development.",
+        "Develop speed and balance through professional skating programs built for young competitors.",
       gameLinkL: "/sport/skating",
+    },
+    {
+      id: 6,
+      gameImage: "",
+      gameName: "Table Tennis",
+      gameAboutContent:
+        "Master reflexes and game strategy through expert-led table tennis training programs at Gaudium Sportopia",
+      gameLinkL: "/sport/tabletennis",
+    },
+
+    {
+      id: 7,
+      gameImage: "",
+      gameName: "Taekwondo",
+      gameAboutContent:
+        "Build discipline and competitive spirit through professionally guided taekwondo training programs.",
+      gameLinkL: "/sport/taekwondo",
+    },
+    {
+      id: 8,
+      gameImage: "",
+      gameName: "Chess",
+      gameAboutContent:
+        "Strengthen analytical thinking and competitive focus through structured chess learning pathways.",
+      gameLinkL: "/sport/chess",
+    },
+
+    {
+      id: 8,
+      gameImage: "",
+      gameName: "Squash",
+      gameAboutContent:
+        "Join squash training at Gaudium Sportopia designed to develop agility, stamina, and match-winning confidence.",
+      gameLinkL: "/sport/squash",
     },
   ];
 

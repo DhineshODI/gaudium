@@ -1510,7 +1510,7 @@ body {
 }
 
 .thirdsecheart.newaddedsection .visionsection {
-    text-align: center;
+    text-align: left;
 }
 
 .theheartcontentflex .paragraphtext {
@@ -3383,6 +3383,7 @@ body {
   border: 2px solid white;
   padding-top: 70px;
   background: rgba(190, 30, 45, 0.84);
+  background: rgba(190, 30, 45, 1);
 }
 
 .formPopup .discovermorebutton .buttonfont {

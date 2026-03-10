@@ -65,7 +65,7 @@ const DetailsData = {
       secondsportstitlefirst: "The vision of",
       secondsportstitlesecond: "Badminton Excellence",
       firstparagraphtext:
-        "The Badminton Centre of Excellence at Gaudium Sportopia is led by India’s most successful badminton coach, Mr. Pullela Gopichand, Chief Indian National Coach with his experience shaping Olympic and world champions including P.V. Sindhu and Saina Nehwal. Empower the next generation of Indian badminton champions to rise and inspire on the global stage.",
+        "The Badminton Centre of Excellence at Gaudium Sportopia is led by India’s most successful badminton coach, 'Padma Bhushan Mr. Pullela Gopichand', Chief Indian National Coach with his experience shaping Olympic and world champions including P.V. Sindhu and Saina Nehwal. Empower the next generation of Indian badminton champions to rise and inspire on the global stage.",
       secondparagraphtext: "",
     },
 
@@ -359,7 +359,7 @@ const DetailsData = {
           id: 8,
           image: "/images/detail-page/badminton/sucess-stories/lakshmi.png",
           title: "Lakshmi Sai Aaradhya",
-          description: "Bronze - Medel",
+          description: "Bronze - Medal",
           svgCard: bluesvg,
         },
         {
@@ -374,7 +374,7 @@ const DetailsData = {
           id: 10,
           image: "/images/detail-page/badminton/sucess-stories/sathvika.png",
           title: "Sathvika Lakkativari",
-          description: "Bronze - Medel",
+          description: "Bronze - Medal",
           svgCard: bluesvg,
         },
         {

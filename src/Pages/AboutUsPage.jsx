@@ -178,31 +178,6 @@ export default function AboutUsPage({ menuOnclick }) {
                   Sportopia.
                 </p>
               </div>
-              <div className="thirdsecheart newaddedsection">
-                {/* <h4 className="oursection">Our</h4> */}
-                <h2 className="visionsection">Director Details </h2>
-                <p className="paragraphtext">
-                  Sports wasn’t looked upon as a career option a decade ago.
-                  Today, youngsters across the length and breadth of the country
-                  have actively taken up sports and are shining at the
-                  international level. And any sport is easy to learn when
-                  young. Unfortunately, most schools focus only on academics,
-                  and a kid who aspires to become a sport star has to seek the
-                  help on small scale Private sports academies that either offer
-                  training during the weekends or during the holidays. Which is
-                  certainly not enough for a talented child to become a
-                  champion. And that’s exactly where the Gaudium Sportopia can
-                  help. Sportopia provides every child the best possible sports
-                  eco system inside the school campus so that each child can
-                  pursue his/ her game of choice in a seamless way and become
-                  champions if they have the talent. With the potential of
-                  offering more than 20+ world class sport academies, Gaudium
-                  Sportopia in its first phase is ready to launch 15 different
-                  sports academies run by champion coaches who are still
-                  actively coaching current champions, Sportopia offers three
-                  level of courses for children.
-                </p>
-              </div>
             </div>
           </div>
         </div>

@@ -14,7 +14,7 @@ export default function OutDoorSportsPage({ menuOnclick }) {
       gameImage: "/images/ourprograms/athletics.jpg",
       gameName: "Athletics",
       gameAboutContent:
-        "A track-and-field sport enhancing speed, endurance, strength, agility, coordination and competitive performance across multiple events.",
+        "Begin your competitive athletics journey with professional training designed to unlock sporting potential.",
       gameLinkL: "/sport/athletics",
     },
     {
@@ -22,7 +22,7 @@ export default function OutDoorSportsPage({ menuOnclick }) {
       gameImage: "/images/ourprograms/cricket.jpg",
       gameName: "Cricket",
       gameAboutContent:
-        "A strategic team sport developing batting, bowling, fielding skills, teamwork, focus and match awareness consistently.",
+        "Enroll in cricket training at Gaudium Sportopia that builds match skills, discipline, and future-ready competitive players.",
       gameLinkL: "/sport/cricket",
     },
     {
@@ -30,7 +30,7 @@ export default function OutDoorSportsPage({ menuOnclick }) {
       gameImage: "/images/ourprograms/football.jpg",
       gameName: "Football",
       gameAboutContent:
-        "A high-intensity team sport improving stamina, coordination, tactical understanding, ball control, teamwork and competitive spirit.",
+        "Start your football journey at Gaudium Sportopia with coaching aligned to modern competitive standards.",
       gameLinkL: "/sport/football",
     },
     {
@@ -38,7 +38,7 @@ export default function OutDoorSportsPage({ menuOnclick }) {
       gameImage: "/images/ourprograms/swimming.png",
       gameName: "Swimming",
       gameAboutContent:
-        "A full-body water sport building strength, endurance, technique, flexibility, speed and aquatic confidence for all levels.",
+        "Join structured swimming programs designed to build endurance, technique, and competitive readiness.",
       gameLinkL: "/sport/swimming",
     },
     {
@@ -46,7 +46,16 @@ export default function OutDoorSportsPage({ menuOnclick }) {
       gameImage: "/images/ourprograms/tennis.png",
       gameName: "Tennis",
       gameAboutContent:
-        "A fast-paced racquet sport developing agility, precision, strategy, reflexes, stamina and competitive match readiness effectively.",
+        "Train in tennis at Gaudium Sportopia and progress through structured competitive development pathways.",
+      gameLinkL: "/sport/tennis",
+    },
+
+    {
+      id: 6,
+      gameImage: "",
+      gameName: "Volleyball",
+      gameAboutContent:
+        "Enroll in volleyball at Gaudium Sportopia Volleyball that shapes confident match players through performance-focused development.",
       gameLinkL: "/sport/tennis",
     },
   ];
